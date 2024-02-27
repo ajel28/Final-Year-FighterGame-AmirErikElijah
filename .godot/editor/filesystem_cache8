@@ -1,13 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709051221
+::res://::1709056701
 icon.svg::CompressedTexture2D::8402663531990749670::1707397684::1707397684::1::::<><>::
 README.md::TextFile::-1::1707397684::0::1::::<><>::
-start_menu.gd::GDScript::-1::1709051221::0::1::::<>Control<>::
-::res://Character Select Screen/::1709051279
-character_select.tscn::PackedScene::4905334018019174395::1709051244::0::1::::<><>::
-Select Character Screen.pptx.png::CompressedTexture2D::4475696161834635546::1709051279::1709051280::1::::<><>::
+start_menu.gd::GDScript::-1::1709051465::0::1::::<>Control<>::
+::res://Character Select Screen/::1709056673
+character_select.tscn::PackedScene::4905334018019174395::1709056673::0::1::::<><>::uid://dp6yevm7lfk7k::::res://Menu Screen/Select Character Screen.pptx.png
 TitleScreen.png::CompressedTexture2D::2279321331867644295::1709050615::1709051026::1::::<><>::
-::res://Menu Screen/::1709051235
+::res://Menu Screen/::1709056673
 playbutton.gd::GDScript::-1::1709050904::0::1::::<>Button<>::
 Select Character Screen.pptx.png::CompressedTexture2D::8277555890024505162::1709051001::1709051001::1::::<><>::
-start_menu.tscn::PackedScene::1976587525571984087::1709051235::0::1::::<><>::res://start_menu.gd<>uid://7qedbi0lmy1d::::res://Character Select Screen/TitleScreen.png
+start_menu.tscn::PackedScene::1976587525571984087::1709056673::0::1::::<><>::res://start_menu.gd<>uid://7qedbi0lmy1d::::res://Character Select Screen/TitleScreen.png
