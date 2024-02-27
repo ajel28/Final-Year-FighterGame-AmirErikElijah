@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cb5getui3hj0n"]
+
+[ext_resource type="Texture2D" uid="uid://dp6yevm7lfk7k" path="res://Menu Screen/Select Character Screen.pptx.png" id="1_fl83t"]
+
+[node name="CharacterSelect" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 2969.0
+offset_bottom = 1823.0
+texture = ExtResource("1_fl83t")
