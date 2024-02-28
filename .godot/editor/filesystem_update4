@@ -1,3 +1,4 @@
 res://Menu/start_menu.tscn
 res://Character Select/character_select.tscn
 res://Controls/controls.tscn
+res://Character Select/character_select.gd

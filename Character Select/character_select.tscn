@@ -1,10 +1,73 @@
-[gd_scene load_steps=2 format=3 uid="uid://cb5getui3hj0n"]
+[gd_scene load_steps=3 format=3 uid="uid://cb5getui3hj0n"]
 
 [ext_resource type="Texture2D" uid="uid://dp6yevm7lfk7k" path="res://Character Select/Select Character Screen.pptx.png" id="1_cwlav"]
+[ext_resource type="Script" path="res://Character Select/character_select.gd" id="1_ok3hl"]
 
 [node name="CharacterSelect" type="Node2D"]
+script = ExtResource("1_ok3hl")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 2969.0
 offset_bottom = 1823.0
 texture = ExtResource("1_cwlav")
+
+[node name="JinButton" type="LinkButton" parent="."]
+offset_left = 1825.0
+offset_top = 1364.0
+offset_right = 2061.0
+offset_bottom = 1592.0
+
+[node name="DeadpoolButton" type="LinkButton" parent="."]
+offset_left = 627.0
+offset_top = 1206.0
+offset_right = 836.0
+offset_bottom = 1417.0
+
+[node name="RyuButton" type="LinkButton" parent="."]
+offset_left = 1814.0
+offset_top = 1042.0
+offset_right = 2034.0
+offset_bottom = 1259.0
+
+[node name="DoomButton" type="LinkButton" parent="."]
+offset_left = 2133.0
+offset_top = 1209.0
+offset_right = 2369.0
+offset_bottom = 1446.0
+
+[node name="TerminatorButton" type="LinkButton" parent="."]
+offset_left = 1238.0
+offset_top = 1042.0
+offset_right = 1455.0
+offset_bottom = 1253.0
+
+[node name="WSoldierButton" type="LinkButton" parent="."]
+offset_left = 1511.0
+offset_top = 1040.0
+offset_right = 1739.0
+offset_bottom = 1255.0
+
+[node name="DJinButton" type="LinkButton" parent="."]
+offset_left = 927.0
+offset_top = 1361.0
+offset_right = 1136.0
+offset_bottom = 1588.0
+
+[node name="JohnWickButton" type="LinkButton" parent="."]
+offset_left = 1238.0
+offset_top = 1377.0
+offset_right = 1452.0
+offset_bottom = 1597.0
+
+[node name="RaidenButton" type="LinkButton" parent="."]
+offset_left = 1535.0
+offset_top = 1377.0
+offset_right = 1741.0
+offset_bottom = 1602.0
+
+[node name="RockyButton" type="LinkButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="pressed" from="JinButton" to="." method="_on_jin_button_pressed"]
+[connection signal="pressed" from="DeadpoolButton" to="." method="_on_deadpool_button_pressed"]
