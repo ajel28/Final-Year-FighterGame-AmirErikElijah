@@ -1,8 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709081524
+::res://::1709081881
 icon.svg::CompressedTexture2D::8402663531990749670::1707397684::1707397684::1::::<><>::
 README.md::TextFile::-1::1707397684::0::1::::<><>::
-start_menu.gd::GDScript::-1::1709078773::0::1::::<>Control<>::
 ::res://1 Deadpool/::1709080749
 ::res://1 Devil Jin/::1709080728
 ::res://1 Dr. Doom/::1709080769
@@ -13,17 +12,18 @@ start_menu.gd::GDScript::-1::1709078773::0::1::::<>Control<>::
 ::res://1 Ryu/::1709080812
 ::res://1 Terminator/::1709080779
 ::res://1 Winter Soldier/::1709080801
-::res://Character Select/::1709078773
-character_select.tscn::PackedScene::4905334018019174395::1709078773::0::1::::<><>::uid://dp6yevm7lfk7k::::res://Character Select/Select Character Screen.pptx.png
+::res://Character Select/::1709081654
+character_select.tscn::PackedScene::4905334018019174395::1709081654::0::1::::<><>::uid://dp6yevm7lfk7k::::res://Character Select/Select Character Screen.pptx.png
 Select Character Screen.pptx.png::CompressedTexture2D::8277555890024505162::1709051001::1709078296::1::::<><>::
-::res://Controls/::1709078773
+::res://Controls/::1709081654
 Controls Screen.png::CompressedTexture2D::2801199216467510857::1709077520::1709077540::1::::<><>::
 controls.gd::GDScript::-1::1709078296::0::1::::<>Node2D<>::
-controls.tscn::PackedScene::7750915240133754944::1709078773::0::1::::<><>::res://Controls/controls.gd<>uid://bf56lvfqjjpk8::::res://Controls/Controls Screen.png
-::res://Global Stuff/::1709081524
-Global.gd::GDScript::-1::1709081517::0::1::::<>Node<>::
-::res://Menu/::1709078773
+controls.tscn::PackedScene::7750915240133754944::1709081654::0::1::::<><>::res://Controls/controls.gd<>uid://bf56lvfqjjpk8::::res://Controls/Controls Screen.png
+::res://Global Stuff/::1709081654
+Global.gd::GDScript::-1::1709081654::0::1::::<>Node<>::
+::res://Menu/::1709081654
 LobbyMusic.mp3::AudioStreamMP3::3550493253570322633::1709078260::1709078328::1::::<><>::
 playbutton.gd::GDScript::-1::1709050904::0::1::::<>Button<>::
-start_menu.tscn::PackedScene::1976587525571984087::1709081556::0::1::::<><>::res://start_menu.gd<>uid://7qedbi0lmy1d::::res://Menu/TitleScreen.png<>uid://bqt5dts6nv11v::::res://Menu/LobbyMusic.mp3
+start_menu.gd::GDScript::-1::1709078773::0::1::::<>Control<>::
+start_menu.tscn::PackedScene::1976587525571984087::1709081654::0::1::::<><>::res://Menu/start_menu.gd<>uid://7qedbi0lmy1d::::res://Menu/TitleScreen.png<>uid://bqt5dts6nv11v::::res://Menu/LobbyMusic.mp3
 TitleScreen.png::CompressedTexture2D::2279321331867644295::1709050615::1709078299::1::::<><>::
