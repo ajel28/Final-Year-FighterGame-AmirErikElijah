@@ -1,7 +1,5 @@
-res://Character Select/character_select.gd
-res://Global Stuff/Global.gd
-res://Character Select/character_select.tscn
 res://Menu/start_menu.tscn
-res://jin_character_select_p_1.tscn
+res://Character Select/character_select.gd
+res://Character Select/character_select.tscn
 res://1 Jin Kazama/jin_character_select_p_1.tscn
 res://1 Jin Kazama/jin_character_select_p_2.tscn

@@ -1,19 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://cb5getui3hj0n"]
+[gd_scene load_steps=4 format=3 uid="uid://cb5getui3hj0n"]
 
 [ext_resource type="Script" path="res://Character Select/character_select.gd" id="1_ok3hl"]
-[ext_resource type="PackedScene" uid="uid://12vjy5a31niq" path="res://1 Jin Kazama/jin_character_select_p_1.tscn" id="2_ot86s"]
 [ext_resource type="PackedScene" uid="uid://44t3k4uxpqkx" path="res://1 Jin Kazama/jin_character_select_p_2.tscn" id="3_3ilau"]
-[ext_resource type="Texture2D" uid="uid://cvx4d8fstvmd1" path="res://Character Select/Select Character Screen.pptx (1).png" id="3_4l0cm"]
+[ext_resource type="Texture2D" uid="uid://c4l6tr3xg6dsu" path="res://Character Select/Select Character Screen.pptx (2).png" id="4_la403"]
 
 [node name="CharacterSelect" type="Node2D"]
 script = ExtResource("1_ok3hl")
-jinP1select = ExtResource("2_ot86s")
+jinP1select = ExtResource("3_3ilau")
 jinP2select = ExtResource("3_3ilau")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 2969.0
 offset_bottom = 1823.0
-texture = ExtResource("3_4l0cm")
+texture = ExtResource("4_la403")
 
 [node name="JinButton" type="LinkButton" parent="."]
 offset_left = 1825.0
@@ -73,6 +72,18 @@ offset_bottom = 1602.0
 offset_right = 40.0
 offset_bottom = 40.0
 
+[node name="BackButton" type="LinkButton" parent="."]
+offset_left = 105.0
+offset_top = 1543.0
+offset_right = 616.0
+offset_bottom = 1738.0
+
+[node name="ResetButton" type="LinkButton" parent="."]
+offset_left = 2289.0
+offset_top = 1535.0
+offset_right = 2779.0
+offset_bottom = 1747.0
+
 [connection signal="pressed" from="JinButton" to="." method="_on_jin_button_pressed"]
 [connection signal="pressed" from="DeadpoolButton" to="." method="_on_deadpool_button_pressed"]
 [connection signal="pressed" from="RyuButton" to="." method="_on_ryu_button_pressed"]
@@ -83,3 +94,5 @@ offset_bottom = 40.0
 [connection signal="pressed" from="JohnWickButton" to="." method="_on_john_wick_button_pressed"]
 [connection signal="pressed" from="RaidenButton" to="." method="_on_raiden_button_pressed"]
 [connection signal="pressed" from="RockyButton" to="." method="_on_rocky_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]
