@@ -2,6 +2,7 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD:Character Select/Select Character Screen.pptx (2).png.import
 <<<<<<<< HEAD:Character Select/Select Character Screen.pptx (2).png.import
 uid="uid://c4l6tr3xg6dsu"
 path="res://.godot/imported/Select Character Screen.pptx (2).png-2afba5601e0a22b0798a397d2d3ac7ef.ctex"
@@ -9,12 +10,17 @@ path="res://.godot/imported/Select Character Screen.pptx (2).png-2afba5601e0a22b
 uid="uid://dp6yevm7lfk7k"
 path="res://.godot/imported/Select Character Screen.pptx.png-19144fe9cc42bba6fb1c1e0e48e82479.ctex"
 >>>>>>>> parent of 7424bc8 (continued to work on character selection):Character Select/Select Character Screen.pptx.png.import
+=======
+uid="uid://cvx4d8fstvmd1"
+path="res://.godot/imported/Select Character Screen.pptx (1).png-c41b7fcaf6b4c21b8052288a2e1da7a8.ctex"
+>>>>>>> parent of 0fdefc7 (continued):Character Select/Select Character Screen.pptx (1).png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<< HEAD:Character Select/Select Character Screen.pptx (2).png.import
 <<<<<<<< HEAD:Character Select/Select Character Screen.pptx (2).png.import
 source_file="res://Character Select/Select Character Screen.pptx (2).png"
 dest_files=["res://.godot/imported/Select Character Screen.pptx (2).png-2afba5601e0a22b0798a397d2d3ac7ef.ctex"]
@@ -22,6 +28,10 @@ dest_files=["res://.godot/imported/Select Character Screen.pptx (2).png-2afba560
 source_file="res://Character Select/Select Character Screen.pptx.png"
 dest_files=["res://.godot/imported/Select Character Screen.pptx.png-19144fe9cc42bba6fb1c1e0e48e82479.ctex"]
 >>>>>>>> parent of 7424bc8 (continued to work on character selection):Character Select/Select Character Screen.pptx.png.import
+=======
+source_file="res://Character Select/Select Character Screen.pptx (1).png"
+dest_files=["res://.godot/imported/Select Character Screen.pptx (1).png-c41b7fcaf6b4c21b8052288a2e1da7a8.ctex"]
+>>>>>>> parent of 0fdefc7 (continued):Character Select/Select Character Screen.pptx (1).png.import
 
 [params]
 
