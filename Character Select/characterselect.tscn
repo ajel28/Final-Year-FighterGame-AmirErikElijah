@@ -1,0 +1,103 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkrvuhoo7rd1r"]
+
+[ext_resource type="Script" path="res://Character Select/characterselect.gd" id="1_k2uhs"]
+[ext_resource type="PackedScene" uid="uid://srmqp8v1pxq8" path="res://1 Jin Kazama/jin_p_1_select.tscn" id="2_oq3ql"]
+[ext_resource type="Texture2D" uid="uid://cyuee57u2y65b" path="res://Character Select/Select Character Screen.pptx (3).png" id="2_ss88x"]
+[ext_resource type="PackedScene" uid="uid://k0kotvxnx4d7" path="res://1 Jin Kazama/jin_p_2_select.tscn" id="3_pi26h"]
+
+[node name="characterselect" type="Node2D"]
+script = ExtResource("1_k2uhs")
+jinP1select = ExtResource("2_oq3ql")
+jinP2select = ExtResource("3_pi26h")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -13.0
+offset_top = -15.0
+offset_right = 2973.0
+offset_bottom = 1808.0
+texture = ExtResource("2_ss88x")
+
+[node name="backButton" type="LinkButton" parent="."]
+offset_left = 118.0
+offset_top = 1472.0
+offset_right = 603.0
+offset_bottom = 1686.0
+
+[node name="ResetButton" type="LinkButton" parent="."]
+offset_left = 2247.0
+offset_top = 1494.0
+offset_right = 2720.0
+offset_bottom = 1668.0
+
+[node name="JinButton" type="LinkButton" parent="."]
+offset_left = 1812.0
+offset_top = 1335.0
+offset_right = 2076.0
+offset_bottom = 1590.0
+
+[node name="DeadpoolButton" type="LinkButton" parent="."]
+offset_left = 616.0
+offset_top = 1155.0
+offset_right = 871.0
+offset_bottom = 1416.0
+
+[node name="RyuButton" type="LinkButton" parent="."]
+offset_left = 1814.0
+offset_top = 999.0
+offset_right = 2059.0
+offset_bottom = 1241.0
+
+[node name="DoomButton" type="LinkButton" parent="."]
+offset_left = 2154.0
+offset_top = 1161.0
+offset_right = 2381.0
+offset_bottom = 1385.0
+
+[node name="DJinButton" type="LinkButton" parent="."]
+offset_left = 912.0
+offset_top = 1342.0
+offset_right = 1151.0
+offset_bottom = 1575.0
+
+[node name="RaidenButton" type="LinkButton" parent="."]
+offset_left = 1553.0
+offset_top = 1351.0
+offset_right = 1770.0
+offset_bottom = 1565.0
+
+[node name="TerminatorButton" type="LinkButton" parent="."]
+offset_left = 1232.0
+offset_top = 999.0
+offset_right = 1474.0
+offset_bottom = 1248.0
+
+[node name="WSoldierButton" type="LinkButton" parent="."]
+offset_left = 1515.0
+offset_top = 1002.0
+offset_right = 1732.0
+offset_bottom = 1226.0
+
+[node name="JohnWickButton" type="LinkButton" parent="."]
+offset_left = 1242.0
+offset_top = 1345.0
+offset_right = 1453.0
+offset_bottom = 1562.0
+
+[node name="RockyButton" type="LinkButton" parent="."]
+offset_left = 940.0
+offset_top = 1009.0
+offset_right = 1148.0
+offset_bottom = 1210.0
+
+[connection signal="pressed" from="backButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]
+[connection signal="pressed" from="JinButton" to="." method="_on_jin_button_pressed"]
+[connection signal="pressed" from="DeadpoolButton" to="." method="_on_deadpool_button_pressed"]
+[connection signal="pressed" from="RyuButton" to="." method="_on_ryu_button_pressed"]
+[connection signal="pressed" from="DoomButton" to="." method="_on_doom_button_pressed"]
+[connection signal="pressed" from="DJinButton" to="." method="_on_d_jin_button_pressed"]
+[connection signal="pressed" from="RaidenButton" to="." method="_on_raiden_button_pressed"]
+[connection signal="pressed" from="TerminatorButton" to="." method="_on_terminator_button_pressed"]
+[connection signal="pressed" from="WSoldierButton" to="." method="_on_w_soldier_button_pressed"]
+[connection signal="pressed" from="JohnWickButton" to="." method="_on_john_wick_button_pressed"]
+[connection signal="pressed" from="RockyButton" to="." method="_on_rocky_button_pressed"]

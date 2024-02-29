@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://srmqp8v1pxq8"]
+
+[ext_resource type="Texture2D" uid="uid://bx2puxyxt1dbj" path="res://1 Jin Kazama/JinChSelectP1.png" id="1_dboem"]
+
+[node name="JinP1Select" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 204.0
+offset_top = 323.0
+offset_right = 1032.0
+offset_bottom = 1196.0
+texture = ExtResource("1_dboem")
