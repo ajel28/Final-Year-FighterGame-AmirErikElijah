@@ -15,6 +15,7 @@ DoomChSelectP2.png::CompressedTexture2D::2286124794361726796::1709132482::170913
 JinChSelectP1.png::CompressedTexture2D::4057450003680844567::1709133073::1709133083::1::::<><>::
 JinChSelectP2.png::CompressedTexture2D::1454943762145583268::1709133101::1709133108::1::::<><>::
 jin_character_select_p_1.tscn::PackedScene::1881940569884686308::1709163075::0::1::::<><>::uid://bx2puxyxt1dbj::::res://1 Jin Kazama/JinChSelectP1.png
+jin_character_select_p_2.tscn::PackedScene::2096547616435454675::1709163075::0::1::::<><>::uid://uy1ygeyjbru7::::res://1 Jin Kazama/JinChSelectP2.png
 ::res://1 John Wick/::1709132320
 JohnWickChSelectP1.png::CompressedTexture2D::4769355037231803599::1709132266::1709132276::1::::<><>::
 JohnWickChSelectP2.png::CompressedTexture2D::1529239381387087302::1709132307::1709132320::1::::<><>::
