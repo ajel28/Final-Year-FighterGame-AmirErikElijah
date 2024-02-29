@@ -11,8 +11,8 @@ func _process(delta):
 	pass
 
 
-func _on_link_button_pressed():
-	get_tree().change_scene_to_file("res://Character Select/characterselect.tscn")
+func _on_intro_button_pressed():
+	get_tree().change_scene_to_file("res://Menu/intro_screen.tscn")
 
 
 func _on_controls_button_pressed():

@@ -27,13 +27,6 @@ offset_top = 907.0
 offset_right = 1771.0
 offset_bottom = 1151.0
 
-[node name="CharacterSelectButton" type="LinkButton" parent="."]
-layout_mode = 0
-offset_left = 101.0
-offset_top = 516.0
-offset_right = 883.0
-offset_bottom = 810.0
-
 [node name="ControlsButton" type="LinkButton" parent="."]
 layout_mode = 0
 offset_left = 80.0
@@ -41,11 +34,18 @@ offset_top = 907.0
 offset_right = 853.0
 offset_bottom = 1195.0
 
+[node name="IntroButton" type="LinkButton" parent="."]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 532.0
+offset_right = 843.0
+offset_bottom = 783.0
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_vd1p0")
 volume_db = 0.299
 autoplay = true
 
 [connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]
-[connection signal="pressed" from="CharacterSelectButton" to="." method="_on_link_button_pressed"]
 [connection signal="pressed" from="ControlsButton" to="." method="_on_controls_button_pressed"]
+[connection signal="pressed" from="IntroButton" to="." method="_on_intro_button_pressed"]

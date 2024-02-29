@@ -1,6 +1,6 @@
-CollisionShape2D
-Area2D
 LinkButton
 TextureRect
+CollisionShape2D
+Area2D
 AudioStreamPlayer
 Button
