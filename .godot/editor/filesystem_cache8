@@ -1,5 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
+<<<<<<< HEAD
 ::res://::1709163716
+=======
+::res://::1709133108
+>>>>>>> parent of 7424bc8 (continued to work on character selection)
 icon.svg::CompressedTexture2D::8402663531990749670::1707397684::1707397684::1::::<><>::
 README.md::TextFile::-1::1707397684::0::1::::<><>::
 ::res://1 Deadpool/::1709132894
@@ -11,7 +15,11 @@ DJinChSelectP2.png::CompressedTexture2D::2262625484557200525::1709132759::170913
 ::res://1 Dr. Doom/::1709132530
 DoomChSelectP1.png::CompressedTexture2D::3311886052887997226::1709132377::1709132401::1::::<><>::
 DoomChSelectP2.png::CompressedTexture2D::2286124794361726796::1709132482::1709132491::1::::<><>::
+<<<<<<< HEAD
 ::res://1 Jin Kazama/::1709163075
+=======
+::res://1 Jin Kazama/::1709133108
+>>>>>>> parent of 7424bc8 (continued to work on character selection)
 JinChSelectP1.png::CompressedTexture2D::4057450003680844567::1709133073::1709133083::1::::<><>::
 JinChSelectP2.png::CompressedTexture2D::1454943762145583268::1709133101::1709133108::1::::<><>::
 jin_character_select_p_1.tscn::PackedScene::1881940569884686308::1709163075::0::1::::<><>::uid://bx2puxyxt1dbj::::res://1 Jin Kazama/JinChSelectP1.png
@@ -34,6 +42,7 @@ TerminatorChSelectP2.png::CompressedTexture2D::3740199167558898606::1709132817::
 ::res://1 Winter Soldier/::1709132627
 WsoldierChSelectP1.png::CompressedTexture2D::3612178013634449142::1709132518::1709132543::1::::<><>::
 WsoldierChSelectP2.png::CompressedTexture2D::7081964725215575265::1709132607::1709132627::1::::<><>::
+<<<<<<< HEAD
 ::res://Character Select/::1709163716
 character_select.gd::GDScript::-1::1709163075::0::1::::<>Node2D<>::
 character_select.tscn::PackedScene::4905334018019174395::1709163075::0::1::::<><>::res://Character Select/character_select.gd<>uid://12vjy5a31niq::::res://1 Jin Kazama/jin_character_select_p_1.tscn<>uid://44t3k4uxpqkx::::res://1 Jin Kazama/jin_character_select_p_2.tscn<>uid://cvx4d8fstvmd1::::res://Character Select/Select Character Screen.pptx (1).png
@@ -50,4 +59,20 @@ LobbyMusic.mp3::AudioStreamMP3::3550493253570322633::1709078260::1709078328::1::
 playbutton.gd::GDScript::-1::1709050904::0::1::::<>Button<>::
 start_menu.gd::GDScript::-1::1709078773::0::1::::<>Control<>::
 start_menu.tscn::PackedScene::1976587525571984087::1709163075::0::1::::<><>::res://Menu/start_menu.gd<>uid://7qedbi0lmy1d::::res://Menu/TitleScreen.png<>uid://bqt5dts6nv11v::::res://Menu/LobbyMusic.mp3
+=======
+::res://Character Select/::1709131734
+character_select.tscn::PackedScene::4905334018019174395::1709131734::0::1::::<><>::uid://dp6yevm7lfk7k::::res://Character Select/Select Character Screen.pptx.png
+Select Character Screen.pptx.png::CompressedTexture2D::8277555890024505162::1709051001::1709078296::1::::<><>::
+::res://Controls/::1709131734
+Controls Screen.png::CompressedTexture2D::2801199216467510857::1709077520::1709077540::1::::<><>::
+controls.gd::GDScript::-1::1709078296::0::1::::<>Node2D<>::
+controls.tscn::PackedScene::7750915240133754944::1709131734::0::1::::<><>::res://Controls/controls.gd<>uid://bf56lvfqjjpk8::::res://Controls/Controls Screen.png
+::res://Global Stuff/::1709132006
+Global.gd::GDScript::-1::1709081654::0::1::::<>Node<>::
+::res://Menu/::1709131734
+LobbyMusic.mp3::AudioStreamMP3::3550493253570322633::1709078260::1709078328::1::::<><>::
+playbutton.gd::GDScript::-1::1709050904::0::1::::<>Button<>::
+start_menu.gd::GDScript::-1::1709078773::0::1::::<>Control<>::
+start_menu.tscn::PackedScene::1976587525571984087::1709131734::0::1::::<><>::res://Menu/start_menu.gd<>uid://7qedbi0lmy1d::::res://Menu/TitleScreen.png<>uid://bqt5dts6nv11v::::res://Menu/LobbyMusic.mp3
+>>>>>>> parent of 7424bc8 (continued to work on character selection)
 TitleScreen.png::CompressedTexture2D::2279321331867644295::1709050615::1709078299::1::::<><>::

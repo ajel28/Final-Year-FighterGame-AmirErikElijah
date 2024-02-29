@@ -1,7 +1,7 @@
 extends Node
 
 
-var player = 1
+var player = 0
 
 var player1
 

@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 [gd_scene load_steps=4 format=3 uid="uid://cb5getui3hj0n"]
+=======
+[gd_scene load_steps=3 format=3 uid="uid://cb5getui3hj0n"]
+>>>>>>> parent of 7424bc8 (continued to work on character selection)
 
+[ext_resource type="Texture2D" uid="uid://dp6yevm7lfk7k" path="res://Character Select/Select Character Screen.pptx.png" id="1_cwlav"]
 [ext_resource type="Script" path="res://Character Select/character_select.gd" id="1_ok3hl"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://44t3k4uxpqkx" path="res://1 Jin Kazama/jin_character_select_p_2.tscn" id="3_3ilau"]
 [ext_resource type="Texture2D" uid="uid://c4l6tr3xg6dsu" path="res://Character Select/Select Character Screen.pptx (2).png" id="4_la403"]
 
@@ -8,11 +14,20 @@
 script = ExtResource("1_ok3hl")
 jinP1select = ExtResource("3_3ilau")
 jinP2select = ExtResource("3_3ilau")
+=======
+
+[node name="CharacterSelect" type="Node2D"]
+script = ExtResource("1_ok3hl")
+>>>>>>> parent of 7424bc8 (continued to work on character selection)
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 2969.0
 offset_bottom = 1823.0
+<<<<<<< HEAD
 texture = ExtResource("4_la403")
+=======
+texture = ExtResource("1_cwlav")
+>>>>>>> parent of 7424bc8 (continued to work on character selection)
 
 [node name="JinButton" type="LinkButton" parent="."]
 offset_left = 1825.0
@@ -86,6 +101,7 @@ offset_bottom = 1747.0
 
 [connection signal="pressed" from="JinButton" to="." method="_on_jin_button_pressed"]
 [connection signal="pressed" from="DeadpoolButton" to="." method="_on_deadpool_button_pressed"]
+<<<<<<< HEAD
 [connection signal="pressed" from="RyuButton" to="." method="_on_ryu_button_pressed"]
 [connection signal="pressed" from="DoomButton" to="." method="_on_doom_button_pressed"]
 [connection signal="pressed" from="TerminatorButton" to="." method="_on_terminator_button_pressed"]
@@ -96,3 +112,5 @@ offset_bottom = 1747.0
 [connection signal="pressed" from="RockyButton" to="." method="_on_rocky_button_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]
+=======
+>>>>>>> parent of 7424bc8 (continued to work on character selection)

@@ -1,5 +1,11 @@
 res://Menu/start_menu.tscn
+<<<<<<< HEAD
 res://Character Select/character_select.gd
 res://Character Select/character_select.tscn
 res://1 Jin Kazama/jin_character_select_p_1.tscn
 res://1 Jin Kazama/jin_character_select_p_2.tscn
+=======
+res://Character Select/character_select.tscn
+res://Controls/controls.tscn
+res://Character Select/character_select.gd
+>>>>>>> parent of 7424bc8 (continued to work on character selection)

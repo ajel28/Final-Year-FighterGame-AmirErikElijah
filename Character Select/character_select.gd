@@ -1,5 +1,6 @@
 extends Node2D
 
+<<<<<<< HEAD
 @export var jinP1select: PackedScene
 @export var jinP2select: PackedScene
 
@@ -57,3 +58,22 @@ func _on_back_button_pressed():
 func _on_reset_button_pressed():
 	Global.player=1
 	return true
+=======
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
+func _on_jin_button_pressed():
+	pass # Replace with function body.
+
+
+func _on_deadpool_button_pressed():
+	pass # Replace with function body.
+>>>>>>> parent of 7424bc8 (continued to work on character selection)
