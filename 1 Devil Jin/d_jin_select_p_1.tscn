@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cka3b6xqdhmwg"]
+
+[ext_resource type="Texture2D" uid="uid://qe26q6shcxwo" path="res://1 Devil Jin/DJinChSelectP1.png" id="1_8abj0"]
+
+[node name="DJinSelectP1" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_8abj0")

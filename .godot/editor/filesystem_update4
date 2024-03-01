@@ -1,6 +1,6 @@
-res://Menu/intro_screen.gd
-res://Menu/intro_screen.tscn
-res://Menu/start_menu.gd
+res://Character Select/characterselect.gd
 res://Menu/start_menu.tscn
 res://Character Select/characterselect.tscn
-res://Character Select/characterselect.gd
+res://Menu/intro_screen.tscn
+res://1 Devil Jin/d_jin_select_p_1.tscn
+res://1 Devil Jin/d_jin_select_p_2.tscn

@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Character Select/characterselect.gd" id="1_k2uhs"]
 [ext_resource type="PackedScene" uid="uid://srmqp8v1pxq8" path="res://1 Jin Kazama/jin_p_1_select.tscn" id="2_oq3ql"]
-[ext_resource type="Texture2D" uid="uid://cyuee57u2y65b" path="res://Character Select/Select Character Screen.pptx (3).png" id="2_ss88x"]
 [ext_resource type="PackedScene" uid="uid://k0kotvxnx4d7" path="res://1 Jin Kazama/jin_p_2_select.tscn" id="3_pi26h"]
+[ext_resource type="Texture2D" uid="uid://cn1nmhyl8cyss" path="res://Character Select/Select Character Screen.pptx (4).png" id="4_1f4kk"]
 
 [node name="characterselect" type="Node2D"]
 script = ExtResource("1_k2uhs")
@@ -15,7 +15,7 @@ offset_left = -13.0
 offset_top = -15.0
 offset_right = 2973.0
 offset_bottom = 1808.0
-texture = ExtResource("2_ss88x")
+texture = ExtResource("4_1f4kk")
 
 [node name="backButton" type="LinkButton" parent="."]
 offset_left = 118.0
@@ -23,11 +23,11 @@ offset_top = 1472.0
 offset_right = 603.0
 offset_bottom = 1686.0
 
-[node name="ResetButton" type="LinkButton" parent="."]
-offset_left = 2247.0
-offset_top = 1494.0
-offset_right = 2720.0
-offset_bottom = 1668.0
+[node name="NextButton" type="LinkButton" parent="."]
+offset_left = 2266.0
+offset_top = 1531.0
+offset_right = 2739.0
+offset_bottom = 1705.0
 
 [node name="JinButton" type="LinkButton" parent="."]
 offset_left = 1812.0
@@ -90,7 +90,7 @@ offset_right = 1148.0
 offset_bottom = 1210.0
 
 [connection signal="pressed" from="backButton" to="." method="_on_back_button_pressed"]
-[connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]
+[connection signal="pressed" from="NextButton" to="." method="_on_next_button_pressed"]
 [connection signal="pressed" from="JinButton" to="." method="_on_jin_button_pressed"]
 [connection signal="pressed" from="DeadpoolButton" to="." method="_on_deadpool_button_pressed"]
 [connection signal="pressed" from="RyuButton" to="." method="_on_ryu_button_pressed"]
