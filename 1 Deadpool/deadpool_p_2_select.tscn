@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlsembn85p3dc"]
+
+[ext_resource type="Texture2D" uid="uid://pau7382yruw" path="res://1 Deadpool/DeadpoolChSelectP2.png" id="1_4nbej"]
+
+[node name="DeadpoolP2Select" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1792.0
+offset_top = 253.0
+offset_right = 2608.0
+offset_bottom = 1192.0
+texture = ExtResource("1_4nbej")

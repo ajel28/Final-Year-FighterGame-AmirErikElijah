@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://drocb5op5cfyy"]
+
+[ext_resource type="Texture2D" uid="uid://c2t0piprfulo1" path="res://1 Ryu/RyuChSelectP1.png" id="1_6ripg"]
+
+[node name="RyuP1Select" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 188.0
+offset_top = 338.0
+offset_right = 1020.0
+offset_bottom = 1222.0
+texture = ExtResource("1_6ripg")
