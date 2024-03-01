@@ -6,7 +6,7 @@
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = 260.0
-offset_top = 296.0
-offset_right = 1086.0
+offset_top = 322.0
+offset_right = 1062.0
 offset_bottom = 1193.0
 texture = ExtResource("1_ii2he")

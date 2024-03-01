@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bos4nhfxbhhix"]
+
+[ext_resource type="Texture2D" uid="uid://7toe2n4jqi3e" path="res://1 Dr. Doom/DoomChSelectP2.png" id="1_i0oqm"]
+
+[node name="DoomP2Select" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1848.0
+offset_top = 283.0
+offset_right = 2752.0
+offset_bottom = 1220.0
+texture = ExtResource("1_i0oqm")

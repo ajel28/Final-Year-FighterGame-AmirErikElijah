@@ -15,6 +15,9 @@ extends Node2D
 @export var RyuP1Select: PackedScene
 @export var RyuP2Select: PackedScene
 
+@export var DoomP1Select: PackedScene
+@export var DoomP2Select: PackedScene
+
 func _on_jin_button_pressed():
 		if(Global.player==1):
 			var jin1 = jinP1select.instantiate()
@@ -48,7 +51,14 @@ func _on_ryu_button_pressed():
 
 
 func _on_doom_button_pressed():
-	pass # Replace with function body.
+	if(Global.player==1):
+		var doomp1 = DoomP1Select.instantiate()
+		get_tree().root.get_node("characterselect").add_child(doomp1)
+		Global.player+=1
+	elif(Global.player==2):
+		var doomp2 = DoomP2Select.instantiate()
+		get_tree().root.get_node("characterselect").add_child(doomp2)
+		Global.player+=1
 
 
 func _on_terminator_button_pressed():

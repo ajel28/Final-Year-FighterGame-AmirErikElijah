@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dkrvuhoo7rd1r"]
+[gd_scene load_steps=15 format=3 uid="uid://dkrvuhoo7rd1r"]
 
 [ext_resource type="Script" path="res://Character Select/characterselect.gd" id="1_k2uhs"]
 [ext_resource type="PackedScene" uid="uid://srmqp8v1pxq8" path="res://1 Jin Kazama/jin_p_1_select.tscn" id="2_oq3ql"]
@@ -12,6 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://bt3m8lj0e8ugh" path="res://1 John Wick/john_wick_p_2_select.tscn" id="9_4ex3m"]
 [ext_resource type="PackedScene" uid="uid://drocb5op5cfyy" path="res://1 Ryu/ryu_p_1_select.tscn" id="10_nkpfq"]
 [ext_resource type="PackedScene" uid="uid://bworwahc0peld" path="res://1 Ryu/ryu_p_2_select.tscn" id="11_5ttcn"]
+[ext_resource type="PackedScene" uid="uid://cjlfsf3kbiqne" path="res://1 Dr. Doom/doom_p_1_select.tscn" id="12_fp8an"]
+[ext_resource type="PackedScene" uid="uid://bos4nhfxbhhix" path="res://1 Dr. Doom/doom_p_2_select.tscn" id="13_n37x2"]
 
 [node name="characterselect" type="Node2D"]
 script = ExtResource("1_k2uhs")
@@ -25,6 +27,8 @@ JohnWickP1select = ExtResource("8_8i2td")
 JohnWickP2select = ExtResource("9_4ex3m")
 RyuP1Select = ExtResource("10_nkpfq")
 RyuP2Select = ExtResource("11_5ttcn")
+DoomP1Select = ExtResource("12_fp8an")
+DoomP2Select = ExtResource("13_n37x2")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -13.0
