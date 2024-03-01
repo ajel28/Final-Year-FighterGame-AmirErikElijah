@@ -5,6 +5,8 @@
 [node name="DJinSelectP1" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 111.0
+offset_top = 360.0
+offset_right = 1009.0
+offset_bottom = 1188.0
 texture = ExtResource("1_8abj0")

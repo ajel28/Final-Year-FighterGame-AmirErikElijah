@@ -1,14 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://dkrvuhoo7rd1r"]
+[gd_scene load_steps=7 format=3 uid="uid://dkrvuhoo7rd1r"]
 
 [ext_resource type="Script" path="res://Character Select/characterselect.gd" id="1_k2uhs"]
 [ext_resource type="PackedScene" uid="uid://srmqp8v1pxq8" path="res://1 Jin Kazama/jin_p_1_select.tscn" id="2_oq3ql"]
 [ext_resource type="PackedScene" uid="uid://k0kotvxnx4d7" path="res://1 Jin Kazama/jin_p_2_select.tscn" id="3_pi26h"]
 [ext_resource type="Texture2D" uid="uid://cn1nmhyl8cyss" path="res://Character Select/Select Character Screen.pptx (4).png" id="4_1f4kk"]
+[ext_resource type="PackedScene" uid="uid://cka3b6xqdhmwg" path="res://1 Devil Jin/d_jin_select_p_1.tscn" id="4_marqv"]
+[ext_resource type="PackedScene" uid="uid://c81oqifnoydsr" path="res://1 Devil Jin/d_jin_select_p_2.tscn" id="5_qr8v0"]
 
 [node name="characterselect" type="Node2D"]
 script = ExtResource("1_k2uhs")
 jinP1select = ExtResource("2_oq3ql")
 jinP2select = ExtResource("3_pi26h")
+DjinP1select = ExtResource("4_marqv")
+DjinP2select = ExtResource("5_qr8v0")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -13.0
