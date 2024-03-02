@@ -1,12 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://bi4eprqh56fmy"]
 
-[ext_resource type="PackedScene" uid="uid://dkrvuhoo7rd1r" path="res://Character Select/characterselect.tscn" id="1_vpwu0"]
+[ext_resource type="Script" path="res://Map Select/map_select.gd" id="1_7jipo"]
 [ext_resource type="Texture2D" uid="uid://cxlvjwiqcmdfr" path="res://Map Select/Map Select Screen.pptx.png" id="2_3vb1b"]
 
 [node name="MapSelect" type="Node2D"]
-
-[node name="characterselect" parent="." instance=ExtResource("1_vpwu0")]
-position = Vector2(1, 0)
+script = ExtResource("1_7jipo")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -3.0
@@ -14,3 +12,74 @@ offset_top = -13.0
 offset_right = 2974.0
 offset_bottom = 1814.0
 texture = ExtResource("2_3vb1b")
+
+[node name="AbandonedButton" type="LinkButton" parent="."]
+offset_left = 269.0
+offset_top = 384.0
+offset_right = 781.0
+offset_bottom = 712.0
+
+[node name="FrostButton" type="LinkButton" parent="."]
+offset_left = 790.0
+offset_top = 731.0
+offset_right = 1276.0
+offset_bottom = 1070.0
+
+[node name="IntoButton" type="LinkButton" parent="."]
+offset_left = 272.0
+offset_top = 54.0
+offset_right = 772.0
+offset_bottom = 377.0
+
+[node name="NinButton" type="LinkButton" parent="."]
+offset_left = 783.0
+offset_top = 60.0
+offset_right = 1274.0
+offset_bottom = 382.0
+
+[node name="TakaButton" type="LinkButton" parent="."]
+offset_left = 788.0
+offset_top = 394.0
+offset_right = 1277.0
+offset_bottom = 713.0
+
+[node name="DepthButton" type="LinkButton" parent="."]
+offset_left = 274.0
+offset_top = 748.0
+offset_right = 764.0
+offset_bottom = 1054.0
+
+[node name="DojoButton" type="LinkButton" parent="."]
+offset_left = 781.0
+offset_top = 1069.0
+offset_right = 1281.0
+offset_bottom = 1408.0
+
+[node name="YakuButton" type="LinkButton" parent="."]
+offset_left = 278.0
+offset_top = 1079.0
+offset_right = 766.0
+offset_bottom = 1399.0
+
+[node name="BackButton" type="LinkButton" parent="."]
+offset_left = 71.0
+offset_top = 1505.0
+offset_right = 628.0
+offset_bottom = 1733.0
+
+[node name="NextButton" type="LinkButton" parent="."]
+offset_left = 2219.0
+offset_top = 1490.0
+offset_right = 2790.0
+offset_bottom = 1747.0
+
+[connection signal="pressed" from="AbandonedButton" to="." method="_on_abandoned_button_pressed"]
+[connection signal="pressed" from="FrostButton" to="." method="_on_frost_button_pressed"]
+[connection signal="pressed" from="IntoButton" to="." method="_on_into_button_pressed"]
+[connection signal="pressed" from="NinButton" to="." method="_on_nin_button_pressed"]
+[connection signal="pressed" from="TakaButton" to="." method="_on_taka_button_pressed"]
+[connection signal="pressed" from="DepthButton" to="." method="_on_depth_button_pressed"]
+[connection signal="pressed" from="DojoButton" to="." method="_on_dojo_button_pressed"]
+[connection signal="pressed" from="YakuButton" to="." method="_on_yaku_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="NextButton" to="." method="_on_next_button_pressed"]

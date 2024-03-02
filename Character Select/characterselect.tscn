@@ -102,16 +102,16 @@ offset_right = 1770.0
 offset_bottom = 1565.0
 
 [node name="TerminatorButton" type="LinkButton" parent="."]
-offset_left = 1232.0
+offset_left = 1217.0
 offset_top = 999.0
-offset_right = 1474.0
+offset_right = 1459.0
 offset_bottom = 1248.0
 
 [node name="WSoldierButton" type="LinkButton" parent="."]
 offset_left = 1515.0
 offset_top = 1002.0
 offset_right = 1732.0
-offset_bottom = 1226.0
+offset_bottom = 1244.0
 
 [node name="JohnWickButton" type="LinkButton" parent="."]
 offset_left = 1242.0
@@ -120,10 +120,10 @@ offset_right = 1453.0
 offset_bottom = 1562.0
 
 [node name="RockyButton" type="LinkButton" parent="."]
-offset_left = 915.0
-offset_top = 1021.0
-offset_right = 1123.0
-offset_bottom = 1222.0
+offset_left = 911.0
+offset_top = 1019.0
+offset_right = 1138.0
+offset_bottom = 1249.0
 
 [connection signal="pressed" from="backButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="NextButton" to="." method="_on_next_button_pressed"]
