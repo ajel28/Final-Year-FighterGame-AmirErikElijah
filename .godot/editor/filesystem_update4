@@ -1,10 +1,10 @@
 res://Menu/start_menu.tscn
 res://Character Select/characterselect.tscn
-res://Menu/intro_screen.tscn
-res://1 Ryu/ryu_p_1_select.tscn
-res://1 Ryu/ryu_p_2_select.tscn
 res://Character Select/characterselect.gd
-res://1 Dr. Doom/doom_p_1_select.tscn
-res://1 Dr. Doom/doom_p_2_select.tscn
-res://1 Deadpool/deadpool_p_1_select.tscn
-res://1 Deadpool/deadpool_p_2_select.tscn
+res://1 Rocky Balboa/rocky_p_1_select.tscn
+res://1 Rocky Balboa/rocky_p_2_select.tscn
+res://Controls/controls.tscn
+res://1 Raiden/raiden_p_1_select.tscn
+res://1 Raiden/raiden_p_2_select.tscn
+res://1 Winter Soldier/soldier_p_1_select.tscn
+res://1 Winter Soldier/soldier_p_2_select.tscn

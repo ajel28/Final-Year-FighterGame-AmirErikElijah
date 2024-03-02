@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://c725ntihwowpv"]
+
+[ext_resource type="Texture2D" uid="uid://dyjjn68vb6kv" path="res://1 Raiden/RaidenChSelectP1.png" id="1_ev3lu"]
+
+[node name="RaidenP1Select" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 184.0
+offset_top = 294.0
+offset_right = 1082.0
+offset_bottom = 1212.0
+texture = ExtResource("1_ev3lu")

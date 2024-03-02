@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://i7javn8rx0f4"]
+
+[ext_resource type="Texture2D" uid="uid://btj1sfebj0mw1" path="res://1 Terminator/TerminatorChSelectP2.png" id="1_85alv"]
+
+[node name="TerminatorP2Select" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1922.0
+offset_top = 270.0
+offset_right = 2756.0
+offset_bottom = 1226.0
+texture = ExtResource("1_85alv")

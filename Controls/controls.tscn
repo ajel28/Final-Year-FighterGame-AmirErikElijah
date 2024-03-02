@@ -7,9 +7,10 @@
 script = ExtResource("1_b4x0e")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = -113.0
-offset_right = 2983.0
-offset_bottom = 1831.0
+offset_left = -129.0
+offset_top = -1.0
+offset_right = 2974.0
+offset_bottom = 1830.0
 texture = ExtResource("1_y6c7r")
 
 [node name="ControlBack" type="LinkButton" parent="."]

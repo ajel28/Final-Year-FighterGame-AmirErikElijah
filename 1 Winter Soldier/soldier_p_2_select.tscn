@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://51pqsq3p4sxj"]
+
+[ext_resource type="Texture2D" uid="uid://c75s6osd465yr" path="res://1 Winter Soldier/WsoldierChSelectP2.png" id="1_o26qv"]
+
+[node name="SoldierP2Select" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 2062.0
+offset_top = 334.0
+offset_right = 2800.0
+offset_bottom = 1206.0
+texture = ExtResource("1_o26qv")
