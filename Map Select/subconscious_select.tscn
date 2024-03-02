@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://du3oxqhctnj7m"]
+
+[ext_resource type="Texture2D" uid="uid://3nnkd8v1c7dl" path="res://Map Select/Into the Subconcious.png" id="1_wdw0p"]
+
+[node name="SubconsciousSelect" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1396.0
+offset_top = 428.0
+offset_right = 2860.0
+offset_bottom = 1227.0
+texture = ExtResource("1_wdw0p")

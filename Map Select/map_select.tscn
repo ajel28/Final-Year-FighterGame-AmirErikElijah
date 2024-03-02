@@ -1,10 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://bi4eprqh56fmy"]
+[gd_scene load_steps=11 format=3 uid="uid://bi4eprqh56fmy"]
 
 [ext_resource type="Script" path="res://Map Select/map_select.gd" id="1_7jipo"]
 [ext_resource type="Texture2D" uid="uid://cxlvjwiqcmdfr" path="res://Map Select/Map Select Screen.pptx.png" id="2_3vb1b"]
+[ext_resource type="PackedScene" uid="uid://5mcyabvn4p8a" path="res://Map Select/ruins_select.tscn" id="2_n7yhm"]
+[ext_resource type="PackedScene" uid="uid://du3oxqhctnj7m" path="res://Map Select/subconscious_select.tscn" id="3_78qk1"]
+[ext_resource type="PackedScene" uid="uid://bd3f1k4sbshnw" path="res://Map Select/nishitani_select.tscn" id="4_fvu5s"]
+[ext_resource type="PackedScene" uid="uid://bg7armixua3ki" path="res://Map Select/takachiho_select.tscn" id="5_llgi1"]
+[ext_resource type="PackedScene" uid="uid://bf7g0ke7khu6r" path="res://Map Select/depth_select.tscn" id="6_lk8py"]
+[ext_resource type="PackedScene" uid="uid://dxn5httb0qhil" path="res://Map Select/dojo_select.tscn" id="7_i8y4n"]
+[ext_resource type="PackedScene" uid="uid://b6i2efnpgitfm" path="res://Map Select/yakushima_select.tscn" id="8_1kjgd"]
+[ext_resource type="PackedScene" uid="uid://ds8x1jtu0oaax" path="res://Map Select/frosbite_select.tscn" id="9_8q7wy"]
 
 [node name="MapSelect" type="Node2D"]
 script = ExtResource("1_7jipo")
+abandonRuins = ExtResource("2_n7yhm")
+subconscious = ExtResource("3_78qk1")
+ninshitani = ExtResource("4_fvu5s")
+takachiho = ExtResource("5_llgi1")
+depths = ExtResource("6_lk8py")
+theDojo = ExtResource("7_i8y4n")
+yakushima = ExtResource("8_1kjgd")
+frostbite = ExtResource("9_8q7wy")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -3.0

@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6i2efnpgitfm"]
+
+[ext_resource type="Texture2D" uid="uid://dmii2y03k3372" path="res://Map Select/Yakushima Forest.png" id="1_d3m1m"]
+
+[node name="YakushimaSelect" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1434.0
+offset_top = 442.0
+offset_right = 2867.0
+offset_bottom = 1210.0
+texture = ExtResource("1_d3m1m")

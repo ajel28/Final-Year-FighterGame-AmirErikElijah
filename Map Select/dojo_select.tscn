@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxn5httb0qhil"]
+
+[ext_resource type="Texture2D" uid="uid://brhe8je7j4kiw" path="res://Map Select/The Dojo.png" id="1_djo5r"]
+
+[node name="DojoSelect" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1652.0
+offset_top = 442.0
+offset_right = 2662.0
+offset_bottom = 1201.0
+texture = ExtResource("1_djo5r")

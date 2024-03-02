@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bg7armixua3ki"]
+
+[ext_resource type="Texture2D" uid="uid://kpkswpwkjkk1" path="res://Map Select/Takachiho Gorge.png" id="1_xx7h2"]
+
+[node name="TakachihoSelect" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1474.0
+offset_top = 420.0
+offset_right = 2805.0
+offset_bottom = 1240.0
+texture = ExtResource("1_xx7h2")

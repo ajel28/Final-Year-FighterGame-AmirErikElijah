@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://5mcyabvn4p8a"]
+
+[ext_resource type="Texture2D" uid="uid://crsn62ytaoo8l" path="res://Map Select/Abandoned Ruins.png" id="1_bj4nv"]
+
+[node name="RuinsSelect" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1388.0
+offset_top = 432.0
+offset_right = 2870.0
+offset_bottom = 1233.0
+texture = ExtResource("1_bj4nv")

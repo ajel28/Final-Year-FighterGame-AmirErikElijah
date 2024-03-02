@@ -1,5 +1,5 @@
-LinkButton
 TextureRect
+LinkButton
 CollisionShape2D
 Area2D
 AudioStreamPlayer
