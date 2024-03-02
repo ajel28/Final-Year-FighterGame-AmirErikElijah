@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bi4eprqh56fmy"]
+
+[ext_resource type="PackedScene" uid="uid://dkrvuhoo7rd1r" path="res://Character Select/characterselect.tscn" id="1_vpwu0"]
+[ext_resource type="Texture2D" uid="uid://cxlvjwiqcmdfr" path="res://Map Select/Map Select Screen.pptx.png" id="2_3vb1b"]
+
+[node name="MapSelect" type="Node2D"]
+
+[node name="characterselect" parent="." instance=ExtResource("1_vpwu0")]
+position = Vector2(1, 0)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -3.0
+offset_top = -13.0
+offset_right = 2974.0
+offset_bottom = 1814.0
+texture = ExtResource("2_3vb1b")

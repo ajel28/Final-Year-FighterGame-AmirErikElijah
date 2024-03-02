@@ -1,4 +1,6 @@
-res://Character Select/characterselect.tscn
 res://Menu/start_menu.tscn
+res://Character Select/characterselect.gd
+res://Character Select/characterselect.tscn
 res://1 Winter Soldier/soldier_p_1_select.tscn
 res://1 Winter Soldier/soldier_p_2_select.tscn
+res://Map Select/map_select.tscn
