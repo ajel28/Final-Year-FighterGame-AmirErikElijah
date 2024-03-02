@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cn1nmhyl8cyss"
-path="res://.godot/imported/Select Character Screen.pptx (4).png-cd73f5b2db24626a97f2479d0617f590.ctex"
+uid="uid://bbgmu0faspf55"
+path="res://.godot/imported/Select Character Screen.pptx (7).png-3f28138d28d74a1f77c5603f07e00b0c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Character Select/Select Character Screen.pptx (4).png"
-dest_files=["res://.godot/imported/Select Character Screen.pptx (4).png-cd73f5b2db24626a97f2479d0617f590.ctex"]
+source_file="res://Character Select/Select Character Screen.pptx (7).png"
+dest_files=["res://.godot/imported/Select Character Screen.pptx (7).png-3f28138d28d74a1f77c5603f07e00b0c.ctex"]
 
 [params]
 

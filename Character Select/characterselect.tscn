@@ -3,7 +3,6 @@
 [ext_resource type="Script" path="res://Character Select/characterselect.gd" id="1_k2uhs"]
 [ext_resource type="PackedScene" uid="uid://srmqp8v1pxq8" path="res://1 Jin Kazama/jin_p_1_select.tscn" id="2_oq3ql"]
 [ext_resource type="PackedScene" uid="uid://k0kotvxnx4d7" path="res://1 Jin Kazama/jin_p_2_select.tscn" id="3_pi26h"]
-[ext_resource type="Texture2D" uid="uid://cn1nmhyl8cyss" path="res://Character Select/Select Character Screen.pptx (4).png" id="4_1f4kk"]
 [ext_resource type="PackedScene" uid="uid://cka3b6xqdhmwg" path="res://1 Devil Jin/d_jin_select_p_1.tscn" id="4_marqv"]
 [ext_resource type="PackedScene" uid="uid://c81oqifnoydsr" path="res://1 Devil Jin/d_jin_select_p_2.tscn" id="5_qr8v0"]
 [ext_resource type="PackedScene" uid="uid://cov0edl2jxqm6" path="res://1 Deadpool/deadpool_p_1_select.tscn" id="6_xblai"]
@@ -22,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://i7javn8rx0f4" path="res://1 Terminator/terminator_p_2_select.tscn" id="19_lp1tx"]
 [ext_resource type="PackedScene" uid="uid://qoe675jqn8ir" path="res://1 Winter Soldier/soldier_p_1_select.tscn" id="20_bb4dh"]
 [ext_resource type="PackedScene" uid="uid://51pqsq3p4sxj" path="res://1 Winter Soldier/soldier_p_2_select.tscn" id="21_vrvnp"]
+[ext_resource type="Texture2D" uid="uid://bbgmu0faspf55" path="res://Character Select/Select Character Screen.pptx (7).png" id="22_fenus"]
 
 [node name="characterselect" type="Node2D"]
 script = ExtResource("1_k2uhs")
@@ -51,7 +51,7 @@ offset_left = -13.0
 offset_top = -15.0
 offset_right = 2973.0
 offset_bottom = 1808.0
-texture = ExtResource("4_1f4kk")
+texture = ExtResource("22_fenus")
 
 [node name="backButton" type="LinkButton" parent="."]
 offset_left = 118.0

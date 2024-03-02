@@ -1,10 +1,4 @@
-res://Menu/start_menu.tscn
 res://Character Select/characterselect.tscn
-res://Character Select/characterselect.gd
-res://1 Rocky Balboa/rocky_p_1_select.tscn
-res://1 Rocky Balboa/rocky_p_2_select.tscn
-res://Controls/controls.tscn
-res://1 Raiden/raiden_p_1_select.tscn
-res://1 Raiden/raiden_p_2_select.tscn
+res://Menu/start_menu.tscn
 res://1 Winter Soldier/soldier_p_1_select.tscn
 res://1 Winter Soldier/soldier_p_2_select.tscn
