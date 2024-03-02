@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://dkrvuhoo7rd1r"]
+[gd_scene load_steps=25 format=3 uid="uid://dkrvuhoo7rd1r"]
 
 [ext_resource type="Script" path="res://Character Select/characterselect.gd" id="1_k2uhs"]
 [ext_resource type="PackedScene" uid="uid://srmqp8v1pxq8" path="res://1 Jin Kazama/jin_p_1_select.tscn" id="2_oq3ql"]
@@ -22,6 +22,8 @@
 [ext_resource type="PackedScene" uid="uid://qoe675jqn8ir" path="res://1 Winter Soldier/soldier_p_1_select.tscn" id="20_bb4dh"]
 [ext_resource type="PackedScene" uid="uid://51pqsq3p4sxj" path="res://1 Winter Soldier/soldier_p_2_select.tscn" id="21_vrvnp"]
 [ext_resource type="Texture2D" uid="uid://bbgmu0faspf55" path="res://Character Select/Select Character Screen.pptx (7).png" id="22_fenus"]
+[ext_resource type="AudioStream" uid="uid://cn1udulpbh5v5" path="res://Character Select/ChooseDestiny.mp3" id="23_l56ex"]
+[ext_resource type="AudioStream" uid="uid://bx2h7i3nmfwkb" path="res://Character Select/Mortal Kombat 11 Character Select Music.mp3" id="24_tn18t"]
 
 [node name="characterselect" type="Node2D"]
 script = ExtResource("1_k2uhs")
@@ -47,10 +49,10 @@ SoldierP1Select = ExtResource("20_bb4dh")
 SoldierP2Select = ExtResource("21_vrvnp")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = -13.0
-offset_top = -15.0
-offset_right = 2973.0
-offset_bottom = 1808.0
+offset_left = -77.0
+offset_top = -17.0
+offset_right = 3043.0
+offset_bottom = 1806.0
 texture = ExtResource("22_fenus")
 
 [node name="backButton" type="LinkButton" parent="."]
@@ -124,6 +126,16 @@ offset_left = 911.0
 offset_top = 1019.0
 offset_right = 1138.0
 offset_bottom = 1249.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("23_l56ex")
+volume_db = 0.468
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("24_tn18t")
+volume_db = 0.3
+autoplay = true
 
 [connection signal="pressed" from="backButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="NextButton" to="." method="_on_next_button_pressed"]

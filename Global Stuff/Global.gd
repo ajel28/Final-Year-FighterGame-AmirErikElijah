@@ -1,6 +1,5 @@
 extends Node
 
-
 var player = 1
 
 var map = 0

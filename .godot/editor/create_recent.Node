@@ -1,6 +1,7 @@
+AudioStreamPlayer
+AudioListener2D
 TextureRect
 LinkButton
 CollisionShape2D
 Area2D
-AudioStreamPlayer
 Button

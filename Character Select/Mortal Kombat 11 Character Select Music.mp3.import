@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bx2h7i3nmfwkb"
+path="res://.godot/imported/Mortal Kombat 11 Character Select Music.mp3-bb7f06c5ea4bd512b7497d866ceb7b00.mp3str"
+
+[deps]
+
+source_file="res://Character Select/Mortal Kombat 11 Character Select Music.mp3"
+dest_files=["res://.godot/imported/Mortal Kombat 11 Character Select Music.mp3-bb7f06c5ea4bd512b7497d866ceb7b00.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
