@@ -7,3 +7,5 @@ var map = 0
 var player1
 
 var player2
+
+var mapchosen

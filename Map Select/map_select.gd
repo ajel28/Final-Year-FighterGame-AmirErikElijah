@@ -2,26 +2,35 @@ extends Node2D
 
 
 @export var abandonRuins: PackedScene
+var abandonbool = false
 
 @export var subconscious: PackedScene
+var sub = false
 
 @export var ninshitani: PackedScene
+var nin = false
 
 @export var takachiho: PackedScene
+var tak = false
 
 @export var depths: PackedScene
+var dep = false
 
 @export var theDojo: PackedScene
+var doj = false
 
 @export var yakushima: PackedScene
+var yak = false
 
 @export var frostbite: PackedScene
+var fros = false
 
 func _on_abandoned_button_pressed():
 	if(Global.map==0):
 		var abandon = abandonRuins.instantiate()
 		get_tree().root.get_node("MapSelect").add_child(abandon)
 		Global.map+=1
+		abandonbool = true
 
 
 func _on_frost_button_pressed():
@@ -79,4 +88,4 @@ func _on_back_button_pressed():
 
 
 func _on_next_button_pressed():
-	pass # Replace with function body.
+	pass
