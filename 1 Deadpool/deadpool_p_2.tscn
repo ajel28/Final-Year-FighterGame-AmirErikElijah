@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1jdnguba8pig"]
+
+[ext_resource type="Texture2D" uid="uid://d0ob8vrise2ry" path="res://Characters/Deadpool Player 1 (1).png" id="1_wcx86"]
+
+[node name="DeadpoolP2" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1793.0
+offset_top = 870.0
+offset_right = 2505.0
+offset_bottom = 1582.0
+texture = ExtResource("1_wcx86")
+flip_h = true

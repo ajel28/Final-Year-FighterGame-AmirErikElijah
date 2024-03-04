@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dy4hc4dsyy4b1"]
+
+[ext_resource type="Texture2D" uid="uid://cxl7pl3du53lh" path="res://Characters/Terminator Player 1 (3).png" id="1_dtkq5"]
+
+[node name="TerminatorP2" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1856.0
+offset_top = 947.0
+offset_right = 2485.0
+offset_bottom = 1576.0
+texture = ExtResource("1_dtkq5")
+flip_h = true

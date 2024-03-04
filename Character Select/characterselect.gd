@@ -47,60 +47,72 @@ func _on_deadpool_button_pressed():
 		var deadpoolp1 = DeadpoolP1select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(deadpoolp1)
 		Global.player+=1
+		Global.player1 = load('res://1 Deadpool/deadpool_p_1.tscn')
 	elif(Global.player==2):
 		var deadpoolp2 = DeadpoolP2select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(deadpoolp2)
 		Global.player+=1
+		Global.player2 = load("res://1 Deadpool/deadpool_p_2.tscn")
 
 func _on_ryu_button_pressed():
 	if(Global.player==1):
 		var ryup1 = RyuP1Select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(ryup1)
 		Global.player+=1
+		Global.player1 = load("res://1 Ryu/ryu_p_1.tscn")
 	elif(Global.player==2):
 		var ryup2 = RyuP2Select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(ryup2)
 		Global.player+=1
+		Global.player2 = load("res://1 Ryu/ryu_p_2.tscn")
 
 func _on_doom_button_pressed():
 	if(Global.player==1):
 		var doomp1 = DoomP1Select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(doomp1)
 		Global.player+=1
+		Global.player1 = load("res://1 Dr. Doom/doom_p_1.tscn")
 	elif(Global.player==2):
 		var doomp2 = DoomP2Select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(doomp2)
 		Global.player+=1
+		Global.player2 = load('res://1 Dr. Doom/doom_p_2.tscn')
 
 func _on_terminator_button_pressed():
 	if(Global.player==1):
 		var termp1 = TermP1Select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(termp1)
 		Global.player+=1
+		Global.player1 = load("res://1 Terminator/terminator_p_1.tscn")
 	elif(Global.player==2):
 		var termp2 = TermP2Select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(termp2)
 		Global.player+=1
+		Global.player2 = load("res://1 Terminator/terminator_p_2.tscn")
 
 func _on_w_soldier_button_pressed():
 	if(Global.player==1):
 		var soldp1 = SoldierP1Select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(soldp1)
 		Global.player+=1
+		Global.player1 = load("res://1 Winter Soldier/soldier_p_1.tscn")
 	elif(Global.player==2):
 		var soldp2 = SoldierP2Select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(soldp2)
 		Global.player+=1.
+		Global.player2 = load("res://1 Winter Soldier/soldier_p_2.tscn")
 
 func _on_d_jin_button_pressed():
 	if(Global.player==1):
 		var djin1 = DjinP1select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(djin1)
 		Global.player+=1
+		Global.player1 = load("res://1 Devil Jin/d_jin_p_1.tscn")
 	elif(Global.player==2):
 		var djin2 = DjinP2select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(djin2)
 		Global.player+=1
+		Global.player2 = load("res://1 Devil Jin/d_jin_p_2.tscn")
 
 func _on_john_wick_button_pressed():
 	if(Global.player==1):

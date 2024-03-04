@@ -1,8 +1,10 @@
-res://Character Select/characterselect.gd
 res://Map Select/map_select.tscn
+res://Character Select/characterselect.gd
 res://1 Jin Kazama/jin_kazama.tscn
 res://Character Select/characterselect.tscn
-res://Map Select/map_select.gd
-res://Maps/ruins_map.tscn
-res://Maps/ruins_map.gd
-res://1 Jin Kazama/jin_kazama_p_2.tscn
+res://1 Deadpool/deadpool_p_1.tscn
+res://1 Deadpool/deadpool_p_2.tscn
+res://1 Dr. Doom/doom_p_1.tscn
+res://1 Dr. Doom/doom_p_2.tscn
+res://1 Winter Soldier/soldier_p_1.tscn
+res://1 Winter Soldier/soldier_p_2.tscn

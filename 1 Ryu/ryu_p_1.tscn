@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://da3rbr86g0icw"]
+
+[ext_resource type="Texture2D" uid="uid://crchjrgwfwxve" path="res://Characters/Ryu Player 1 (2).png" id="1_5q4h2"]
+
+[node name="RyuP1" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 562.0
+offset_top = 938.0
+offset_right = 1180.0
+offset_bottom = 1556.0
+texture = ExtResource("1_5q4h2")

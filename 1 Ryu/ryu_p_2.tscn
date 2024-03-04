@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpl8ljakjhy0t"]
+
+[ext_resource type="Texture2D" uid="uid://crchjrgwfwxve" path="res://Characters/Ryu Player 1 (2).png" id="1_5few2"]
+
+[node name="RyuP2" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1842.0
+offset_top = 936.0
+offset_right = 2464.0
+offset_bottom = 1558.0
+texture = ExtResource("1_5few2")
+flip_h = true

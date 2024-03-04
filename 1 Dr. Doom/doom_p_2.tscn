@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdhjlgq46nt8i"]
+
+[ext_resource type="Texture2D" uid="uid://dtwbe4le4tmca" path="res://Characters/Dr. Doom Player 1 (1).png" id="1_61g7u"]
+
+[node name="DoomP2" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1803.0
+offset_top = 934.0
+offset_right = 2451.0
+offset_bottom = 1582.0
+texture = ExtResource("1_61g7u")
+flip_h = true
