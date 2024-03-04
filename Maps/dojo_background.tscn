@@ -1,12 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://csdotesi5o6kp"]
+[gd_scene load_steps=3 format=3 uid="uid://csdotesi5o6kp"]
 
+[ext_resource type="Script" path="res://Maps/dojo_background.gd" id="1_pecgx"]
 [ext_resource type="Texture2D" uid="uid://qlpms2ob1kck" path="res://Maps/Dojo Background (1).jpeg" id="1_rtsny"]
 
 [node name="DojoBackground" type="Node2D"]
+script = ExtResource("1_pecgx")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 11.0
-offset_top = -1594.0
-offset_right = 6301.0
-offset_bottom = 1891.0
+offset_left = -471.0
+offset_top = -1193.0
+offset_right = 5819.0
+offset_bottom = 2292.0
 texture = ExtResource("1_rtsny")

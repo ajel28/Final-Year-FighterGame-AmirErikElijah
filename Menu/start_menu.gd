@@ -12,7 +12,7 @@ func _process(delta):
 
 
 func _on_intro_button_pressed():
-	get_tree().change_scene_to_file("res://Menu/intro_screen.tscn")
+	get_tree().change_scene_to_file("res://Character Select/characterselect.tscn")
 
 
 func _on_controls_button_pressed():
@@ -21,3 +21,7 @@ func _on_controls_button_pressed():
 
 func _on_exit_button_pressed():
 	get_tree().quit()
+
+
+func _on_story_button_pressed():
+	get_tree().change_scene_to_file("res://Menu/intro_screen.tscn")

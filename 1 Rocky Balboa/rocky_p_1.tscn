@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://886767g7i8lg"]
+
+[ext_resource type="Texture2D" uid="uid://b5kov1015rcug" path="res://Characters/Rocky Balboa Player 2 (2).png" id="1_2dad4"]
+
+[node name="RockyP1" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 538.0
+offset_top = 917.0
+offset_right = 1183.0
+offset_bottom = 1562.0
+texture = ExtResource("1_2dad4")
+flip_h = true

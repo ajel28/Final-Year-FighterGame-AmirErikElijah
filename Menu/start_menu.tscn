@@ -41,6 +41,13 @@ offset_top = 532.0
 offset_right = 843.0
 offset_bottom = 783.0
 
+[node name="StoryButton" type="LinkButton" parent="."]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 1299.0
+offset_right = 813.0
+offset_bottom = 1587.0
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_vd1p0")
 volume_db = 0.299
@@ -49,3 +56,4 @@ autoplay = true
 [connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]
 [connection signal="pressed" from="ControlsButton" to="." method="_on_controls_button_pressed"]
 [connection signal="pressed" from="IntroButton" to="." method="_on_intro_button_pressed"]
+[connection signal="pressed" from="StoryButton" to="." method="_on_story_button_pressed"]

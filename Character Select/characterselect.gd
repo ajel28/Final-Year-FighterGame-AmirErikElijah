@@ -119,33 +119,39 @@ func _on_john_wick_button_pressed():
 		var johnWickp1 = JohnWickP1select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(johnWickp1)
 		Global.player+=1
+		Global.player1 = load("res://1 John Wick/john_wick_p_1.tscn")
 	elif(Global.player==2):
 		var johnWickp2 = JohnWickP2select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(johnWickp2)
 		Global.player+=1
+		Global.player2 = load("res://1 John Wick/john_wick_p_2.tscn")
 
 func _on_raiden_button_pressed():
 	if(Global.player==1):
 		var raidenp1 = RaidenP1Select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(raidenp1)
 		Global.player+=1
+		Global.player1 = load("res://1 Raiden/raiden_p_1.tscn")
 	elif(Global.player==2):
 		var raidenp2 = RaidenP2Select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(raidenp2)
 		Global.player+=1
+		Global.player2 = load('res://1 Raiden/raiden_p_2.tscn')
 
 func _on_rocky_button_pressed():
 	if(Global.player==1):
 		var rockyp1 = RockyP1Select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(rockyp1)
 		Global.player+=1
+		Global.player1 = load("res://1 Rocky Balboa/rocky_p_1.tscn")
 	elif(Global.player==2):
 		var rockyp2 = RockyP2Select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(rockyp2)
 		Global.player+=1
+		Global.player2 = load("res://1 Rocky Balboa/rocky_p_2.tscn")
 
 func _on_back_button_pressed():
-	get_tree().change_scene_to_file("res://Menu/intro_screen.tscn")
+	get_tree().change_scene_to_file("res://Menu/start_menu.tscn")
 	Global.player = 1
 
 func _on_next_button_pressed():

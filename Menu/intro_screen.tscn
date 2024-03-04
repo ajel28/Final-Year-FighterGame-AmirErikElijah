@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://n88vcest8wk4"]
 
 [ext_resource type="Script" path="res://Menu/intro_screen.gd" id="1_xdcgs"]
-[ext_resource type="Texture2D" uid="uid://bwfum1ybyyhvt" path="res://Menu/Intro.png" id="2_owynv"]
+[ext_resource type="Texture2D" uid="uid://bxei201vj6am8" path="res://Menu/Intro.jpg" id="2_qwka5"]
 
 [node name="IntroScreen" type="Node2D"]
 script = ExtResource("1_xdcgs")
@@ -10,7 +10,7 @@ script = ExtResource("1_xdcgs")
 offset_left = -112.0
 offset_right = 2976.0
 offset_bottom = 1830.0
-texture = ExtResource("2_owynv")
+texture = ExtResource("2_qwka5")
 
 [node name="CharacterSelect" type="LinkButton" parent="."]
 offset_left = 892.0

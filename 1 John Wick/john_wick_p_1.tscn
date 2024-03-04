@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://y6i7wj5df6rs"]
+
+[ext_resource type="Texture2D" uid="uid://xdo3ro6u557o" path="res://Characters/John Wick Player 1 (1).png" id="1_e47co"]
+
+[node name="JohnWickP1" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 554.0
+offset_top = 960.0
+offset_right = 1180.0
+offset_bottom = 1586.0
+texture = ExtResource("1_e47co")

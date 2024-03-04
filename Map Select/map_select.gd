@@ -8,7 +8,7 @@ var abandonbool = false
 var subc = false
 
 @export var ninshitani: PackedScene
-var nin = false
+var ninsh = false
 
 @export var takachiho: PackedScene
 var tak = false
@@ -54,7 +54,8 @@ func _on_nin_button_pressed():
 		var nin = ninshitani.instantiate()
 		get_tree().root.get_node("MapSelect").add_child(nin)
 		Global.map+=1
-		nin = true
+		ninsh = true
+
 
 func _on_taka_button_pressed():
 	if(Global.map==0):
@@ -99,7 +100,7 @@ func _on_next_button_pressed():
 			get_tree().change_scene_to_file("res://Maps/ruins_map.tscn")
 		elif(subc==true):
 			get_tree().change_scene_to_file("res://Maps/subconscious_map.tscn")
-		elif(nin==true):
+		elif(ninsh==true):
 			get_tree().change_scene_to_file("res://Maps/ninshitani_map.tscn")
 		elif(tak==true):
 			get_tree().change_scene_to_file("res://Maps/taka_map.tscn")

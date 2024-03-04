@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbr6yliawxjan"]
+
+[ext_resource type="Texture2D" uid="uid://daoalj220o3wr" path="res://Characters/Raiden Player 1 (2).png" id="1_2kvd5"]
+
+[node name="RaidenP1" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 554.0
+offset_top = 932.0
+offset_right = 1192.0
+offset_bottom = 1570.0
+texture = ExtResource("1_2kvd5")

@@ -1,7 +1,7 @@
 TextureRect
+LinkButton
 AudioStreamPlayer
 AudioListener2D
-LinkButton
 CollisionShape2D
 Area2D
 Button

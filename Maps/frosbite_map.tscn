@@ -1,15 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://cn2ctm4qos323"]
 
-[ext_resource type="PackedScene" uid="uid://beckipq6js6r4" path="res://Maps/subconscious_map.tscn" id="1_mrfme"]
+[ext_resource type="Script" path="res://Maps/frosbite_map.gd" id="1_cilvh"]
 [ext_resource type="Texture2D" uid="uid://b3x8aaftpirjj" path="res://Maps/Icy Background (1).png" id="2_8r8cv"]
 
-[node name="FrosbiteMap" type="Node2D"]
-
-[node name="SubconsciousMap" parent="." instance=ExtResource("1_mrfme")]
+[node name="FrostbiteMap" type="Node2D"]
+script = ExtResource("1_cilvh")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = -11.0
-offset_top = -1918.0
-offset_right = 6130.0
-offset_bottom = 2097.0
+offset_left = -184.0
+offset_top = -1382.0
+offset_right = 5957.0
+offset_bottom = 2633.0
 texture = ExtResource("2_8r8cv")

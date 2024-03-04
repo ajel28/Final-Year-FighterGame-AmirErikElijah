@@ -1,12 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://beckipq6js6r4"]
+[gd_scene load_steps=3 format=3 uid="uid://beckipq6js6r4"]
 
 [ext_resource type="Texture2D" uid="uid://y24u5fak6y40" path="res://Maps/Tekken Background (2).webp" id="1_bv22v"]
+[ext_resource type="Script" path="res://Maps/subconscious_map.gd" id="1_n6pvv"]
 
 [node name="SubconsciousMap" type="Node2D"]
+script = ExtResource("1_n6pvv")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = -4.0
-offset_top = -1475.0
-offset_right = 6302.0
-offset_bottom = 1844.0
+offset_left = -427.0
+offset_top = -674.0
+offset_right = 5879.0
+offset_bottom = 2645.0
 texture = ExtResource("1_bv22v")
