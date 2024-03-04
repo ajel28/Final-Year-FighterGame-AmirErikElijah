@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://jv1c33jhqauh"]
+
+[ext_resource type="Script" path="res://Maps/ruins_map.gd" id="1_ffj44"]
+[ext_resource type="Texture2D" uid="uid://cwguguq33qqb8" path="res://Maps/MortalKombat Background (2).webp" id="1_m6su6"]
+
+[node name="RuinsMap" type="Node2D"]
+script = ExtResource("1_ffj44")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -1.0
+offset_top = -1662.0
+offset_right = 6357.0
+offset_bottom = 1872.0
+texture = ExtResource("1_m6su6")

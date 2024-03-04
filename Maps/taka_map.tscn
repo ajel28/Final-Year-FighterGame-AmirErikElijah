@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://8s8gdpqoevts"]
+
+[ext_resource type="PackedScene" uid="uid://beckipq6js6r4" path="res://Maps/subconscious_map.tscn" id="1_xjfu3"]
+[ext_resource type="Texture2D" uid="uid://bhr3o6hmk5bag" path="res://Maps/Random-Background.jpeg-_3_.jpg" id="2_r4wkx"]
+
+[node name="TakaMap" type="Node2D"]
+
+[node name="SubconsciousMap" parent="." instance=ExtResource("1_xjfu3")]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -159.0
+offset_top = -1752.0
+offset_right = 6616.0
+offset_bottom = 2059.0
+texture = ExtResource("2_r4wkx")

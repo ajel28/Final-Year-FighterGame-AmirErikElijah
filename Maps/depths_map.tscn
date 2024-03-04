@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdrkj3cpgpwua"]
+
+[ext_resource type="Texture2D" uid="uid://b33hqexn3lmlg" path="res://Maps/Lava Background (1).jpeg" id="1_dx5i1"]
+
+[node name="DepthsMap" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 34.0
+offset_top = -1430.0
+offset_right = 6308.0
+offset_bottom = 3213.0
+texture = ExtResource("1_dx5i1")

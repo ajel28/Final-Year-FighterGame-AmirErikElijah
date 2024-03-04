@@ -35,10 +35,12 @@ func _on_jin_button_pressed():
 			var jin1 = jinP1select.instantiate()
 			get_tree().root.get_node("characterselect").add_child(jin1)
 			Global.player+=1
+			Global.player1 = load("res://1 Jin Kazama/jin_p_1_select.tscn")
 		elif(Global.player==2):
 			var jin2 = jinP2select.instantiate()
 			get_tree().root.get_node("characterselect").add_child(jin2)
 			Global.player+=1
+			Global.player2 = load("res://1 Jin Kazama/jin_p_2_select.tscn")
 
 func _on_deadpool_button_pressed():
 	if(Global.player==1):

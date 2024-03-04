@@ -1,9 +1,15 @@
 res://Menu/start_menu.tscn
-res://Global Stuff/Global.gd
-res://Map Select/map_select.gd
 res://Character Select/characterselect.tscn
 res://Map Select/map_select.tscn
-res://Character Select/characterselect.gd
-res://Controls/controls.gd
-res://Map Select/ruins_select.gd
 res://Map Select/ruins_select.tscn
+res://Character Select/characterselect.gd
+res://Map Select/map_select.gd
+res://Maps/ruins_map.gd
+res://Maps/depths_map.tscn
+res://Maps/dojo_background.tscn
+res://Maps/frosbite_map.tscn
+res://Maps/ninshitani_map.tscn
+res://Maps/ruins_map.tscn
+res://Maps/subconscious_map.tscn
+res://Maps/taka_map.tscn
+res://Maps/yaka_map.tscn

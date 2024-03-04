@@ -38,6 +38,7 @@ func _on_frost_button_pressed():
 		var frost = frostbite.instantiate()
 		get_tree().root.get_node("MapSelect").add_child(frost)
 		Global.map+=1
+		fros = true
 
 
 func _on_into_button_pressed():
@@ -45,6 +46,7 @@ func _on_into_button_pressed():
 		var sub = subconscious.instantiate()
 		get_tree().root.get_node("MapSelect").add_child(sub)
 		Global.map+=1
+		sub = true
 
 
 func _on_nin_button_pressed():
@@ -52,13 +54,14 @@ func _on_nin_button_pressed():
 		var nin = ninshitani.instantiate()
 		get_tree().root.get_node("MapSelect").add_child(nin)
 		Global.map+=1
-
+		nin = true
 
 func _on_taka_button_pressed():
 	if(Global.map==0):
 		var taka = takachiho.instantiate()
 		get_tree().root.get_node("MapSelect").add_child(taka)
 		Global.map+=1
+		tak = true
 
 
 func _on_depth_button_pressed():
@@ -66,6 +69,7 @@ func _on_depth_button_pressed():
 		var depth = depths.instantiate()
 		get_tree().root.get_node("MapSelect").add_child(depth)
 		Global.map+=1
+		dep = true
 
 
 func _on_dojo_button_pressed():
@@ -73,6 +77,7 @@ func _on_dojo_button_pressed():
 		var dojo = theDojo.instantiate()
 		get_tree().root.get_node("MapSelect").add_child(dojo)
 		Global.map+=1
+		doj = true
 
 
 func _on_yaku_button_pressed():
@@ -80,6 +85,7 @@ func _on_yaku_button_pressed():
 		var yaku = yakushima.instantiate()
 		get_tree().root.get_node("MapSelect").add_child(yaku)
 		Global.map+=1
+		yak = true
 
 
 func _on_back_button_pressed():
@@ -88,4 +94,21 @@ func _on_back_button_pressed():
 
 
 func _on_next_button_pressed():
-	pass
+	if(Global.map==1):
+		if(abandonbool==true):
+			get_tree().change_scene_to_file("res://Maps/ruins_map.tscn")
+		elif(sub==true):
+			get_tree().change_scene_to_file("res://Maps/subconscious_map.tscn")
+		elif(nin==true):
+			get_tree().change_scene_to_file("res://Maps/ninshitani_map.tscn")
+		elif(tak==true):
+			get_tree().change_scene_to_file("res://Maps/taka_map.tscn")
+		elif(dep==true):
+			get_tree().change_scene_to_file("res://Maps/depths_map.tscn")
+		elif(doj==true):
+			get_tree().change_scene_to_file("res://Maps/dojo_background.tscn")
+		elif(yak==true):
+			get_tree().change_scene_to_file("res://Maps/yaku_map.tscn")
+		elif(fros==true):
+			get_tree().change_scene_to_file("res://Maps/frosbite_map.tscn")
+		

@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwl1hw8ksqpct"]
+
+[ext_resource type="Texture2D" uid="uid://cyvqmaet1urkx" path="res://Maps/Forest Background (1).jpeg" id="1_gny8a"]
+
+[node name="YakaMap" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -7.0
+offset_top = -1738.0
+offset_right = 6355.0
+offset_bottom = 1848.0
+texture = ExtResource("1_gny8a")

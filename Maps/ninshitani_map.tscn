@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcbl74ow8osm4"]
+
+[ext_resource type="Texture2D" uid="uid://0y4xo3v3ydxg" path="res://Maps/StreetFighter Background (1).jpeg" id="1_rvy0j"]
+
+[node name="NinshitaniMap" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -5.0
+offset_top = -1530.0
+offset_right = 6009.0
+offset_bottom = 1853.0
+texture = ExtResource("1_rvy0j")
