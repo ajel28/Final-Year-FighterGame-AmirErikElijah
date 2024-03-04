@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtivlebww4j1t"]
+
+[ext_resource type="Texture2D" uid="uid://drpd6slc1mbf1" path="res://Characters/Jin Kazama Player 1 (2).png" id="2_usmja"]
+
+[node name="JinKazamaP1" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 549.0
+offset_top = 946.0
+offset_right = 1158.0
+offset_bottom = 1555.0
+texture = ExtResource("2_usmja")

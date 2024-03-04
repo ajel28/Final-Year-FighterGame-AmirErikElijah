@@ -5,7 +5,7 @@ extends Node2D
 var abandonbool = false
 
 @export var subconscious: PackedScene
-var sub = false
+var subc = false
 
 @export var ninshitani: PackedScene
 var nin = false
@@ -46,7 +46,7 @@ func _on_into_button_pressed():
 		var sub = subconscious.instantiate()
 		get_tree().root.get_node("MapSelect").add_child(sub)
 		Global.map+=1
-		sub = true
+		subc = true
 
 
 func _on_nin_button_pressed():
@@ -97,7 +97,7 @@ func _on_next_button_pressed():
 	if(Global.map==1):
 		if(abandonbool==true):
 			get_tree().change_scene_to_file("res://Maps/ruins_map.tscn")
-		elif(sub==true):
+		elif(subc==true):
 			get_tree().change_scene_to_file("res://Maps/subconscious_map.tscn")
 		elif(nin==true):
 			get_tree().change_scene_to_file("res://Maps/ninshitani_map.tscn")
