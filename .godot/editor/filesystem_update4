@@ -1,8 +1,4 @@
-res://1 Jin Kazama/jin_kazama.tscn
-res://1 Jin Kazama/CharacterBody2D.gd
+res://Character Select/characterselect.tscn
 res://Map Select/map_select.tscn
-res://1 Devil Jin/d_jin_p_1.tscn
-res://1 Devil Jin/d_jin_p_2.tscn
+res://1 Jin Kazama/jin_kazama.tscn
 res://1 Jin Kazama/jin_kazama_p_2.tscn
-res://1 Jin Kazama/JinP2.gd
-res://Maps/dojo_background.tscn

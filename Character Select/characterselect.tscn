@@ -21,7 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://i7javn8rx0f4" path="res://1 Terminator/terminator_p_2_select.tscn" id="19_lp1tx"]
 [ext_resource type="PackedScene" uid="uid://qoe675jqn8ir" path="res://1 Winter Soldier/soldier_p_1_select.tscn" id="20_bb4dh"]
 [ext_resource type="PackedScene" uid="uid://51pqsq3p4sxj" path="res://1 Winter Soldier/soldier_p_2_select.tscn" id="21_vrvnp"]
-[ext_resource type="Texture2D" uid="uid://bbgmu0faspf55" path="res://Character Select/Select Character Screen.pptx (7).png" id="22_fenus"]
+[ext_resource type="Texture2D" uid="uid://ddmx4t7lahm8t" path="res://Character Select/Select Character Screen.pptx (8).png" id="22_r82uq"]
 [ext_resource type="AudioStream" uid="uid://cn1udulpbh5v5" path="res://Character Select/ChooseDestiny.mp3" id="23_l56ex"]
 [ext_resource type="AudioStream" uid="uid://bx2h7i3nmfwkb" path="res://Character Select/Mortal Kombat 11 Character Select Music.mp3" id="24_tn18t"]
 
@@ -49,11 +49,11 @@ SoldierP1Select = ExtResource("20_bb4dh")
 SoldierP2Select = ExtResource("21_vrvnp")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = -77.0
+offset_left = -47.0
 offset_top = -17.0
-offset_right = 3043.0
+offset_right = 3073.0
 offset_bottom = 1806.0
-texture = ExtResource("22_fenus")
+texture = ExtResource("22_r82uq")
 
 [node name="backButton" type="LinkButton" parent="."]
 offset_left = 118.0
