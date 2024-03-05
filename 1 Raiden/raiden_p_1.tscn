@@ -1,12 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://cbr6yliawxjan"]
+[gd_scene load_steps=3 format=3 uid="uid://cbr6yliawxjan"]
 
 [ext_resource type="Texture2D" uid="uid://daoalj220o3wr" path="res://Characters/Raiden Player 1 (2).png" id="1_2kvd5"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fogwt"]
+size = Vector2(320.5, 603.5)
+
 [node name="RaidenP1" type="Node2D"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 554.0
-offset_top = 932.0
-offset_right = 1192.0
-offset_bottom = 1570.0
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(862, 1266)
+scale = Vector2(3.05, 3.05)
 texture = ExtResource("1_2kvd5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(863.75, 1266.75)
+shape = SubResource("RectangleShape2D_fogwt")

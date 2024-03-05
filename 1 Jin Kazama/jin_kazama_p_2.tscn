@@ -1,13 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://c0soaw4janyg2"]
+[gd_scene load_steps=3 format=3 uid="uid://c0soaw4janyg2"]
 
 [ext_resource type="Texture2D" uid="uid://drpd6slc1mbf1" path="res://Characters/Jin Kazama Player 1 (2).png" id="1_a65o4"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cbt6k"]
+size = Vector2(412, 632.5)
+
 [node name="JinKazamaP2" type="Node2D"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1858.0
-offset_top = 950.0
-offset_right = 2466.0
-offset_bottom = 1558.0
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(2162, 1256)
+scale = Vector2(3.025, 3.025)
 texture = ExtResource("1_a65o4")
 flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(2153, 1256.25)
+shape = SubResource("RectangleShape2D_cbt6k")

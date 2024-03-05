@@ -1,13 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://dy4hc4dsyy4b1"]
+[gd_scene load_steps=3 format=3 uid="uid://dy4hc4dsyy4b1"]
 
 [ext_resource type="Texture2D" uid="uid://cxl7pl3du53lh" path="res://Characters/Terminator Player 1 (3).png" id="1_dtkq5"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iby2u"]
+size = Vector2(344, 625)
+
 [node name="TerminatorP2" type="Node2D"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1856.0
-offset_top = 947.0
-offset_right = 2485.0
-offset_bottom = 1576.0
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(2171, 1267)
+scale = Vector2(3.07625, 3.07625)
 texture = ExtResource("1_dtkq5")
 flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(2153, 1263.5)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_iby2u")

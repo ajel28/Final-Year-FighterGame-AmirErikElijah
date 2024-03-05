@@ -1,7 +1,9 @@
+CollisionShape2D
+CharacterBody2D
+Sprite2D
 TextureRect
 LinkButton
 AudioStreamPlayer
 AudioListener2D
-CollisionShape2D
 Area2D
 Button

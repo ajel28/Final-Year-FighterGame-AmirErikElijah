@@ -1,12 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://bec3sqiew2ali"]
+[gd_scene load_steps=3 format=3 uid="uid://bec3sqiew2ali"]
 
 [ext_resource type="Texture2D" uid="uid://b5kov1015rcug" path="res://Characters/Rocky Balboa Player 2 (2).png" id="1_u4h7i"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ia1gf"]
+size = Vector2(274, 608.5)
+
 [node name="RockyP2" type="Node2D"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1830.0
-offset_top = 918.0
-offset_right = 2472.0
-offset_bottom = 1560.0
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(2154, 1257)
+scale = Vector2(3.10594, 3.10594)
 texture = ExtResource("1_u4h7i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(2141, 1264.25)
+shape = SubResource("RectangleShape2D_ia1gf")

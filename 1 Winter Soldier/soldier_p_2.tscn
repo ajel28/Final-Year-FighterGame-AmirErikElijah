@@ -1,13 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://dcw05bdd7621p"]
+[gd_scene load_steps=3 format=3 uid="uid://dcw05bdd7621p"]
 
 [ext_resource type="Texture2D" uid="uid://dhgthvwo1bqge" path="res://Characters/Winter Soldier Player 1 (2).png" id="1_isy3q"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h4uix"]
+size = Vector2(433, 548)
+
 [node name="SoldierP2" type="Node2D"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1916.0
-offset_top = 1006.0
-offset_right = 2476.0
-offset_bottom = 1566.0
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(2160, 1290)
+scale = Vector2(2.68, 2.68)
 texture = ExtResource("1_isy3q")
 flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(2167.5, 1288)
+shape = SubResource("RectangleShape2D_h4uix")

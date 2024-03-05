@@ -1,12 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://bypk66v45qs60"]
+[gd_scene load_steps=3 format=3 uid="uid://bypk66v45qs60"]
 
 [ext_resource type="Texture2D" uid="uid://d1n1070rwtm4k" path="res://Characters/Devil Jin Player 1 (2).png" id="1_ogo66"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vugn1"]
+size = Vector2(465.5, 620)
+
 [node name="DJinP1" type="Node2D"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 508.0
-offset_top = 920.0
-offset_right = 1168.0
-offset_bottom = 1580.0
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(851.75, 1266.25)
+scale = Vector2(3.1525, 3.1525)
 texture = ExtResource("1_ogo66")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(863.25, 1267)
+shape = SubResource("RectangleShape2D_vugn1")

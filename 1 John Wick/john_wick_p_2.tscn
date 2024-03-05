@@ -1,13 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://c7guufwi6t05k"]
+[gd_scene load_steps=3 format=3 uid="uid://c7guufwi6t05k"]
 
 [ext_resource type="Texture2D" uid="uid://xdo3ro6u557o" path="res://Characters/John Wick Player 1 (1).png" id="1_khrqo"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gx8ql"]
+size = Vector2(433, 575)
+
 [node name="JohnWickP2" type="Node2D"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1860.0
-offset_top = 958.0
-offset_right = 2488.0
-offset_bottom = 1586.0
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(2158, 1280)
+scale = Vector2(2.9725, 2.9725)
 texture = ExtResource("1_khrqo")
 flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(2145.5, 1279.5)
+shape = SubResource("RectangleShape2D_gx8ql")

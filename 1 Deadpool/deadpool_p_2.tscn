@@ -1,13 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://b1jdnguba8pig"]
+[gd_scene load_steps=3 format=3 uid="uid://b1jdnguba8pig"]
 
 [ext_resource type="Texture2D" uid="uid://d0ob8vrise2ry" path="res://Characters/Deadpool Player 1 (1).png" id="1_wcx86"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xujcu"]
+size = Vector2(336.25, 629.75)
+
 [node name="DeadpoolP2" type="Node2D"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1793.0
-offset_top = 870.0
-offset_right = 2505.0
-offset_bottom = 1582.0
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(2150, 1244)
+scale = Vector2(3.4675, 3.4675)
 texture = ExtResource("1_wcx86")
 flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(2163.12, 1249.88)
+shape = SubResource("RectangleShape2D_xujcu")
