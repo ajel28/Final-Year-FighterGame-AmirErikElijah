@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dtivlebww4j1t"]
+[gd_scene load_steps=4 format=3 uid="uid://dtivlebww4j1t"]
 
+[ext_resource type="Script" path="res://1 Jin Kazama/CharacterBody2D.gd" id="1_1urm1"]
 [ext_resource type="Texture2D" uid="uid://drpd6slc1mbf1" path="res://Characters/Jin Kazama Player 1 (2).png" id="2_usmja"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mdbq0"]
@@ -8,6 +9,7 @@ size = Vector2(377, 607)
 [node name="JinKazamaP1" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_1urm1")
 
 [node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(856, 1257)
@@ -17,3 +19,9 @@ texture = ExtResource("2_usmja")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(869.5, 1258.5)
 shape = SubResource("RectangleShape2D_mdbq0")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(1627, 775)
+zoom = Vector2(0.8, 0.8)
+position_smoothing_enabled = true
+position_smoothing_speed = 4.0

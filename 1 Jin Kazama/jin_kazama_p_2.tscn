@@ -1,20 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://c0soaw4janyg2"]
+[gd_scene load_steps=4 format=3 uid="uid://c0soaw4janyg2"]
 
 [ext_resource type="Texture2D" uid="uid://drpd6slc1mbf1" path="res://Characters/Jin Kazama Player 1 (2).png" id="1_a65o4"]
+[ext_resource type="Script" path="res://1 Jin Kazama/JinP2.gd" id="1_qa0yt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cbt6k"]
 size = Vector2(412, 632.5)
 
 [node name="JinKazamaP2" type="Node2D"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="JinP2" type="CharacterBody2D" parent="."]
+script = ExtResource("1_qa0yt")
 
-[node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
+[node name="TextureRect" type="Sprite2D" parent="JinP2"]
 position = Vector2(2162, 1256)
 scale = Vector2(3.025, 3.025)
 texture = ExtResource("1_a65o4")
 flip_h = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="JinP2"]
 position = Vector2(2153, 1256.25)
 shape = SubResource("RectangleShape2D_cbt6k")
