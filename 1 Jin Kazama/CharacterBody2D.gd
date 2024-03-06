@@ -16,9 +16,13 @@ func get_input():
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_A")) == 1:
 		return input.normalized()
+	###elif int(Input.is_action_pressed("ui_S"))  == 1:
+		###kazamaCrouch()
 	else:
 		return input.normalized()
 
+	
+###func kazamaCrouch():
 	
 func player_movement(delta):
 	input = get_input()

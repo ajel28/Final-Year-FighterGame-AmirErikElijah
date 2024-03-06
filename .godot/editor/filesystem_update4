@@ -1,4 +1,5 @@
-res://Character Select/characterselect.tscn
-res://Map Select/map_select.tscn
 res://1 Jin Kazama/jin_kazama.tscn
+res://1 Jin Kazama/CharacterBody2D.gd
+res://Map Select/map_select.tscn
 res://1 Jin Kazama/jin_kazama_p_2.tscn
+res://Character Select/characterselect.tscn
