@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709731941
+::res://::1709748557
 icon.svg::CompressedTexture2D::8402663531990749670::1707397684::1707397684::1::::<><>::
 README.md::TextFile::-1::1707397684::0::1::::<><>::
 ::res://1 Deadpool/::1709599540
@@ -23,16 +23,17 @@ doom_p_1.tscn::PackedScene::699280927772597892::1709600524::0::1::::<><>::uid://
 doom_p_1_select.tscn::PackedScene::5427585151004569870::1709306523::0::1::::<><>::uid://bngkjrai7c1qs::::res://1 Dr. Doom/DoomChSelectP1.png
 doom_p_2.tscn::PackedScene::4998424980463129006::1709600616::0::1::::<><>::uid://dtwbe4le4tmca::::res://Characters/Dr. Doom Player 1 (1).png
 doom_p_2_select.tscn::PackedScene::3408007678743729195::1709306523::0::1::::<><>::uid://7toe2n4jqi3e::::res://1 Dr. Doom/DoomChSelectP2.png
-::res://1 Jin Kazama/::1709730066
-CharacterBody2D.gd::GDScript::-1::1709606550::0::1::::<>CharacterBody2D<>::
+::res://1 Jin Kazama/::1709748557
+CharacterBody2D.gd::GDScript::-1::1709732877::0::1::::<>CharacterBody2D<>::
 JinChSelectP1.png::CompressedTexture2D::4057450003680844567::1709133073::1709133083::1::::<><>::
 JinChSelectP2.png::CompressedTexture2D::1454943762145583268::1709133101::1709133108::1::::<><>::
 JinP2.gd::GDScript::-1::1709606550::0::1::::<>CharacterBody2D<>::
 jin_kazama.gd::GDScript::-1::1709605705::0::1::::<>Node2D<>::
-jin_kazama.tscn::PackedScene::8510660015483781107::1709730066::0::1::::<><>::res://1 Jin Kazama/CharacterBody2D.gd<>uid://drpd6slc1mbf1::::res://Characters/Jin Kazama Player 1 (2).png
-jin_kazama_p_2.tscn::PackedScene::6565572496531307151::1709730066::0::1::::<><>::uid://drpd6slc1mbf1::::res://Characters/Jin Kazama Player 1 (2).png<>res://1 Jin Kazama/JinP2.gd
+jin_kazama.tscn::PackedScene::8510660015483781107::1709748557::0::1::::<><>::res://1 Jin Kazama/CharacterBody2D.gd<>uid://deownb54lwa1w::::res://1 Jin Kazama/kazama-sprite.png
+jin_kazama_p_2.tscn::PackedScene::6565572496531307151::1709748434::0::1::::<><>::uid://drpd6slc1mbf1::::res://Characters/Jin Kazama Player 1 (2).png<>res://1 Jin Kazama/JinP2.gd
 jin_p_1_select.tscn::PackedScene::1299251623737578261::1709169145::0::1::::<><>::uid://bx2puxyxt1dbj::::res://1 Jin Kazama/JinChSelectP1.png
 jin_p_2_select.tscn::PackedScene::754131082722021666::1709169145::0::1::::<><>::uid://uy1ygeyjbru7::::res://1 Jin Kazama/JinChSelectP2.png
+kazama-sprite.png::CompressedTexture2D::7470277803550570634::1709731629::1709748557::1::::<><>::
 ::res://1 John Wick/::1709600000
 JohnWickChSelectP1.png::CompressedTexture2D::4769355037231803599::1709132266::1709132276::1::::<><>::
 JohnWickChSelectP2.png::CompressedTexture2D::1529239381387087302::1709132307::1709132320::1::::<><>::
@@ -75,19 +76,18 @@ soldier_p_2.tscn::PackedScene::7346627604919074439::1709599057::0::1::::<><>::ui
 soldier_p_2_select.tscn::PackedScene::2160279429771072567::1709399256::0::1::::<><>::uid://c75s6osd465yr::::res://1 Winter Soldier/WsoldierChSelectP2.png
 WsoldierChSelectP1.png::CompressedTexture2D::3612178013634449142::1709132518::1709132543::1::::<><>::
 WsoldierChSelectP2.png::CompressedTexture2D::7081964725215575265::1709132607::1709132627::1::::<><>::
-::res://Character Select/::1709730066
+::res://Character Select/::1709748434
 characterselect.gd::GDScript::-1::1709592462::0::1::::<>Node2D<>::
-characterselect.tscn::PackedScene::7897556071975080921::1709730066::0::1::::<><>::res://Character Select/characterselect.gd<>uid://srmqp8v1pxq8::::res://1 Jin Kazama/jin_p_1_select.tscn<>uid://k0kotvxnx4d7::::res://1 Jin Kazama/jin_p_2_select.tscn<>uid://cka3b6xqdhmwg::::res://1 Devil Jin/d_jin_select_p_1.tscn<>uid://c81oqifnoydsr::::res://1 Devil Jin/d_jin_select_p_2.tscn<>uid://cov0edl2jxqm6::::res://1 Deadpool/deadpool_p_1_select.tscn<>uid://dlsembn85p3dc::::res://1 Deadpool/deadpool_p_2_select.tscn<>uid://cpeoj32epjjqt::::res://1 John Wick/john_wick_p_1_select.tscn<>uid://bt3m8lj0e8ugh::::res://1 John Wick/john_wick_p_2_select.tscn<>uid://drocb5op5cfyy::::res://1 Ryu/ryu_p_1_select.tscn<>uid://bworwahc0peld::::res://1 Ryu/ryu_p_2_select.tscn<>uid://cjlfsf3kbiqne::::res://1 Dr. Doom/doom_p_1_select.tscn<>uid://bos4nhfxbhhix::::res://1 Dr. Doom/doom_p_2_select.tscn<>uid://csn71a41n66kd::::res://1 Rocky Balboa/rocky_p_1_select.tscn<>uid://dsn6vakt3cmsu::::res://1 Rocky Balboa/rocky_p_2_select.tscn<>uid://c725ntihwowpv::::res://1 Raiden/raiden_p_1_select.tscn<>uid://x23qkyqa74uq::::res://1 Raiden/raiden_p_2_select.tscn<>uid://wi4l85w31v8g::::res://1 Terminator/terminator_p_1_select.tscn<>uid://i7javn8rx0f4::::res://1 Terminator/terminator_p_2_select.tscn<>uid://qoe675jqn8ir::::res://1 Winter Soldier/soldier_p_1_select.tscn<>uid://51pqsq3p4sxj::::res://1 Winter Soldier/soldier_p_2_select.tscn<>uid://ddmx4t7lahm8t::::res://Character Select/Select Character Screen.pptx (8).png<>uid://cn1udulpbh5v5::::res://Character Select/ChooseDestiny.mp3<>uid://bx2h7i3nmfwkb::::res://Character Select/Mortal Kombat 11 Character Select Music.mp3
+characterselect.tscn::PackedScene::7897556071975080921::1709748434::0::1::::<><>::res://Character Select/characterselect.gd<>uid://srmqp8v1pxq8::::res://1 Jin Kazama/jin_p_1_select.tscn<>uid://k0kotvxnx4d7::::res://1 Jin Kazama/jin_p_2_select.tscn<>uid://cka3b6xqdhmwg::::res://1 Devil Jin/d_jin_select_p_1.tscn<>uid://c81oqifnoydsr::::res://1 Devil Jin/d_jin_select_p_2.tscn<>uid://cov0edl2jxqm6::::res://1 Deadpool/deadpool_p_1_select.tscn<>uid://dlsembn85p3dc::::res://1 Deadpool/deadpool_p_2_select.tscn<>uid://cpeoj32epjjqt::::res://1 John Wick/john_wick_p_1_select.tscn<>uid://bt3m8lj0e8ugh::::res://1 John Wick/john_wick_p_2_select.tscn<>uid://drocb5op5cfyy::::res://1 Ryu/ryu_p_1_select.tscn<>uid://bworwahc0peld::::res://1 Ryu/ryu_p_2_select.tscn<>uid://cjlfsf3kbiqne::::res://1 Dr. Doom/doom_p_1_select.tscn<>uid://bos4nhfxbhhix::::res://1 Dr. Doom/doom_p_2_select.tscn<>uid://csn71a41n66kd::::res://1 Rocky Balboa/rocky_p_1_select.tscn<>uid://dsn6vakt3cmsu::::res://1 Rocky Balboa/rocky_p_2_select.tscn<>uid://c725ntihwowpv::::res://1 Raiden/raiden_p_1_select.tscn<>uid://x23qkyqa74uq::::res://1 Raiden/raiden_p_2_select.tscn<>uid://wi4l85w31v8g::::res://1 Terminator/terminator_p_1_select.tscn<>uid://i7javn8rx0f4::::res://1 Terminator/terminator_p_2_select.tscn<>uid://qoe675jqn8ir::::res://1 Winter Soldier/soldier_p_1_select.tscn<>uid://51pqsq3p4sxj::::res://1 Winter Soldier/soldier_p_2_select.tscn<>uid://ddmx4t7lahm8t::::res://Character Select/Select Character Screen.pptx (8).png<>uid://cn1udulpbh5v5::::res://Character Select/ChooseDestiny.mp3<>uid://bx2h7i3nmfwkb::::res://Character Select/Mortal Kombat 11 Character Select Music.mp3
 ChooseDestiny.mp3::AudioStreamMP3::5740190921666250952::1709410880::1709410894::1::::<><>::
 Mortal Kombat 11 Character Select Music.mp3::AudioStreamMP3::4056984915130025397::1709411288::1709411329::1::::<><>::
 Select Character Screen.pptx (8).png::CompressedTexture2D::7396050441776462141::1709671929::1709671929::1::::<><>::
-::res://Characters/::1709732236
+::res://Characters/::1709748557
 Deadpool Player 1 (1).png::CompressedTexture2D::8943005208418332230::1709513011::1709513012::1::::<><>::
 Devil Jin Player 1 (2).png::CompressedTexture2D::9012633903300350956::1709513004::1709513004::1::::<><>::
 Dr. Doom Player 1 (1).png::CompressedTexture2D::8538335791350878492::1709512996::1709512996::1::::<><>::
 Jin Kazama Player 1 (2).png::CompressedTexture2D::8383676532365341256::1709512991::1709512991::1::::<><>::
 John Wick Player 1 (1).png::CompressedTexture2D::1621437493025645782::1709512978::1709512978::1::::<><>::
-kazama-sprite.png::CompressedTexture2D::7470277803550570634::1709731629::1709732260::1::::<><>::
 Raiden Player 1 (2).png::CompressedTexture2D::7188183499049712653::1709512971::1709512971::1::::<><>::
 Rocky Balboa Player 2 (2).png::CompressedTexture2D::4513618715394700062::1709512962::1709512962::1::::<><>::
 Ryu Player 1 (2).png::CompressedTexture2D::5970622459008313450::1709512953::1709512953::1::::<><>::
@@ -99,7 +99,7 @@ controls.gd::GDScript::-1::1709509278::0::1::::<>Node2D<>::
 controls.tscn::PackedScene::7750915240133754944::1709344520::0::1::::<><>::res://Controls/controls.gd<>uid://bf56lvfqjjpk8::::res://Controls/Controls Screen.png
 ::res://Global Stuff/::1709508767
 Global.gd::GDScript::-1::1709508767::0::1::::<>Node<>::
-::res://Map Select/::1709730066
+::res://Map Select/::1709748434
 Abandoned Ruins.png::CompressedTexture2D::6004056645392444917::1709398127::1709398133::1::::<><>::
 depth_select.tscn::PackedScene::2803834469697712343::1709404971::0::1::::<><>::uid://cnepuquudua3u::::res://Map Select/The Depths.png
 dojo_select.tscn::PackedScene::8802277403271570983::1709405037::0::1::::<><>::uid://brhe8je7j4kiw::::res://Map Select/The Dojo.png
@@ -108,7 +108,7 @@ Frostbite Coliseum.png::CompressedTexture2D::6122696611820091391::1709398505::17
 Into the Subconcious.png::CompressedTexture2D::1992931921050297345::1709398058::1709398069::1::::<><>::
 Map Select Screen.pptx.png::CompressedTexture2D::6411185223951097543::1709398766::1709398766::1::::<><>::
 map_select.gd::GDScript::-1::1709593285::0::1::::<>Node2D<>::
-map_select.tscn::PackedScene::3008068960517918716::1709730066::0::1::::<><>::res://Map Select/map_select.gd<>uid://cxlvjwiqcmdfr::::res://Map Select/Map Select Screen.pptx.png<>uid://5mcyabvn4p8a::::res://Map Select/ruins_select.tscn<>uid://du3oxqhctnj7m::::res://Map Select/subconscious_select.tscn<>uid://bd3f1k4sbshnw::::res://Map Select/nishitani_select.tscn<>uid://bg7armixua3ki::::res://Map Select/takachiho_select.tscn<>uid://bf7g0ke7khu6r::::res://Map Select/depth_select.tscn<>uid://dxn5httb0qhil::::res://Map Select/dojo_select.tscn<>uid://b6i2efnpgitfm::::res://Map Select/yakushima_select.tscn<>uid://ds8x1jtu0oaax::::res://Map Select/frosbite_select.tscn
+map_select.tscn::PackedScene::3008068960517918716::1709748434::0::1::::<><>::res://Map Select/map_select.gd<>uid://cxlvjwiqcmdfr::::res://Map Select/Map Select Screen.pptx.png<>uid://5mcyabvn4p8a::::res://Map Select/ruins_select.tscn<>uid://du3oxqhctnj7m::::res://Map Select/subconscious_select.tscn<>uid://bd3f1k4sbshnw::::res://Map Select/nishitani_select.tscn<>uid://bg7armixua3ki::::res://Map Select/takachiho_select.tscn<>uid://bf7g0ke7khu6r::::res://Map Select/depth_select.tscn<>uid://dxn5httb0qhil::::res://Map Select/dojo_select.tscn<>uid://b6i2efnpgitfm::::res://Map Select/yakushima_select.tscn<>uid://ds8x1jtu0oaax::::res://Map Select/frosbite_select.tscn
 Nishitanis Castle.png::CompressedTexture2D::5985335188704326615::1709398095::1709404734::1::::<><>::
 nishitani_select.tscn::PackedScene::2655140378178951052::1709404788::0::1::::<><>::uid://crjlujcx6h1ol::::res://Map Select/Nishitanis Castle.png
 ruins_select.gd::GDScript::-1::1709509516::0::1::::<>Node2D<>::

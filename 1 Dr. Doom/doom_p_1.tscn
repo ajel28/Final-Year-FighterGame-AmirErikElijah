@@ -1,19 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://j70b4iqssibs"]
+[gd_scene load_steps=4 format=3 uid="uid://j70b4iqssibs"]
 
+[ext_resource type="Script" path="res://1 Dr. Doom/doom_p_1.gd" id="1_nxp1m"]
 [ext_resource type="Texture2D" uid="uid://dtwbe4le4tmca" path="res://Characters/Dr. Doom Player 1 (1).png" id="1_vf7gv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5yttx"]
 size = Vector2(460.5, 601)
 
 [node name="DoomP1" type="Node2D"]
+script = ExtResource("1_nxp1m")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="DoomP1" type="CharacterBody2D" parent="."]
 
-[node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
+[node name="TextureRect" type="Sprite2D" parent="DoomP1"]
 position = Vector2(893.875, 1260)
 scale = Vector2(3.13125, 3.1325)
 texture = ExtResource("1_vf7gv")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DoomP1"]
 position = Vector2(900.75, 1263.5)
 shape = SubResource("RectangleShape2D_5yttx")

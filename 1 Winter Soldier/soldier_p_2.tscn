@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://dcw05bdd7621p"]
+[gd_scene load_steps=4 format=3 uid="uid://dcw05bdd7621p"]
 
 [ext_resource type="Texture2D" uid="uid://dhgthvwo1bqge" path="res://Characters/Winter Soldier Player 1 (2).png" id="1_isy3q"]
+[ext_resource type="Script" path="res://1 Winter Soldier/soldier_p_2.gd" id="1_t5xny"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h4uix"]
 size = Vector2(433, 548)
 
 [node name="SoldierP2" type="Node2D"]
+script = ExtResource("1_t5xny")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 

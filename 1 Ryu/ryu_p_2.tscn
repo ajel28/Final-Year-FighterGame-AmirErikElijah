@@ -1,20 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://bpl8ljakjhy0t"]
+[gd_scene load_steps=4 format=3 uid="uid://bpl8ljakjhy0t"]
 
 [ext_resource type="Texture2D" uid="uid://crchjrgwfwxve" path="res://Characters/Ryu Player 1 (2).png" id="1_5few2"]
+[ext_resource type="Script" path="res://1 Ryu/ryu_p_2.gd" id="1_qwph0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gkkdl"]
 size = Vector2(370, 615.5)
 
 [node name="RyuP2" type="Node2D"]
+script = ExtResource("1_qwph0")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="RyuP2" type="CharacterBody2D" parent="."]
 
-[node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
+[node name="TextureRect" type="Sprite2D" parent="RyuP2"]
 position = Vector2(2140, 1261)
 scale = Vector2(3.12, 3.12)
 texture = ExtResource("1_5few2")
 flip_h = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RyuP2"]
 position = Vector2(2147, 1266.75)
 shape = SubResource("RectangleShape2D_gkkdl")

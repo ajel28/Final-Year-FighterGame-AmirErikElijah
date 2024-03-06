@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://xee311mmo32j"]
+[gd_scene load_steps=4 format=3 uid="uid://xee311mmo32j"]
 
 [ext_resource type="Texture2D" uid="uid://daoalj220o3wr" path="res://Characters/Raiden Player 1 (2).png" id="1_b6636"]
+[ext_resource type="Script" path="res://1 Raiden/raiden_p_2.gd" id="1_e1ly0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ptl5s"]
 size = Vector2(324.5, 593.5)
 
 [node name="RaidenP2" type="Node2D"]
+script = ExtResource("1_e1ly0")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 

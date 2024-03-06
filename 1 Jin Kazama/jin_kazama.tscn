@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dtivlebww4j1t"]
 
 [ext_resource type="Script" path="res://1 Jin Kazama/CharacterBody2D.gd" id="1_1urm1"]
-[ext_resource type="Texture2D" uid="uid://deownb54lwa1w" path="res://Characters/kazama-sprite.png" id="2_ys1gn"]
+[ext_resource type="Texture2D" uid="uid://deownb54lwa1w" path="res://1 Jin Kazama/kazama-sprite.png" id="2_ys1gn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mdbq0"]
 size = Vector2(377, 607)

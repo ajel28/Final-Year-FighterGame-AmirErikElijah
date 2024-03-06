@@ -1,2 +1,2 @@
 # Finalyear-
- final year project comsci 
+ final year project compsci 

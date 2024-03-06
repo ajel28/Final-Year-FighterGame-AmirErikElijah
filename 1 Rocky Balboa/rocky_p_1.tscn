@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://886767g7i8lg"]
+[gd_scene load_steps=4 format=3 uid="uid://886767g7i8lg"]
 
 [ext_resource type="Texture2D" uid="uid://b5kov1015rcug" path="res://Characters/Rocky Balboa Player 2 (2).png" id="1_2dad4"]
+[ext_resource type="Script" path="res://1 Rocky Balboa/rocky_p_1.gd" id="1_snoko"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vwv41"]
 size = Vector2(282.5, 615)
 
 [node name="RockyP1" type="Node2D"]
+script = ExtResource("1_snoko")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 
