@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var yes  = 1 
-
+@onready var animationsRyu = $AnimationPlayer
 const max_speed = 520
 const accel = 1000
 const friction = 3000
@@ -11,12 +11,16 @@ func _physics_process(delta):
 	player_movement(delta)
 
 func get_input():
-	input.x = int(Input.is_action_pressed("ui_A")) - int(Input.is_action_pressed("ui_end"))
+	input.x = int(Input.is_action_pressed("ui_D")) - int(Input.is_action_pressed("ui_A"))
 	if int(Input.is_action_pressed("ui_A")) == 1:
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_D")) == 1:
 		return input.normalized()
+	elif int(Input.is_action_pressed("ui_S")) == 1:
+		animationsRyu.play("crouchryu")
+		return input.normalized()
 	else:
+		animationsRyu.play("ryuidle")
 		return input.normalized()
 
 	

@@ -1,6 +1,6 @@
-CollisionShape2D
 AnimationPlayer
 Camera2D
+CollisionShape2D
 CharacterBody2D
 Sprite2D
 TextureRect
