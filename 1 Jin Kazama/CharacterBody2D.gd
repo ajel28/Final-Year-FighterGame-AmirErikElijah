@@ -9,7 +9,7 @@ const friction = 3000
 var input = Vector2.ZERO
 
 func _physics_process(delta):
-	_player_movement(delta)
+	player_movement(delta)
 
 func get_input():
 	input.x = int(Input.is_action_pressed("ui_D")) - int(Input.is_action_pressed("ui_A"))
@@ -20,13 +20,16 @@ func get_input():
 	elif int(Input.is_action_pressed("ui_S"))  == 1:
 		animations.play("crouch")
 		return input.normalized()
+	elif int(Input.is_action_pressed("ui_Q")) == 1:
+		animations.play("kick")
+		return input.normalized()
 	else:
 		animations.play("idle")
 		return input.normalized()
 
 	
 	
-func _player_movement(delta):
+func player_movement(delta):
 	input = get_input()
 	
 	if input == Vector2.ZERO:

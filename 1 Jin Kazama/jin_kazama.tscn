@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dtivlebww4j1t"]
+[gd_scene load_steps=8 format=3 uid="uid://dtivlebww4j1t"]
 
 [ext_resource type="Script" path="res://1 Jin Kazama/CharacterBody2D.gd" id="1_1urm1"]
 [ext_resource type="Texture2D" uid="uid://deownb54lwa1w" path="res://1 Jin Kazama/kazama-sprite.png" id="2_ys1gn"]
@@ -38,10 +38,27 @@ tracks/0/keys = {
 "values": [0, 1, 2]
 }
 
+[sub_resource type="Animation" id="Animation_s5bvc"]
+resource_name = "kick"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 6, 0]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ifsdv"]
 _data = {
 "crouch": SubResource("Animation_qtryj"),
-"idle": SubResource("Animation_q4gh0")
+"idle": SubResource("Animation_q4gh0"),
+"kick": SubResource("Animation_s5bvc")
 }
 
 [node name="JinKazamaP1" type="Node2D"]
@@ -53,7 +70,7 @@ script = ExtResource("1_1urm1")
 position = Vector2(854, 1257)
 scale = Vector2(3.015, 3.015)
 texture = ExtResource("2_ys1gn")
-hframes = 5
+hframes = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(869.5, 1258.5)

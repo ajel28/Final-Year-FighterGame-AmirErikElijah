@@ -20,6 +20,10 @@ func get_input():
 	elif int(Input.is_action_pressed("ui_K")) == 1:
 		animations2.play("crouch2")
 		return input.normalized()
+	elif int(Input.is_action_pressed("ui_U")) == 1:
+		animations2.play("kick2")
+		return input.normalized()
+		
 	else:
 		animations2.play("idle2")
 		return input.normalized()
