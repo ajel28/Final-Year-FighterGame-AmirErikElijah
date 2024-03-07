@@ -21,6 +21,7 @@ func get_input():
 		animations.play("crouch")
 		return input.normalized()
 	else:
+		animations.play("idle")
 		return input.normalized()
 
 	
