@@ -7,9 +7,9 @@
 size = Vector2(358.5, 611)
 
 [node name="TerminatorP1" type="Node2D"]
-script = ExtResource("1_bfd82")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_bfd82")
 
 [node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(858, 1268)

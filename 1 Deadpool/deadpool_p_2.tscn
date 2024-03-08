@@ -7,9 +7,9 @@
 size = Vector2(336.25, 629.75)
 
 [node name="DeadpoolP2" type="Node2D"]
-script = ExtResource("1_i1ie6")
 
 [node name="DeadpoolP2" type="CharacterBody2D" parent="."]
+script = ExtResource("1_i1ie6")
 
 [node name="TextureRect" type="Sprite2D" parent="DeadpoolP2"]
 position = Vector2(2150, 1244)

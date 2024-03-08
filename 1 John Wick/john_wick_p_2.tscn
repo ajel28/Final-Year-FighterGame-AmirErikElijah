@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://c7guufwi6t05k"]
+[gd_scene load_steps=4 format=3 uid="uid://c7guufwi6t05k"]
 
+[ext_resource type="Script" path="res://1 John Wick/john_wick_p_2.gd" id="1_27865"]
 [ext_resource type="Texture2D" uid="uid://xdo3ro6u557o" path="res://Characters/John Wick Player 1 (1).png" id="1_khrqo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gx8ql"]
@@ -8,6 +9,7 @@ size = Vector2(433, 575)
 [node name="JohnWickP2" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_27865")
 
 [node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(2158, 1280)

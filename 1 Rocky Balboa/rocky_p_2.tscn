@@ -7,9 +7,9 @@
 size = Vector2(274, 608.5)
 
 [node name="RockyP2" type="Node2D"]
-script = ExtResource("1_314r8")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_314r8")
 
 [node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(2154, 1257)

@@ -11,7 +11,7 @@ func _physics_process(delta):
 	player_movement(delta)
 
 func get_input():
-	input.x = int(Input.is_action_pressed("ui_A")) - int(Input.is_action_pressed("ui_D"))
+	input.x = int(Input.is_action_pressed("ui_D")) - int(Input.is_action_pressed("ui_A"))
 	if int(Input.is_action_pressed("ui_A")) == 1:
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_D")) == 1:
