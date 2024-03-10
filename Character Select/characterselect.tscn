@@ -21,7 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://i7javn8rx0f4" path="res://1 Terminator/terminator_p_2_select.tscn" id="19_lp1tx"]
 [ext_resource type="PackedScene" uid="uid://qoe675jqn8ir" path="res://1 Winter Soldier/soldier_p_1_select.tscn" id="20_bb4dh"]
 [ext_resource type="PackedScene" uid="uid://51pqsq3p4sxj" path="res://1 Winter Soldier/soldier_p_2_select.tscn" id="21_vrvnp"]
-[ext_resource type="Texture2D" uid="uid://dvqnllg5grivt" path="res://Character Select/Select Character Screen.pptx (9).png" id="22_om3b4"]
+[ext_resource type="Texture2D" uid="uid://dt8rn06wgenhd" path="res://Character Select/Select Character Screen.pptx (10).png" id="22_wrsg0"]
 [ext_resource type="AudioStream" uid="uid://cn1udulpbh5v5" path="res://Character Select/ChooseDestiny.mp3" id="23_l56ex"]
 [ext_resource type="AudioStream" uid="uid://bx2h7i3nmfwkb" path="res://Character Select/Mortal Kombat 11 Character Select Music.mp3" id="24_tn18t"]
 
@@ -49,17 +49,17 @@ SoldierP1Select = ExtResource("20_bb4dh")
 SoldierP2Select = ExtResource("21_vrvnp")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = -47.0
-offset_top = -17.0
-offset_right = 3073.0
-offset_bottom = 1806.0
-texture = ExtResource("22_om3b4")
+offset_left = -3.0
+offset_top = -13.0
+offset_right = 2974.0
+offset_bottom = 1814.0
+texture = ExtResource("22_wrsg0")
 
 [node name="backButton" type="LinkButton" parent="."]
-offset_left = 118.0
-offset_top = 1472.0
-offset_right = 603.0
-offset_bottom = 1686.0
+offset_left = 94.0
+offset_top = 1514.0
+offset_right = 579.0
+offset_bottom = 1728.0
 
 [node name="NextButton" type="LinkButton" parent="."]
 offset_left = 2266.0
@@ -68,64 +68,70 @@ offset_right = 2739.0
 offset_bottom = 1705.0
 
 [node name="JinButton" type="LinkButton" parent="."]
-offset_left = 1812.0
-offset_top = 1335.0
-offset_right = 2076.0
-offset_bottom = 1590.0
+offset_left = 1832.0
+offset_top = 1323.0
+offset_right = 2096.0
+offset_bottom = 1608.0
 
 [node name="DeadpoolButton" type="LinkButton" parent="."]
-offset_left = 616.0
-offset_top = 1155.0
-offset_right = 871.0
-offset_bottom = 1416.0
+offset_left = 694.0
+offset_top = 1158.0
+offset_right = 949.0
+offset_bottom = 1440.0
 
 [node name="RyuButton" type="LinkButton" parent="."]
-offset_left = 1814.0
-offset_top = 999.0
-offset_right = 2059.0
-offset_bottom = 1241.0
+offset_left = 1846.0
+offset_top = 998.0
+offset_right = 2091.0
+offset_bottom = 1273.0
 
 [node name="DoomButton" type="LinkButton" parent="."]
-offset_left = 2154.0
+offset_left = 2138.0
 offset_top = 1161.0
 offset_right = 2381.0
-offset_bottom = 1385.0
+offset_bottom = 1435.0
 
 [node name="DJinButton" type="LinkButton" parent="."]
-offset_left = 912.0
-offset_top = 1342.0
-offset_right = 1151.0
-offset_bottom = 1575.0
+offset_left = 984.0
+offset_top = 1326.0
+offset_right = 1229.0
+offset_bottom = 1609.0
 
 [node name="RaidenButton" type="LinkButton" parent="."]
-offset_left = 1553.0
-offset_top = 1351.0
-offset_right = 1770.0
-offset_bottom = 1565.0
+offset_left = 1565.0
+offset_top = 1330.0
+offset_right = 1814.0
+offset_bottom = 1605.0
 
 [node name="TerminatorButton" type="LinkButton" parent="."]
-offset_left = 1217.0
-offset_top = 999.0
-offset_right = 1459.0
-offset_bottom = 1248.0
+offset_left = 1269.0
+offset_top = 996.0
+offset_right = 1521.0
+offset_bottom = 1275.0
 
 [node name="WSoldierButton" type="LinkButton" parent="."]
-offset_left = 1515.0
-offset_top = 1002.0
-offset_right = 1732.0
-offset_bottom = 1244.0
+offset_left = 1567.0
+offset_top = 996.0
+offset_right = 1816.0
+offset_bottom = 1273.0
 
 [node name="JohnWickButton" type="LinkButton" parent="."]
-offset_left = 1242.0
-offset_top = 1345.0
-offset_right = 1453.0
-offset_bottom = 1562.0
+offset_left = 1273.0
+offset_top = 1328.0
+offset_right = 1519.0
+offset_bottom = 1613.0
 
 [node name="RockyButton" type="LinkButton" parent="."]
-offset_left = 911.0
-offset_top = 1019.0
-offset_right = 1138.0
-offset_bottom = 1249.0
+offset_left = 989.0
+offset_top = 998.0
+offset_right = 1234.0
+offset_bottom = 1274.0
+
+[node name="MCButton" type="LinkButton" parent="."]
+offset_left = 1400.0
+offset_top = 688.0
+offset_right = 1644.0
+offset_bottom = 965.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("23_l56ex")
