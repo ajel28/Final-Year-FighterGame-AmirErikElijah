@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dnmcodurj3xbl"
+path="res://.godot/imported/JinSelect.wav-f0a170f2c2d33634d60eb10014fac9a6.sample"
+
+[deps]
+
+source_file="res://1 Jin Kazama/JinSelect.wav"
+dest_files=["res://.godot/imported/JinSelect.wav-f0a170f2c2d33634d60eb10014fac9a6.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

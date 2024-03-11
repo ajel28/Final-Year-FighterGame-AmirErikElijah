@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://i0eu2fopwilx"
+path="res://.godot/imported/RyuSelect.mp3-c588936a6c412aa8df77b70d6fbb4871.mp3str"
+
+[deps]
+
+source_file="res://1 Ryu/RyuSelect.mp3"
+dest_files=["res://.godot/imported/RyuSelect.mp3-c588936a6c412aa8df77b70d6fbb4871.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

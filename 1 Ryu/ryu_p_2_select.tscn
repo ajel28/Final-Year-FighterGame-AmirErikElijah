@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bworwahc0peld"]
+[gd_scene load_steps=3 format=3 uid="uid://bworwahc0peld"]
 
 [ext_resource type="Texture2D" uid="uid://ctrwcc8d2x3rp" path="res://1 Ryu/RyuChSelectP2.png" id="1_143by"]
+[ext_resource type="AudioStream" uid="uid://i0eu2fopwilx" path="res://1 Ryu/RyuSelect.mp3" id="2_xh1bq"]
 
 [node name="RyuP2Select" type="Node2D"]
 
@@ -10,3 +11,7 @@ offset_top = 312.0
 offset_right = 2836.0
 offset_bottom = 1206.0
 texture = ExtResource("1_143by")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_xh1bq")
+autoplay = true

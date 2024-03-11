@@ -1,3 +1,5 @@
+AudioStreamPlayer
+AudioStreamPlayer2D
 LinkButton
 AnimationPlayer
 Camera2D
@@ -5,7 +7,6 @@ CollisionShape2D
 CharacterBody2D
 Sprite2D
 TextureRect
-AudioStreamPlayer
 AudioListener2D
 Area2D
 Button
