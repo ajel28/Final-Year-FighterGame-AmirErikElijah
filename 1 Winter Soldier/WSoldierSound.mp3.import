@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://t0uh2dw8xc17"
+path="res://.godot/imported/WSoldierSound.mp3-b4be5caad76b7b1b5f3b978b5b9db467.mp3str"
+
+[deps]
+
+source_file="res://1 Winter Soldier/WSoldierSound.mp3"
+dest_files=["res://.godot/imported/WSoldierSound.mp3-b4be5caad76b7b1b5f3b978b5b9db467.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
