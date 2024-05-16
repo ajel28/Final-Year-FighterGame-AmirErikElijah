@@ -1,7 +1,7 @@
+AnimationPlayer
 AudioStreamPlayer
 AudioStreamPlayer2D
 LinkButton
-AnimationPlayer
 Camera2D
 CollisionShape2D
 CharacterBody2D

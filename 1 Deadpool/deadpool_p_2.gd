@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @export var yes  = 1 
+@onready var animationsDp2 = $AnimationPlayer
 
 const max_speed = 520
 const accel = 1000
@@ -16,7 +17,17 @@ func get_input():
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_J")) == 1:
 		return input.normalized()
+	elif int(Input.is_action_pressed("ui_K"))  == 1:
+		animationsDp2.play("deadpoolcrouch2")
+		return input.normalized()
+	elif int(Input.is_action_pressed("ui_U")) == 1:
+		animationsDp2.play("deadpoolpunch2")
+		return input.normalized()
+	elif int(Input.is_action_pressed("ui_I")) ==1:
+		animationsDp2.play("deadpooljump2")
+		return input.normalized()
 	else:
+		animationsDp2.play("deadpoolidle2")
 		return input.normalized()
 
 	
