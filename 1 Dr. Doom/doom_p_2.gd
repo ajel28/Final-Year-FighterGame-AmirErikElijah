@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var yes  = 1 
-@onready animationsDoom2 = $AnimationPlayer
+@onready var animationsDoom2 = $AnimationPlayer
 
 const max_speed = 520
 const accel = 1000
