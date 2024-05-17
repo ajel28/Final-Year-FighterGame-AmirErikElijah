@@ -17,7 +17,7 @@
     <style>
       * {
         font-family: "Courier", monospace;
-        color: rgb(255, 255, 255);
+        color: white;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -69,7 +69,7 @@
       .champ-pics {
         margin: auto;
         width: 100%;
-        height: 450px;
+        height: 1000px;
         display: flex;
         justify-content: space-between;
         gap: 5px;
@@ -184,22 +184,30 @@
         text-decoration: none;
       }
       .container {
-        height: 200%;
+        height: 100%;
         margin: 50px auto;
         display: flex;
         flex-wrap: wrap;
         overflow: scroll;
       }
-      .container > div {
+      .container > a{
         flex: 25%;
         height: 300px;
         margin: 20px;
+        border-radius: 10%;
+        background-color: #410000;
       }
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 20px;
+      }
+      .LastDivs {
+        height:100%
+      }
+      .LastImgs {
+        object-fit: contain;
       }
     </style>
   </head>
@@ -236,17 +244,17 @@
         <h1 class="a">Champions</h1>
         <div class="champ-pics">
           <div class="container">
-            <div><img src="img/Deadpool Player 1.png" alt="" /></div>
-            <div><img src="img/Devil Jin Player 1.png" alt="" /></div>
-            <div><img src="img/Dr. Doom Player 1.png" alt="" /></div>
-            <div><img src="img/Jin Kazama Player 1.png" alt="" /></div>
-            <div><img src="img/John Wick Player 1.png" alt="" /></div>
-            <div><img src="img/MainCharacter.png" alt="" /></div>
-            <div><img src="img/Raiden Player 1.png" alt="" /></div>
-            <div><img src="img/Rocky Balboa Player 2.png" alt="" /></div>
-            <div><img src="img/Ryu Player 1.png" alt="" /></div>
-            <div><img src="img/Terminator Player 1.png" alt="" /></div>
-            <div><img src="img/Winter Soldier Player 1.png" alt="" /></div>
+            <a href="/ChWikis/DeadpoolWiki.html"><div><img src="img/Deadpool Player 1.png" alt="" /></div></a>
+            <a href="/ChWikis/DjinWiki.html"><div><img src="img/Devil Jin Player 1.png" alt="" /></div></a>
+            <a href="/ChWikis/DoomWiki.html"><div><img src="img/Dr. Doom Player 1.png" alt="" /></div></a>
+            <a href="/ChWikis/JinWiki.html"><div><img src="img/Jin Kazama Player 1.png" alt="" /></div></a>
+            <a href="/ChWikis/JWickWiki.html"><div><img src="img/John Wick Player 1.png" alt="" /></div></a>
+            <a href="/ChWikis/MCWiki.html"><div><img src="img/MainCharacter.png" alt="" /></div></a>
+            <a href="/ChWikis/Raiden.html"><div><img src="img/Raiden Player 1.png" alt="" /></div></a>
+            <a href="/ChWikis/RockyWiki.html"><div><img src="img/Rocky Balboa Player 2.png" alt="" /></div></a>
+            <a href="/ChWikis/RyuWiki.html"><div><img src="img/Ryu Player 1.png" alt="" /></div></a>
+            <a href="/ChWikis/TerminatorWiki.html" ><div class="LastDivs"><img class="LastImgs" src="img/Terminator Player 1.png" alt="" /></div></a>
+            <a href="/ChWikis/WSoldierWiki.html" ><div class="LastDivs"><img class="LastImgs" src="img/Winter Soldier Player 1.png" alt=""/></div></a>
           </div>
             
         </div>
