@@ -1,30 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Fallen Shadow</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Fight Night</title>
+    <script
+      src="https://kit.fontawesome.com/d06cb09b4c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        .divider-line {
-            border: 1px solid rgb(225, 225, 225);
-            margin: 10px;
-        }
+      * {
+        font-family: "Courier", monospace;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .logo {
+        color: #270506;
+        font-weight: 600;
+        font-size: 1.3rem;
+      }
+      .logo i {
+        font-size: 1.5rem;
+      }
+      nav ul,
+      .user ul {
+        display: flex;
+        list-style: none;
+        font-weight: 300;
+      }
+
+      nav ul li,
+      .user ul li {
+        padding: 0 10px;
+      }
+      nav ul li:first-child,
+      .user ul li:first-child {
+        font-weight: 500;
+      }
+
+      header {
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+      }
+      .divider-line {
+        border-bottom: 1px solid rgb(229, 229, 229);
+        margin-bottom: 20px;
+      }
+      main {
+        margin: 20px auto;
+        width: 70%;
+      }
+      .champion-array p {
+        font-size: 1.7rem;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+      .champ-pics {
+        margin: auto;
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+
+      .pics-left,
+      .pics-right {
+        width: 50%;
+      }
+
+      .pics-right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        gap: 5px;
+        border-radius: 0 20px 20px 0;
+        overflow: hidden;
+      }
+
+      .pics-left img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .pic {
+        flex: 48%;
+        height: 49%;
+      }
+      .pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .owner-info {
+        margin-top: 20px;
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+      }
+      .owner-info-main {
+        flex: 1;
+      }
+      .home-info-main p {
+        margin-top: 5px;
+        font-weight: 300;
+      }
+      .rating {
+        margin-bottom: 20px;
+      }
+      .description {
+        line-height: 24px;
+        margin-bottom: 20px;
+      }
+      .home-info-reserve {
+        width: 400px;
+        border: 1px solid rgb(229, 229, 229);
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 2px 3px 17px -15px rgba(66, 68, 90, 1);
+      }
+
+      .price {
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+      .game-info-purchase button {
+        margin: 20px 0 10px 0;
+        width: 100%;
+        padding: 13px;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        background-color: #0b0404;
+        cursor: pointer;
+      }
+
+      .charge {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .home-info-reserve table {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .home-info-reserve table td {
+        padding: 4px 0;
+      }
+      .home-info-reserve table td:last-child {
+        text-align: right;
+      }
+
+      footer {
+        background-color: rgb(247, 247, 247);
+      }
+      .footer-text {
+        padding: 20px 0;
+        width: 70%;
+        margin: auto;
+      }
+      a{
+        position: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li>Characters</li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <p><i class="fa-solid fa-gamepad"></i> Retro Fight Night</p>
+      </div>
+      <nav>
+        <ul>
+          <li><strong>Maps</strong></li>
+          <li ><strong>Controls</strong></li>
+          <li><strong>Creators</strong></li>
+        </ul>
+      </nav>
+
+      <div>
+        <div class="user">
+        <ul>
+          <li><i class="fa-solid fa-globe"></i></li>
+          <li><i class="fa-solid fa-bars"></i></li>
+          <li><i class="fa-solid fa-user"></i></li>
+
+        </ul>
+        </div>
+        
+      </div>
     </header>
     <div class="divider-line"></div>
     <main>
+        <div class="champion-array">
+        <p class="a">Retro Fight Night's Champions!</p>
+        <p>We have sent invitation's out to some of the best fighters in the multiverse...</p>
+        <div class="champ-pics">
+            <div class="pics-left"> <img src="https://tse1.mm.bing.net/th/id/OIG3.CbcQQfxHX0tWLJ2yIpDy?pid=ImgGn" alt=""></div>
+
+            <div class="pics-right">
+                <div class="pic"> <img src="https://tse1.mm.bing.net/th/id/OIG1.7VugXmMZ5qij5jz109gf?pid=ImgGn" alt=""></div>
+                <div class="pic"> <img src="https://tse3.mm.bing.net/th/id/OIG3.mZHb1pOUBm7UiHb07IxV?pid=ImgGn" alt=""></div>
+                <div class="pic"> <img src="https://tse3.mm.bing.net/th/id/OIG2.x8P_hx.svoRG0iY_yQbl?w=1024&h=1024&rs=1&pid=ImgDetMain" alt=""></div>
+                <div class="pic"> <img src="https://tse4.mm.bing.net/th/id/OIG4.iDFXknpjBim6aWCS1hCt?pid=ImgGn" alt=""></div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="owner-info">
+        <div class="owner-info-main">
+          <h2>Who Owns this Fight Club?</h2>
+          <p> Koro Nishitani</p>
+          <p><i class="fa-solid fa-star"></i>5.0 - 1078 Reviews</p>
+          <p>
+            Welcome to the Underground Arena, a subterranean sanctuary of clandestine combat boasting multiple arenas catering to every fighting style. Descend into the dimly lit depths where the air crackles with anticipation and the scent of sweat and adrenaline fills the atmosphere. Behold our glorious fighters, each a legend in the making, as they clash in a symphony of violence under the harsh glow of the overhead lights. Here, friendships are forged, rivalries ignited, and legends born amidst the chaos and camaraderie of the ring. Welcome to the epitome of primal thrills and underground glory.
+          </p>
+        </div>
+      <div class="divider-line"></div>
+      <div class="game-info-purchase">
+        <p><span class="price">$13.99</span> DLC</p>
+        <button>Purchase</button>
+        <p> <span class ="charge">You won't be charged yet</span></p>
+        <table>
+        <tr>
+          <td>Content Fee  </td>
+          <td> $12</td>
+        </tr>
+        <tr>
+          <td> Tax</td>
+          <td>$1.99</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td>$13.99</td>
+        </tr>
+  
+        </table>
+      </div>
+    </div>
 
     </main>
     <footer>
-        <div class="divider-line"></div>
+      <div class="divider-line"></div>
+      <div class="footer-text">
+        <p><i class="fa-solid fa-copyright"></i> Retro Fight Night, Inc. AEE Games - Privacy - Your Privacy Choices</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
