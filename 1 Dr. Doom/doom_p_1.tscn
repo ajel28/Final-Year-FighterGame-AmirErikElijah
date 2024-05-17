@@ -1,10 +1,81 @@
-[gd_scene load_steps=4 format=3 uid="uid://j70b4iqssibs"]
+[gd_scene load_steps=9 format=3 uid="uid://j70b4iqssibs"]
 
 [ext_resource type="Script" path="res://1 Dr. Doom/doom_p_1.gd" id="1_nxp1m"]
-[ext_resource type="Texture2D" uid="uid://dtwbe4le4tmca" path="res://Characters/Dr. Doom Player 1 (1).png" id="1_vf7gv"]
+[ext_resource type="Texture2D" uid="uid://ccm0f38v8bx72" path="res://1 Dr. Doom/Doom-sprite.png" id="2_dei3s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5yttx"]
 size = Vector2(460.5, 601)
+
+[sub_resource type="Animation" id="Animation_noaj0"]
+resource_name = "doomcrouch1"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [5]
+}
+
+[sub_resource type="Animation" id="Animation_nwae5"]
+resource_name = "doomidle1"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [2, 0]
+}
+
+[sub_resource type="Animation" id="Animation_sggg2"]
+resource_name = "doomjump1"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+
+[sub_resource type="Animation" id="Animation_8s63b"]
+resource_name = "doompunch1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bvwla"]
+_data = {
+"doomcrouch1": SubResource("Animation_noaj0"),
+"doomidle1": SubResource("Animation_nwae5"),
+"doomjump1": SubResource("Animation_sggg2"),
+"doompunch1": SubResource("Animation_8s63b")
+}
 
 [node name="DoomP1" type="Node2D"]
 
@@ -14,8 +85,15 @@ script = ExtResource("1_nxp1m")
 [node name="TextureRect" type="Sprite2D" parent="DoomP1"]
 position = Vector2(893.875, 1260)
 scale = Vector2(3.13125, 3.1325)
-texture = ExtResource("1_vf7gv")
+texture = ExtResource("2_dei3s")
+hframes = 6
+frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoomP1"]
-position = Vector2(900.75, 1263.5)
+position = Vector2(868, 1253)
 shape = SubResource("RectangleShape2D_5yttx")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DoomP1"]
+libraries = {
+"": SubResource("AnimationLibrary_bvwla")
+}

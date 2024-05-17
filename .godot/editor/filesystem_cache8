@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715952319
+::res://::1715972356
 icon.svg::CompressedTexture2D::8402663531990749670::1707346693::1707346960::1::::<><>::
-p1Health.tscn::PackedScene::5397409468546100131::1715950544::0::1::::<><>::uid://cs5g5q70p8g3w::::res://Global Stuff/p1HealthTheme.tres<>res://ProgressBar.gd
+p1Health.tscn::PackedScene::5397409468546100131::1715972106::0::1::::<><>::uid://cs5g5q70p8g3w::::res://Global Stuff/p1HealthTheme.tres<>res://ProgressBar.gd
 ProgressBar.gd::GDScript::-1::1715950490::0::1::::<>ProgressBar<>::
 README.md::TextFile::-1::1715901185::0::1::::<><>::
 ::res://1 Deadpool/::1715901184
@@ -23,12 +23,13 @@ d_jin_p_2.gd::GDScript::-1::1715901184::0::1::::<>CharacterBody2D<>::
 d_jin_p_2.tscn::PackedScene::4400732602567530949::1715901184::0::1::::<><>::uid://d1n1070rwtm4k::::res://Characters/Devil Jin Player 1 (2).png<>res://1 Devil Jin/d_jin_p_2.gd
 d_jin_select_p_1.tscn::PackedScene::5476433329843513418::1715901184::0::1::::<><>::uid://qe26q6shcxwo::::res://1 Devil Jin/DJinChSelectP1.png
 d_jin_select_p_2.tscn::PackedScene::7143626068169173633::1715901184::0::1::::<><>::uid://7ibd1q6asvrh::::res://1 Devil Jin/DJinChSelectP2.png
-::res://1 Dr. Doom/::1715901184
+::res://1 Dr. Doom/::1715972106
+Doom-sprite.png::CompressedTexture2D::4939519964130330031::1715971270::1715971502::1::::<><>::
 DoomChSelectP1.png::CompressedTexture2D::3311886052887997226::1715901184::1715901184::1::::<><>::
 DoomChSelectP2.png::CompressedTexture2D::2286124794361726796::1715901184::1715901184::1::::<><>::
 DoomSelect.mp3::AudioStreamMP3::79723055234617874::1715901184::1715901184::1::::<><>::
-doom_p_1.gd::GDScript::-1::1715901184::0::1::::<>CharacterBody2D<>::
-doom_p_1.tscn::PackedScene::699280927772597892::1715901184::0::1::::<><>::res://1 Dr. Doom/doom_p_1.gd<>uid://dtwbe4le4tmca::::res://Characters/Dr. Doom Player 1 (1).png
+doom_p_1.gd::GDScript::-1::1715972106::0::1::::<>CharacterBody2D<>::
+doom_p_1.tscn::PackedScene::699280927772597892::1715972106::0::1::::<><>::res://1 Dr. Doom/doom_p_1.gd<>uid://ccm0f38v8bx72::::res://1 Dr. Doom/Doom-sprite.png
 doom_p_1_select.tscn::PackedScene::5427585151004569870::1715901184::0::1::::<><>::uid://bngkjrai7c1qs::::res://1 Dr. Doom/DoomChSelectP1.png<>uid://beva6kblfrvm::::res://1 Dr. Doom/DoomSelect.mp3
 doom_p_2.gd::GDScript::-1::1715901184::0::1::::<>CharacterBody2D<>::
 doom_p_2.tscn::PackedScene::4998424980463129006::1715901184::0::1::::<><>::uid://dtwbe4le4tmca::::res://Characters/Dr. Doom Player 1 (1).png<>res://1 Dr. Doom/doom_p_2.gd
@@ -123,10 +124,10 @@ Winter Soldier Player 1 (2).png::CompressedTexture2D::7664137484136734456::17159
 Controls Screen.png::CompressedTexture2D::2801199216467510857::1715901185::1715901185::1::::<><>::
 controls.gd::GDScript::-1::1715901185::0::1::::<>Node2D<>::
 controls.tscn::PackedScene::7750915240133754944::1715901185::0::1::::<><>::res://Controls/controls.gd<>uid://bf56lvfqjjpk8::::res://Controls/Controls Screen.png
-::res://Global Stuff/::1715950544
+::res://Global Stuff/::1715972106
 Global.gd::GDScript::-1::1715950490::0::1::::<>Node<>::
 p1HealthTheme.tres::Theme::6098590652230903166::1715950490::0::1::::<><>::
-pause.tscn::PackedScene::5738698664817500356::1715950544::0::1::::<><>::uid://cbkkvxi6b5vd7::::res://Global Stuff/PauseButton.png
+pause.tscn::PackedScene::5738698664817500356::1715972106::0::1::::<><>::uid://cbkkvxi6b5vd7::::res://Global Stuff/PauseButton.png
 PauseButton.png::CompressedTexture2D::4864319881971026362::1715904544::1715904544::1::::<><>::
 ::res://Map Select/::1715901185
 Abandoned Ruins.png::CompressedTexture2D::6004056645392444917::1715901185::1715901185::1::::<><>::
@@ -183,4 +184,6 @@ playbutton.gd::GDScript::-1::1715901185::0::1::::<>Button<>::
 start_menu.gd::GDScript::-1::1715901185::0::1::::<>Control<>::
 start_menu.tscn::PackedScene::1976587525571984087::1715901185::0::1::::<><>::res://Menu/start_menu.gd<>uid://7qedbi0lmy1d::::res://Menu/TitleScreen.png<>uid://bqt5dts6nv11v::::res://Menu/LobbyMusic.mp3
 TitleScreen.png::CompressedTexture2D::2279321331867644295::1715901185::1715901185::1::::<><>::
-::res://website/::1715950490
+::res://website/::1715971370
+::res://website/img/::1715971502
+Sword.png::CompressedTexture2D::3869774498907408161::1715971370::1715971502::1::::<><>::

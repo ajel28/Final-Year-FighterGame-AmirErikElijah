@@ -1,8 +1,8 @@
+AnimationPlayer
 ProgressBar
 LinkButton
 TextureRect
 Node2D
-AnimationPlayer
 AudioStreamPlayer
 AudioStreamPlayer2D
 Camera2D
