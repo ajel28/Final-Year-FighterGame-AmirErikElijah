@@ -56,6 +56,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_8s63b"]
 resource_name = "doompunch1"
+length = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -87,7 +88,7 @@ position = Vector2(893.875, 1260)
 scale = Vector2(3.13125, 3.1325)
 texture = ExtResource("2_dei3s")
 hframes = 6
-frame = 2
+frame = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoomP1"]
 position = Vector2(868, 1253)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cdhjlgq46nt8i"]
+[gd_scene load_steps=9 format=3 uid="uid://cdhjlgq46nt8i"]
 
 [ext_resource type="Script" path="res://1 Dr. Doom/doom_p_2.gd" id="1_eggay"]
 [ext_resource type="Texture2D" uid="uid://ccm0f38v8bx72" path="res://1 Dr. Doom/Doom-sprite.png" id="2_h65u4"]
@@ -21,9 +21,58 @@ tracks/0/keys = {
 "values": [5]
 }
 
+[sub_resource type="Animation" id="Animation_sueaq"]
+resource_name = "doomjump2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+
+[sub_resource type="Animation" id="Animation_p077e"]
+resource_name = "doomidle2"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [2, 0]
+}
+
+[sub_resource type="Animation" id="Animation_aapdd"]
+resource_name = "doompunch2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_m46h6"]
 _data = {
-"doomcrouch2": SubResource("Animation_qbqub")
+"doomcrouch2": SubResource("Animation_qbqub"),
+"doomidle2": SubResource("Animation_p077e"),
+"doomjump2": SubResource("Animation_sueaq"),
+"doompunch2": SubResource("Animation_aapdd")
 }
 
 [node name="DoomP2" type="Node2D"]
@@ -32,12 +81,11 @@ _data = {
 script = ExtResource("1_eggay")
 
 [node name="TextureRect" type="Sprite2D" parent="DoomP2"]
-position = Vector2(2130, 1261)
-scale = Vector2(3.1425, 3.1425)
+position = Vector2(2111.38, 1248.63)
+scale = Vector2(2.93625, 3.26625)
 texture = ExtResource("2_h65u4")
 flip_h = true
 hframes = 6
-frame = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoomP2"]
 position = Vector2(2124.25, 1264.75)
