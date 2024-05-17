@@ -6,13 +6,13 @@
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = 2307.0
-offset_top = -211.0
+offset_top = -13.0
 offset_right = 2539.0
-offset_bottom = 22.0
+offset_bottom = 220.0
 texture = ExtResource("1_bq531")
 
 [node name="LinkButton" type="LinkButton" parent="."]
 offset_left = 2348.0
-offset_top = -163.0
+offset_top = 35.0
 offset_right = 2498.0
-offset_bottom = -28.0
+offset_bottom = 170.0

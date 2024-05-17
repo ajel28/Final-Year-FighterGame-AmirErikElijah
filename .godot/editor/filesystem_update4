@@ -1,11 +1,5 @@
-res://Global Stuff/Global.gd
-res://Maps/depths_map.tscn
-res://Maps/dojo_background.tscn
-res://Maps/frosbite_map.tscn
-res://Maps/ninshitani_map.tscn
 res://Maps/ruins_map.tscn
-res://Maps/subconscious_map.tscn
-res://Maps/taka_map.tscn
-res://Maps/yaku_map.tscn
-res://pause.tscn
 res://Global Stuff/pause.tscn
+res://Global Stuff/p1HealthTheme.tres
+res://Global Stuff/Global.gd
+res://p1Health.tscn
