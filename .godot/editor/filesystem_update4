@@ -1,7 +1,11 @@
-res://Character Select/characterselect.tscn
-res://1 Jin Kazama/CharacterBody2D.gd
-res://1 Deadpool/deadpool_p_2.gd
-res://1 Deadpool/deadpool_p_1.tscn
-res://1 Ryu/ryu_p_1.tscn
-res://1 Jin Kazama/jin_kazama.tscn
-res://1 Deadpool/deadpool_p_2.tscn
+res://Global Stuff/Global.gd
+res://Maps/depths_map.tscn
+res://Maps/dojo_background.tscn
+res://Maps/frosbite_map.tscn
+res://Maps/ninshitani_map.tscn
+res://Maps/ruins_map.tscn
+res://Maps/subconscious_map.tscn
+res://Maps/taka_map.tscn
+res://Maps/yaku_map.tscn
+res://pause.tscn
+res://Global Stuff/pause.tscn

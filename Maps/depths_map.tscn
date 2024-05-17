@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bdrkj3cpgpwua"]
+[gd_scene load_steps=4 format=3 uid="uid://bdrkj3cpgpwua"]
 
 [ext_resource type="Texture2D" uid="uid://b33hqexn3lmlg" path="res://Maps/Lava Background (1).jpeg" id="1_dx5i1"]
 [ext_resource type="Script" path="res://Maps/depths_map.gd" id="1_rb8js"]
+[ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_f5lj0"]
 
 [node name="DepthsMap" type="Node2D"]
 script = ExtResource("1_rb8js")
@@ -12,3 +13,6 @@ offset_top = -1167.0
 offset_right = 6070.0
 offset_bottom = 3476.0
 texture = ExtResource("1_dx5i1")
+
+[node name="Pause" parent="." instance=ExtResource("3_f5lj0")]
+position = Vector2(294, 0)

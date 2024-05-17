@@ -1,12 +1,13 @@
+LinkButton
+TextureRect
+Node2D
 AnimationPlayer
 AudioStreamPlayer
 AudioStreamPlayer2D
-LinkButton
 Camera2D
 CollisionShape2D
 CharacterBody2D
 Sprite2D
-TextureRect
 AudioListener2D
 Area2D
 Button

@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://cn04r8bebir05"]
+
+[ext_resource type="Texture2D" uid="uid://cbkkvxi6b5vd7" path="res://Global Stuff/PauseButton.png" id="1_bq531"]
+
+[node name="Pause" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 2307.0
+offset_top = -211.0
+offset_right = 2539.0
+offset_bottom = 22.0
+texture = ExtResource("1_bq531")
+
+[node name="LinkButton" type="LinkButton" parent="."]
+offset_left = 2348.0
+offset_top = -163.0
+offset_right = 2498.0
+offset_bottom = -28.0

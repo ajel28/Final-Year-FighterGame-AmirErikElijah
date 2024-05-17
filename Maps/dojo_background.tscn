@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://csdotesi5o6kp"]
+[gd_scene load_steps=4 format=3 uid="uid://csdotesi5o6kp"]
 
 [ext_resource type="Script" path="res://Maps/dojo_background.gd" id="1_pecgx"]
 [ext_resource type="Texture2D" uid="uid://qlpms2ob1kck" path="res://Maps/Dojo Background (1).jpeg" id="1_rtsny"]
+[ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_r8h85"]
 
 [node name="DojoBackground" type="Node2D"]
 script = ExtResource("1_pecgx")
@@ -12,3 +13,5 @@ offset_top = -1227.0
 offset_right = 6035.0
 offset_bottom = 2513.0
 texture = ExtResource("1_rtsny")
+
+[node name="Pause" parent="." instance=ExtResource("3_r8h85")]

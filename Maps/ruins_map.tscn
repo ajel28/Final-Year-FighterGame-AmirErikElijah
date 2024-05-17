@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://jv1c33jhqauh"]
+[gd_scene load_steps=4 format=3 uid="uid://jv1c33jhqauh"]
 
 [ext_resource type="Script" path="res://Maps/ruins_map.gd" id="1_ffj44"]
 [ext_resource type="Texture2D" uid="uid://cwguguq33qqb8" path="res://Maps/MortalKombat Background (2).webp" id="1_m6su6"]
+[ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_fvf0i"]
 
 [node name="RuinsMap" type="Node2D"]
 script = ExtResource("1_ffj44")
@@ -12,3 +13,5 @@ offset_top = -1404.0
 offset_right = 5656.0
 offset_bottom = 1987.0
 texture = ExtResource("1_m6su6")
+
+[node name="Pause" parent="." instance=ExtResource("3_fvf0i")]

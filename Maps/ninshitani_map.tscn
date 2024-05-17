@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dcbl74ow8osm4"]
+[gd_scene load_steps=4 format=3 uid="uid://dcbl74ow8osm4"]
 
 [ext_resource type="Script" path="res://Maps/ninshitani_map.gd" id="1_6tbce"]
 [ext_resource type="Texture2D" uid="uid://0y4xo3v3ydxg" path="res://Maps/StreetFighter Background (1).jpeg" id="1_rvy0j"]
+[ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_xphb5"]
 
 [node name="NinshitaniMap" type="Node2D"]
 script = ExtResource("1_6tbce")
@@ -12,3 +13,5 @@ offset_top = -1220.0
 offset_right = 5847.0
 offset_bottom = 2163.0
 texture = ExtResource("1_rvy0j")
+
+[node name="Pause" parent="." instance=ExtResource("3_xphb5")]
