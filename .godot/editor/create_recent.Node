@@ -1,3 +1,4 @@
+CollisionShape2D
 Timer
 ProgressBar
 AnimationPlayer
@@ -7,9 +8,7 @@ Node2D
 AudioStreamPlayer
 AudioStreamPlayer2D
 Camera2D
-CollisionShape2D
 CharacterBody2D
 Sprite2D
 AudioListener2D
 Area2D
-Button

@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://deownb54lwa1w" path="res://1 Jin Kazama/kazama-sprite.png" id="2_ys1gn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mdbq0"]
-size = Vector2(377, 607)
+size = Vector2(377, 603)
 
 [sub_resource type="Animation" id="Animation_qtryj"]
 resource_name = "crouch"
@@ -69,16 +69,20 @@ _data = {
 script = ExtResource("1_1urm1")
 
 [node name="p1Health" parent="CharacterBody2D" instance=ExtResource("2_g77c2")]
+offset_left = -175.0
+offset_top = -90.0
+offset_right = -175.0
+offset_bottom = -90.0
 
 [node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(854, 1257)
 scale = Vector2(3.015, 3.015)
 texture = ExtResource("2_ys1gn")
 hframes = 7
-frame = 4
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(869.5, 1258.5)
+[node name="IdleCollision" type="CollisionShape2D" parent="CharacterBody2D"]
+z_as_relative = false
+position = Vector2(869.5, 1260.5)
 shape = SubResource("RectangleShape2D_mdbq0")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]

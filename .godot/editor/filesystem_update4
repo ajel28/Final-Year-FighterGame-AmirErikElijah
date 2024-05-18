@@ -1,10 +1,2 @@
-res://Global Stuff/pause.tscn
-res://p1Health.tscn
-res://1 Dr. Doom/doom_p_1.tscn
-res://1 Dr. Doom/doom_p_2.tscn
-res://Global Stuff/p1Health.tscn
-res://Global Stuff/Global.gd
-res://Global Stuff/ProgressBar.gd
-res://Global Stuff/P1Health.gd
-res://1 Jin Kazama/CharacterBody2D.gd
 res://1 Jin Kazama/jin_kazama.tscn
+res://Global Stuff/p1Health.tscn
