@@ -2,12 +2,22 @@ extends CharacterBody2D
 
 @export var yes  = 1 
 @onready var animationsDp1 = $AnimationPlayer
+@onready var healthbar = $p1Health
 
 const max_speed = 520
 const accel = 1000
 const friction = 3000
 var input = Vector2.ZERO
 
+func ready():
+	Global.healthp1=100
+	Global.healthbar.init_health(Global.healthp1)
+	
+func _set_health(value):
+	Global._set_health(value)
+	Global.healthp1 = Global.healthp1
+	
+	
 func _physics_process(delta):
 	player_movement(delta)
 

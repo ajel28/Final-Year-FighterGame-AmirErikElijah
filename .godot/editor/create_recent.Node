@@ -1,5 +1,6 @@
-AnimationPlayer
+Timer
 ProgressBar
+AnimationPlayer
 LinkButton
 TextureRect
 Node2D

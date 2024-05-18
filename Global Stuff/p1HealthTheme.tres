@@ -1,7 +1,0 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cs5g5q70p8g3w"]
-
-[sub_resource type="FontVariation" id="FontVariation_33fs6"]
-
-[resource]
-default_font = SubResource("FontVariation_33fs6")
-ProgressBar/styles/background = null

@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://dtivlebww4j1t"]
+[gd_scene load_steps=9 format=3 uid="uid://dtivlebww4j1t"]
 
 [ext_resource type="Script" path="res://1 Jin Kazama/CharacterBody2D.gd" id="1_1urm1"]
+[ext_resource type="PackedScene" uid="uid://ci5ssspo85p0v" path="res://Global Stuff/p1Health.tscn" id="2_g77c2"]
 [ext_resource type="Texture2D" uid="uid://deownb54lwa1w" path="res://1 Jin Kazama/kazama-sprite.png" id="2_ys1gn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mdbq0"]
@@ -66,6 +67,8 @@ _data = {
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("1_1urm1")
+
+[node name="p1Health" parent="CharacterBody2D" instance=ExtResource("2_g77c2")]
 
 [node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(854, 1257)
