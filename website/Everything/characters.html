@@ -69,7 +69,7 @@
       .champ-pics {
         margin: auto;
         width: 100%;
-        height: 450px;
+        height: 1000px;
         display: flex;
         justify-content: space-between;
         gap: 5px;
@@ -148,7 +148,7 @@
         border: none;
         border-radius: 10px;
         font-size: 1.2rem;
-        background-color: #0b0404;
+        background-color: #7b0a0a;
         cursor: pointer;
       }
 
@@ -177,28 +177,52 @@
         width: 70%;
         margin: auto;
       }
-      .a{
-        position: center;
-      }
 
-      a {
-        color: black;
+      .a {
+        text-align: center;
+        color: rgb(255, 255, 255);
         text-decoration: none;
+      }
+      .container {
+        height: 100%;
+        margin: 50px auto;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: scroll;
+      }
+      .container > a{
+        flex: 25%;
+        height: 300px;
+        margin: 20px;
+        border-radius: 10%;
+        background-color: #410000;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+      .LastDivs {
+        height:100%
+      }
+      .LastImgs {
+        object-fit: contain;
       }
     </style>
   </head>
-  <body style="background-color:black;">
+  <body style="background-color:rgb(0, 0, 0);">
     <header>
       <div class="logo">
         <p><i class="fa-solid fa-gamepad"></i> Retro Fight Night</p>
       </div>
       <nav>
         <ul>
-          <li><a href="characters.html"><strong>Characters</strong></a></li>
-          <li><a href="maps.html"><strong>Maps</strong></a></li>
-          <li><a href="controls.html"><strong>Controls</strong></a></li>
-          <li><a href="creators.html"><strong>Creators</strong></a></li>
-          <li><a href="description.html"><strong>Description</strong></a></li>
+          <li><a href="/Everything/characters.html"><strong>Characters</strong></a></li>
+          <li><a href="/Everything/maps.html"><strong>Maps</strong></a></li>
+          <li><a href="/Everything/controls.html"><strong>Controls</strong></a></li>
+          <li><a href="/Everything/creators.html"><strong>Creators</strong></a></li>
+          <li><a href="/Everything/description.html"><strong>Description</strong></a></li>
         </ul>
       </nav>
 
@@ -216,23 +240,36 @@
     </header>
     <div class="divider-line"></div>
     <main>
-    
-      <div class="owner-info">
-        <div class="owner-info-main">
-          <h2>Who Owns this Fight Club?</h2>
-          <p> Koro Nishitani</p>
-          <p><i class="fa-solid fa-star"></i>5.0 - 1078 Reviews</p>
-          <p>
-            Welcome to the Underground Arena, a subterranean sanctuary of clandestine combat boasting multiple arenas catering to every fighting style. Descend into the dimly lit depths where the air crackles with anticipation and the scent of sweat and adrenaline fills the atmosphere. Behold our glorious fighters, each a legend in the making, as they clash in a symphony of violence under the harsh glow of the overhead lights. Here, friendships are forged, rivalries ignited, and legends born amidst the chaos and camaraderie of the ring. Welcome to the epitome of primal thrills and underground glory.
-          </p>
+      <div>
+        <h1 class="a">Champions</h1>
+        <div class="champ-pics">
+          <div class="container">
+            <a href="/ChWikis/DeadpoolWiki.html"><div><img src="img/Deadpool Player 1.png" alt="" /></div></a>
+            <a href="/ChWikis/DjinWiki.html"><div><img src="img/Devil Jin Player 1.png" alt="" /></div></a>
+            <a href="/ChWikis/DoomWiki.html"><div><img src="img/Dr. Doom Player 1.png" alt="" /></div></a>
+            <a href="/ChWikis/JinWiki.html"><div><img src="img/Jin Kazama Player 1.png" alt="" /></div></a>
+            <a href="/ChWikis/JWickWiki.html"><div><img src="img/John Wick Player 1.png" alt="" /></div></a>
+            <a href="/ChWikis/MCWiki.html"><div><img src="img/MainCharacter.png" alt="" /></div></a>
+            <a href="/ChWikis/Raiden.html"><div><img src="img/Raiden Player 1.png" alt="" /></div></a>
+            <a href="/ChWikis/RockyWiki.html"><div><img src="img/Rocky Balboa Player 2.png" alt="" /></div></a>
+            <a href="/ChWikis/RyuWiki.html"><div><img src="img/Ryu Player 1.png" alt="" /></div></a>
+            <a href="/ChWikis/TerminatorWiki.html" ><div class="LastDivs"><img class="LastImgs" src="img/Terminator Player 1.png" alt="" /></div></a>
+            <a href="/ChWikis/WSoldierWiki.html" ><div class="LastDivs"><img class="LastImgs" src="img/Winter Soldier Player 1.png" alt=""/></div></a>
+          </div>
+            
         </div>
-
+      </div>
+    </br>
+    
+      <div class=>
+       
+    </div>
     </main>
     <footer>
       <div class="divider-line"></div>
       <div class="footer-text">
         <p><i class="fa-solid fa-copyright"></i> Retro Fight Night, Inc. AEE Games - Privacy - Your Privacy Choices</p>
-        <p>Maps page will delete later</p>
+        <p>characters page will delete later</p>
       </div>
     </footer>
   </body>

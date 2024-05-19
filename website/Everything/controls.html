@@ -64,50 +64,28 @@
       .champion-array p {
         font-size: 1.7rem;
         font-weight: 500;
-        margin-bottom: 15px;
+        margin-left: 100px;
+        margin-right:100px;
+        margin-bottom: 0;
+        text-align: center;
       }
       .champ-pics {
-        margin: auto;
+        margin: 0;
         width: 100%;
-        height: 1000px;
+        height:250px;
         display: flex;
-        justify-content: space-between;
-        gap: 5px;
         border-radius: 20px;
         overflow: hidden;
       }
 
-      .pics-left,
-      .pics-right {
-        width: 50%;
+      .pics-left{
+        width: 100%;
       }
-
-      .pics-right {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: space-between;
-        gap: 5px;
-        border-radius: 0 20px 20px 0;
-        overflow: hidden;
-      }
-
       .pics-left img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
       }
-
-      .pic {
-        flex: 48%;
-        height: 49%;
-      }
-      .pic img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
       .owner-info {
         margin-top: 20px;
         display: flex;
@@ -116,10 +94,14 @@
       }
       .owner-info-main {
         flex: 1;
+        font-size: 0.8rem;
       }
       .home-info-main p {
         margin-top: 5px;
         font-weight: 300;
+      }
+      .owner-info-main p{
+        text-shadow: 3px 5px 3px red;
       }
       .rating {
         margin-bottom: 20px;
@@ -148,7 +130,7 @@
         border: none;
         border-radius: 10px;
         font-size: 1.2rem;
-        background-color: #7b0a0a;
+        background-color: #0b0404;
         cursor: pointer;
       }
 
@@ -177,52 +159,29 @@
         width: 70%;
         margin: auto;
       }
+      .a{
+        position: center;
+        text-shadow: 3px 5px 3px red;
+      }
 
-      .a {
-        text-align: center;
-        color: rgb(255, 255, 255);
+      a {
+        color: black;
         text-decoration: none;
-      }
-      .container {
-        height: 100%;
-        margin: 50px auto;
-        display: flex;
-        flex-wrap: wrap;
-        overflow: scroll;
-      }
-      .container > a{
-        flex: 25%;
-        height: 300px;
-        margin: 20px;
-        border-radius: 10%;
-        background-color: #410000;
-      }
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 20px;
-      }
-      .LastDivs {
-        height:100%
-      }
-      .LastImgs {
-        object-fit: contain;
       }
     </style>
   </head>
-  <body style="background-color:rgb(0, 0, 0);">
+  <body style="background-color:black;">
     <header>
       <div class="logo">
         <p><i class="fa-solid fa-gamepad"></i> Retro Fight Night</p>
       </div>
       <nav>
         <ul>
-          <li><a href="characters.html"><strong>Characters</strong></a></li>
-          <li><a href="maps.html">Maps</a></li>
-          <li><a href="controls.html">Controls</a></li>
-          <li><a href="creators.html">Creators</a></li>
-          <li><a href="description.html">Description</a></li>
+          <li><a href="/Everything/characters.html"><strong>Characters</strong></a></li>
+          <li><a href="/Everything/maps.html"><strong>Maps</strong></a></li>
+          <li><a href="/Everything/controls.html"><strong>Controls</strong></a></li>
+          <li><a href="/Everything/creators.html"><strong>Creators</strong></a></li>
+          <li><a href="/Everything/description.html"><strong>Description</strong></a></li>
         </ul>
       </nav>
 
@@ -235,41 +194,46 @@
 
         </ul>
         </div>
-        
       </div>
     </header>
     <div class="divider-line"></div>
-    <main>
-      <div>
-        <h1 class="a">Champions</h1>
-        <div class="champ-pics">
-          <div class="container">
-            <a href="/ChWikis/DeadpoolWiki.html"><div><img src="img/Deadpool Player 1.png" alt="" /></div></a>
-            <a href="/ChWikis/DjinWiki.html"><div><img src="img/Devil Jin Player 1.png" alt="" /></div></a>
-            <a href="/ChWikis/DoomWiki.html"><div><img src="img/Dr. Doom Player 1.png" alt="" /></div></a>
-            <a href="/ChWikis/JinWiki.html"><div><img src="img/Jin Kazama Player 1.png" alt="" /></div></a>
-            <a href="/ChWikis/JWickWiki.html"><div><img src="img/John Wick Player 1.png" alt="" /></div></a>
-            <a href="/ChWikis/MCWiki.html"><div><img src="img/MainCharacter.png" alt="" /></div></a>
-            <a href="/ChWikis/Raiden.html"><div><img src="img/Raiden Player 1.png" alt="" /></div></a>
-            <a href="/ChWikis/RockyWiki.html"><div><img src="img/Rocky Balboa Player 2.png" alt="" /></div></a>
-            <a href="/ChWikis/RyuWiki.html"><div><img src="img/Ryu Player 1.png" alt="" /></div></a>
-            <a href="/ChWikis/TerminatorWiki.html" ><div class="LastDivs"><img class="LastImgs" src="img/Terminator Player 1.png" alt="" /></div></a>
-            <a href="/ChWikis/WSoldierWiki.html" ><div class="LastDivs"><img class="LastImgs" src="img/Winter Soldier Player 1.png" alt=""/></div></a>
-          </div>
-            
-        </div>
+    <div class="champion-array">
+      <p class="a">Controls</p>
       </div>
-    </br>
-    
-      <div class=>
-       
+    <main>
+      <div class="champ-pics">
+        <div class="pics-left">
+            <img src="https://t4.ftcdn.net/jpg/04/46/95/43/360_F_446954363_R17loymnltHJV2PYwv4YWqVEUdEvjXfV.jpg" alt="">
+        </div>
     </div>
+  </div>
+      <div class="owner-info">
+        <div class="owner-info-main">
+          <h2>You'll find all the information you need to master the controls of your game. Whether you're a seasoned player looking to customize your setup or a newcomer eager to learn the basics, this guide has you covered. Discover the functions of each button, and make your gaming experience one to remember. Dive in and take full control of your champion!</h2>
+          <br>
+          <p>
+          <strong>
+            D, L - Walk Right
+            <br>
+            A, J - Walk Left
+            <br>
+            S, K - Crouch
+            <br>
+            W, I - Jump
+            <br>
+            Q, U - Base Attack
+            <br>
+            E, P - Powerup (Maybe)
+          </strong>
+          </p>
+        </div>
+
     </main>
     <footer>
       <div class="divider-line"></div>
       <div class="footer-text">
         <p><i class="fa-solid fa-copyright"></i> Retro Fight Night, Inc. AEE Games - Privacy - Your Privacy Choices</p>
-        <p>characters page will delete later</p>
+        <p>Maps page will delete later</p>
       </div>
     </footer>
   </body>
