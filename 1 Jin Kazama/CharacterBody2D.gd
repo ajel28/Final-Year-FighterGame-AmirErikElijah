@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @export var yes  = 1 
+var kick = false
 @onready var animationsDp1 = $AnimationPlayer
 
 const max_speed = 520
@@ -22,6 +23,7 @@ func get_input():
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_Q")) == 1:
 		animationsDp1.play("kick")
+		kick=true
 		return input.normalized()
 	else:
 		animationsDp1.play("idle")
@@ -41,10 +43,3 @@ func player_movement(delta):
 		velocity += ((input * accel * delta))
 		velocity = velocity.limit_length(max_speed)
 	move_and_slide()
-	
-
-
-
-func _on_area_2d_area_entered(area):
-		Global.healthp2-=5
-		print(Global.healthp2)

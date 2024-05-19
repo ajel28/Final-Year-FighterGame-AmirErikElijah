@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://1 Jin Kazama/CharacterBody2D.gd" id="1_1urm1"]
 [ext_resource type="Texture2D" uid="uid://deownb54lwa1w" path="res://1 Jin Kazama/kazama-sprite.png" id="2_ys1gn"]
-[ext_resource type="PackedScene" uid="uid://c0soaw4janyg2" path="res://1 Jin Kazama/jin_kazama_p_2.tscn" id="3_87am5"]
+[ext_resource type="Script" path="res://1 Jin Kazama/JinP1Area2d.gd" id="3_evgs2"]
 
 [sub_resource type="Animation" id="Animation_qtryj"]
 resource_name = "crouch"
@@ -68,17 +68,17 @@ size = Vector2(377, 603)
 
 [node name="JinKazamaP1" type="Node2D"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="Jin" type="CharacterBody2D" parent="."]
 script = ExtResource("1_1urm1")
 
-[node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
+[node name="TextureRect" type="Sprite2D" parent="Jin"]
 position = Vector2(854, 1257)
 scale = Vector2(3.015, 3.015)
 texture = ExtResource("2_ys1gn")
 hframes = 7
 frame = 4
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+[node name="Camera2D" type="Camera2D" parent="Jin"]
 position = Vector2(1627, 775)
 zoom = Vector2(0.8, 0.8)
 limit_left = -1000
@@ -86,22 +86,21 @@ limit_right = 5250
 position_smoothing_enabled = true
 position_smoothing_speed = 4.0
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Jin"]
 libraries = {
 "": SubResource("AnimationLibrary_ifsdv")
 }
 
-[node name="IdleCollision" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="IdleCollision" type="CollisionShape2D" parent="Jin"]
 z_as_relative = false
 position = Vector2(869.5, 1260.5)
 shape = SubResource("RectangleShape2D_mdbq0")
 
-[node name="Area2D" type="Area2D" parent="CharacterBody2D"]
+[node name="JinP1Area2D" type="Area2D" parent="Jin"]
+script = ExtResource("3_evgs2")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jin/JinP1Area2D"]
 position = Vector2(869.5, 1260.5)
 shape = SubResource("RectangleShape2D_q2gpg")
 
-[node name="JinKazamaP2" parent="." instance=ExtResource("3_87am5")]
-
-[connection signal="area_entered" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="Jin/JinP1Area2D" to="Jin/JinP1Area2D" method="_on_area_entered"]
