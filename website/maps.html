@@ -116,6 +116,11 @@
       }
       .owner-info-main {
         flex: 1;
+        font-size: 0.8rem;
+      }
+      .owner-info-main p{
+        text-shadow: 3px 5px 3px red;
+        font-size: 1.5rem;
       }
       .home-info-main p {
         margin-top: 5px;
@@ -143,15 +148,27 @@
       .game-info-purchase button {
         margin: 20px 0 10px 0;
         width: 100%;
+        height:20%;
         padding: 13px;
         color: #fff;
         border: none;
         border-radius: 10px;
         font-size: 1.2rem;
-        background-color: #0b0404;
+        background-color: tomato;
         cursor: pointer;
       }
-
+      button:hover{
+        margin: 20px 0 10px 0;
+        width: 110%;
+        height:25%;
+        padding: 13px;
+        color: black;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        background-color: tomato;
+        cursor: pointer;
+      }
       .charge {
         font-size: 0.9rem;
         text-align: center;
@@ -178,12 +195,19 @@
         margin: auto;
       }
       .a{
-        position: center;
+        text-align: center;
+        text-shadow: 3px 5px 3px red;
       }
 
       a {
         color: black;
         text-decoration: none;
+      }
+      .whoOwns{
+        text-shadow: 3px 5px 3px red;
+      }
+      .reviews{
+        color:gold;
       }
     </style>
   </head>
@@ -216,15 +240,38 @@
     </header>
     <div class="divider-line"></div>
     <main>
+      <div class="champion-array">
+        <p class="a">Maps</p>
+        <div class="champ-pics">
+            <div class="pics-left">
+                <img src="file:///Users/erikturdiu/Downloads/ForestBackground.jpg" alt="">
+            </div>
+
+            <div class="pics-right">
+                <div class="pic"> <img src="/Users/erikturdiu/Downloads/DojoBackground.jpg" alt=""></div>
+                <div class="pic"> <img src="file:///Users/erikturdiu/Downloads/RandomBackground.jpg" alt=""></div>
+                <div class="pic"> <img src="file:///Users/erikturdiu/Downloads/StreetFighterBackground.jpg" alt=""></div>
+            </div>
+        </div>
+      </div>
     
       <div class="owner-info">
         <div class="owner-info-main">
-          <h2>Who Owns this Fight Club?</h2>
-          <p> Koro Nishitani</p>
-          <p><i class="fa-solid fa-star"></i>5.0 - 1078 Reviews</p>
+          <h2>Get ready to dominate the battlefield with our detailed maps designed specifically for fighter platforms. Whether you're planning your next move or seeking the upper hand against your opponents, these maps will help you navigate and utilize every aspect of the stage to your advantage. Study each map, learn the terrain, and prepare to outmaneuver your rivals in every fight!</h2>
+          <br>
           <p>
-            Welcome to the Underground Arena, a subterranean sanctuary of clandestine combat boasting multiple arenas catering to every fighting style. Descend into the dimly lit depths where the air crackles with anticipation and the scent of sweat and adrenaline fills the atmosphere. Behold our glorious fighters, each a legend in the making, as they clash in a symphony of violence under the harsh glow of the overhead lights. Here, friendships are forged, rivalries ignited, and legends born amidst the chaos and camaraderie of the ring. Welcome to the epitome of primal thrills and underground glory.
-          </p>
+            <strong>
+              Nishitani's Castle
+              <br>
+              Yakushima Forest
+              <br>
+              Takachiho Gorge
+              <br>
+              The Dojo
+              <br>
+              REST TBD
+            </strong>
+            </p>
         </div>
 
     </main>
@@ -232,7 +279,7 @@
       <div class="divider-line"></div>
       <div class="footer-text">
         <p><i class="fa-solid fa-copyright"></i> Retro Fight Night, Inc. AEE Games - Privacy - Your Privacy Choices</p>
-        <p>Maps page will delete later</p>
+        <p>Description Page (delete this later)</p>
       </div>
     </footer>
   </body>
