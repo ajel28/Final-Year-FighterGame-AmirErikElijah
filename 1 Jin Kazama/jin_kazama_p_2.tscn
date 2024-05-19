@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://c0soaw4janyg2"]
+[gd_scene load_steps=9 format=3 uid="uid://c0soaw4janyg2"]
 
 [ext_resource type="Script" path="res://1 Jin Kazama/JinP2.gd" id="1_qa0yt"]
 [ext_resource type="Texture2D" uid="uid://deownb54lwa1w" path="res://1 Jin Kazama/kazama-sprite.png" id="2_abo3y"]
@@ -61,6 +61,9 @@ _data = {
 "kick2": SubResource("Animation_5d3qk")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gvcyb"]
+size = Vector2(412, 631.875)
+
 [node name="JinKazamaP2" type="Node2D"]
 
 [node name="JinP2" type="CharacterBody2D" parent="."]
@@ -75,10 +78,16 @@ hframes = 7
 frame = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="JinP2"]
-position = Vector2(2153, 1256.25)
+position = Vector2(2153, 1254)
 shape = SubResource("RectangleShape2D_cbt6k")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="JinP2"]
 libraries = {
 "": SubResource("AnimationLibrary_i6ygw")
 }
+
+[node name="Area2D" type="Area2D" parent="JinP2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="JinP2/Area2D"]
+position = Vector2(2153, 1253.94)
+shape = SubResource("RectangleShape2D_gvcyb")

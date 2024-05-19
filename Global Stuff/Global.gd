@@ -9,3 +9,7 @@ var player1
 var player2
 
 var mapchosen
+
+var healthp1 = 100
+
+var healthp2 = 100

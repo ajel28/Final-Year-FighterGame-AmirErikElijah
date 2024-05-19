@@ -1,10 +1,5 @@
-res://Global Stuff/p1Health.tscn
 res://1 Jin Kazama/jin_kazama.tscn
-res://1 Jin Kazama/jin_p_1_select.tscn
-res://Character Select/characterselect.gd
+res://1 Jin Kazama/CharacterBody2D.gd
+res://Global Stuff/Global.gd
 res://Character Select/characterselect.tscn
-res://MainCharacter/McP1.gd
-res://MainCharacter/McP2.gd
-res://MainCharacter/main_character_p_1.tscn
-res://MainCharacter/main_character_p_2.tscn
 res://1 Jin Kazama/jin_kazama_p_2.tscn
