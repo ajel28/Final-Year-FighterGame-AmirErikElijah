@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://dkrvuhoo7rd1r"]
+[gd_scene load_steps=27 format=3 uid="uid://dkrvuhoo7rd1r"]
 
 [ext_resource type="Script" path="res://Character Select/characterselect.gd" id="1_k2uhs"]
 [ext_resource type="PackedScene" uid="uid://srmqp8v1pxq8" path="res://1 Jin Kazama/jin_p_1_select.tscn" id="2_oq3ql"]
@@ -22,6 +22,8 @@
 [ext_resource type="PackedScene" uid="uid://qoe675jqn8ir" path="res://1 Winter Soldier/soldier_p_1_select.tscn" id="20_bb4dh"]
 [ext_resource type="PackedScene" uid="uid://51pqsq3p4sxj" path="res://1 Winter Soldier/soldier_p_2_select.tscn" id="21_vrvnp"]
 [ext_resource type="Texture2D" uid="uid://c48bv5ok5nxt7" path="res://Character Select/Select Character Screen.png" id="22_anbni"]
+[ext_resource type="PackedScene" uid="uid://v2ttyxy2h0su" path="res://MainCharacter/mc_select_p_1.tscn" id="22_hq2rk"]
+[ext_resource type="PackedScene" uid="uid://cxkycfahah041" path="res://MainCharacter/mc_select_p_2.tscn" id="23_6b1hc"]
 [ext_resource type="AudioStream" uid="uid://cn1udulpbh5v5" path="res://Character Select/ChooseDestiny.mp3" id="23_l56ex"]
 [ext_resource type="AudioStream" uid="uid://bx2h7i3nmfwkb" path="res://Character Select/Mortal Kombat 11 Character Select Music.mp3" id="24_tn18t"]
 
@@ -47,6 +49,8 @@ TermP1Select = ExtResource("18_td43j")
 TermP2Select = ExtResource("19_lp1tx")
 SoldierP1Select = ExtResource("20_bb4dh")
 SoldierP2Select = ExtResource("21_vrvnp")
+MCP1Select = ExtResource("22_hq2rk")
+MCP2Select = ExtResource("23_6b1hc")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -3.0
@@ -155,3 +159,4 @@ autoplay = true
 [connection signal="pressed" from="WSoldierButton" to="." method="_on_w_soldier_button_pressed"]
 [connection signal="pressed" from="JohnWickButton" to="." method="_on_john_wick_button_pressed"]
 [connection signal="pressed" from="RockyButton" to="." method="_on_rocky_button_pressed"]
+[connection signal="pressed" from="MCButton" to="." method="_on_mc_button_pressed"]

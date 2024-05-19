@@ -30,6 +30,9 @@ extends Node2D
 @export var SoldierP1Select: PackedScene
 @export var SoldierP2Select: PackedScene
 
+@export var MCP1Select: PackedScene
+@export var MCP2Select: PackedScene
+
 func _on_jin_button_pressed():
 		if(Global.player==1):
 			var jin1 = jinP1select.instantiate()
@@ -150,6 +153,18 @@ func _on_rocky_button_pressed():
 		Global.player+=1
 		Global.player2 = load("res://1 Rocky Balboa/rocky_p_2.tscn")
 
+func _on_mc_button_pressed():
+	if(Global.player==1):
+		var mcp1 = MCP1Select.instantiate()
+		get_tree().root.get_node("characterselect").add_child(mcp1)
+		Global.player+=1
+		Global.player1 = load("res://MainCharacter/main_character_p_1.tscn")
+	elif(Global.player==2):
+		var mcp2 = MCP2Select.instantiate()
+		get_tree().root.get_node("characterselect").add_child(mcp2)
+		Global.player+=1
+		Global.player2 = load("res://MainCharacter/main_character_p_2.tscn")
+
 func _on_back_button_pressed():
 	get_tree().change_scene_to_file("res://Menu/start_menu.tscn")
 	Global.player = 1
@@ -157,4 +172,3 @@ func _on_back_button_pressed():
 func _on_next_button_pressed():
 	if(Global.player==3):
 		get_tree().change_scene_to_file("res://Map Select/map_select.tscn")
-	

@@ -1,7 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1716077883
+::res://::1716079554
 icon.svg::CompressedTexture2D::8402663531990749670::1707397684::1707397684::1::::<><>::
 README.md::TextFile::-1::1709749475::0::1::::<><>::
+mc_select_p_1.tscn::PackedScene::1530892765922790788::1716079764::0::1::::<><>::uid://cmbnf5ilqafhs::::res://MainCharacter/MCcharacterSelectP1.png
+mc_select_p_2.tscn::PackedScene::6409289590950853360::1716079909::0::1::::<><>::uid://b1errqha0t3d5::::res://MainCharacter/MCcharacterSelectP2.png
 ::res://1 Deadpool/::1715901973
 1Deadpool-sprite.png::CompressedTexture2D::9114095317591810291::1715901973::1715884700::1::::<><>::
 DeadpoolChSelectP1.png::CompressedTexture2D::6094125457086067344::1709132855::1709132869::1::::<><>::
@@ -39,9 +41,9 @@ JinChSelectP2.png::CompressedTexture2D::1454943762145583268::1709133101::1709133
 JinP2.gd::GDScript::-1::1709830306::0::1::::<>CharacterBody2D<>::
 JinSelect.wav::AudioStreamWAV::8096636175774338073::1710120715::1710120746::1::::<><>::
 jin_kazama.gd::GDScript::-1::1709605705::0::1::::<>Node2D<>::
-jin_kazama.tscn::PackedScene::8510660015483781107::1716075634::0::1::::<><>::res://1 Jin Kazama/CharacterBody2D.gd<>uid://ci5ssspo85p0v::::res://Global Stuff/p1Health.tscn<>uid://deownb54lwa1w::::res://1 Jin Kazama/kazama-sprite.png
+jin_kazama.tscn::PackedScene::8510660015483781107::1716079756::0::1::::<><>::res://1 Jin Kazama/CharacterBody2D.gd<>uid://ci5ssspo85p0v::::res://Global Stuff/p1Health.tscn<>uid://deownb54lwa1w::::res://1 Jin Kazama/kazama-sprite.png
 jin_kazama_p_2.tscn::PackedScene::6565572496531307151::1709905306::0::1::::<><>::res://1 Jin Kazama/JinP2.gd<>uid://deownb54lwa1w::::res://1 Jin Kazama/kazama-sprite.png
-jin_p_1_select.tscn::PackedScene::1299251623737578261::1711137609::0::1::::<><>::uid://bx2puxyxt1dbj::::res://1 Jin Kazama/JinChSelectP1.png<>uid://dnmcodurj3xbl::::res://1 Jin Kazama/JinSelect.wav
+jin_p_1_select.tscn::PackedScene::1299251623737578261::1716079756::0::1::::<><>::uid://bx2puxyxt1dbj::::res://1 Jin Kazama/JinChSelectP1.png<>uid://dnmcodurj3xbl::::res://1 Jin Kazama/JinSelect.wav
 jin_p_2_select.tscn::PackedScene::754131082722021666::1711137609::0::1::::<><>::uid://uy1ygeyjbru7::::res://1 Jin Kazama/JinChSelectP2.png<>uid://dnmcodurj3xbl::::res://1 Jin Kazama/JinSelect.wav
 kazama-sprite.png::CompressedTexture2D::7470277803550570634::1709830306::1709748557::1::::<><>::
 ::res://1 John Wick/::1709905306
@@ -125,9 +127,12 @@ controls.tscn::PackedScene::7750915240133754944::1709344520::0::1::::<><>::res:/
 ::res://Global Stuff/::1716075500
 Global.gd::GDScript::-1::1715998437::0::1::::<>Node<>::
 P1Health.gd::GDScript::-1::1715998952::0::1::::<>ProgressBar<>::
-p1Health.tscn::PackedScene::5397409468546100131::1716075500::0::1::::<><>::res://Global Stuff/P1Health.gd
+p1Health.tscn::PackedScene::5397409468546100131::1716079756::0::1::::<><>::res://Global Stuff/P1Health.gd
 pause.tscn::PackedScene::5738698664817500356::1715998952::0::1::::<><>::uid://cbkkvxi6b5vd7::::res://Global Stuff/PauseButton.png
 PauseButton.png::CompressedTexture2D::4864319881971026362::1715902767::1715902798::1::::<><>::
+::res://MainCharacter/::1716079554
+MCcharacterSelectP1.png::CompressedTexture2D::5617971707252255732::1716079489::1716079519::1::::<><>::
+MCcharacterSelectP2.png::CompressedTexture2D::4220651527893016156::1716079542::1716079554::1::::<><>::
 ::res://Map Select/::1709748434
 Abandoned Ruins.png::CompressedTexture2D::6004056645392444917::1709398127::1709398133::1::::<><>::
 depth_select.tscn::PackedScene::2803834469697712343::1709404971::0::1::::<><>::uid://cnepuquudua3u::::res://Map Select/The Depths.png
