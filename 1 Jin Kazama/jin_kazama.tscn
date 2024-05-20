@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://dtivlebww4j1t"]
+[gd_scene load_steps=11 format=3 uid="uid://dtivlebww4j1t"]
 
 [ext_resource type="Script" path="res://1 Jin Kazama/CharacterBody2D.gd" id="1_1urm1"]
 [ext_resource type="Texture2D" uid="uid://deownb54lwa1w" path="res://1 Jin Kazama/kazama-sprite.png" id="2_ys1gn"]
 [ext_resource type="Script" path="res://1 Jin Kazama/JinP1Area2d.gd" id="3_evgs2"]
+[ext_resource type="PackedScene" uid="uid://c0soaw4janyg2" path="res://1 Jin Kazama/jin_kazama_p_2.tscn" id="4_w686q"]
 
 [sub_resource type="Animation" id="Animation_qtryj"]
 resource_name = "crouch"
@@ -103,4 +104,6 @@ script = ExtResource("3_evgs2")
 position = Vector2(869.5, 1260.5)
 shape = SubResource("RectangleShape2D_q2gpg")
 
-[connection signal="area_entered" from="Jin/JinP1Area2D" to="Jin/JinP1Area2D" method="_on_area_entered"]
+[node name="JinKazamaP2" parent="." instance=ExtResource("4_w686q")]
+
+[connection signal="area_entered" from="Jin/JinP1Area2D" to="Jin/JinP1Area2D" method="_on_jin_p_1_area_2d_area_entered"]
