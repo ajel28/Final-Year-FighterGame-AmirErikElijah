@@ -1,7 +1,10 @@
 extends Area2D
 
-@onready var parent = $Jin
-
 func _on_area_entered(area):
-	Global.healthp2-=5
-	print(Global.healthp2)
+	pass
+
+
+func _on_jin_p_1_area_2d_area_entered(area):
+	if get_parent().kick == true:
+		Global.healthp2-=5
+		print(Global.healthp2)

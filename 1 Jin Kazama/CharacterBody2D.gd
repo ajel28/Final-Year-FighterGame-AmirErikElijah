@@ -16,11 +16,14 @@ func get_input():
 	input.x = int(Input.is_action_pressed("ui_D")) - int(Input.is_action_pressed("ui_A"))
 	if int(Input.is_action_pressed("ui_D")) == 1:
 		return input.normalized()
+		kick=false
 	elif int(Input.is_action_pressed("ui_A")) == 1:
 		return input.normalized()
+		kick=false
 	elif int(Input.is_action_pressed("ui_S"))  == 1:
 		animationsDp1.play("crouch")
 		return input.normalized()
+		kick=false
 	elif int(Input.is_action_pressed("ui_Q")) == 1:
 		animationsDp1.play("kick")
 		kick=true
@@ -28,6 +31,7 @@ func get_input():
 	else:
 		animationsDp1.play("idle")
 		return input.normalized()
+		kick=false
 
 	
 	
@@ -43,3 +47,7 @@ func player_movement(delta):
 		velocity += ((input * accel * delta))
 		velocity = velocity.limit_length(max_speed)
 	move_and_slide()
+
+
+func _on_jin_p_1_area_2d_area_entered(area):
+	pass # Replace with function body.
