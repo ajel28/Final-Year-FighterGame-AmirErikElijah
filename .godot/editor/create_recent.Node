@@ -1,3 +1,4 @@
+AnimationPlayer
 Area2D
 CollisionShape2D
 Sprite2D
@@ -5,7 +6,6 @@ CharacterBody2D
 TextureRect
 Timer
 ProgressBar
-AnimationPlayer
 LinkButton
 Node2D
 AudioStreamPlayer
