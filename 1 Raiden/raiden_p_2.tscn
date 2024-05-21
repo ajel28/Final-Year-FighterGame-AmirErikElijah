@@ -1,10 +1,82 @@
-[gd_scene load_steps=4 format=3 uid="uid://xee311mmo32j"]
+[gd_scene load_steps=9 format=3 uid="uid://xee311mmo32j"]
 
-[ext_resource type="Texture2D" uid="uid://daoalj220o3wr" path="res://Characters/Raiden Player 1 (2).png" id="1_b6636"]
 [ext_resource type="Script" path="res://1 Raiden/raiden_p_2.gd" id="1_e1ly0"]
+[ext_resource type="Texture2D" uid="uid://dbaul8jp5wjv" path="res://1 Raiden/1Raiden-sprite.png" id="2_0xqlu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ptl5s"]
 size = Vector2(324.5, 593.5)
+
+[sub_resource type="Animation" id="Animation_fuov8"]
+resource_name = "raidencrouch2"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_6rtrj"]
+resource_name = "raidenjump2"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [5]
+}
+
+[sub_resource type="Animation" id="Animation_56r4c"]
+resource_name = "raidenpunch2"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+
+[sub_resource type="Animation" id="Animation_wrq8x"]
+resource_name = "raidenidle2"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [2, 1, 0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fsynv"]
+_data = {
+"raidencrouch2": SubResource("Animation_fuov8"),
+"raidenidle2": SubResource("Animation_wrq8x"),
+"raidenjump2": SubResource("Animation_6rtrj"),
+"raidenpunch2": SubResource("Animation_56r4c")
+}
 
 [node name="RaidenP2" type="Node2D"]
 
@@ -14,9 +86,16 @@ script = ExtResource("1_e1ly0")
 [node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(2147, 1266)
 scale = Vector2(3.0425, 3.0425)
-texture = ExtResource("1_b6636")
+texture = ExtResource("2_0xqlu")
 flip_h = true
+hframes = 6
+frame = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(2146.25, 1266.75)
 shape = SubResource("RectangleShape2D_ptl5s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
+libraries = {
+"": SubResource("AnimationLibrary_fsynv")
+}
