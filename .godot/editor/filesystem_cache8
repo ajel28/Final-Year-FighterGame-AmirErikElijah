@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1716316963
+::res://::1716403009
 icon.svg::CompressedTexture2D::8402663531990749670::1707346693::1707346960::1::::<><>::
 README.md::TextFile::-1::1715901185::0::1::::<><>::
 ::res://1 Deadpool/::1715901184
@@ -32,7 +32,7 @@ doom_p_1_select.tscn::PackedScene::5427585151004569870::1715901184::0::1::::<><>
 doom_p_2.gd::GDScript::-1::1715974175::0::1::::<>CharacterBody2D<>::
 doom_p_2.tscn::PackedScene::4998424980463129006::1715990411::0::1::::<><>::res://1 Dr. Doom/doom_p_2.gd<>uid://ccm0f38v8bx72::::res://1 Dr. Doom/Doom-sprite.png
 doom_p_2_select.tscn::PackedScene::3408007678743729195::1715901184::0::1::::<><>::uid://7toe2n4jqi3e::::res://1 Dr. Doom/DoomChSelectP2.png<>uid://beva6kblfrvm::::res://1 Dr. Doom/DoomSelect.mp3
-::res://1 Jin Kazama/::1716317056
+::res://1 Jin Kazama/::1716319016
 CharacterBody2D.gd::GDScript::-1::1716316853::0::1::::<>CharacterBody2D<>::
 JinChSelectP1.png::CompressedTexture2D::4057450003680844567::1715901184::1715901184::1::::<><>::
 JinChSelectP2.png::CompressedTexture2D::1454943762145583268::1715901184::1715901184::1::::<><>::
@@ -40,8 +40,8 @@ JinP1Area2d.gd::GDScript::-1::1716316853::0::1::::<>Area2D<>::
 JinP2.gd::GDScript::-1::1715901184::0::1::::<>CharacterBody2D<>::
 JinSelect.wav::AudioStreamWAV::8096636175774338073::1715901184::1715901184::1::::<><>::
 jin_kazama.gd::GDScript::-1::1715901184::0::1::::<>Node2D<>::
-jin_kazama.tscn::PackedScene::8510660015483781107::1716317056::0::1::::<><>::res://1 Jin Kazama/CharacterBody2D.gd<>uid://deownb54lwa1w::::res://1 Jin Kazama/kazama-sprite.png<>res://1 Jin Kazama/JinP1Area2d.gd<>uid://c0soaw4janyg2::::res://1 Jin Kazama/jin_kazama_p_2.tscn
-jin_kazama_p_2.tscn::PackedScene::6565572496531307151::1716317056::0::1::::<><>::res://1 Jin Kazama/JinP2.gd<>uid://deownb54lwa1w::::res://1 Jin Kazama/kazama-sprite.png
+jin_kazama.tscn::PackedScene::8510660015483781107::1716319016::0::1::::<><>::res://1 Jin Kazama/CharacterBody2D.gd<>uid://deownb54lwa1w::::res://1 Jin Kazama/kazama-sprite.png<>res://1 Jin Kazama/JinP1Area2d.gd
+jin_kazama_p_2.tscn::PackedScene::6565572496531307151::1716319016::0::1::::<><>::res://1 Jin Kazama/JinP2.gd<>uid://deownb54lwa1w::::res://1 Jin Kazama/kazama-sprite.png
 jin_p_1_select.tscn::PackedScene::1299251623737578261::1715901184::0::1::::<><>::uid://bx2puxyxt1dbj::::res://1 Jin Kazama/JinChSelectP1.png<>uid://dnmcodurj3xbl::::res://1 Jin Kazama/JinSelect.wav
 jin_p_2_select.tscn::PackedScene::754131082722021666::1715901184::0::1::::<><>::uid://uy1ygeyjbru7::::res://1 Jin Kazama/JinChSelectP2.png<>uid://dnmcodurj3xbl::::res://1 Jin Kazama/JinSelect.wav
 kazama-sprite.png::CompressedTexture2D::7470277803550570634::1715901184::1715901184::1::::<><>::
@@ -54,19 +54,20 @@ john_wick_p_1_select.tscn::PackedScene::5834799155582476239::1715901184::0::1:::
 john_wick_p_2.gd::GDScript::-1::1715901184::0::1::::<>CharacterBody2D<>::
 john_wick_p_2.tscn::PackedScene::7032520983069158642::1715901184::0::1::::<><>::res://1 John Wick/john_wick_p_2.gd<>uid://xdo3ro6u557o::::res://Characters/John Wick Player 1 (1).png
 john_wick_p_2_select.tscn::PackedScene::3778599417844091851::1715901184::0::1::::<><>::uid://v11l4wo4g4xe::::res://1 John Wick/JohnWickChSelectP2.png
-::res://1 Raiden/::1716317414
+::res://1 Raiden/::1716319016
 1Raiden-sprite.png::CompressedTexture2D::212667253711820895::1716231030::1716317429::1::::<><>::
 RaidenChSelectP1.png::CompressedTexture2D::260674854311570333::1715901184::1715901184::1::::<><>::
 RaidenChSelectP2.png::CompressedTexture2D::1092268127200947652::1715901184::1715901184::1::::<><>::
-raiden_p_1.gd::GDScript::-1::1715901184::0::1::::<>CharacterBody2D<>::
-raiden_p_1.tscn::PackedScene::4880050308818329289::1715901184::0::1::::<><>::uid://daoalj220o3wr::::res://Characters/Raiden Player 1 (2).png<>res://1 Raiden/raiden_p_1.gd
+raiden_p_1.gd::GDScript::-1::1716317882::0::1::::<>CharacterBody2D<>::
+raiden_p_1.tscn::PackedScene::4880050308818329289::1716319016::0::1::::<><>::res://1 Raiden/raiden_p_1.gd<>uid://dbaul8jp5wjv::::res://1 Raiden/1Raiden-sprite.png
 raiden_p_1_select.tscn::PackedScene::7076468298916721563::1715901184::0::1::::<><>::uid://dyjjn68vb6kv::::res://1 Raiden/RaidenChSelectP1.png
-raiden_p_2.gd::GDScript::-1::1715901184::0::1::::<>CharacterBody2D<>::
-raiden_p_2.tscn::PackedScene::1622895191225250111::1715901184::0::1::::<><>::uid://daoalj220o3wr::::res://Characters/Raiden Player 1 (2).png<>res://1 Raiden/raiden_p_2.gd
+raiden_p_2.gd::GDScript::-1::1716318995::0::1::::<>CharacterBody2D<>::
+raiden_p_2.tscn::PackedScene::1622895191225250111::1716319016::0::1::::<><>::res://1 Raiden/raiden_p_2.gd<>uid://dbaul8jp5wjv::::res://1 Raiden/1Raiden-sprite.png
 raiden_p_2_select.tscn::PackedScene::1671810814571364268::1715901184::0::1::::<><>::uid://ptdq46min1qu::::res://1 Raiden/RaidenChSelectP2.png
-::res://1 Rocky Balboa/::1715901184
+::res://1 Rocky Balboa/::1716404206
 RockChSelectP1.png::CompressedTexture2D::2245803669876958590::1715901184::1715901184::1::::<><>::
 RocktChSelectP2.png::CompressedTexture2D::3205640781019803963::1715901184::1715901184::1::::<><>::
+Rocky-sprite.png::CompressedTexture2D::1359752571955789388::1716404106::1716404207::1::::<><>::
 rocky_p_1.gd::GDScript::-1::1715901184::0::1::::<>CharacterBody2D<>::
 rocky_p_1.tscn::PackedScene::2386297356093082368::1715901184::0::1::::<><>::uid://b5kov1015rcug::::res://Characters/Rocky Balboa Player 2 (2).png<>res://1 Rocky Balboa/rocky_p_1.gd
 rocky_p_1_select.tscn::PackedScene::6065066884082892315::1715901184::0::1::::<><>::uid://685b8oqjg7b3::::res://1 Rocky Balboa/RockChSelectP1.png
@@ -103,9 +104,9 @@ soldier_p_2_select.tscn::PackedScene::2160279429771072567::1715901185::0::1::::<
 WsoldierChSelectP1.png::CompressedTexture2D::3612178013634449142::1715901185::1715901185::1::::<><>::
 WsoldierChSelectP2.png::CompressedTexture2D::7081964725215575265::1715901185::1715901185::1::::<><>::
 WSoldierSound.mp3::AudioStreamMP3::1386425737196226020::1715901185::1715901185::1::::<><>::
-::res://Character Select/::1716317056
+::res://Character Select/::1716319016
 characterselect.gd::GDScript::-1::1716316853::0::1::::<>Node2D<>::
-characterselect.tscn::PackedScene::7897556071975080921::1716317056::0::1::::<><>::res://Character Select/characterselect.gd<>uid://srmqp8v1pxq8::::res://1 Jin Kazama/jin_p_1_select.tscn<>uid://k0kotvxnx4d7::::res://1 Jin Kazama/jin_p_2_select.tscn<>uid://cka3b6xqdhmwg::::res://1 Devil Jin/d_jin_select_p_1.tscn<>uid://c81oqifnoydsr::::res://1 Devil Jin/d_jin_select_p_2.tscn<>uid://cov0edl2jxqm6::::res://1 Deadpool/deadpool_p_1_select.tscn<>uid://dlsembn85p3dc::::res://1 Deadpool/deadpool_p_2_select.tscn<>uid://cpeoj32epjjqt::::res://1 John Wick/john_wick_p_1_select.tscn<>uid://bt3m8lj0e8ugh::::res://1 John Wick/john_wick_p_2_select.tscn<>uid://drocb5op5cfyy::::res://1 Ryu/ryu_p_1_select.tscn<>uid://bworwahc0peld::::res://1 Ryu/ryu_p_2_select.tscn<>uid://cjlfsf3kbiqne::::res://1 Dr. Doom/doom_p_1_select.tscn<>uid://bos4nhfxbhhix::::res://1 Dr. Doom/doom_p_2_select.tscn<>uid://csn71a41n66kd::::res://1 Rocky Balboa/rocky_p_1_select.tscn<>uid://dsn6vakt3cmsu::::res://1 Rocky Balboa/rocky_p_2_select.tscn<>uid://c725ntihwowpv::::res://1 Raiden/raiden_p_1_select.tscn<>uid://x23qkyqa74uq::::res://1 Raiden/raiden_p_2_select.tscn<>uid://wi4l85w31v8g::::res://1 Terminator/terminator_p_1_select.tscn<>uid://i7javn8rx0f4::::res://1 Terminator/terminator_p_2_select.tscn<>uid://qoe675jqn8ir::::res://1 Winter Soldier/soldier_p_1_select.tscn<>uid://51pqsq3p4sxj::::res://1 Winter Soldier/soldier_p_2_select.tscn<>uid://c48bv5ok5nxt7::::res://Character Select/Select Character Screen.png<>uid://v2ttyxy2h0su::::res://MainCharacter/mc_select_p_1.tscn<>uid://cxkycfahah041::::res://MainCharacter/mc_select_p_2.tscn<>uid://cn1udulpbh5v5::::res://Character Select/ChooseDestiny.mp3<>uid://bx2h7i3nmfwkb::::res://Character Select/Mortal Kombat 11 Character Select Music.mp3
+characterselect.tscn::PackedScene::7897556071975080921::1716319016::0::1::::<><>::res://Character Select/characterselect.gd<>uid://srmqp8v1pxq8::::res://1 Jin Kazama/jin_p_1_select.tscn<>uid://k0kotvxnx4d7::::res://1 Jin Kazama/jin_p_2_select.tscn<>uid://cka3b6xqdhmwg::::res://1 Devil Jin/d_jin_select_p_1.tscn<>uid://c81oqifnoydsr::::res://1 Devil Jin/d_jin_select_p_2.tscn<>uid://cov0edl2jxqm6::::res://1 Deadpool/deadpool_p_1_select.tscn<>uid://dlsembn85p3dc::::res://1 Deadpool/deadpool_p_2_select.tscn<>uid://cpeoj32epjjqt::::res://1 John Wick/john_wick_p_1_select.tscn<>uid://bt3m8lj0e8ugh::::res://1 John Wick/john_wick_p_2_select.tscn<>uid://drocb5op5cfyy::::res://1 Ryu/ryu_p_1_select.tscn<>uid://bworwahc0peld::::res://1 Ryu/ryu_p_2_select.tscn<>uid://cjlfsf3kbiqne::::res://1 Dr. Doom/doom_p_1_select.tscn<>uid://bos4nhfxbhhix::::res://1 Dr. Doom/doom_p_2_select.tscn<>uid://csn71a41n66kd::::res://1 Rocky Balboa/rocky_p_1_select.tscn<>uid://dsn6vakt3cmsu::::res://1 Rocky Balboa/rocky_p_2_select.tscn<>uid://c725ntihwowpv::::res://1 Raiden/raiden_p_1_select.tscn<>uid://x23qkyqa74uq::::res://1 Raiden/raiden_p_2_select.tscn<>uid://wi4l85w31v8g::::res://1 Terminator/terminator_p_1_select.tscn<>uid://i7javn8rx0f4::::res://1 Terminator/terminator_p_2_select.tscn<>uid://qoe675jqn8ir::::res://1 Winter Soldier/soldier_p_1_select.tscn<>uid://51pqsq3p4sxj::::res://1 Winter Soldier/soldier_p_2_select.tscn<>uid://c48bv5ok5nxt7::::res://Character Select/Select Character Screen.png<>uid://v2ttyxy2h0su::::res://MainCharacter/mc_select_p_1.tscn<>uid://cxkycfahah041::::res://MainCharacter/mc_select_p_2.tscn<>uid://cn1udulpbh5v5::::res://Character Select/ChooseDestiny.mp3<>uid://bx2h7i3nmfwkb::::res://Character Select/Mortal Kombat 11 Character Select Music.mp3
 ChooseDestiny.mp3::AudioStreamMP3::5740190921666250952::1715901185::1715901185::1::::<><>::
 Mortal Kombat 11 Character Select Music.mp3::AudioStreamMP3::4056984915130025397::1715901185::1715901185::1::::<><>::
 Select Character Screen.png::CompressedTexture2D::6876542115260631818::1715901185::1715901185::1::::<><>::
@@ -192,7 +193,7 @@ playbutton.gd::GDScript::-1::1715901185::0::1::::<>Button<>::
 start_menu.gd::GDScript::-1::1715901185::0::1::::<>Control<>::
 start_menu.tscn::PackedScene::1976587525571984087::1715901185::0::1::::<><>::res://Menu/start_menu.gd<>uid://7qedbi0lmy1d::::res://Menu/TitleScreen.png<>uid://bqt5dts6nv11v::::res://Menu/LobbyMusic.mp3
 TitleScreen.png::CompressedTexture2D::2279321331867644295::1715901185::1715901185::1::::<><>::
-::res://website/::1716316853
+::res://website/::1716402982
 ::res://website/ChWikis/::1715990302
 ::res://website/img/::1716316969
 Deadpool Player 1.png::CompressedTexture2D::4400400958193791777::1715973437::1715973788::1::::<><>::
