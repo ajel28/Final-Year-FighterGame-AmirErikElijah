@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @export var yes  = 1 
+@onready var animationsterm2 = $AnimationPlayer
 
 const max_speed = 520
 const accel = 1000
@@ -16,7 +17,17 @@ func get_input():
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_J")) == 1:
 		return input.normalized()
+	elif int(Input.is_action_pressed("ui_K"))  == 1:
+		animationsterm2.play("termcrouch")
+		return input.normalized()
+	elif int(Input.is_action_pressed("ui_U")) == 1:
+		animationsterm2.play("termpunch")
+		return input.normalized()
+	elif int(Input.is_action_pressed("ui_I")) ==1:
+		animationsterm2.play("termjump")
+		return input.normalized()
 	else:
+		animationsterm2.play("termidle")
 		return input.normalized()
 
 	

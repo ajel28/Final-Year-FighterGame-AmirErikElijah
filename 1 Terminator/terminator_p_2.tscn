@@ -1,10 +1,82 @@
-[gd_scene load_steps=4 format=3 uid="uid://dy4hc4dsyy4b1"]
+[gd_scene load_steps=9 format=3 uid="uid://dy4hc4dsyy4b1"]
 
-[ext_resource type="Texture2D" uid="uid://cxl7pl3du53lh" path="res://Characters/Terminator Player 1 (3).png" id="1_dtkq5"]
 [ext_resource type="Script" path="res://1 Terminator/terminator_p_2.gd" id="1_e3l6d"]
+[ext_resource type="Texture2D" uid="uid://c5fomil7lxriq" path="res://1 Terminator/1Terminator-sprite.png" id="2_no8hn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iby2u"]
 size = Vector2(344, 625)
+
+[sub_resource type="Animation" id="Animation_ifml2"]
+resource_name = "termcrouch"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_k7k1g"]
+resource_name = "termpunch"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+
+[sub_resource type="Animation" id="Animation_td0ou"]
+resource_name = "termjump"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [5]
+}
+
+[sub_resource type="Animation" id="Animation_pnsov"]
+resource_name = "termidle"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [2, 1, 2]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_l8kb1"]
+_data = {
+"termcrouch": SubResource("Animation_ifml2"),
+"termidle": SubResource("Animation_pnsov"),
+"termjump": SubResource("Animation_td0ou"),
+"termpunch": SubResource("Animation_k7k1g")
+}
 
 [node name="TerminatorP2" type="Node2D"]
 
@@ -14,9 +86,15 @@ script = ExtResource("1_e3l6d")
 [node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(2171, 1267)
 scale = Vector2(3.07625, 3.07625)
-texture = ExtResource("1_dtkq5")
+texture = ExtResource("2_no8hn")
 flip_h = true
+hframes = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(2153, 1263.5)
+position = Vector2(2262, 1256)
 shape = SubResource("RectangleShape2D_iby2u")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
+libraries = {
+"": SubResource("AnimationLibrary_l8kb1")
+}
