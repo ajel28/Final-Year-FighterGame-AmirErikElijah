@@ -1,10 +1,82 @@
-[gd_scene load_steps=4 format=3 uid="uid://y6i7wj5df6rs"]
+[gd_scene load_steps=9 format=3 uid="uid://y6i7wj5df6rs"]
 
 [ext_resource type="Script" path="res://1 John Wick/john_wick_p_1.gd" id="1_bcwuj"]
-[ext_resource type="Texture2D" uid="uid://xdo3ro6u557o" path="res://Characters/John Wick Player 1 (1).png" id="1_e47co"]
+[ext_resource type="Texture2D" uid="uid://ddir2jqddhtad" path="res://1 John Wick/JohnWick-sprite.png" id="2_6kjc5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2kb6w"]
-size = Vector2(430.5, 577.5)
+size = Vector2(484.5, 577.5)
+
+[sub_resource type="Animation" id="Animation_7erri"]
+resource_name = "Wickcrouch1"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+
+[sub_resource type="Animation" id="Animation_kfjsi"]
+resource_name = "Wickidle1"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [2, 1, 0]
+}
+
+[sub_resource type="Animation" id="Animation_yy0yi"]
+resource_name = "Wickjump1"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [5]
+}
+
+[sub_resource type="Animation" id="Animation_b60ec"]
+resource_name = "Wickpunch1"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_i8hso"]
+_data = {
+"Wickcrouch1": SubResource("Animation_7erri"),
+"Wickidle1": SubResource("Animation_kfjsi"),
+"Wickjump1": SubResource("Animation_yy0yi"),
+"Wickpunch1": SubResource("Animation_b60ec")
+}
 
 [node name="JohnWickP1" type="Node2D"]
 
@@ -14,8 +86,15 @@ script = ExtResource("1_bcwuj")
 [node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(873, 1281)
 scale = Vector2(2.9625, 2.9625)
-texture = ExtResource("1_e47co")
+texture = ExtResource("2_6kjc5")
+hframes = 6
+frame = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(879.75, 1284.75)
+position = Vector2(906.75, 1284.75)
 shape = SubResource("RectangleShape2D_2kb6w")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
+libraries = {
+"": SubResource("AnimationLibrary_i8hso")
+}
