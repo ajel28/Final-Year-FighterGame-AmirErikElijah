@@ -20,6 +20,10 @@ config/icon="res://icon.svg"
 Global="*res://Global Stuff/Global.gd"
 P1Health="*res://Global Stuff/P1Health.gd"
 
+[display]
+
+window/size/mode=3
+
 [input]
 
 ui_L={
