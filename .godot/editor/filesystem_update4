@@ -1,6 +1,11 @@
-res://Maps/dojo_background.tscn
 res://Character Select/characterselect.tscn
-res://Maps/yaku_map.tscn
+res://Maps/dojo_background.tscn
 res://Map Select/yakushima_select.tscn
+res://Maps/yaku_map.tscn
 res://Maps/depths_map.tscn
 res://Maps/ninshitani_map.tscn
+res://Global Stuff/pause.tscn
+res://Global Stuff/health_1.gd
+res://Global Stuff/health_1.tscn
+res://Global Stuff/health_2.gd
+res://Global Stuff/health_2.tscn
