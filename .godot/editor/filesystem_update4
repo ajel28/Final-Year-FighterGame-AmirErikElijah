@@ -1,6 +1,3 @@
-res://1 Terminator/terminator_p_2.tscn
-res://1 Terminator/terminator_p_1.gd
-res://1 Terminator/terminator_p_2.gd
 res://Character Select/characterselect.tscn
 res://1 Jin Kazama/jin_kazama.tscn
 res://1 Jin Kazama/jin_kazama_p_2.tscn
@@ -11,8 +8,9 @@ res://1 Rocky Balboa/rocky_p_2.tscn
 res://1 John Wick/john_wick_p_1.tscn
 res://1 John Wick/john_wick_p_2.tscn
 res://1 Terminator/terminator_p_1.tscn
+res://1 Terminator/terminator_p_2.tscn
 res://1 Terminator/terminator_p_1_select.tscn
 res://1 Winter Soldier/soldier_p_1.tscn
-res://1 Winter Soldier/soldier_p_1.gd
 res://1 Winter Soldier/soldier_p_2.tscn
+res://1 Winter Soldier/soldier_p_1.gd
 res://1 Winter Soldier/soldier_p_2.gd

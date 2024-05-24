@@ -21,7 +21,7 @@ func get_input():
 		animationsbucky1.play("buckycrouch")
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_Q")) == 1:
-		animationsbucky1.play("buckyunch")
+		animationsbucky1.play("buckypunch")
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_W")) ==1:
 		animationsbucky1.play("buckyjump")
