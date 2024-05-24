@@ -92,6 +92,7 @@ func _on_yaku_button_pressed():
 func _on_back_button_pressed():
 	get_tree().change_scene_to_file("res://Character Select/characterselect.tscn")
 	Global.map = 0
+	Global.player = 1;
 
 
 func _on_next_button_pressed():
