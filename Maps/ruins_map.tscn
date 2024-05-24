@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://jv1c33jhqauh"]
 
 [ext_resource type="Script" path="res://Maps/ruins_map.gd" id="1_ffj44"]
-[ext_resource type="Texture2D" uid="uid://cwguguq33qqb8" path="res://Maps/MortalKombat Background (2).webp" id="1_m6su6"]
+[ext_resource type="Texture2D" uid="uid://y7i0pn3ox1l2" path="res://Maps/MortalKombatMap (1).png" id="2_ysv02"]
 [ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_fvf0i"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_bwn02"]
 
@@ -13,7 +13,7 @@ offset_left = -445.0
 offset_top = -1404.0
 offset_right = 5656.0
 offset_bottom = 1987.0
-texture = ExtResource("1_m6su6")
+texture = ExtResource("2_ysv02")
 
 [node name="Pause" parent="." instance=ExtResource("3_fvf0i")]
 

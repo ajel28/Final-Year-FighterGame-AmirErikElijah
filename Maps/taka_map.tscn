@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://8s8gdpqoevts"]
 
 [ext_resource type="Script" path="res://Maps/taka_map.gd" id="1_x0q6t"]
-[ext_resource type="Texture2D" uid="uid://bhr3o6hmk5bag" path="res://Maps/Random-Background.jpeg-_3_.jpg" id="2_r4wkx"]
+[ext_resource type="Texture2D" uid="uid://cd0rf5f5bhc4s" path="res://Maps/RandomBackground (2).jpg" id="2_km7cd"]
 [ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_q71yk"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_7a28k"]
 
@@ -13,7 +13,7 @@ offset_left = -456.0
 offset_top = -1499.0
 offset_right = 6319.0
 offset_bottom = 2312.0
-texture = ExtResource("2_r4wkx")
+texture = ExtResource("2_km7cd")
 
 [node name="Pause" parent="." instance=ExtResource("3_q71yk")]
 position = Vector2(332, 0)

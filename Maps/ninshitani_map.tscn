@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dcbl74ow8osm4"]
 
 [ext_resource type="Script" path="res://Maps/ninshitani_map.gd" id="1_6tbce"]
-[ext_resource type="Texture2D" uid="uid://0y4xo3v3ydxg" path="res://Maps/StreetFighter Background (1).jpeg" id="1_rvy0j"]
+[ext_resource type="Texture2D" uid="uid://sapfi1jpxqtl" path="res://Maps/StreetFighterBackground (2).jpg" id="2_vt3pw"]
 [ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_xphb5"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_adwny"]
 
@@ -13,7 +13,7 @@ offset_left = -167.0
 offset_top = -1220.0
 offset_right = 5847.0
 offset_bottom = 2163.0
-texture = ExtResource("1_rvy0j")
+texture = ExtResource("2_vt3pw")
 
 [node name="Pause" parent="." instance=ExtResource("3_xphb5")]
 

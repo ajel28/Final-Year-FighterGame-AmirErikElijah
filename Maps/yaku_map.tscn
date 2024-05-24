@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cwl1hw8ksqpct"]
 
 [ext_resource type="Script" path="res://Maps/yaku_map.gd" id="1_fe0be"]
-[ext_resource type="Texture2D" uid="uid://cyvqmaet1urkx" path="res://Maps/Forest Background (1).jpeg" id="1_gny8a"]
+[ext_resource type="Texture2D" uid="uid://denv76773v6yn" path="res://Maps/ForestBackground (2).jpg" id="2_lxjwb"]
 [ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_pfdt3"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_85s8j"]
 
@@ -13,7 +13,7 @@ offset_left = -1013.0
 offset_top = -1037.0
 offset_right = 5349.0
 offset_bottom = 2549.0
-texture = ExtResource("1_gny8a")
+texture = ExtResource("2_lxjwb")
 
 [node name="Pause" parent="." instance=ExtResource("3_pfdt3")]
 

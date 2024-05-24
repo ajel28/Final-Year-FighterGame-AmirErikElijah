@@ -11,18 +11,18 @@ func _physics_process(delta):
 	player_movement(delta)
 
 func get_input():
-	input.x = int(Input.is_action_pressed("ui_A")) - int(Input.is_action_pressed("ui_D"))
-	if int(Input.is_action_pressed("ui_A")) == 1:
+	input.x = int(Input.is_action_pressed("ui_L")) - int(Input.is_action_pressed("ui_J"))
+	if int(Input.is_action_pressed("ui_J")) == 1:
 		return input.normalized()
-	elif int(Input.is_action_pressed("ui_D")) == 1:
+	elif int(Input.is_action_pressed("ui_L")) == 1:
 		return input.normalized()
-	elif int(Input.is_action_pressed("ui_S"))  == 1:
+	elif int(Input.is_action_pressed("ui_K"))  == 1:
 		animationsWick2.play("Wickcrouch1")
 		return input.normalized()
-	elif int(Input.is_action_pressed("ui_Q")) == 1:
+	elif int(Input.is_action_pressed("ui_U")) == 1:
 		animationsWick2.play("Wickpunch1")
 		return input.normalized()
-	elif int(Input.is_action_pressed("ui_W")) ==1:
+	elif int(Input.is_action_pressed("ui_I")) ==1:
 		animationsWick2.play("Wickjump1")
 		return input.normalized()
 	else:

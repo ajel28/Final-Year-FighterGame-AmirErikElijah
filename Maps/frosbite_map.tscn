@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cn2ctm4qos323"]
 
 [ext_resource type="Script" path="res://Maps/frosbite_map.gd" id="1_cilvh"]
-[ext_resource type="Texture2D" uid="uid://b3x8aaftpirjj" path="res://Maps/Icy Background (1).png" id="2_8r8cv"]
+[ext_resource type="Texture2D" uid="uid://b44xog427nl6k" path="res://Maps/IcyBackground (1).png" id="2_3jqjv"]
 [ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_jgn3q"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_g70x2"]
 
@@ -13,7 +13,7 @@ offset_left = -184.0
 offset_top = -1382.0
 offset_right = 5957.0
 offset_bottom = 2633.0
-texture = ExtResource("2_8r8cv")
+texture = ExtResource("2_3jqjv")
 
 [node name="Pause" parent="." instance=ExtResource("3_jgn3q")]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://beckipq6js6r4"]
 
-[ext_resource type="Texture2D" uid="uid://y24u5fak6y40" path="res://Maps/Tekken Background (2).webp" id="1_bv22v"]
 [ext_resource type="Script" path="res://Maps/subconscious_map.gd" id="1_n6pvv"]
+[ext_resource type="Texture2D" uid="uid://b8wcbus4pdn74" path="res://Maps/TekkenBackground (1).png" id="2_a5fxo"]
 [ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_xik41"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_fr7nq"]
 
@@ -13,7 +13,7 @@ offset_left = -427.0
 offset_top = -674.0
 offset_right = 5879.0
 offset_bottom = 2645.0
-texture = ExtResource("1_bv22v")
+texture = ExtResource("2_a5fxo")
 
 [node name="Pause" parent="." instance=ExtResource("3_xik41")]
 
