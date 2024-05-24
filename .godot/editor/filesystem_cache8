@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1716568025
+::res://::1716575681
 icon.svg::CompressedTexture2D::8402663531990749670::1707397684::1707397684::1::::<><>::
 README.md::TextFile::-1::1709749475::0::1::::<><>::
 ::res://1 Deadpool/::1715901973
@@ -45,14 +45,14 @@ jin_kazama_p_2.tscn::PackedScene::6565572496531307151::1716554088::0::1::::<><>:
 jin_p_1_select.tscn::PackedScene::1299251623737578261::1716079756::0::1::::<><>::uid://bx2puxyxt1dbj::::res://1 Jin Kazama/JinChSelectP1.png<>uid://dnmcodurj3xbl::::res://1 Jin Kazama/JinSelect.wav
 jin_p_2_select.tscn::PackedScene::754131082722021666::1711137609::0::1::::<><>::uid://uy1ygeyjbru7::::res://1 Jin Kazama/JinChSelectP2.png<>uid://dnmcodurj3xbl::::res://1 Jin Kazama/JinSelect.wav
 kazama-sprite.png::CompressedTexture2D::7470277803550570634::1709830306::1709748557::1::::<><>::
-::res://1 John Wick/::1716567880
+::res://1 John Wick/::1716568282
 JohnWick-sprite.png::CompressedTexture2D::7387424506905974935::1716553727::1716553727::1::::<><>::
 JohnWickChSelectP1.png::CompressedTexture2D::4769355037231803599::1709132266::1709132276::1::::<><>::
 JohnWickChSelectP2.png::CompressedTexture2D::1529239381387087302::1709132307::1709132320::1::::<><>::
 john_wick_p_1.gd::GDScript::-1::1716553727::0::1::::<>CharacterBody2D<>::
 john_wick_p_1.tscn::PackedScene::1749072009819966248::1716554088::0::1::::<><>::res://1 John Wick/john_wick_p_1.gd<>uid://ddir2jqddhtad::::res://1 John Wick/JohnWick-sprite.png
 john_wick_p_1_select.tscn::PackedScene::5834799155582476239::1709300509::0::1::::<><>::uid://b87kt0h616pgp::::res://1 John Wick/JohnWickChSelectP1.png
-john_wick_p_2.gd::GDScript::-1::1716567880::0::1::::<>CharacterBody2D<>::
+john_wick_p_2.gd::GDScript::-1::1716568282::0::1::::<>CharacterBody2D<>::
 john_wick_p_2.tscn::PackedScene::7032520983069158642::1716554088::0::1::::<><>::res://1 John Wick/john_wick_p_2.gd<>uid://ddir2jqddhtad::::res://1 John Wick/JohnWick-sprite.png
 john_wick_p_2_select.tscn::PackedScene::3778599417844091851::1709300509::0::1::::<><>::uid://v11l4wo4g4xe::::res://1 John Wick/JohnWickChSelectP2.png
 ::res://1 Raiden/::1716554088
@@ -107,9 +107,9 @@ soldier_p_2_select.tscn::PackedScene::2160279429771072567::1711137558::0::1::::<
 WsoldierChSelectP1.png::CompressedTexture2D::3612178013634449142::1709132518::1709132543::1::::<><>::
 WsoldierChSelectP2.png::CompressedTexture2D::7081964725215575265::1709132607::1709132627::1::::<><>::
 WSoldierSound.mp3::AudioStreamMP3::1386425737196226020::1711137427::1711137456::1::::<><>::
-::res://Character Select/::1716567880
+::res://Character Select/::1716575484
 characterselect.gd::GDScript::-1::1716080906::0::1::::<>Node2D<>::
-characterselect.tscn::PackedScene::7897556071975080921::1716567880::0::1::::<><>::res://Character Select/characterselect.gd<>uid://srmqp8v1pxq8::::res://1 Jin Kazama/jin_p_1_select.tscn<>uid://k0kotvxnx4d7::::res://1 Jin Kazama/jin_p_2_select.tscn<>uid://cka3b6xqdhmwg::::res://1 Devil Jin/d_jin_select_p_1.tscn<>uid://c81oqifnoydsr::::res://1 Devil Jin/d_jin_select_p_2.tscn<>uid://cov0edl2jxqm6::::res://1 Deadpool/deadpool_p_1_select.tscn<>uid://dlsembn85p3dc::::res://1 Deadpool/deadpool_p_2_select.tscn<>uid://cpeoj32epjjqt::::res://1 John Wick/john_wick_p_1_select.tscn<>uid://bt3m8lj0e8ugh::::res://1 John Wick/john_wick_p_2_select.tscn<>uid://drocb5op5cfyy::::res://1 Ryu/ryu_p_1_select.tscn<>uid://bworwahc0peld::::res://1 Ryu/ryu_p_2_select.tscn<>uid://cjlfsf3kbiqne::::res://1 Dr. Doom/doom_p_1_select.tscn<>uid://bos4nhfxbhhix::::res://1 Dr. Doom/doom_p_2_select.tscn<>uid://csn71a41n66kd::::res://1 Rocky Balboa/rocky_p_1_select.tscn<>uid://dsn6vakt3cmsu::::res://1 Rocky Balboa/rocky_p_2_select.tscn<>uid://c725ntihwowpv::::res://1 Raiden/raiden_p_1_select.tscn<>uid://x23qkyqa74uq::::res://1 Raiden/raiden_p_2_select.tscn<>uid://wi4l85w31v8g::::res://1 Terminator/terminator_p_1_select.tscn<>uid://i7javn8rx0f4::::res://1 Terminator/terminator_p_2_select.tscn<>uid://qoe675jqn8ir::::res://1 Winter Soldier/soldier_p_1_select.tscn<>uid://51pqsq3p4sxj::::res://1 Winter Soldier/soldier_p_2_select.tscn<>uid://c48bv5ok5nxt7::::res://Character Select/Select Character Screen.png<>uid://v2ttyxy2h0su::::res://MainCharacter/mc_select_p_1.tscn<>uid://cxkycfahah041::::res://MainCharacter/mc_select_p_2.tscn<>uid://cn1udulpbh5v5::::res://Character Select/ChooseDestiny.mp3<>uid://bx2h7i3nmfwkb::::res://Character Select/Mortal Kombat 11 Character Select Music.mp3
+characterselect.tscn::PackedScene::7897556071975080921::1716575484::0::1::::<><>::res://Character Select/characterselect.gd<>uid://srmqp8v1pxq8::::res://1 Jin Kazama/jin_p_1_select.tscn<>uid://k0kotvxnx4d7::::res://1 Jin Kazama/jin_p_2_select.tscn<>uid://cka3b6xqdhmwg::::res://1 Devil Jin/d_jin_select_p_1.tscn<>uid://c81oqifnoydsr::::res://1 Devil Jin/d_jin_select_p_2.tscn<>uid://cov0edl2jxqm6::::res://1 Deadpool/deadpool_p_1_select.tscn<>uid://dlsembn85p3dc::::res://1 Deadpool/deadpool_p_2_select.tscn<>uid://cpeoj32epjjqt::::res://1 John Wick/john_wick_p_1_select.tscn<>uid://bt3m8lj0e8ugh::::res://1 John Wick/john_wick_p_2_select.tscn<>uid://drocb5op5cfyy::::res://1 Ryu/ryu_p_1_select.tscn<>uid://bworwahc0peld::::res://1 Ryu/ryu_p_2_select.tscn<>uid://cjlfsf3kbiqne::::res://1 Dr. Doom/doom_p_1_select.tscn<>uid://bos4nhfxbhhix::::res://1 Dr. Doom/doom_p_2_select.tscn<>uid://csn71a41n66kd::::res://1 Rocky Balboa/rocky_p_1_select.tscn<>uid://dsn6vakt3cmsu::::res://1 Rocky Balboa/rocky_p_2_select.tscn<>uid://c725ntihwowpv::::res://1 Raiden/raiden_p_1_select.tscn<>uid://x23qkyqa74uq::::res://1 Raiden/raiden_p_2_select.tscn<>uid://wi4l85w31v8g::::res://1 Terminator/terminator_p_1_select.tscn<>uid://i7javn8rx0f4::::res://1 Terminator/terminator_p_2_select.tscn<>uid://qoe675jqn8ir::::res://1 Winter Soldier/soldier_p_1_select.tscn<>uid://51pqsq3p4sxj::::res://1 Winter Soldier/soldier_p_2_select.tscn<>uid://c48bv5ok5nxt7::::res://Character Select/Select Character Screen.png<>uid://v2ttyxy2h0su::::res://MainCharacter/mc_select_p_1.tscn<>uid://cxkycfahah041::::res://MainCharacter/mc_select_p_2.tscn<>uid://cn1udulpbh5v5::::res://Character Select/ChooseDestiny.mp3<>uid://bx2h7i3nmfwkb::::res://Character Select/Mortal Kombat 11 Character Select Music.mp3
 ChooseDestiny.mp3::AudioStreamMP3::5740190921666250952::1709410880::1709410894::1::::<><>::
 Mortal Kombat 11 Character Select Music.mp3::AudioStreamMP3::4056984915130025397::1709411288::1709411329::1::::<><>::
 Select Character Screen.png::CompressedTexture2D::6876542115260631818::1714765965::1714765978::1::::<><>::
@@ -128,8 +128,9 @@ Winter Soldier Player 1 (2).png::CompressedTexture2D::7664137484136734456::17095
 Controls Screen.png::CompressedTexture2D::2801199216467510857::1709077520::1709077540::1::::<><>::
 controls.gd::GDScript::-1::1709509278::0::1::::<>Node2D<>::
 controls.tscn::PackedScene::7750915240133754944::1709344520::0::1::::<><>::res://Controls/controls.gd<>uid://bf56lvfqjjpk8::::res://Controls/Controls Screen.png
-::res://GeneralSounds/::1716568025
+::res://GeneralSounds/::1716575681
 READY, FIGHT - Sound Effect.mp3::AudioStreamMP3::1715094393865560265::1716558095::1716558095::1::::<><>::
+streetfightTheme.mp3::AudioStreamMP3::382963593952078244::1716575620::1716575681::1::::<><>::
 ::res://Global Stuff/::1716557985
 Global.gd::GDScript::-1::1716152866::0::1::::<>Node<>::
 pause.tscn::PackedScene::5738698664817500356::1716557985::0::1::::<><>::uid://cbkkvxi6b5vd7::::res://Global Stuff/PauseButton.png
@@ -143,7 +144,7 @@ McP1.gd::GDScript::-1::1716081243::0::1::::<>CharacterBody2D<>::
 McP2.gd::GDScript::-1::1716081243::0::1::::<>CharacterBody2D<>::
 mc_select_p_1.tscn::PackedScene::1530892765922790788::1716079764::0::1::::<><>::uid://cmbnf5ilqafhs::::res://MainCharacter/MCcharacterSelectP1.png
 mc_select_p_2.tscn::PackedScene::6409289590950853360::1716079909::0::1::::<><>::uid://b1errqha0t3d5::::res://MainCharacter/MCcharacterSelectP2.png
-::res://Map Select/::1716557985
+::res://Map Select/::1716575484
 Abandoned Ruins.png::CompressedTexture2D::6004056645392444917::1709398127::1709398133::1::::<><>::
 depth_select.tscn::PackedScene::2803834469697712343::1709404971::0::1::::<><>::uid://cnepuquudua3u::::res://Map Select/The Depths.png
 dojo_select.tscn::PackedScene::8802277403271570983::1709405037::0::1::::<><>::uid://brhe8je7j4kiw::::res://Map Select/The Dojo.png
@@ -163,14 +164,13 @@ takachiho_select.tscn::PackedScene::2873644835858002668::1709404913::0::1::::<><
 The Depths.png::CompressedTexture2D::5694501188649652252::1709398471::1709398480::1::::<><>::
 The Dojo.png::CompressedTexture2D::3594383949344478662::1709398650::1709398657::1::::<><>::
 Yakushima Forest.png::CompressedTexture2D::8018578449612936971::1709398617::1709398625::1::::<><>::
-yakushima_select.tscn::PackedScene::4580436643873991362::1709405099::0::1::::<><>::uid://dmii2y03k3372::::res://Map Select/Yakushima Forest.png
-::res://Maps/::1716568025
+yakushima_select.tscn::PackedScene::4580436643873991362::1716575484::0::1::::<><>::uid://dmii2y03k3372::::res://Map Select/Yakushima Forest.png
+::res://Maps/::1716575666
 depths_map.gd::GDScript::-1::1709593130::0::1::::<>Node2D<>::
-depths_map.tscn::PackedScene::2632706352932601016::1716567747::0::1::::<><>::res://Maps/depths_map.gd<>uid://c5u6bu1yjyp0e::::res://Maps/LavaBackground (1).png<>uid://cn04r8bebir05::::res://Global Stuff/pause.tscn<>uid://yo2mbldi5pwr::::res://GeneralSounds/READY, FIGHT - Sound Effect.mp3
-Dojo Background (1).jpeg::CompressedTexture2D::1146662825690019030::1709510815::1709510815::1::::<><>::
+depths_map.tscn::PackedScene::2632706352932601016::1716575485::0::1::::<><>::res://Maps/depths_map.gd<>uid://c5u6bu1yjyp0e::::res://Maps/LavaBackground (1).png<>uid://cn04r8bebir05::::res://Global Stuff/pause.tscn<>uid://yo2mbldi5pwr::::res://GeneralSounds/READY, FIGHT - Sound Effect.mp3
 DojoBackground (2).jpg::CompressedTexture2D::7037591147694863050::1716568020::1716568026::1::::<><>::
 dojo_background.gd::GDScript::-1::1709592693::0::1::::<>Node2D<>::
-dojo_background.tscn::PackedScene::6043317892419927855::1716567880::0::1::::<><>::res://Maps/dojo_background.gd<>uid://qlpms2ob1kck::::res://Maps/Dojo Background (1).jpeg<>uid://cn04r8bebir05::::res://Global Stuff/pause.tscn
+dojo_background.tscn::PackedScene::6043317892419927855::1716575484::0::1::::<><>::res://Maps/dojo_background.gd<>uid://c7jcdljxyq2yo::::res://Maps/DojoBackground (2).jpg<>uid://cn04r8bebir05::::res://Global Stuff/pause.tscn<>uid://yo2mbldi5pwr::::res://GeneralSounds/READY, FIGHT - Sound Effect.mp3
 ForestBackground (2).jpg::CompressedTexture2D::7468188217837071009::1716567403::1716567423::1::::<><>::
 frosbite_map.gd::GDScript::-1::1709592693::0::1::::<>Node2D<>::
 frosbite_map.tscn::PackedScene::5741190573935909074::1716567747::0::1::::<><>::res://Maps/frosbite_map.gd<>uid://b44xog427nl6k::::res://Maps/IcyBackground (1).png<>uid://cn04r8bebir05::::res://Global Stuff/pause.tscn<>uid://yo2mbldi5pwr::::res://GeneralSounds/READY, FIGHT - Sound Effect.mp3
@@ -189,7 +189,7 @@ taka_map.gd::GDScript::-1::1709592693::0::1::::<>Node2D<>::
 taka_map.tscn::PackedScene::2355405196640841644::1716567747::0::1::::<><>::res://Maps/taka_map.gd<>uid://cd0rf5f5bhc4s::::res://Maps/RandomBackground (2).jpg<>uid://cn04r8bebir05::::res://Global Stuff/pause.tscn<>uid://yo2mbldi5pwr::::res://GeneralSounds/READY, FIGHT - Sound Effect.mp3
 TekkenBackground (1).png::CompressedTexture2D::4748193133728211385::1716567503::1716567503::1::::<><>::
 yaku_map.gd::GDScript::-1::1709592733::0::1::::<>Node2D<>::
-yaku_map.tscn::PackedScene::6341296432058137907::1716567747::0::1::::<><>::res://Maps/yaku_map.gd<>uid://denv76773v6yn::::res://Maps/ForestBackground (2).jpg<>uid://cn04r8bebir05::::res://Global Stuff/pause.tscn<>uid://yo2mbldi5pwr::::res://GeneralSounds/READY, FIGHT - Sound Effect.mp3
+yaku_map.tscn::PackedScene::6341296432058137907::1716575484::0::1::::<><>::res://Maps/yaku_map.gd<>uid://denv76773v6yn::::res://Maps/ForestBackground (2).jpg<>uid://cn04r8bebir05::::res://Global Stuff/pause.tscn<>uid://yo2mbldi5pwr::::res://GeneralSounds/READY, FIGHT - Sound Effect.mp3
 ::res://Menu/::1709592053
 Intro.jpg::CompressedTexture2D::4009556904977707105::1709591806::1709591807::1::::<><>::
 intro_screen.gd::GDScript::-1::1709592053::0::1::::<>Node2D<>::
