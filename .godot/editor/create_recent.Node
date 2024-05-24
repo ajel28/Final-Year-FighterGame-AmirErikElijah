@@ -1,3 +1,6 @@
+AudioStreamPlayer
+AudioStreamPlayer2D
+AudioListener2D
 Camera2D
 AnimationPlayer
 Area2D
@@ -9,6 +12,3 @@ Timer
 ProgressBar
 LinkButton
 Node2D
-AudioStreamPlayer
-AudioStreamPlayer2D
-AudioListener2D

@@ -1,4 +1,8 @@
-res://Global Stuff/pause.tscn
+res://Maps/depths_map.tscn
 res://Character Select/characterselect.tscn
-res://Map Select/map_select.gd
-res://Map Select/map_select.tscn
+res://Maps/frosbite_map.tscn
+res://Maps/ninshitani_map.tscn
+res://Maps/ruins_map.tscn
+res://Maps/subconscious_map.tscn
+res://Maps/taka_map.tscn
+res://Maps/yaku_map.tscn
