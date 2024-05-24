@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Fight Night</title>
+    <script src="https://kit.fontawesome.com/d06cb09b4c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Pixelify Sans", sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            color: white;
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+
+        .logo i {
+            font-size: 1.5rem;
+        }
+
+        nav ul,
+        .user ul {
+            display: flex;
+            list-style: none;
+            font-weight: 300;
+        }
+
+        nav ul li,
+        .user ul li {
+            padding: 0 10px;
+        }
+
+        nav ul li:first-child,
+        .user ul li:first-child {
+            font-weight: 500;
+        }
+
+        header {
+            margin: 30px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+        }
+
+        .divider-line {
+            border-bottom: 1px solid rgb(229, 229, 229);
+            margin-bottom: 20px;
+        }
+
+        main {
+            margin: 20px auto;
+            width: 70%;
+        }
+
+        .champion-array p {
+            font-size: 1.7rem;
+            font-weight: 500;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        .champ-pics {
+            margin: 0;
+            width: 100%;
+            height: 350px;
+            display: flex;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .pics-left {
+            width: 100%;
+        }
+
+        .pics-left img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .owner-info {
+            margin-top: 20px;
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;
+        }
+
+        .owner-info-main {
+            flex: 1;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .home-info-main p {
+            margin-top: 5px;
+            font-weight: 300;
+        }
+
+        .owner-info-main p {
+            text-shadow: 3px 5px 3px red;
+            font-size: 1.5rem;
+        }
+
+        .rating {
+            margin-bottom: 20px;
+        }
+
+        .description {
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+
+        .home-info-reserve {
+            width: 400px;
+            border: 1px solid rgb(229, 229, 229);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 2px 3px 17px -15px rgba(66, 68, 90, 1);
+        }
+
+        .price {
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+
+        .game-info-purchase button {
+            margin: 20px 0 10px 0;
+            width: 100%;
+            padding: 13px;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            background-color: #0b0404;
+            cursor: pointer;
+        }
+
+        .charge {
+            font-size: 0.9rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .home-info-reserve table {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .home-info-reserve table td {
+            padding: 4px 0;
+        }
+
+        .home-info-reserve table td:last-child {
+            text-align: right;
+        }
+
+        footer {
+            background-color: rgb(51, 51, 51);
+        }
+
+        .footer-text {
+            padding: 20px 0;
+            width: 70%;
+            margin: auto;
+        }
+
+        .a {
+            text-align: center;
+            position: center;
+            text-shadow: 3px 5px 3px red;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        p strong{
+            flex: 1;
+            font-size: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="background-color:black;">
+    <header>
+        <div class="logo">
+            <a href="start.html">
+                <p><i class="fa-solid fa-gamepad"></i> Retro Fight Night</p>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="characters.html"><strong>Characters</strong></a></li>
+                <li><a href="maps.html"><strong>Maps</strong></a></li>
+                <li><a href="controls.html"><strong>Controls</strong></a></li>
+                <li><a href="creators.html"><strong>Creators</strong></a></li>
+                <li><a href="description.html"><strong>Description</strong></a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <div class="user">
+                <ul>
+                    <li><i class="fa-solid fa-globe"></i></li>
+                    <li><i class="fa-solid fa-bars"></i></li>
+                    <li><i class="fa-solid fa-user"></i></li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="divider-line"></div>
+    <div class="champion-array">
+        <h1 class="a">????</h1>
+    </div>
+    <main>
+                <p>
+                    <strong>
+                        Error: Destination Not Found
+                    </strong>
+                </p>
+            </div>
+
+    </main>
+    <footer>
+        <div class="divider-line"></div>
+        <div class="footer-text">
+            <p><i class="fa-solid fa-copyright"></i> Retro Fight Night, Inc. AEE Games - Privacy - Your Privacy Choices
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
