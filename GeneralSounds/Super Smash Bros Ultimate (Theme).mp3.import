@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b68gnt3fjg4rs"
+path="res://.godot/imported/Super Smash Bros Ultimate (Theme).mp3-96d28268485a1e6e121b0908eef92f63.mp3str"
+
+[deps]
+
+source_file="res://GeneralSounds/Super Smash Bros Ultimate (Theme).mp3"
+dest_files=["res://.godot/imported/Super Smash Bros Ultimate (Theme).mp3-96d28268485a1e6e121b0908eef92f63.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
