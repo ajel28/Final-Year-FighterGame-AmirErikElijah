@@ -1,14 +1,8 @@
 res://Character Select/characterselect.tscn
 res://Maps/yaku_map.tscn
-res://Maps/depths_map.tscn
-res://Maps/ninshitani_map.tscn
-res://Maps/subconscious_map.tscn
-res://Maps/dojo_background.tscn
-res://1 Dr. Doom/doom_p_1_select.tscn
-res://1 Dr. Doom/doom_p_2_select.tscn
-res://1 Jin Kazama/jin_kazama_p_2.tscn
-res://1 Jin Kazama/jin_p_2_select.tscn
-res://1 Jin Kazama/jin_p_1_select.tscn
 res://Maps/taka_map.tscn
 res://Maps/frosbite_map.tscn
 res://Maps/ruins_map.tscn
+res://1 Deadpool/deadpool_p_1.tscn
+res://1 Jin Kazama/jin_kazama.tscn
+res://1 Jin Kazama/jin_kazama_p_2.tscn
