@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://tmw6qxjouv53" path="res://1 Rocky Balboa/Rocky-sprite.png" id="2_v7hqh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vwv41"]
-size = Vector2(317.25, 619.5)
+size = Vector2(226.625, 619.5)
 
 [sub_resource type="Animation" id="Animation_mqm06"]
 resource_name = "rockycrouch1"
@@ -90,7 +90,7 @@ texture = ExtResource("2_v7hqh")
 hframes = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(890, 1260)
+position = Vector2(844.688, 1260)
 shape = SubResource("RectangleShape2D_vwv41")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]

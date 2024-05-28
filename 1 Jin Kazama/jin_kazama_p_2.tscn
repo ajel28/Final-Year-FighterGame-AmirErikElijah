@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://deownb54lwa1w" path="res://1 Jin Kazama/kazama-sprite.png" id="2_abo3y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cbt6k"]
-size = Vector2(412, 632.5)
+size = Vector2(286, 625.25)
 
 [sub_resource type="Animation" id="Animation_hfve4"]
 resource_name = "crouch2"
@@ -61,8 +61,8 @@ _data = {
 "kick2": SubResource("Animation_5d3qk")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gvcyb"]
-size = Vector2(412, 631.875)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dvig1"]
+size = Vector2(382.5, 628.5)
 
 [node name="JinKazamaP2" type="Node2D"]
 
@@ -75,10 +75,10 @@ scale = Vector2(3.025, 3.025)
 texture = ExtResource("2_abo3y")
 flip_h = true
 hframes = 7
-frame = 4
+frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="JinP2"]
-position = Vector2(2153, 1254)
+position = Vector2(2216, 1250.38)
 shape = SubResource("RectangleShape2D_cbt6k")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="JinP2"]
@@ -86,8 +86,8 @@ libraries = {
 "": SubResource("AnimationLibrary_i6ygw")
 }
 
-[node name="Area2D" type="Area2D" parent="JinP2"]
+[node name="JinP2Hurtbox" type="Area2D" parent="JinP2"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="JinP2/Area2D"]
-position = Vector2(2153, 1253.94)
-shape = SubResource("RectangleShape2D_gvcyb")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="JinP2/JinP2Hurtbox"]
+position = Vector2(2168.25, 1249.25)
+shape = SubResource("RectangleShape2D_dvig1")

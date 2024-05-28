@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://clxv6ubuqfy8p" path="res://1 Ryu/ryu-sprite.png" id="2_dj4ga"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gkkdl"]
-size = Vector2(370, 615.5)
+size = Vector2(284, 615.5)
 
 [sub_resource type="Animation" id="Animation_td0cy"]
 resource_name = "ryucrouch2"
@@ -57,7 +57,7 @@ flip_h = true
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RyuP2"]
-position = Vector2(2147, 1266.75)
+position = Vector2(2190, 1266.75)
 shape = SubResource("RectangleShape2D_gkkdl")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="RyuP2"]

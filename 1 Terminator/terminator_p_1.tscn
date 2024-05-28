@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c5fomil7lxriq" path="res://1 Terminator/1Terminator-sprite.png" id="2_uaav8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qj4j6"]
-size = Vector2(358.5, 611)
+size = Vector2(270.25, 611)
 
 [sub_resource type="Animation" id="Animation_ifml2"]
 resource_name = "termcrouch"
@@ -91,7 +91,7 @@ hframes = 6
 frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(758, 1267)
+position = Vector2(713.875, 1267)
 shape = SubResource("RectangleShape2D_qj4j6")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]

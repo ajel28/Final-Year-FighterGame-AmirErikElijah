@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://clxv6ubuqfy8p" path="res://1 Ryu/ryu-sprite.png" id="2_1ghwc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2wvoc"]
-size = Vector2(380, 603.5)
+size = Vector2(295, 603.5)
 
 [sub_resource type="Animation" id="Animation_rinsu"]
 resource_name = "crouchryu"
@@ -56,7 +56,7 @@ texture = ExtResource("2_1ghwc")
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RyuP1"]
-position = Vector2(868, 1261.75)
+position = Vector2(825.5, 1261.75)
 shape = SubResource("RectangleShape2D_2wvoc")
 
 [node name="Camera2D" type="Camera2D" parent="RyuP1"]

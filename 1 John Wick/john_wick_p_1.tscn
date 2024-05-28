@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ddir2jqddhtad" path="res://1 John Wick/JohnWick-sprite.png" id="2_6kjc5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2kb6w"]
-size = Vector2(484.5, 577.5)
+size = Vector2(316.5, 577.5)
 
 [sub_resource type="Animation" id="Animation_7erri"]
 resource_name = "Wickcrouch1"
@@ -91,7 +91,7 @@ hframes = 6
 frame = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(906.75, 1284.75)
+position = Vector2(822.75, 1284.75)
 shape = SubResource("RectangleShape2D_2kb6w")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]

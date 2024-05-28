@@ -8,7 +8,7 @@ const max_speed = 520
 const accel = 1000
 const friction = 3000
 var input = Vector2.ZERO
-	
+
 func _physics_process(delta):
 	player_movement(delta)
 
@@ -49,5 +49,7 @@ func player_movement(delta):
 	move_and_slide()
 
 
-func _on_jin_p_1_area_2d_area_entered(area):
-	pass # Replace with function body.
+func _on_kick_area_2d_area_entered(area):
+	if kick==true:
+		Global.healthp2-=5
+		print(Global.healthp2)

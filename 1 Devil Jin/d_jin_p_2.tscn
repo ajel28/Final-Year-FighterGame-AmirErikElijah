@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://1 Devil Jin/d_jin_p_2.gd" id="1_b6owt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ahees"]
-size = Vector2(477, 624.5)
+size = Vector2(357, 624.5)
 
 [node name="DJinP2" type="Node2D"]
 
@@ -18,5 +18,5 @@ texture = ExtResource("1_3g6du")
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(2160.5, 1267.25)
+position = Vector2(2220.5, 1267.25)
 shape = SubResource("RectangleShape2D_ahees")

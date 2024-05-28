@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c0pjeeb1btg7m" path="res://1 Winter Soldier/1WinterSoldier-sprite.png" id="2_j6gx7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h4uix"]
-size = Vector2(433, 548)
+size = Vector2(339, 548)
 
 [sub_resource type="Animation" id="Animation_jy606"]
 resource_name = "buckycrouch"
@@ -91,7 +91,7 @@ flip_h = true
 hframes = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(2211, 1290)
+position = Vector2(2255.5, 1290)
 shape = SubResource("RectangleShape2D_h4uix")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]

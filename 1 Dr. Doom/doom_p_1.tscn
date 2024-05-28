@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ccm0f38v8bx72" path="res://1 Dr. Doom/Doom-sprite.png" id="2_dei3s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5yttx"]
-size = Vector2(460.5, 601)
+size = Vector2(339.25, 601)
 
 [sub_resource type="Animation" id="Animation_noaj0"]
 resource_name = "doomcrouch1"
@@ -91,7 +91,7 @@ hframes = 6
 frame = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoomP1"]
-position = Vector2(868, 1253)
+position = Vector2(807.375, 1253)
 shape = SubResource("RectangleShape2D_5yttx")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="DoomP1"]

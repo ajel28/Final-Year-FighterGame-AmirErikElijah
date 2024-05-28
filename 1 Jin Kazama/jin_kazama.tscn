@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" path="res://1 Jin Kazama/CharacterBody2D.gd" id="1_1urm1"]
 [ext_resource type="Texture2D" uid="uid://deownb54lwa1w" path="res://1 Jin Kazama/kazama-sprite.png" id="2_ys1gn"]
-[ext_resource type="Script" path="res://1 Jin Kazama/JinP1Area2d.gd" id="3_evgs2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5n6a1"]
+size = Vector2(61.2776, 44.4415)
 
 [sub_resource type="Animation" id="Animation_qtryj"]
 resource_name = "crouch"
@@ -52,19 +54,68 @@ tracks/0/keys = {
 "update": 1,
 "values": [0, 6, 0]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect/KickArea2d/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-15.257, -58.3748), Vector2(70, 15.73), Vector2(-14.5937, -53.3996)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect/KickArea2d/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
+}
+
+[sub_resource type="Animation" id="Animation_qwya1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect/KickArea2d/CollisionShape2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(39.2786, 15.7296)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect/KickArea2d/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ifsdv"]
 _data = {
+"RESET": SubResource("Animation_qwya1"),
 "crouch": SubResource("Animation_qtryj"),
 "idle": SubResource("Animation_q4gh0"),
 "kick": SubResource("Animation_s5bvc")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mdbq0"]
-size = Vector2(377, 603)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_q2gpg"]
-size = Vector2(377, 603)
+size = Vector2(264, 603)
 
 [node name="JinKazamaP1" type="Node2D"]
 
@@ -76,7 +127,13 @@ position = Vector2(854, 1257)
 scale = Vector2(3.015, 3.015)
 texture = ExtResource("2_ys1gn")
 hframes = 7
-frame = 4
+
+[node name="KickArea2d" type="Area2D" parent="Jin/TextureRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jin/TextureRect/KickArea2d"]
+position = Vector2(39.2786, 15.7296)
+rotation = 0.523599
+shape = SubResource("RectangleShape2D_5n6a1")
 
 [node name="Camera2D" type="Camera2D" parent="Jin"]
 position = Vector2(1627, 775)
@@ -93,14 +150,7 @@ libraries = {
 
 [node name="IdleCollision" type="CollisionShape2D" parent="Jin"]
 z_as_relative = false
-position = Vector2(869.5, 1260.5)
+position = Vector2(813, 1260.5)
 shape = SubResource("RectangleShape2D_mdbq0")
 
-[node name="JinP1Area2D" type="Area2D" parent="Jin"]
-script = ExtResource("3_evgs2")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Jin/JinP1Area2D"]
-position = Vector2(869.5, 1260.5)
-shape = SubResource("RectangleShape2D_q2gpg")
-
-[connection signal="area_entered" from="Jin/JinP1Area2D" to="Jin/JinP1Area2D" method="_on_jin_p_1_area_2d_area_entered"]
+[connection signal="area_entered" from="Jin/TextureRect/KickArea2d" to="Jin" method="_on_kick_area_2d_area_entered"]
