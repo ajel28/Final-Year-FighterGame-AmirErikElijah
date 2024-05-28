@@ -53,6 +53,7 @@ func player_movement(delta):
 
 
 func _on_soldier_p_1_punch_area_entered(area):
-	if punch==true:
-		Global.healthp2-=0.5
-		print(Global.healthp2)
+	if !(area is SoldierHurtbox1):
+		if punch==true:
+			Global.healthp2-=0.5
+			print(Global.healthp2)

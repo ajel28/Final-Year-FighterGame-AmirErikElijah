@@ -49,6 +49,7 @@ func player_movement(delta):
 	move_and_slide()
 	
 func _on_jin_p_2_kick_area_entered(area):
-	if kick==true:
-		Global.healthp1-=0.5
-		print(Global.healthp1)
+	if !(area is JinHurtbox2):
+		if kick==true:
+			Global.healthp1-=0.5
+			print(Global.healthp1)

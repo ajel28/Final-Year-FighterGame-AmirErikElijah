@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://dtivlebww4j1t"]
+[gd_scene load_steps=12 format=3 uid="uid://dtivlebww4j1t"]
 
 [ext_resource type="Script" path="res://1 Jin Kazama/CharacterBody2D.gd" id="1_1urm1"]
 [ext_resource type="Texture2D" uid="uid://deownb54lwa1w" path="res://1 Jin Kazama/kazama-sprite.png" id="2_ys1gn"]
+[ext_resource type="Script" path="res://1 Jin Kazama/JinP1Hurtbox.gd" id="3_wicmm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5n6a1"]
 size = Vector2(61.2776, 44.4415)
@@ -157,6 +158,7 @@ position = Vector2(813, 1260.5)
 shape = SubResource("RectangleShape2D_mdbq0")
 
 [node name="JinP1Hurtbox" type="Area2D" parent="Jin"]
+script = ExtResource("3_wicmm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Jin/JinP1Hurtbox"]
 position = Vector2(873, 1261.25)

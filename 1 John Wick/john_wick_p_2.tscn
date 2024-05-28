@@ -1,13 +1,41 @@
-[gd_scene load_steps=12 format=3 uid="uid://c7guufwi6t05k"]
+[gd_scene load_steps=13 format=3 uid="uid://c7guufwi6t05k"]
 
 [ext_resource type="Script" path="res://1 John Wick/john_wick_p_2.gd" id="1_27865"]
 [ext_resource type="Texture2D" uid="uid://ddir2jqddhtad" path="res://1 John Wick/JohnWick-sprite.png" id="2_7wlbd"]
+[ext_resource type="Script" path="res://1 John Wick/WickP2Hurtbox.gd" id="3_bvypt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rl6b6"]
 size = Vector2(58.9948, 24.5584)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gx8ql"]
 size = Vector2(307, 575)
+
+[sub_resource type="Animation" id="Animation_6dipv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect/WickP2Punch/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect/WickP2Punch/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-53.3831, -53.3222)]
+}
 
 [sub_resource type="Animation" id="Animation_7erri"]
 resource_name = "Wickcrouch1"
@@ -97,33 +125,6 @@ tracks/2/keys = {
 "values": [Vector2(-53.3831, -53.3222), Vector2(34.9874, -75.3575)]
 }
 
-[sub_resource type="Animation" id="Animation_6dipv"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("TextureRect/WickP2Punch/CollisionShape2D:disabled")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("TextureRect/WickP2Punch/CollisionShape2D:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-53.3831, -53.3222)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_i8hso"]
 _data = {
 "RESET": SubResource("Animation_6dipv"),
@@ -153,7 +154,6 @@ frame = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/TextureRect/WickP2Punch"]
 position = Vector2(-53.3831, -53.3222)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_rl6b6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
@@ -166,6 +166,7 @@ libraries = {
 }
 
 [node name="WickP2Hurtbox" type="Area2D" parent="CharacterBody2D"]
+script = ExtResource("3_bvypt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/WickP2Hurtbox"]
 position = Vector2(2164.25, 1281)

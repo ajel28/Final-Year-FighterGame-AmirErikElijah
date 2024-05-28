@@ -53,6 +53,7 @@ func player_movement(delta):
 
 
 func _on_deadpool_p_2_punch_area_entered(area):
-	if punch==true:
-		Global.healthp1-=0.5
-		print(Global.healthp1)
+	if !(area is DeadpoolHurtbox2):
+		if punch==true:
+			Global.healthp1-=0.5
+			print(Global.healthp1)
