@@ -51,5 +51,5 @@ func player_movement(delta):
 
 func _on_kick_area_2d_area_entered(area):
 	if kick==true:
-		Global.healthp2-=5
+		Global.healthp2-=0.5
 		print(Global.healthp2)

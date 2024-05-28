@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var yes  = 1 
 @onready var animationsDp2 = $AnimationPlayer
+var punch = false
 
 const max_speed = 520
 const accel = 1000
@@ -14,19 +15,25 @@ func _physics_process(delta):
 func get_input():
 	input.x = int(Input.is_action_pressed("ui_L")) - int(Input.is_action_pressed("ui_J"))
 	if int(Input.is_action_pressed("ui_L")) == 1:
+		punch = false
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_J")) == 1:
+		punch = false
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_K"))  == 1:
+		punch = false
 		animationsDp2.play("deadpoolcrouch2")
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_U")) == 1:
+		punch = true
 		animationsDp2.play("deadpoolpunch2")
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_I")) ==1:
+		var punch = false
 		animationsDp2.play("deadpooljump2")
 		return input.normalized()
 	else:
+		var punch = false
 		animationsDp2.play("deadpoolidle2")
 		return input.normalized()
 
@@ -43,3 +50,9 @@ func player_movement(delta):
 		velocity += (input * accel * delta)
 		velocity = velocity.limit_length(max_speed)
 	move_and_slide()
+
+
+func _on_deadpool_p_2_punch_area_entered(area):
+	if punch==true:
+		Global.healthp1-=0.5
+		print(Global.healthp1)
