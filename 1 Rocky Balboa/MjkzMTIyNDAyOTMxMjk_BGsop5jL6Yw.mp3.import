@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://iuopxpmgibt1"
+path="res://.godot/imported/MjkzMTIyNDAyOTMxMjk_BGsop5jL6Yw.mp3-1c118a16a0104d767dc93d42858f2661.mp3str"
+
+[deps]
+
+source_file="res://1 Rocky Balboa/MjkzMTIyNDAyOTMxMjk_BGsop5jL6Yw.mp3"
+dest_files=["res://.godot/imported/MjkzMTIyNDAyOTMxMjk_BGsop5jL6Yw.mp3-1c118a16a0104d767dc93d42858f2661.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

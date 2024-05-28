@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b6pt3x5880h8j"
+path="res://.godot/imported/hasta-la-vista-101soundboards.mp3-4c9aa2660127a2b4acc3b844f2ac3d50.mp3str"
+
+[deps]
+
+source_file="res://1 Terminator/hasta-la-vista-101soundboards.mp3"
+dest_files=["res://.godot/imported/hasta-la-vista-101soundboards.mp3-4c9aa2660127a2b4acc3b844f2ac3d50.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

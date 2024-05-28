@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d2ruolhllfyno"
+path="res://.godot/imported/give-me-something-101soundboards.mp3-a578f41245aadd516671bf9b3b7c009d.mp3str"
+
+[deps]
+
+source_file="res://1 John Wick/give-me-something-101soundboards.mp3"
+dest_files=["res://.godot/imported/give-me-something-101soundboards.mp3-a578f41245aadd516671bf9b3b7c009d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

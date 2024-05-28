@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bsgdge2u6wubi"
+path="res://.godot/imported/DJinselect.wav-35c0e0e704c06850263bbb151a79d2cd.sample"
+
+[deps]
+
+source_file="res://1 Devil Jin/DJinselect.wav"
+dest_files=["res://.godot/imported/DJinselect.wav-35c0e0e704c06850263bbb151a79d2cd.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

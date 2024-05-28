@@ -1,7 +1,7 @@
+AudioStreamPlayer
 CollisionShape2D
 Area2D
 ParallaxLayer
-AudioStreamPlayer
 Label
 AnimationPlayer
 Sprite2D
