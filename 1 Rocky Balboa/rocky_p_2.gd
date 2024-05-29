@@ -15,9 +15,11 @@ func _physics_process(delta):
 func get_input():
 	input.x = int(Input.is_action_pressed("ui_L")) - int(Input.is_action_pressed("ui_J"))
 	if int(Input.is_action_pressed("ui_L")) == 1:
+		global_position = global_position.clamp(Vector2(-700,-999), Vector2(2800,750))
 		punch = false
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_J")) == 1:
+		global_position = global_position.clamp(Vector2(-700,-999), Vector2(2800,750))
 		punch = false
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_K"))  == 1:

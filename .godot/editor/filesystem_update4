@@ -1,28 +1,24 @@
 res://Menu/start_menu.tscn
-res://Maps/ninshitani_map.tscn
-res://1 Deadpool/deadpool_p_1.tscn
-res://1 Jin Kazama/CharacterBody2D.gd
-res://Character Select/characterselect.gd
-res://1 Deadpool/DeadpoolP1Hurtbox.gd
-res://1 Deadpool/DeadpoolP2Hurtbox.gd
 res://1 Deadpool/deadpool_p_1.gd
 res://1 Deadpool/deadpool_p_2.gd
+res://1 Deadpool/deadpool_p_1.tscn
+res://1 Deadpool/deadpool_p_2.tscn
+res://1 Jin Kazama/CharacterBody2D.gd
+res://1 Dr. Doom/doom_p_1.gd
+res://1 Dr. Doom/doom_p_2.gd
+res://1 Devil Jin/d_jin_p_1.gd
 res://1 Devil Jin/d_jin_p_2.gd
-res://Menu/intro_screen.gd
-res://1 Jin Kazama/JinP1Hurtbox.gd
 res://1 Jin Kazama/JinP2.gd
-res://1 Jin Kazama/JinP2Hurtbox.gd
 res://1 John Wick/john_wick_p_1.gd
 res://1 John Wick/john_wick_p_2.gd
-res://Maps/ninshitani_map.gd
-res://1 Rocky Balboa/RockyP1Hurtbox.gd
-res://1 Rocky Balboa/RockyP2Hurtbox.gd
+res://1 Raiden/raiden_p_1.gd
+res://1 Raiden/raiden_p_2.gd
 res://1 Rocky Balboa/rocky_p_1.gd
 res://1 Rocky Balboa/rocky_p_2.gd
-res://1 Winter Soldier/SoldierP1Hurtbox.gd
-res://1 Winter Soldier/SoldierP2Hurtbox.gd
+res://1 Ryu/ryu_p_1.gd
+res://1 Ryu/ryu_p_2.gd
 res://1 Winter Soldier/soldier_p_1.gd
 res://1 Winter Soldier/soldier_p_2.gd
-res://Menu/start_menu.gd
-res://1 John Wick/WickP1Hurtbox.gd
-res://1 John Wick/WickP2Hurtbox.gd
+res://1 Terminator/terminator_p_1.gd
+res://1 Terminator/terminator_p_2.gd
+res://1 Jin Kazama/jin_kazama.tscn
