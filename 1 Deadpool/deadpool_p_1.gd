@@ -50,6 +50,7 @@ func player_movement(delta):
 		velocity += (input * accel * delta)
 		velocity = velocity.limit_length(max_speed)
 	move_and_slide()
+	
 
 
 func _on_deadpool_p_1_punch_area_entered(area):
