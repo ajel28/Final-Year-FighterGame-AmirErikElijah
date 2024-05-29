@@ -158,7 +158,6 @@ frame = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeadpoolP1/TextureRect/DeadpoolP1Punch"]
 position = Vector2(46.8698, -36.4902)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_bwvxk")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="DeadpoolP1"]
