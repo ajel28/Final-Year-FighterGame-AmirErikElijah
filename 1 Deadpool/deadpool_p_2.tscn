@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://1 Deadpool/DeadpoolP2Hurtbox.gd" id="3_fol0w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t24q1"]
-size = Vector2(29.3691, 28.9365)
+size = Vector2(39.2214, 17.3035)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xujcu"]
 size = Vector2(270.245, 629.75)
@@ -121,7 +121,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(21.341, -69.7909), Vector2(-61.1626, -37.491), Vector2(21.6294, -70.9445)]
+"values": [Vector2(21.341, -69.7909), Vector2(-56.2365, -36.9142), Vector2(21.6294, -70.9445)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_mgr81"]
