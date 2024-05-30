@@ -1,10 +1,41 @@
-[gd_scene load_steps=9 format=3 uid="uid://bec3sqiew2ali"]
+[gd_scene load_steps=13 format=3 uid="uid://bec3sqiew2ali"]
 
 [ext_resource type="Script" path="res://1 Rocky Balboa/rocky_p_2.gd" id="1_314r8"]
 [ext_resource type="Texture2D" uid="uid://tmw6qxjouv53" path="res://1 Rocky Balboa/Rocky-sprite.png" id="2_npn56"]
+[ext_resource type="Script" path="res://1 Rocky Balboa/RockyP2Hurtbox.gd" id="3_ngtig"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gc8ww"]
+size = Vector2(67.3001, 31.2496)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ia1gf"]
-size = Vector2(378.5, 633.25)
+size = Vector2(234.25, 633.25)
+
+[sub_resource type="Animation" id="Animation_xwo5q"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect/RockyP2Punch/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect/RockyP2Punch/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-61.4951, -43.7871)]
+}
 
 [sub_resource type="Animation" id="Animation_77dex"]
 resource_name = "rockycrouch2"
@@ -69,14 +100,42 @@ tracks/0/keys = {
 "update": 1,
 "values": [3, 0]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect/RockyP2Punch/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect/RockyP2Punch/CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-60.2072, -47.3287), Vector2(30.5866, -79.847)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0ffb4"]
 _data = {
+"RESET": SubResource("Animation_xwo5q"),
 "rockycrouch2": SubResource("Animation_77dex"),
 "rockyidle2": SubResource("Animation_n6x2r"),
 "rockyjump2": SubResource("Animation_te4uh"),
 "rockypunch2": SubResource("Animation_1m7ml")
 }
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kxvjw"]
+size = Vector2(326, 636)
 
 [node name="RockyP2" type="Node2D"]
 
@@ -89,13 +148,28 @@ scale = Vector2(3.10594, 3.10594)
 texture = ExtResource("2_npn56")
 flip_h = true
 hframes = 6
-frame = 3
+frame = 2
+
+[node name="RockyP2Punch" type="Area2D" parent="CharacterBody2D/TextureRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/TextureRect/RockyP2Punch"]
+position = Vector2(-61.4951, -43.7871)
+shape = SubResource("RectangleShape2D_gc8ww")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(2141, 1254)
+position = Vector2(2213.12, 1254)
 shape = SubResource("RectangleShape2D_ia1gf")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
 libraries = {
 "": SubResource("AnimationLibrary_0ffb4")
 }
+
+[node name="RockyP2Hurtbox" type="Area2D" parent="CharacterBody2D"]
+script = ExtResource("3_ngtig")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/RockyP2Hurtbox"]
+position = Vector2(2170, 1255)
+shape = SubResource("RectangleShape2D_kxvjw")
+
+[connection signal="area_entered" from="CharacterBody2D/TextureRect/RockyP2Punch" to="CharacterBody2D" method="_on_rocky_p_2_punch_area_entered"]

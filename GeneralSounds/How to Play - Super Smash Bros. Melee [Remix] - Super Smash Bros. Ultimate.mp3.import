@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://hx8sgs5ugtr0"
+path="res://.godot/imported/How to Play - Super Smash Bros. Melee [Remix] - Super Smash Bros. Ultimate.mp3-8880f595fe26d560e14c9c0ecdec9d2d.mp3str"
+
+[deps]
+
+source_file="res://GeneralSounds/How to Play - Super Smash Bros. Melee [Remix] - Super Smash Bros. Ultimate.mp3"
+dest_files=["res://.godot/imported/How to Play - Super Smash Bros. Melee [Remix] - Super Smash Bros. Ultimate.mp3-8880f595fe26d560e14c9c0ecdec9d2d.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

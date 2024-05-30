@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://daj6dic8d0uvk"
+=======
+uid="uid://djajgdtclmber"
+>>>>>>> 5291211c4b087318142dc2367840247698d847a4
 path="res://.godot/imported/JWickWiki.png-462fdc269dcfd1ac10c5bc946342e64a.ctex"
 metadata={
 "vram_texture": false

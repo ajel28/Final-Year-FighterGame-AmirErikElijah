@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dbaul8jp5wjv" path="res://1 Raiden/1Raiden-sprite.png" id="2_0xqlu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ptl5s"]
-size = Vector2(324.5, 593.5)
+size = Vector2(234.5, 593.5)
 
 [sub_resource type="Animation" id="Animation_fuov8"]
 resource_name = "raidencrouch2"
@@ -91,7 +91,7 @@ flip_h = true
 hframes = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(2146.25, 1266.75)
+position = Vector2(2191.25, 1266.75)
 shape = SubResource("RectangleShape2D_ptl5s")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cb36mtqgdwwh5"
+path="res://.godot/imported/DeadpoolSelect.mp3-05deba37d7dc632c40b44fc65976dc42.mp3str"
+
+[deps]
+
+source_file="res://1 Deadpool/DeadpoolSelect.mp3"
+dest_files=["res://.godot/imported/DeadpoolSelect.mp3-05deba37d7dc632c40b44fc65976dc42.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

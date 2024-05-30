@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cov0edl2jxqm6"]
+[gd_scene load_steps=3 format=3 uid="uid://cov0edl2jxqm6"]
 
 [ext_resource type="Texture2D" uid="uid://cs3bmdo5qf1ng" path="res://1 Deadpool/DeadpoolChSelectP1.png" id="1_ii2he"]
+[ext_resource type="AudioStream" uid="uid://cb36mtqgdwwh5" path="res://1 Deadpool/DeadpoolSelect.mp3" id="2_awrqf"]
 
 [node name="DeadpoolP1Select" type="Node2D"]
 
@@ -10,3 +11,7 @@ offset_top = 322.0
 offset_right = 1062.0
 offset_bottom = 1193.0
 texture = ExtResource("1_ii2he")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_awrqf")
+autoplay = true

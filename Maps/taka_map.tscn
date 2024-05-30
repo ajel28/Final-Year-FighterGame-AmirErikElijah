@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://8s8gdpqoevts"]
+[gd_scene load_steps=6 format=3 uid="uid://8s8gdpqoevts"]
 
 [ext_resource type="Script" path="res://Maps/taka_map.gd" id="1_x0q6t"]
 [ext_resource type="Texture2D" uid="uid://cd0rf5f5bhc4s" path="res://Maps/RandomBackground (2).jpg" id="2_km7cd"]
 [ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_q71yk"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_7a28k"]
+[ext_resource type="AudioStream" uid="uid://hx8sgs5ugtr0" path="res://GeneralSounds/How to Play - Super Smash Bros. Melee [Remix] - Super Smash Bros. Ultimate.mp3" id="5_62ygu"]
 
 [node name="TakaMap" type="Node2D"]
 script = ExtResource("1_x0q6t")
@@ -20,4 +21,8 @@ position = Vector2(332, 0)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_7a28k")
+autoplay = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_62ygu")
 autoplay = true

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cka3b6xqdhmwg"]
+[gd_scene load_steps=3 format=3 uid="uid://cka3b6xqdhmwg"]
 
 [ext_resource type="Texture2D" uid="uid://qe26q6shcxwo" path="res://1 Devil Jin/DJinChSelectP1.png" id="1_8abj0"]
+[ext_resource type="AudioStream" uid="uid://bsgdge2u6wubi" path="res://1 Devil Jin/DJinselect.wav" id="2_0cdb7"]
 
 [node name="DJinSelectP1" type="Node2D"]
 
@@ -10,3 +11,7 @@ offset_top = 360.0
 offset_right = 1009.0
 offset_bottom = 1188.0
 texture = ExtResource("1_8abj0")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_0cdb7")
+autoplay = true

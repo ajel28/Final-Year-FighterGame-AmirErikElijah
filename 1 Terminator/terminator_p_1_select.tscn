@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://wi4l85w31v8g"]
+[gd_scene load_steps=3 format=3 uid="uid://wi4l85w31v8g"]
 
 [ext_resource type="Texture2D" uid="uid://brd6tqurqhule" path="res://1 Terminator/TerminatorChSelectP1.png" id="1_6myvm"]
+[ext_resource type="AudioStream" uid="uid://b6pt3x5880h8j" path="res://1 Terminator/hasta-la-vista-101soundboards.mp3" id="2_70yyo"]
 
 [node name="TerminatorP1Select" type="Node2D"]
 
@@ -10,3 +11,7 @@ offset_top = 307.0
 offset_right = 1068.0
 offset_bottom = 1234.0
 texture = ExtResource("1_6myvm")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_70yyo")
+autoplay = true

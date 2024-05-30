@@ -8,16 +8,18 @@ const max_speed = 520
 const accel = 1000
 const friction = 3000
 var input = Vector2.ZERO
-	
+
 func _physics_process(delta):
 	player_movement(delta)
 
 func get_input():
 	input.x = int(Input.is_action_pressed("ui_D")) - int(Input.is_action_pressed("ui_A"))
 	if int(Input.is_action_pressed("ui_D")) == 1:
+		global_position = global_position.clamp(Vector2(-700,-999), Vector2(2800,750))
 		return input.normalized()
 		kick=false
 	elif int(Input.is_action_pressed("ui_A")) == 1:
+		global_position = global_position.clamp(Vector2(-700,-999), Vector2(2800,750))
 		return input.normalized()
 		kick=false
 	elif int(Input.is_action_pressed("ui_S"))  == 1:
@@ -49,5 +51,8 @@ func player_movement(delta):
 	move_and_slide()
 
 
-func _on_jin_p_1_area_2d_area_entered(area):
-	pass # Replace with function body.
+func _on_kick_area_2d_area_entered(area):
+	if !(area is JinHurtbox1):
+		if kick==true:
+			Global.healthp2-=0.5
+			print(Global.healthp2)

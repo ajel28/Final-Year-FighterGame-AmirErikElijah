@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c725ntihwowpv"]
+[gd_scene load_steps=3 format=3 uid="uid://c725ntihwowpv"]
 
 [ext_resource type="Texture2D" uid="uid://dyjjn68vb6kv" path="res://1 Raiden/RaidenChSelectP1.png" id="1_ev3lu"]
+[ext_resource type="AudioStream" uid="uid://d1c8tq8glaac0" path="res://1 Raiden/i-must-consult-1.mp3" id="2_p6o5x"]
 
 [node name="RaidenP1Select" type="Node2D"]
 
@@ -10,3 +11,7 @@ offset_top = 294.0
 offset_right = 1082.0
 offset_bottom = 1212.0
 texture = ExtResource("1_ev3lu")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_p6o5x")
+autoplay = true
