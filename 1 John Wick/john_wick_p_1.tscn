@@ -56,7 +56,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_b60ec"]
 resource_name = "Wickpunch1"
-length = 0.1
+length = 0.25
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -64,10 +64,10 @@ tracks/0/path = NodePath("TextureRect:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [3]
+"values": [3, 0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_i8hso"]
@@ -88,7 +88,6 @@ position = Vector2(873, 1281)
 scale = Vector2(2.9625, 2.9625)
 texture = ExtResource("2_6kjc5")
 hframes = 6
-frame = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(906.75, 1284.75)

@@ -93,6 +93,7 @@ position = Vector2(929, 1248)
 scale = Vector2(3.59, 3.59)
 texture = ExtResource("2_nv5fj")
 hframes = 6
+frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="DeadpoolP1"]
 libraries = {
