@@ -56,7 +56,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_8s63b"]
 resource_name = "doompunch1"
-length = 0.1
+length = 0.25
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -64,10 +64,10 @@ tracks/0/path = NodePath("TextureRect:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [3]
+"values": [3, 0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bvwla"]
@@ -88,7 +88,6 @@ position = Vector2(893.875, 1260)
 scale = Vector2(3.13125, 3.1325)
 texture = ExtResource("2_dei3s")
 hframes = 6
-frame = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoomP1"]
 position = Vector2(807.375, 1253)

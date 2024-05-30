@@ -152,6 +152,9 @@ position = Vector2(929, 1248)
 scale = Vector2(3.59, 3.59)
 texture = ExtResource("2_nv5fj")
 hframes = 6
+<<<<<<< HEAD
+frame = 1
+=======
 frame = 4
 
 [node name="DeadpoolP1Punch" type="Area2D" parent="DeadpoolP1/TextureRect"]
@@ -159,6 +162,7 @@ frame = 4
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeadpoolP1/TextureRect/DeadpoolP1Punch"]
 position = Vector2(46.8698, -36.4902)
 shape = SubResource("RectangleShape2D_bwvxk")
+>>>>>>> 5291211c4b087318142dc2367840247698d847a4
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="DeadpoolP1"]
 libraries = {

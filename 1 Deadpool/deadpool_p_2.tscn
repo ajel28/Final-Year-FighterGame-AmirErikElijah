@@ -99,6 +99,8 @@ tracks/0/keys = {
 "update": 1,
 "values": [1, 4, 2]
 }
+<<<<<<< HEAD
+=======
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
@@ -123,6 +125,7 @@ tracks/2/keys = {
 "update": 0,
 "values": [Vector2(21.341, -69.7909), Vector2(-56.2365, -36.9142), Vector2(21.6294, -70.9445)]
 }
+>>>>>>> 5291211c4b087318142dc2367840247698d847a4
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_mgr81"]
 _data = {
@@ -147,6 +150,9 @@ scale = Vector2(3.4675, 3.4675)
 texture = ExtResource("2_fud5q")
 flip_h = true
 hframes = 6
+<<<<<<< HEAD
+frame = 1
+=======
 frame = 4
 
 [node name="DeadpoolP2Punch" type="Area2D" parent="DeadpoolP2/TextureRect"]
@@ -154,6 +160,7 @@ frame = 4
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeadpoolP2/TextureRect/DeadpoolP2Punch"]
 position = Vector2(-47.0079, -35.8093)
 shape = SubResource("RectangleShape2D_t24q1")
+>>>>>>> 5291211c4b087318142dc2367840247698d847a4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeadpoolP2"]
 position = Vector2(2196.12, 1249.88)
