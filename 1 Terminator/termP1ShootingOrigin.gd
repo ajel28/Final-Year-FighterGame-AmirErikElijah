@@ -1,5 +1,7 @@
 extends Node2D
 
+class_name TerminatorPlayer1
+
 @export var termp1_scene: PackedScene
 
 
