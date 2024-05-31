@@ -1,7 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://bpo00d74d56db"]
+[gd_scene load_steps=12 format=3 uid="uid://bpo00d74d56db"]
 
 [ext_resource type="Script" path="res://1 Terminator/terminator_p_1.gd" id="1_bfd82"]
 [ext_resource type="Texture2D" uid="uid://c5fomil7lxriq" path="res://1 Terminator/1Terminator-sprite.png" id="2_uaav8"]
+[ext_resource type="Script" path="res://1 Terminator/termP1ShootingOrigin.gd" id="3_5it6k"]
+[ext_resource type="PackedScene" uid="uid://cidvskwee72ym" path="res://1 Terminator/terminator_fire_ball_p_1.tscn" id="4_ei11k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qj4j6"]
 size = Vector2(270.25, 611)
@@ -78,27 +80,41 @@ _data = {
 "termpunch": SubResource("Animation_k7k1g")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u8v3p"]
+size = Vector2(333, 614)
+
 [node name="TerminatorP1" type="Node2D"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="TermCharacterBody" type="CharacterBody2D" parent="."]
 script = ExtResource("1_bfd82")
 
-[node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
+[node name="TextureRect" type="Sprite2D" parent="TermCharacterBody"]
 position = Vector2(858, 1268)
 scale = Vector2(3.065, 3.065)
 texture = ExtResource("2_uaav8")
 hframes = 6
 frame = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TermCharacterBody"]
 position = Vector2(713.875, 1267)
 shape = SubResource("RectangleShape2D_qj4j6")
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+[node name="Camera2D" type="Camera2D" parent="TermCharacterBody"]
 position = Vector2(1627, 778)
 zoom = Vector2(0.8, 0.8)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TermCharacterBody"]
 libraries = {
 "": SubResource("AnimationLibrary_l8kb1")
 }
+
+[node name="termP1ShootingOrigin" type="Node2D" parent="TermCharacterBody"]
+position = Vector2(995, 1162)
+script = ExtResource("3_5it6k")
+termp1_scene = ExtResource("4_ei11k")
+
+[node name="TermP1Hurtbox" type="Area2D" parent="TermCharacterBody"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TermCharacterBody/TermP1Hurtbox"]
+position = Vector2(746.5, 1268)
+shape = SubResource("RectangleShape2D_u8v3p")

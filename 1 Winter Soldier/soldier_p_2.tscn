@@ -209,7 +209,7 @@ scale = Vector2(2.68, 2.68)
 texture = ExtResource("2_j6gx7")
 flip_h = true
 hframes = 6
-frame = 3
+frame = 2
 
 [node name="SoldierP2Punch" type="Area2D" parent="CharacterBody2D/TextureRect"]
 
