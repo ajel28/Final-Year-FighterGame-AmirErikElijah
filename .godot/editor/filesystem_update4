@@ -1,16 +1,6 @@
 res://Menu/start_menu.tscn
-res://1 Winter Soldier/soldier_p_1.tscn
-res://1 Winter Soldier/soldier_p_2.tscn
-res://1 Terminator/terminator_p_1.tscn
-res://TerminatorFireBall/terminator_fire_ball_p_1.gd
-res://TerminatorFireBall/terminator_fire_ball_p_1.tscn
-res://1 Terminator/termP1ShootingOrigin.gd
 res://1 Terminator/terminator_fire_ball_p_1.tscn
-res://terminator_p_1.tscn
-res://Character Select/characterselect.gd
-res://Maps/depths_map.gd
-res://1 Terminator/terminator_fire_ball_p_1.gd
+res://1 Terminator/terminator_p_1.tscn
 res://1 Terminator/terminator_p_2.tscn
-res://1 Jin Kazama/JinP2.gd
 res://1 Jin Kazama/jin_p_2_select.tscn
 res://1 Jin Kazama/jin_kazama_p_2.tscn
