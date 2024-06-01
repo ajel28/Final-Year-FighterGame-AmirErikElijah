@@ -1,10 +1,26 @@
-[gd_scene load_steps=11 format=3 uid="uid://dy4hc4dsyy4b1"]
+[gd_scene load_steps=12 format=3 uid="uid://dy4hc4dsyy4b1"]
 
 [ext_resource type="Script" path="res://1 Terminator/terminator_p_2.gd" id="1_e3l6d"]
 [ext_resource type="Texture2D" uid="uid://c5fomil7lxriq" path="res://1 Terminator/1Terminator-sprite.png" id="2_no8hn"]
+[ext_resource type="Script" path="res://1 Terminator/termP2ShootingOrigin.gd" id="3_j7oqr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iby2u"]
 size = Vector2(260, 625)
+
+[sub_resource type="Animation" id="Animation_hh0ea"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TerminatorP2Hurtbox/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_ifml2"]
 resource_name = "termcrouch"
@@ -94,21 +110,6 @@ tracks/0/keys = {
 "values": [4]
 }
 
-[sub_resource type="Animation" id="Animation_hh0ea"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("TerminatorP2Hurtbox/CollisionShape2D:disabled")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_l8kb1"]
 _data = {
 "RESET": SubResource("Animation_hh0ea"),
@@ -123,10 +124,10 @@ size = Vector2(312, 628.5)
 
 [node name="TerminatorP2" type="Node2D"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="TermCharacterBody2" type="CharacterBody2D" parent="."]
 script = ExtResource("1_e3l6d")
 
-[node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
+[node name="TextureRect" type="Sprite2D" parent="TermCharacterBody2"]
 position = Vector2(2171, 1267)
 scale = Vector2(3.07625, 3.07625)
 texture = ExtResource("2_no8hn")
@@ -134,18 +135,21 @@ flip_h = true
 hframes = 6
 frame = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TermCharacterBody2"]
 position = Vector2(2304, 1256)
 shape = SubResource("RectangleShape2D_iby2u")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TermCharacterBody2"]
 libraries = {
 "": SubResource("AnimationLibrary_l8kb1")
 }
 
-[node name="TerminatorP2Hurtbox" type="Area2D" parent="CharacterBody2D"]
+[node name="termP2shootingOrigin" type="Marker2D" parent="TermCharacterBody2"]
+script = ExtResource("3_j7oqr")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/TerminatorP2Hurtbox"]
+[node name="TerminatorP2Hurtbox" type="Area2D" parent="TermCharacterBody2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TermCharacterBody2/TerminatorP2Hurtbox"]
 position = Vector2(2274, 1259.25)
 shape = SubResource("RectangleShape2D_s7vr6")
 disabled = true

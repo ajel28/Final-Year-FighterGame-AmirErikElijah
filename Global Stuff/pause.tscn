@@ -1,15 +1,15 @@
 [gd_scene load_steps=2 format=3 uid="uid://cn04r8bebir05"]
 
-[ext_resource type="Texture2D" uid="uid://cbkkvxi6b5vd7" path="res://Global Stuff/PauseButton.png" id="1_bq531"]
+[ext_resource type="Texture2D" uid="uid://ds1l2r85tr2px" path="res://Global Stuff/pause.png" id="1_drexn"]
 
 [node name="Pause" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 2307.0
-offset_top = -13.0
-offset_right = 2539.0
-offset_bottom = 220.0
-texture = ExtResource("1_bq531")
+offset_left = 2294.0
+offset_top = -15.0
+offset_right = 2562.0
+offset_bottom = 254.0
+texture = ExtResource("1_drexn")
 
 [node name="LinkButton" type="LinkButton" parent="."]
 offset_left = 2348.0
