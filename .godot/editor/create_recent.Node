@@ -1,7 +1,6 @@
+AudioStreamPlayer
 CollisionShape2D
 Area2D
-Marker2D
-AudioStreamPlayer
 ParallaxLayer
 Label
 AnimationPlayer
@@ -12,3 +11,4 @@ Node2D
 AudioStreamPlayer2D
 AudioListener2D
 Camera2D
+CharacterBody2D

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://v2ttyxy2h0su"]
 
-[ext_resource type="Texture2D" uid="uid://cmbnf5ilqafhs" path="res://1MainCharacter/MCcharacterSelectP1.png" id="1_js6td"]
+[ext_resource type="Texture2D" uid="uid://cmbnf5ilqafhs" path="res://MainCharacter/MCcharacterSelectP1.png" id="1_js6td"]
 
 [node name="MCSelectP1" type="Node2D"]
 
