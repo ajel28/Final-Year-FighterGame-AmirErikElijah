@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1errqha0t3d5"
-path="res://.godot/imported/MCcharacterSelectP2.png-b4f7476893878f2ee4feb69fac0e6c33.ctex"
+uid="uid://bdti6hrqkkh0c"
+path="res://.godot/imported/FireBall.png-8379d87009a77475f245c369d63d2345.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MainCharacter/MCcharacterSelectP2.png"
-dest_files=["res://.godot/imported/MCcharacterSelectP2.png-b4f7476893878f2ee4feb69fac0e6c33.ctex"]
+source_file="res://1 Terminator/FireBall.png"
+dest_files=["res://.godot/imported/FireBall.png-8379d87009a77475f245c369d63d2345.ctex"]
 
 [params]
 

@@ -22,8 +22,8 @@
 [ext_resource type="PackedScene" uid="uid://qoe675jqn8ir" path="res://1 Winter Soldier/soldier_p_1_select.tscn" id="20_bb4dh"]
 [ext_resource type="PackedScene" uid="uid://51pqsq3p4sxj" path="res://1 Winter Soldier/soldier_p_2_select.tscn" id="21_vrvnp"]
 [ext_resource type="Texture2D" uid="uid://c48bv5ok5nxt7" path="res://Character Select/Select Character Screen.png" id="22_anbni"]
-[ext_resource type="PackedScene" uid="uid://v2ttyxy2h0su" path="res://MainCharacter/mc_select_p_1.tscn" id="22_hq2rk"]
-[ext_resource type="PackedScene" uid="uid://cxkycfahah041" path="res://MainCharacter/mc_select_p_2.tscn" id="23_6b1hc"]
+[ext_resource type="PackedScene" uid="uid://v2ttyxy2h0su" path="res://1MainCharacter/mc_select_p_1.tscn" id="22_hq2rk"]
+[ext_resource type="PackedScene" uid="uid://cxkycfahah041" path="res://1MainCharacter/mc_select_p_2.tscn" id="23_6b1hc"]
 [ext_resource type="AudioStream" uid="uid://cn1udulpbh5v5" path="res://Character Select/ChooseDestiny.mp3" id="23_l56ex"]
 [ext_resource type="AudioStream" uid="uid://bx2h7i3nmfwkb" path="res://Character Select/Mortal Kombat 11 Character Select Music.mp3" id="24_tn18t"]
 
