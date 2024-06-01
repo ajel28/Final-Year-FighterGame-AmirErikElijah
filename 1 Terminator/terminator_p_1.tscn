@@ -108,7 +108,7 @@ libraries = {
 "": SubResource("AnimationLibrary_l8kb1")
 }
 
-[node name="termP1ShootingOrigin" type="Node2D" parent="TermCharacterBody"]
+[node name="termP1ShootingOrigin" type="Marker2D" parent="TermCharacterBody"]
 position = Vector2(995, 1162)
 script = ExtResource("3_5it6k")
 termp1_scene = ExtResource("4_ei11k")
