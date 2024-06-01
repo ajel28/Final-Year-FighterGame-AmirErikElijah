@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://j70b4iqssibs"]
+[gd_scene load_steps=11 format=3 uid="uid://j70b4iqssibs"]
 
 [ext_resource type="Script" path="res://1 Dr. Doom/doom_p_1.gd" id="1_nxp1m"]
 [ext_resource type="Texture2D" uid="uid://ccm0f38v8bx72" path="res://1 Dr. Doom/Doom-sprite.png" id="2_dei3s"]
@@ -21,6 +21,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [5]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DoomP1Hurtbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_nwae5"]
 resource_name = "doomidle1"
@@ -36,6 +48,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [2, 0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DoomP1Hurtbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, false, false]
 }
 
 [sub_resource type="Animation" id="Animation_sggg2"]
@@ -70,13 +94,32 @@ tracks/0/keys = {
 "values": [3, 0]
 }
 
+[sub_resource type="Animation" id="Animation_5e2pc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DoomP1Hurtbox/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bvwla"]
 _data = {
+"RESET": SubResource("Animation_5e2pc"),
 "doomcrouch1": SubResource("Animation_noaj0"),
 "doomidle1": SubResource("Animation_nwae5"),
 "doomjump1": SubResource("Animation_sggg2"),
 "doompunch1": SubResource("Animation_8s63b")
 }
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q40p6"]
+size = Vector2(421.5, 589.5)
 
 [node name="DoomP1" type="Node2D"]
 
@@ -88,6 +131,7 @@ position = Vector2(893.875, 1260)
 scale = Vector2(3.13125, 3.1325)
 texture = ExtResource("2_dei3s")
 hframes = 6
+frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoomP1"]
 position = Vector2(807.375, 1253)
@@ -97,3 +141,10 @@ shape = SubResource("RectangleShape2D_5yttx")
 libraries = {
 "": SubResource("AnimationLibrary_bvwla")
 }
+
+[node name="DoomP1Hurtbox" type="Area2D" parent="DoomP1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DoomP1/DoomP1Hurtbox"]
+position = Vector2(845.25, 1263.75)
+shape = SubResource("RectangleShape2D_q40p6")
+disabled = true
