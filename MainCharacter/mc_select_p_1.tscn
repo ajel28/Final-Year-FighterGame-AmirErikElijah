@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://v2ttyxy2h0su"]
+
+[ext_resource type="Texture2D" uid="uid://cmbnf5ilqafhs" path="res://MainCharacter/MCcharacterSelectP1.png" id="1_js6td"]
+
+[node name="MCSelectP1" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 228.0
+offset_top = 317.0
+offset_right = 1049.0
+offset_bottom = 1199.0
+texture = ExtResource("1_js6td")
