@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://cn04r8bebir05"]
+[gd_scene load_steps=4 format=3 uid="uid://cn04r8bebir05"]
 
 [ext_resource type="Script" path="res://Global Stuff/pause.gd" id="1_63cur"]
 [ext_resource type="Texture2D" uid="uid://ds1l2r85tr2px" path="res://Global Stuff/pause.png" id="1_drexn"]
+[ext_resource type="PackedScene" uid="uid://7vgu60ngymtx" path="res://Global Stuff/pause_screen.tscn" id="2_fkdoc"]
 
 [node name="Pause" type="Node2D"]
 position = Vector2(-4, -3)
 script = ExtResource("1_63cur")
+PauseScreen = ExtResource("2_fkdoc")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = 865.0

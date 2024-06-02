@@ -12,4 +12,8 @@ func _process(delta):
 
 
 func _on_exit_pressed():
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://Menu/start_menu.tscn")
+
+
+func _on_resume_pressed():
+	self.queue_free()

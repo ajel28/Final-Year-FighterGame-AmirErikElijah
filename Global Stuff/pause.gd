@@ -1,6 +1,7 @@
 extends Node2D
 
 
+@export var PauseScreen: PackedScene
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -12,4 +13,5 @@ func _process(delta):
 
 
 func _on_link_button_pressed():
-	pass
+	var ps = PauseScreen.instantiate()
+	add_child(ps)
