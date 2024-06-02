@@ -5,8 +5,8 @@
 [node name="DepthSelect" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1554.0
-offset_top = 420.0
-offset_right = 2708.0
-offset_bottom = 1247.0
+offset_left = 1062.0
+offset_top = 276.0
+offset_right = 1775.0
+offset_bottom = 787.0
 texture = ExtResource("1_46jln")

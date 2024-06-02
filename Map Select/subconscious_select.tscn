@@ -5,8 +5,8 @@
 [node name="SubconsciousSelect" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1396.0
-offset_top = 428.0
-offset_right = 2860.0
-offset_bottom = 1227.0
+offset_left = 1028.0
+offset_top = 282.0
+offset_right = 1942.0
+offset_bottom = 781.0
 texture = ExtResource("1_wdw0p")

@@ -10,10 +10,11 @@
 script = ExtResource("1_fe0be")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = -469.0
-offset_top = -458.0
-offset_right = 5151.0
-offset_bottom = 2604.0
+offset_left = -84.0
+offset_top = -52.0
+offset_right = 3756.0
+offset_bottom = 2108.0
+scale = Vector2(0.530298, 0.52337)
 texture = ExtResource("2_lxjwb")
 
 [node name="Pause" parent="." instance=ExtResource("3_pfdt3")]

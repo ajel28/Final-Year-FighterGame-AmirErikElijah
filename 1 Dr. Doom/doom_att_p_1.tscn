@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://b3jwbo3d5xvxw"]
+
+[ext_resource type="Script" path="res://1 Dr. Doom/doomAttP1.gd" id="1_ny2ve"]
+[ext_resource type="Texture2D" uid="uid://c8k3saspuni1h" path="res://1 Dr. Doom/doomball.png" id="2_55v1q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1fvhd"]
+atlas = ExtResource("2_55v1q")
+region = Rect2(0, 0, 225, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dta1q"]
+atlas = ExtResource("2_55v1q")
+region = Rect2(225, 0, 225, 225)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_av0un"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1fvhd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dta1q")
+}],
+"loop": true,
+"name": &"gb",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yjdkl"]
+size = Vector2(252, 165.75)
+
+[node name="doomAttP1" type="Area2D"]
+position = Vector2(0, -89)
+script = ExtResource("1_ny2ve")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1309, 1164)
+scale = Vector2(1.13111, 1.13111)
+sprite_frames = SubResource("SpriteFrames_av0un")
+animation = &"gb"
+frame_progress = 0.0391416
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1310, 1157)
+shape = SubResource("RectangleShape2D_yjdkl")

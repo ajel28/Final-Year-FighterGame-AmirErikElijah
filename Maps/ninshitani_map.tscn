@@ -1,22 +1,25 @@
-[gd_scene load_steps=6 format=3 uid="uid://dcbl74ow8osm4"]
+[gd_scene load_steps=8 format=3 uid="uid://dcbl74ow8osm4"]
 
 [ext_resource type="Script" path="res://Maps/ninshitani_map.gd" id="1_6tbce"]
 [ext_resource type="Texture2D" uid="uid://sapfi1jpxqtl" path="res://Maps/StreetFighterBackground (2).jpg" id="2_vt3pw"]
 [ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_xphb5"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_adwny"]
 [ext_resource type="AudioStream" uid="uid://fprmby646d8o" path="res://GeneralSounds/streetfightTheme.mp3" id="5_40mjs"]
+[ext_resource type="PackedScene" uid="uid://58jchj08xrjt" path="res://Global Stuff/health_2.tscn" id="6_n78o1"]
+[ext_resource type="PackedScene" uid="uid://c02pxi1t5ipwh" path="res://Global Stuff/health_1.tscn" id="7_imsgf"]
 
 [node name="NinshitaniMap" type="Node2D"]
 script = ExtResource("1_6tbce")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = -167.0
-offset_top = -1220.0
-offset_right = 5847.0
-offset_bottom = 2163.0
+offset_left = 5.0
+offset_top = -16.0
+offset_right = 1947.0
+offset_bottom = 1076.0
 texture = ExtResource("2_vt3pw")
 
 [node name="Pause" parent="." instance=ExtResource("3_xphb5")]
+position = Vector2(18, -3)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_adwny")
@@ -25,3 +28,7 @@ autoplay = true
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_40mjs")
 autoplay = true
+
+[node name="health1" parent="." instance=ExtResource("7_imsgf")]
+
+[node name="health2" parent="." instance=ExtResource("6_n78o1")]

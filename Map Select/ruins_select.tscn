@@ -5,8 +5,8 @@
 [node name="RuinsSelect" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1388.0
-offset_top = 432.0
-offset_right = 2870.0
-offset_bottom = 1233.0
+offset_left = 1078.0
+offset_top = 246.0
+offset_right = 1953.0
+offset_bottom = 719.0
 texture = ExtResource("1_bj4nv")

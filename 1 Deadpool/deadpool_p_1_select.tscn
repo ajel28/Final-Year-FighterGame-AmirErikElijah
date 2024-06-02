@@ -5,13 +5,13 @@
 
 [node name="DeadpoolP1Select" type="Node2D"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 260.0
-offset_top = 322.0
-offset_right = 1062.0
-offset_bottom = 1193.0
-texture = ExtResource("1_ii2he")
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_awrqf")
 autoplay = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 54.0
+offset_top = 186.0
+offset_right = 634.0
+offset_bottom = 837.0
+texture = ExtResource("1_ii2he")

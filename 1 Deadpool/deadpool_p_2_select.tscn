@@ -6,10 +6,10 @@
 [node name="DeadpoolP2Select" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1820.0
-offset_top = 285.0
-offset_right = 2608.0
-offset_bottom = 1192.0
+offset_left = 1356.0
+offset_top = 173.0
+offset_right = 1938.0
+offset_bottom = 843.0
 texture = ExtResource("1_4nbej")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

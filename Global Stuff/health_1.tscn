@@ -27,8 +27,8 @@ _data = {
 script = ExtResource("1_fryop")
 
 [node name="barsprite" type="Sprite2D" parent="."]
-position = Vector2(211, 93)
-scale = Vector2(4.09, 2.06136)
+position = Vector2(421, 155)
+scale = Vector2(7.8625, 3.85312)
 texture = ExtResource("2_rbvi0")
 hframes = 17
 

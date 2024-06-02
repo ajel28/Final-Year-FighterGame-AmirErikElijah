@@ -1,10 +1,27 @@
-[gd_scene load_steps=11 format=3 uid="uid://cdhjlgq46nt8i"]
+[gd_scene load_steps=13 format=3 uid="uid://cdhjlgq46nt8i"]
 
 [ext_resource type="Script" path="res://1 Dr. Doom/doom_p_2.gd" id="1_eggay"]
 [ext_resource type="Texture2D" uid="uid://ccm0f38v8bx72" path="res://1 Dr. Doom/Doom-sprite.png" id="2_h65u4"]
+[ext_resource type="Script" path="res://1 Dr. Doom/doomP2shootingOrigin.gd" id="3_emyxb"]
+[ext_resource type="PackedScene" uid="uid://jgllyibx8cah" path="res://1 Dr. Doom/doom_att_p_2.tscn" id="4_5nukc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tp4i7"]
 size = Vector2(325.5, 597.5)
+
+[sub_resource type="Animation" id="Animation_63wlq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DoomP2Hurtbox/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_qbqub"]
 resource_name = "doomcrouch2"
@@ -92,21 +109,6 @@ tracks/0/keys = {
 "values": [3, 0]
 }
 
-[sub_resource type="Animation" id="Animation_63wlq"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("DoomP2Hurtbox/CollisionShape2D:disabled")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_m46h6"]
 _data = {
 "RESET": SubResource("Animation_63wlq"),
@@ -139,6 +141,10 @@ shape = SubResource("RectangleShape2D_tp4i7")
 libraries = {
 "": SubResource("AnimationLibrary_m46h6")
 }
+
+[node name="doomP2shootingOrigin" type="Marker2D" parent="DoomP2"]
+script = ExtResource("3_emyxb")
+doomp2_scene = ExtResource("4_5nukc")
 
 [node name="DoomP2Hurtbox" type="Area2D" parent="DoomP2"]
 

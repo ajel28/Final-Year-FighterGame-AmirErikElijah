@@ -12,8 +12,8 @@ script = ExtResource("1_rb8js")
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = 5.0
 offset_top = 16.0
-offset_right = 1925.0
-offset_bottom = 1438.0
+offset_right = 3195.0
+offset_bottom = 2290.0
 scale = Vector2(0.59584, 0.476672)
 texture = ExtResource("2_b55h2")
 

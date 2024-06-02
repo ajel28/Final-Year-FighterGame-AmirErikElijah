@@ -1,15 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://bos4nhfxbhhix"]
+[gd_scene load_steps=4 format=3 uid="uid://bos4nhfxbhhix"]
 
 [ext_resource type="Texture2D" uid="uid://7toe2n4jqi3e" path="res://1 Dr. Doom/DoomChSelectP2.png" id="1_i0oqm"]
+[ext_resource type="PackedScene" uid="uid://dkrvuhoo7rd1r" path="res://Character Select/characterselect.tscn" id="1_kvn6a"]
 [ext_resource type="AudioStream" uid="uid://beva6kblfrvm" path="res://1 Dr. Doom/DoomSelect.mp3" id="2_8vixa"]
 
 [node name="DoomP2Select" type="Node2D"]
 
+[node name="characterselect" parent="." instance=ExtResource("1_kvn6a")]
+position = Vector2(2, -1)
+
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1848.0
-offset_top = 283.0
-offset_right = 2752.0
-offset_bottom = 1220.0
+offset_left = 1352.0
+offset_top = 177.0
+offset_right = 1966.0
+offset_bottom = 814.0
 texture = ExtResource("1_i0oqm")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

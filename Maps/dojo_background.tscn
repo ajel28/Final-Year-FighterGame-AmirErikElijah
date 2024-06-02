@@ -10,13 +10,14 @@
 script = ExtResource("1_pecgx")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = -225.0
-offset_top = -1124.0
-offset_right = 5256.0
-offset_bottom = 1913.0
+offset_left = -10.0
+offset_top = -39.0
+offset_right = 1979.0
+offset_bottom = 1063.0
 texture = ExtResource("2_3kg22")
 
 [node name="Pause" parent="." instance=ExtResource("3_r8h85")]
+position = Vector2(-1404, -27)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_xij7x")

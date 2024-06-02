@@ -5,8 +5,8 @@
 [node name="NishitaniSelect" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1386.0
-offset_top = 410.0
-offset_right = 2913.0
-offset_bottom = 1253.0
+offset_left = 864.0
+offset_top = 246.0
+offset_right = 1862.0
+offset_bottom = 797.0
 texture = ExtResource("1_dtt8l")

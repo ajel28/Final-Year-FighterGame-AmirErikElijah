@@ -5,8 +5,8 @@
 [node name="TakachihoSelect" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1474.0
-offset_top = 420.0
-offset_right = 2805.0
-offset_bottom = 1240.0
+offset_left = 1086.0
+offset_top = 234.0
+offset_right = 1969.0
+offset_bottom = 778.0
 texture = ExtResource("1_xx7h2")

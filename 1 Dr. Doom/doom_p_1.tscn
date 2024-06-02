@@ -1,7 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://j70b4iqssibs"]
+[gd_scene load_steps=13 format=3 uid="uid://j70b4iqssibs"]
 
 [ext_resource type="Script" path="res://1 Dr. Doom/doom_p_1.gd" id="1_nxp1m"]
 [ext_resource type="Texture2D" uid="uid://ccm0f38v8bx72" path="res://1 Dr. Doom/Doom-sprite.png" id="2_dei3s"]
+[ext_resource type="Script" path="res://1 Dr. Doom/doomP1shootingOrigin.gd" id="3_ronra"]
+[ext_resource type="PackedScene" uid="uid://b3jwbo3d5xvxw" path="res://1 Dr. Doom/doom_att_p_1.tscn" id="4_w8hpj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5yttx"]
 size = Vector2(339.25, 601)
@@ -141,6 +143,10 @@ shape = SubResource("RectangleShape2D_5yttx")
 libraries = {
 "": SubResource("AnimationLibrary_bvwla")
 }
+
+[node name="Marker2D" type="Marker2D" parent="DoomP1"]
+script = ExtResource("3_ronra")
+doomp1_scene = ExtResource("4_w8hpj")
 
 [node name="DoomP1Hurtbox" type="Area2D" parent="DoomP1"]
 
