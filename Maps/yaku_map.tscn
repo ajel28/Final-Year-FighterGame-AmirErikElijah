@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://cwl1hw8ksqpct"]
 
 [ext_resource type="Script" path="res://Maps/yaku_map.gd" id="1_fe0be"]
-[ext_resource type="Texture2D" uid="uid://denv76773v6yn" path="res://Maps/ForestBackground (2).jpg" id="2_lxjwb"]
+[ext_resource type="Texture2D" uid="uid://cj7k2xvaahn0v" path="res://Maps/ActualYakushimaForest.png" id="2_3pgad"]
 [ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_pfdt3"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_85s8j"]
 [ext_resource type="AudioStream" uid="uid://f3l15b3b7ulq" path="res://GeneralSounds/Rebellion  Sekiro_ Shadows Die Twice OST.mp3" id="5_rkpiw"]
@@ -15,7 +15,7 @@ offset_top = -52.0
 offset_right = 3756.0
 offset_bottom = 2108.0
 scale = Vector2(0.530298, 0.52337)
-texture = ExtResource("2_lxjwb")
+texture = ExtResource("2_3pgad")
 
 [node name="Pause" parent="." instance=ExtResource("3_pfdt3")]
 

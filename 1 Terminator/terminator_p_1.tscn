@@ -127,10 +127,6 @@ frame = 2
 position = Vector2(713.875, 1267)
 shape = SubResource("RectangleShape2D_qj4j6")
 
-[node name="Camera2D" type="Camera2D" parent="TermCharacterBody"]
-position = Vector2(1627, 778)
-zoom = Vector2(0.8, 0.8)
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="TermCharacterBody"]
 libraries = {
 "": SubResource("AnimationLibrary_l8kb1")

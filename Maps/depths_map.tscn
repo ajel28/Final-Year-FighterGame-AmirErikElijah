@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bdrkj3cpgpwua"]
 
 [ext_resource type="Script" path="res://Maps/depths_map.gd" id="1_rb8js"]
-[ext_resource type="Texture2D" uid="uid://c5u6bu1yjyp0e" path="res://Maps/LavaBackground (1).png" id="2_b55h2"]
+[ext_resource type="Texture2D" uid="uid://6j7i310i4tmk" path="res://Maps/ActualTheDepths.png" id="2_vvges"]
 [ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_f5lj0"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_qskw4"]
 [ext_resource type="AudioStream" uid="uid://b4h0vvd2e8ppn" path="res://GeneralSounds/STORM RISING (Climax).mp3" id="5_sknlw"]
@@ -15,7 +15,7 @@ offset_top = 16.0
 offset_right = 3195.0
 offset_bottom = 2290.0
 scale = Vector2(0.59584, 0.476672)
-texture = ExtResource("2_b55h2")
+texture = ExtResource("2_vvges")
 
 [node name="Pause" parent="." instance=ExtResource("3_f5lj0")]
 position = Vector2(-1845, 3)

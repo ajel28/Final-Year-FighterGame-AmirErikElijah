@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://jv1c33jhqauh"]
 
 [ext_resource type="Script" path="res://Maps/ruins_map.gd" id="1_ffj44"]
-[ext_resource type="Texture2D" uid="uid://y7i0pn3ox1l2" path="res://Maps/MortalKombatMap (1).png" id="2_ysv02"]
+[ext_resource type="Texture2D" uid="uid://1n2vpwloagrl" path="res://Maps/ActualAbandonedRuins.png" id="2_o3vqq"]
 [ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_fvf0i"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_bwn02"]
 [ext_resource type="AudioStream" uid="uid://ds4a38gsleaek" path="res://GeneralSounds/Yarikawa's Defense - Ghost of Tsushima OST.mp3" id="5_uv3ua"]
@@ -13,8 +13,8 @@ script = ExtResource("1_ffj44")
 offset_left = -13.0
 offset_top = -13.0
 offset_right = 1947.0
-offset_bottom = 1076.0
-texture = ExtResource("2_ysv02")
+offset_bottom = 1093.0
+texture = ExtResource("2_o3vqq")
 
 [node name="Pause" parent="." instance=ExtResource("3_fvf0i")]
 
