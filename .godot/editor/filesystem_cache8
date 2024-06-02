@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1717356566
+::res://::1717357160
 icon.svg::CompressedTexture2D::8402663531990749670::1707346693::1717265887::1::::<><>::
 README.md::TextFile::-1::1717348932::0::1::::<><>::
 ::res://1 Deadpool/::1717356480
@@ -26,24 +26,24 @@ d_jin_p_2.gd::GDScript::-1::1717348937::0::1::::<>CharacterBody2D<>::
 d_jin_p_2.tscn::PackedScene::4400732602567530949::1717348931::0::1::::<><>::uid://d1n1070rwtm4k::::res://Characters/Devil Jin Player 1 (2).png<>res://1 Devil Jin/d_jin_p_2.gd
 d_jin_select_p_1.tscn::PackedScene::5476433329843513418::1717356480::0::1::::<><>::uid://qe26q6shcxwo::::res://1 Devil Jin/DJinChSelectP1.png<>uid://bsgdge2u6wubi::::res://1 Devil Jin/DJinselect.wav
 d_jin_select_p_2.tscn::PackedScene::7143626068169173633::1717356480::0::1::::<><>::uid://7ibd1q6asvrh::::res://1 Devil Jin/DJinChSelectP2.png<>uid://bsgdge2u6wubi::::res://1 Devil Jin/DJinselect.wav
-::res://1 Dr. Doom/::1717356615
+::res://1 Dr. Doom/::1717356880
 Doom-sprite.png::CompressedTexture2D::4939519964130330031::1717348931::1717348931::1::::<><>::
-doomAttP1.gd::GDScript::-1::1717349726::0::1::::DoomAttackPlayer1<>Area2D<>::
 doomball.png::CompressedTexture2D::7111449233584876323::1717265639::1717349443::1::::<><>::
 DoomChSelectP1.png::CompressedTexture2D::3311886052887997226::1717348931::1717348931::1::::<><>::
 DoomChSelectP2.png::CompressedTexture2D::2286124794361726796::1717348931::1717348931::1::::<><>::
 doomP1shootingOrigin.gd::GDScript::-1::1717350192::0::1::::DoomPlayer1<>Node2D<>::
 doomP2shootingOrigin.gd::GDScript::-1::1717350192::0::1::::DoomPlayer2<>Node2D<>::
 DoomSelect.mp3::AudioStreamMP3::79723055234617874::1717348931::1717348931::1::::<><>::
-doom_att_p_1.tscn::PackedScene::4371626043738063984::1717356726::0::1::::<><>::res://1 Dr. Doom/doomAttP1.gd<>uid://c8k3saspuni1h::::res://1 Dr. Doom/doomball.png
+doom_att_p_1.gd::GDScript::-1::1717349726::0::1::::DoomAttackPlayer1<>Area2D<>::
+doom_att_p_1.tscn::PackedScene::4371626043738063984::1717356726::0::1::::<><>::res://1 Dr. Doom/doom_att_p_1.gd<>uid://c8k3saspuni1h::::res://1 Dr. Doom/doomball.png
 doom_att_p_2.gd::GDScript::-1::1717350192::0::1::::DoomAttackPlayer2<>Area2D<>::
 doom_att_p_2.tscn::PackedScene::644774662916344359::1717356479::0::1::::<><>::res://1 Dr. Doom/doom_att_p_2.gd<>uid://c8k3saspuni1h::::res://1 Dr. Doom/doomball.png
 doom_p_1.gd::GDScript::-1::1717348937::0::1::::<>CharacterBody2D<>::
 doom_p_1.tscn::PackedScene::699280927772597892::1717356479::0::1::::<><>::res://1 Dr. Doom/doom_p_1.gd<>uid://ccm0f38v8bx72::::res://1 Dr. Doom/Doom-sprite.png<>res://1 Dr. Doom/doomP1shootingOrigin.gd<>uid://b3jwbo3d5xvxw::::res://1 Dr. Doom/doom_att_p_1.tscn
 doom_p_1_select.tscn::PackedScene::5427585151004569870::1717356501::0::1::::<><>::uid://bngkjrai7c1qs::::res://1 Dr. Doom/DoomChSelectP1.png<>uid://beva6kblfrvm::::res://1 Dr. Doom/DoomSelect.mp3
 doom_p_2.gd::GDScript::-1::1717348937::0::1::::<>CharacterBody2D<>::
-doom_p_2.tscn::PackedScene::4998424980463129006::1717356479::0::1::::<><>::res://1 Dr. Doom/doom_p_2.gd<>uid://ccm0f38v8bx72::::res://1 Dr. Doom/Doom-sprite.png<>res://1 Dr. Doom/doomP2shootingOrigin.gd<>uid://jgllyibx8cah::::res://1 Dr. Doom/doom_att_p_2.tscn
-doom_p_2_select.tscn::PackedScene::3408007678743729195::1717356615::0::1::::<><>::uid://7toe2n4jqi3e::::res://1 Dr. Doom/DoomChSelectP2.png<>uid://dkrvuhoo7rd1r::::res://Character Select/characterselect.tscn<>uid://beva6kblfrvm::::res://1 Dr. Doom/DoomSelect.mp3
+doom_p_2.tscn::PackedScene::4998424980463129006::1717356731::0::1::::<><>::res://1 Dr. Doom/doom_p_2.gd<>uid://ccm0f38v8bx72::::res://1 Dr. Doom/Doom-sprite.png<>res://1 Dr. Doom/doomP2shootingOrigin.gd<>uid://jgllyibx8cah::::res://1 Dr. Doom/doom_att_p_2.tscn
+doom_p_2_select.tscn::PackedScene::3408007678743729195::1717356880::0::1::::<><>::uid://ccm0f38v8bx72::::res://1 Dr. Doom/Doom-sprite.png<>uid://dkrvuhoo7rd1r::::res://Character Select/characterselect.tscn<>uid://beva6kblfrvm::::res://1 Dr. Doom/DoomSelect.mp3
 ::res://1 Jin Kazama/::1717348937
 CharacterBody2D.gd::GDScript::-1::1717348937::0::1::::<>CharacterBody2D<>::
 JinChSelectP1.png::CompressedTexture2D::4057450003680844567::1717348931::1717348931::1::::<><>::
