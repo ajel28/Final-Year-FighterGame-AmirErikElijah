@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dcbl74ow8osm4"]
+[gd_scene load_steps=9 format=3 uid="uid://dcbl74ow8osm4"]
 
 [ext_resource type="Script" path="res://Maps/ninshitani_map.gd" id="1_6tbce"]
 [ext_resource type="Texture2D" uid="uid://cj3racnija01q" path="res://Maps/ActualNishitaniCastle.png" id="2_evilm"]
@@ -7,6 +7,9 @@
 [ext_resource type="AudioStream" uid="uid://fprmby646d8o" path="res://GeneralSounds/streetfightTheme.mp3" id="5_40mjs"]
 [ext_resource type="PackedScene" uid="uid://58jchj08xrjt" path="res://Global Stuff/health_2.tscn" id="6_n78o1"]
 [ext_resource type="PackedScene" uid="uid://c02pxi1t5ipwh" path="res://Global Stuff/health_1.tscn" id="7_imsgf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kiori"]
+size = Vector2(1993, 200)
 
 [node name="NinshitaniMap" type="Node2D"]
 script = ExtResource("1_6tbce")
@@ -32,3 +35,9 @@ autoplay = true
 [node name="health1" parent="." instance=ExtResource("7_imsgf")]
 
 [node name="health2" parent="." instance=ExtResource("6_n78o1")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(965, 991)
+shape = SubResource("RectangleShape2D_kiori")
