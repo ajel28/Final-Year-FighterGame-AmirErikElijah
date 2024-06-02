@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://b3jwbo3d5xvxw"]
 
-[ext_resource type="Script" path="res://1 Dr. Doom/doomAttP1.gd" id="1_ny2ve"]
+[ext_resource type="Script" path="res://1 Dr. Doom/doom_att_p_1.gd" id="1_ny2ve"]
 [ext_resource type="Texture2D" uid="uid://c8k3saspuni1h" path="res://1 Dr. Doom/doomball.png" id="2_55v1q"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1fvhd"]
