@@ -5,18 +5,12 @@ res://1 Raiden/raiden_att_p_1.tscn
 res://1 Raiden/raiden_att_p_2.tscn
 res://1 Raiden/raiden_p_2.tscn
 res://1 Raiden/raiden_p_1.tscn
-res://doomAttP1.gd
-res://doom_att_p_1.tscn
 res://1 Dr. Doom/doom_p_1.tscn
-res://1 Dr. Doom/doomP1shootingOrigin.gd
 res://1 Dr. Doom/doom_att_p_1.tscn
 res://1 Terminator/terminator_fire_ball_p_1.tscn
 res://1 Terminator/terminator_p_1.tscn
-res://1 Dr. Doom/doom_p_2.tscn
-res://1 Dr. Doom/doom_att_p_2.gd
-res://1 Dr. Doom/doomP2shootingOrigin.gd
 res://1 Dr. Doom/doom_att_p_2.tscn
-res://Maps/yaku_map.tscn
+res://1 Dr. Doom/doom_p_2.tscn
 res://Maps/depths_map.tscn
 res://Maps/dojo_background.tscn
 res://Maps/frosbite_map.tscn
@@ -24,13 +18,11 @@ res://Maps/ninshitani_map.tscn
 res://Maps/ruins_map.tscn
 res://Maps/subconscious_map.tscn
 res://Maps/taka_map.tscn
+res://Maps/yaku_map.tscn
 res://Menu/intro_screen.tscn
 res://Map Select/depth_select.tscn
 res://Map Select/map_select.tscn
-res://Global Stuff/health_1.gd
-res://Global Stuff/health_2.gd
 res://Global Stuff/health_1.tscn
-res://Character Select/characterselect.tscn
 res://1 Deadpool/deadpool_p_1_select.tscn
 res://1 Deadpool/deadpool_p_2_select.tscn
 res://1 Deadpool/deadpool_p_1.tscn
@@ -41,8 +33,9 @@ res://Map Select/ruins_select.tscn
 res://Map Select/subconscious_select.tscn
 res://Map Select/takachiho_select.tscn
 res://Map Select/yakushima_select.tscn
+res://1 Devil Jin/d_jin_p_1.tscn
 res://1 Devil Jin/d_jin_select_p_1.tscn
 res://1 Devil Jin/d_jin_select_p_2.tscn
 res://1 Dr. Doom/doom_p_1_select.tscn
-res://1 Devil Jin/d_jin_p_1.tscn
 res://1 Dr. Doom/doom_p_2_select.tscn
+res://Character Select/characterselect.tscn
