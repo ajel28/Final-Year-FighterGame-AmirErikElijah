@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Maps/depths_map.gd" id="1_rb8js"]
 [ext_resource type="Texture2D" uid="uid://6j7i310i4tmk" path="res://Maps/ActualTheDepths.png" id="2_vvges"]
-[ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_f5lj0"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_qskw4"]
+[ext_resource type="PackedScene" uid="uid://dp8o4yekl6npt" path="res://Global Stuff/ui_screen.tscn" id="5_rjfwy"]
 [ext_resource type="AudioStream" uid="uid://b4h0vvd2e8ppn" path="res://GeneralSounds/STORM RISING (Climax).mp3" id="5_sknlw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_52coe"]
@@ -20,9 +20,6 @@ offset_bottom = 2263.0
 scale = Vector2(0.59584, 0.476672)
 texture = ExtResource("2_vvges")
 
-[node name="Pause" parent="." instance=ExtResource("3_f5lj0")]
-position = Vector2(-1845, 3)
-
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_qskw4")
 autoplay = true
@@ -36,3 +33,5 @@ autoplay = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(959, 970)
 shape = SubResource("RectangleShape2D_52coe")
+
+[node name="UiScreen" parent="." instance=ExtResource("5_rjfwy")]

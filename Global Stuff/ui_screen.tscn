@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://dp8o4yekl6npt"]
+
+[ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="1_07x0b"]
+[ext_resource type="PackedScene" uid="uid://c02pxi1t5ipwh" path="res://Global Stuff/health_1.tscn" id="2_p5btm"]
+[ext_resource type="PackedScene" uid="uid://58jchj08xrjt" path="res://Global Stuff/health_2.tscn" id="3_58hbx"]
+
+[node name="UiScreen" type="Node2D"]
+
+[node name="Pause" parent="." instance=ExtResource("1_07x0b")]
+
+[node name="health1" parent="." instance=ExtResource("2_p5btm")]
+
+[node name="health2" parent="." instance=ExtResource("3_58hbx")]

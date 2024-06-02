@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://Maps/taka_map.gd" id="1_x0q6t"]
 [ext_resource type="Texture2D" uid="uid://by08g56d5tur3" path="res://Maps/ActualTakachihoGorge.png" id="2_tmwnl"]
-[ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_q71yk"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_7a28k"]
 [ext_resource type="AudioStream" uid="uid://hx8sgs5ugtr0" path="res://GeneralSounds/How to Play - Super Smash Bros. Melee [Remix] - Super Smash Bros. Ultimate.mp3" id="5_62ygu"]
+[ext_resource type="PackedScene" uid="uid://dp8o4yekl6npt" path="res://Global Stuff/ui_screen.tscn" id="5_oyi0d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x857w"]
 size = Vector2(1939, 308)
@@ -19,9 +19,6 @@ offset_right = 1930.0
 offset_bottom = 1106.0
 texture = ExtResource("2_tmwnl")
 
-[node name="Pause" parent="." instance=ExtResource("3_q71yk")]
-position = Vector2(332, 0)
-
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_7a28k")
 autoplay = true
@@ -35,3 +32,5 @@ autoplay = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(954, 1025)
 shape = SubResource("RectangleShape2D_x857w")
+
+[node name="UiScreen" parent="." instance=ExtResource("5_oyi0d")]

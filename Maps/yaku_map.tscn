@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Maps/yaku_map.gd" id="1_fe0be"]
 [ext_resource type="Texture2D" uid="uid://cj7k2xvaahn0v" path="res://Maps/ActualYakushimaForest.png" id="2_3pgad"]
-[ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_pfdt3"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_85s8j"]
+[ext_resource type="PackedScene" uid="uid://dp8o4yekl6npt" path="res://Global Stuff/ui_screen.tscn" id="5_r3kia"]
 [ext_resource type="AudioStream" uid="uid://f3l15b3b7ulq" path="res://GeneralSounds/Rebellion  Sekiro_ Shadows Die Twice OST.mp3" id="5_rkpiw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dif7a"]
@@ -20,8 +20,6 @@ offset_bottom = 2108.0
 scale = Vector2(0.530298, 0.52337)
 texture = ExtResource("2_3pgad")
 
-[node name="Pause" parent="." instance=ExtResource("3_pfdt3")]
-
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_85s8j")
 volume_db = 1.486
@@ -36,3 +34,5 @@ autoplay = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(949, 941.5)
 shape = SubResource("RectangleShape2D_dif7a")
+
+[node name="UiScreen" parent="." instance=ExtResource("5_r3kia")]
