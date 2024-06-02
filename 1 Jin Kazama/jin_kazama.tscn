@@ -167,7 +167,6 @@ position = Vector2(344.625, 707.219)
 scale = Vector2(1.70375, 1.70375)
 texture = ExtResource("2_ys1gn")
 hframes = 7
-frame = 2
 
 [node name="KickArea2d" type="Area2D" parent="Jin/TextureRect"]
 
