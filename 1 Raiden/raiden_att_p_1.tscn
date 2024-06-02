@@ -26,20 +26,20 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_orxr0"]
-size = Vector2(384.003, 284.75)
+size = Vector2(323.001, 144)
 
 [node name="raidenAttP1" type="Area2D"]
 script = ExtResource("1_ggwyn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1277.26, 1202)
-scale = Vector2(1.608, 1.608)
+position = Vector2(1248.01, 1181.5)
+scale = Vector2(1.308, 1.308)
 sprite_frames = SubResource("SpriteFrames_d6cp8")
 animation = &"buzz"
 frame_progress = 0.934936
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1256, 1219.62)
+position = Vector2(1243.5, 1187)
 shape = SubResource("RectangleShape2D_orxr0")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
