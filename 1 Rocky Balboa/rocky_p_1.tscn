@@ -8,7 +8,7 @@
 size = Vector2(68.568, 35.4224)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vwv41"]
-size = Vector2(226.625, 619.5)
+size = Vector2(143, 321.375)
 
 [sub_resource type="Animation" id="Animation_j0j56"]
 length = 0.001
@@ -135,7 +135,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mwsv7"]
-size = Vector2(319.5, 622)
+size = Vector2(174, 325.5)
 
 [node name="RockyP1" type="Node2D"]
 
@@ -143,8 +143,8 @@ size = Vector2(319.5, 622)
 script = ExtResource("1_snoko")
 
 [node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(907, 1255)
-scale = Vector2(3.1075, 3.1075)
+position = Vector2(362, 710)
+scale = Vector2(1.68438, 1.68438)
 texture = ExtResource("2_v7hqh")
 hframes = 6
 frame = 1
@@ -156,7 +156,7 @@ position = Vector2(58.2462, -44.0869)
 shape = SubResource("RectangleShape2D_0mhho")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(844.688, 1260)
+position = Vector2(334.5, 713.688)
 shape = SubResource("RectangleShape2D_vwv41")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
@@ -168,7 +168,7 @@ libraries = {
 script = ExtResource("3_bphvm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/RockyP1Hurtbox"]
-position = Vector2(892.25, 1260)
+position = Vector2(349, 712.75)
 shape = SubResource("RectangleShape2D_mwsv7")
 
 [connection signal="area_entered" from="CharacterBody2D/TextureRect/RockyP1Punch" to="CharacterBody2D" method="_on_rocky_p_1_punch_area_entered"]
