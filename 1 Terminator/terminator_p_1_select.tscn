@@ -6,10 +6,10 @@
 [node name="TerminatorP1Select" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 242.0
-offset_top = 307.0
-offset_right = 1068.0
-offset_bottom = 1234.0
+offset_left = 114.0
+offset_top = 118.0
+offset_right = 628.0
+offset_bottom = 695.0
 texture = ExtResource("1_6myvm")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

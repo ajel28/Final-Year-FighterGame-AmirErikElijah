@@ -6,15 +6,15 @@
 position = Vector2(-4, -3)
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 841.0
+offset_left = 865.0
 offset_top = 2.0
-offset_right = 1341.0
+offset_right = 1365.0
 offset_bottom = 502.0
 scale = Vector2(0.319999, 0.272881)
 texture = ExtResource("1_drexn")
 
 [node name="LinkButton" type="LinkButton" parent="."]
-offset_left = 856.0
-offset_top = 20.0
-offset_right = 980.0
-offset_bottom = 126.0
+offset_left = 887.0
+offset_top = 17.0
+offset_right = 1011.0
+offset_bottom = 123.0

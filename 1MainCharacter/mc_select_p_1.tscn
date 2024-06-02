@@ -6,10 +6,10 @@
 [node name="MCSelectP1" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 228.0
-offset_top = 317.0
-offset_right = 1049.0
-offset_bottom = 1199.0
+offset_left = 124.0
+offset_top = 139.0
+offset_right = 627.0
+offset_bottom = 680.0
 texture = ExtResource("1_js6td")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

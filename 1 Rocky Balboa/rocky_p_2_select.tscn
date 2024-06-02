@@ -6,10 +6,10 @@
 [node name="RockyP2Select" type="Node2D"]
 
 [node name="TextureRect2" type="TextureRect" parent="."]
-offset_left = 1794.0
-offset_top = 287.0
-offset_right = 2684.0
-offset_bottom = 1206.0
+offset_left = 1372.0
+offset_top = 121.0
+offset_right = 1926.0
+offset_bottom = 693.0
 texture = ExtResource("1_t4qi6")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

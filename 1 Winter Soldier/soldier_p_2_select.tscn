@@ -6,10 +6,10 @@
 [node name="SoldierP2Select" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 2062.0
-offset_top = 334.0
-offset_right = 2800.0
-offset_bottom = 1206.0
+offset_left = 1378.0
+offset_top = 90.0
+offset_right = 1886.0
+offset_bottom = 690.0
 texture = ExtResource("1_o26qv")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
