@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://8s8gdpqoevts"]
 
 [ext_resource type="Script" path="res://Maps/taka_map.gd" id="1_x0q6t"]
-[ext_resource type="Texture2D" uid="uid://cd0rf5f5bhc4s" path="res://Maps/RandomBackground (2).jpg" id="2_km7cd"]
+[ext_resource type="Texture2D" uid="uid://by08g56d5tur3" path="res://Maps/ActualTakachihoGorge.png" id="2_tmwnl"]
 [ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_q71yk"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_7a28k"]
 [ext_resource type="AudioStream" uid="uid://hx8sgs5ugtr0" path="res://GeneralSounds/How to Play - Super Smash Bros. Melee [Remix] - Super Smash Bros. Ultimate.mp3" id="5_62ygu"]
@@ -14,7 +14,7 @@ offset_left = -27.0
 offset_top = 5.0
 offset_right = 1930.0
 offset_bottom = 1106.0
-texture = ExtResource("2_km7cd")
+texture = ExtResource("2_tmwnl")
 
 [node name="Pause" parent="." instance=ExtResource("3_q71yk")]
 position = Vector2(332, 0)

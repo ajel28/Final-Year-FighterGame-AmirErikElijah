@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://csdotesi5o6kp"]
 
 [ext_resource type="Script" path="res://Maps/dojo_background.gd" id="1_pecgx"]
-[ext_resource type="Texture2D" uid="uid://c7jcdljxyq2yo" path="res://Maps/DojoBackground (2).jpg" id="2_3kg22"]
+[ext_resource type="Texture2D" uid="uid://dmutwhrb64g6s" path="res://Maps/ActualDojo.png" id="2_7hxnm"]
 [ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_r8h85"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_xij7x"]
 [ext_resource type="AudioStream" uid="uid://blm8j2m75qkt8" path="res://GeneralSounds/The Immortals - Mortal Kombat (Techno Syndrome 12 Mix) [Custom Instrumental].mp3" id="5_w0rdj"]
@@ -14,7 +14,7 @@ offset_left = -10.0
 offset_top = -39.0
 offset_right = 1979.0
 offset_bottom = 1063.0
-texture = ExtResource("2_3kg22")
+texture = ExtResource("2_7hxnm")
 
 [node name="Pause" parent="." instance=ExtResource("3_r8h85")]
 position = Vector2(-1404, -27)

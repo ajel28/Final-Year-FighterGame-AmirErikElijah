@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://dcbl74ow8osm4"]
 
 [ext_resource type="Script" path="res://Maps/ninshitani_map.gd" id="1_6tbce"]
-[ext_resource type="Texture2D" uid="uid://sapfi1jpxqtl" path="res://Maps/StreetFighterBackground (2).jpg" id="2_vt3pw"]
+[ext_resource type="Texture2D" uid="uid://cj3racnija01q" path="res://Maps/ActualNishitaniCastle.png" id="2_evilm"]
 [ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_xphb5"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_adwny"]
 [ext_resource type="AudioStream" uid="uid://fprmby646d8o" path="res://GeneralSounds/streetfightTheme.mp3" id="5_40mjs"]
@@ -12,11 +12,11 @@
 script = ExtResource("1_6tbce")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 5.0
+offset_left = -9.0
 offset_top = -16.0
 offset_right = 1947.0
-offset_bottom = 1076.0
-texture = ExtResource("2_vt3pw")
+offset_bottom = 1084.0
+texture = ExtResource("2_evilm")
 
 [node name="Pause" parent="." instance=ExtResource("3_xphb5")]
 position = Vector2(18, -3)

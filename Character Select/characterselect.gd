@@ -158,12 +158,12 @@ func _on_mc_button_pressed():
 		var mcp1 = MCP1Select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(mcp1)
 		Global.player+=1
-		Global.player1 = load("res://MainCharacter/main_character_p_1.tscn")
+		Global.player1 = load("res://1MainCharacter/main_character_p_1.tscn")
 	elif(Global.player==2):
 		var mcp2 = MCP2Select.instantiate()
 		get_tree().root.get_node("characterselect").add_child(mcp2)
 		Global.player+=1
-		Global.player2 = load("res://MainCharacter/main_character_p_2.tscn")
+		Global.player2 = load("res://1MainCharacter/main_character_p_2.tscn")
 
 func _on_back_button_pressed():
 	get_tree().change_scene_to_file("res://Menu/start_menu.tscn")
