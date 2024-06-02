@@ -8,7 +8,7 @@
 size = Vector2(80.5223, 27.9105)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h4uix"]
-size = Vector2(339, 548)
+size = Vector2(194.5, 307)
 
 [sub_resource type="Animation" id="Animation_8wk51"]
 length = 0.001
@@ -195,7 +195,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_drr6n"]
-size = Vector2(412.5, 541)
+size = Vector2(235.25, 306.5)
 
 [node name="SoldierP2" type="Node2D"]
 
@@ -204,12 +204,12 @@ script = ExtResource("1_t5xny")
 yes = null
 
 [node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(2160, 1290)
-scale = Vector2(2.68, 2.68)
+position = Vector2(1696, 724)
+scale = Vector2(1.49, 1.49)
 texture = ExtResource("2_j6gx7")
 flip_h = true
 hframes = 6
-frame = 3
+frame = 2
 
 [node name="SoldierP2Punch" type="Area2D" parent="CharacterBody2D/TextureRect"]
 
@@ -218,7 +218,7 @@ position = Vector2(-42.5373, -56.7164)
 shape = SubResource("RectangleShape2D_5yacv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(2255.5, 1290)
+position = Vector2(1747.25, 723.5)
 shape = SubResource("RectangleShape2D_h4uix")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
@@ -230,7 +230,7 @@ libraries = {
 script = ExtResource("3_yq3i1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/SoldierP2Hurtbox"]
-position = Vector2(2221.25, 1289.5)
+position = Vector2(1725.62, 724.25)
 shape = SubResource("RectangleShape2D_drr6n")
 
 [connection signal="area_entered" from="CharacterBody2D/TextureRect/SoldierP2Punch" to="CharacterBody2D" method="_on_soldier_p_2_punch_area_entered"]

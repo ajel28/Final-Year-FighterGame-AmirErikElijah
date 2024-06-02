@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://1MainCharacter/McP2.gd" id="1_ywrpk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7h5fk"]
-size = Vector2(268.5, 630.5)
+size = Vector2(109.25, 324.25)
 
 [node name="MainCharacterP2" type="Node2D"]
 
@@ -12,10 +12,10 @@ size = Vector2(268.5, 630.5)
 script = ExtResource("1_ywrpk")
 
 [node name="Sprite2D" type="Sprite2D" parent="McP2"]
-position = Vector2(2150, 1257)
-scale = Vector2(3.205, 3.205)
+position = Vector2(1717, 714)
+scale = Vector2(1.64672, 1.64672)
 texture = ExtResource("1_r26t7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="McP2"]
-position = Vector2(2144.25, 1255.25)
+position = Vector2(1725.62, 716.125)
 shape = SubResource("RectangleShape2D_7h5fk")
