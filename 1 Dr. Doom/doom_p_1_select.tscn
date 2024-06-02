@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cjlfsf3kbiqne"]
 
 [ext_resource type="Texture2D" uid="uid://bngkjrai7c1qs" path="res://1 Dr. Doom/DoomChSelectP1.png" id="1_uoakb"]
-[ext_resource type="AudioStream" uid="uid://beva6kblfrvm" path="res://1 Dr. Doom/DoomSelect.mp3" id="2_sqwdd"]
+[ext_resource type="AudioStream" uid="uid://b16tf8087ej8e" path="res://1 Dr. Doom/Dr Doom 1.wav" id="2_qmen1"]
 
 [node name="DoomP1Select" type="Node2D"]
 
@@ -13,5 +13,5 @@ offset_bottom = 839.0
 texture = ExtResource("1_uoakb")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_sqwdd")
+stream = ExtResource("2_qmen1")
 autoplay = true

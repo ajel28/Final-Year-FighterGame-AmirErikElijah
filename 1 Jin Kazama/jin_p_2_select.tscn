@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://k0kotvxnx4d7"]
 
 [ext_resource type="Texture2D" uid="uid://uy1ygeyjbru7" path="res://1 Jin Kazama/JinChSelectP2.png" id="1_oha04"]
-[ext_resource type="AudioStream" uid="uid://dnmcodurj3xbl" path="res://1 Jin Kazama/JinSelect.wav" id="2_10x8q"]
+[ext_resource type="AudioStream" uid="uid://dgfse5pp6yl3i" path="res://1 Jin Kazama/Jin Kazama 2.wav" id="2_a4rls"]
 
 [node name="JinP2Select" type="Node2D"]
 
@@ -13,5 +13,5 @@ offset_bottom = 1204.0
 texture = ExtResource("1_oha04")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_10x8q")
+stream = ExtResource("2_a4rls")
 autoplay = true
