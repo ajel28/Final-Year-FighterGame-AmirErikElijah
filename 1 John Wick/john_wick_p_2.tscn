@@ -8,7 +8,7 @@
 size = Vector2(58.9948, 24.5584)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gx8ql"]
-size = Vector2(307, 575)
+size = Vector2(181.5, 324)
 
 [sub_resource type="Animation" id="Animation_6dipv"]
 length = 0.001
@@ -135,7 +135,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w2rdk"]
-size = Vector2(404.5, 578)
+size = Vector2(231.25, 325)
 
 [node name="JohnWickP2" type="Node2D"]
 
@@ -143,8 +143,8 @@ size = Vector2(404.5, 578)
 script = ExtResource("1_27865")
 
 [node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(2158, 1280)
-scale = Vector2(2.9725, 2.9725)
+position = Vector2(1692.03, 714.031)
+scale = Vector2(1.67031, 1.66031)
 texture = ExtResource("2_7wlbd")
 flip_h = true
 hframes = 6
@@ -156,7 +156,7 @@ position = Vector2(-53.3831, -53.3222)
 shape = SubResource("RectangleShape2D_rl6b6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(2208.5, 1279.5)
+position = Vector2(1709.75, 720)
 shape = SubResource("RectangleShape2D_gx8ql")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
@@ -168,7 +168,7 @@ libraries = {
 script = ExtResource("3_bvypt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/WickP2Hurtbox"]
-position = Vector2(2164.25, 1281)
+position = Vector2(1684.62, 719.5)
 shape = SubResource("RectangleShape2D_w2rdk")
 
 [connection signal="area_entered" from="CharacterBody2D/TextureRect/WickP2Punch" to="CharacterBody2D" method="_on_wick_p_2_punch_area_entered"]

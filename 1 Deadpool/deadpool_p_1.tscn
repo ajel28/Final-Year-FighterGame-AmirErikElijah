@@ -206,7 +206,6 @@ script = ExtResource("1_jaspc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeadpoolP1"]
 position = Vector2(322.667, 715.75)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_bjnh6")
 
 [node name="TextureRect" type="Sprite2D" parent="DeadpoolP1"]
@@ -231,7 +230,6 @@ script = ExtResource("3_tgvqg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeadpoolP1/DeadpoolP1Hurtbox"]
 position = Vector2(331.864, 712.375)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_b8aft")
 disabled = true
 

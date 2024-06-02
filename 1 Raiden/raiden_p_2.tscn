@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bxlqr24giwnbc" path="res://1 Raiden/raiden_att_p_2.tscn" id="4_kapbo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ptl5s"]
-size = Vector2(234.5, 593.5)
+size = Vector2(152.25, 339)
 
 [sub_resource type="Animation" id="Animation_ed84p"]
 length = 0.001
@@ -121,7 +121,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l4pqf"]
-size = Vector2(306, 590)
+size = Vector2(191, 340)
 
 [node name="RaidenP2" type="Node2D"]
 
@@ -129,15 +129,15 @@ size = Vector2(306, 590)
 script = ExtResource("1_e1ly0")
 
 [node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(2147, 1266)
-scale = Vector2(3.0425, 3.0425)
+position = Vector2(1699.56, 701.562)
+scale = Vector2(1.79563, 1.79563)
 texture = ExtResource("2_0xqlu")
 flip_h = true
 hframes = 6
 frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(2191.25, 1266.75)
+position = Vector2(1715.12, 706.5)
 shape = SubResource("RectangleShape2D_ptl5s")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
@@ -152,6 +152,6 @@ raidp2_scene = ExtResource("4_kapbo")
 [node name="RaidenHurtboxP2" type="Area2D" parent="CharacterBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/RaidenHurtboxP2"]
-position = Vector2(2156, 1269)
+position = Vector2(1694.5, 706)
 shape = SubResource("RectangleShape2D_l4pqf")
 disabled = true

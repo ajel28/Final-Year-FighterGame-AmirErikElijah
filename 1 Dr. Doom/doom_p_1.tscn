@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b3jwbo3d5xvxw" path="res://1 Dr. Doom/doom_att_p_1.tscn" id="4_w8hpj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5yttx"]
-size = Vector2(339.25, 601)
+size = Vector2(190.625, 321.5)
 
 [sub_resource type="Animation" id="Animation_5e2pc"]
 length = 0.001
@@ -121,7 +121,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q40p6"]
-size = Vector2(421.5, 589.5)
+size = Vector2(227.75, 323.75)
 
 [node name="DoomP1" type="Node2D"]
 
@@ -129,14 +129,14 @@ size = Vector2(421.5, 589.5)
 script = ExtResource("1_nxp1m")
 
 [node name="TextureRect" type="Sprite2D" parent="DoomP1"]
-position = Vector2(893.875, 1260)
-scale = Vector2(3.13125, 3.1325)
+position = Vector2(352, 711)
+scale = Vector2(1.82063, 1.82135)
 texture = ExtResource("2_dei3s")
 hframes = 6
 frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoomP1"]
-position = Vector2(807.375, 1253)
+position = Vector2(326.688, 711.25)
 shape = SubResource("RectangleShape2D_5yttx")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="DoomP1"]
@@ -151,6 +151,6 @@ doomp1_scene = ExtResource("4_w8hpj")
 [node name="DoomP1Hurtbox" type="Area2D" parent="DoomP1"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoomP1/DoomP1Hurtbox"]
-position = Vector2(845.25, 1263.75)
+position = Vector2(343.125, 714.125)
 shape = SubResource("RectangleShape2D_q40p6")
 disabled = true

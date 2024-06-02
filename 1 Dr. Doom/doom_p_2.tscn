@@ -1,12 +1,13 @@
-[gd_scene load_steps=13 format=3 uid="uid://cdhjlgq46nt8i"]
+[gd_scene load_steps=14 format=3 uid="uid://cdhjlgq46nt8i"]
 
 [ext_resource type="Script" path="res://1 Dr. Doom/doom_p_2.gd" id="1_eggay"]
 [ext_resource type="Texture2D" uid="uid://ccm0f38v8bx72" path="res://1 Dr. Doom/Doom-sprite.png" id="2_h65u4"]
 [ext_resource type="Script" path="res://1 Dr. Doom/doomP2shootingOrigin.gd" id="3_emyxb"]
 [ext_resource type="PackedScene" uid="uid://jgllyibx8cah" path="res://1 Dr. Doom/doom_att_p_2.tscn" id="4_5nukc"]
+[ext_resource type="PackedScene" uid="uid://b1jdnguba8pig" path="res://1 Deadpool/deadpool_p_2.tscn" id="5_wbwcb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tp4i7"]
-size = Vector2(325.5, 597.5)
+size = Vector2(175.75, 331)
 
 [sub_resource type="Animation" id="Animation_63wlq"]
 length = 0.001
@@ -119,7 +120,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_07g5u"]
-size = Vector2(408, 617.5)
+size = Vector2(235, 334)
 
 [node name="DoomP2" type="Node2D"]
 
@@ -127,14 +128,14 @@ size = Vector2(408, 617.5)
 script = ExtResource("1_eggay")
 
 [node name="TextureRect" type="Sprite2D" parent="DoomP2"]
-position = Vector2(2111.38, 1248.63)
-scale = Vector2(2.93625, 3.26625)
+position = Vector2(1671, 704)
+scale = Vector2(1.64453, 1.82936)
 texture = ExtResource("2_h65u4")
 flip_h = true
 hframes = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoomP2"]
-position = Vector2(2193.75, 1264.75)
+position = Vector2(1704.88, 709.5)
 shape = SubResource("RectangleShape2D_tp4i7")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="DoomP2"]
@@ -149,6 +150,9 @@ doomp2_scene = ExtResource("4_5nukc")
 [node name="DoomP2Hurtbox" type="Area2D" parent="DoomP2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoomP2/DoomP2Hurtbox"]
-position = Vector2(2148, 1259.75)
+position = Vector2(1675.5, 709)
 shape = SubResource("RectangleShape2D_07g5u")
 disabled = true
+
+[node name="DeadpoolP2" parent="." instance=ExtResource("5_wbwcb")]
+visible = false

@@ -8,7 +8,7 @@
 size = Vector2(65.1307, 45.0622)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cbt6k"]
-size = Vector2(286, 625.25)
+size = Vector2(173, 331)
 
 [sub_resource type="Animation" id="Animation_k74ws"]
 length = 0.001
@@ -118,7 +118,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dvig1"]
-size = Vector2(382.5, 628.5)
+size = Vector2(206.25, 329)
 
 [node name="JinKazamaP2" type="Node2D"]
 
@@ -126,8 +126,8 @@ size = Vector2(382.5, 628.5)
 script = ExtResource("1_qa0yt")
 
 [node name="TextureRect" type="Sprite2D" parent="JinP2"]
-position = Vector2(2162, 1256)
-scale = Vector2(3.025, 3.025)
+position = Vector2(1684.5, 707.305)
+scale = Vector2(1.665, 1.665)
 texture = ExtResource("2_abo3y")
 flip_h = true
 hframes = 7
@@ -140,7 +140,7 @@ rotation = 2.44346
 shape = SubResource("RectangleShape2D_v6j4u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="JinP2"]
-position = Vector2(2216, 1250.38)
+position = Vector2(1702.5, 709.5)
 shape = SubResource("RectangleShape2D_cbt6k")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="JinP2"]
@@ -152,7 +152,7 @@ libraries = {
 script = ExtResource("3_2w8xe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="JinP2/JinP2Hurtbox"]
-position = Vector2(2168.25, 1249.25)
+position = Vector2(1687.12, 709.5)
 shape = SubResource("RectangleShape2D_dvig1")
 
 [connection signal="area_entered" from="JinP2/TextureRect/JinP2Kick" to="JinP2" method="_on_jin_p_2_kick_area_entered"]

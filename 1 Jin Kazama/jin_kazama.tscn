@@ -152,10 +152,10 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mdbq0"]
-size = Vector2(264, 603)
+size = Vector2(189, 324.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aaw8i"]
-size = Vector2(388, 604.5)
+size = Vector2(219, 327.25)
 
 [node name="JinKazamaP1" type="Node2D"]
 
@@ -163,8 +163,8 @@ size = Vector2(388, 604.5)
 script = ExtResource("1_1urm1")
 
 [node name="TextureRect" type="Sprite2D" parent="Jin"]
-position = Vector2(854, 1257)
-scale = Vector2(3.015, 3.015)
+position = Vector2(344.625, 707.219)
+scale = Vector2(1.70375, 1.70375)
 texture = ExtResource("2_ys1gn")
 hframes = 7
 frame = 2
@@ -183,14 +183,14 @@ libraries = {
 
 [node name="IdleCollision" type="CollisionShape2D" parent="Jin"]
 z_as_relative = false
-position = Vector2(813, 1260.5)
+position = Vector2(320.5, 715.75)
 shape = SubResource("RectangleShape2D_mdbq0")
 
 [node name="JinP1Hurtbox" type="Area2D" parent="Jin"]
 script = ExtResource("3_wicmm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Jin/JinP1Hurtbox"]
-position = Vector2(873, 1261.25)
+position = Vector2(332.5, 716.375)
 shape = SubResource("RectangleShape2D_aaw8i")
 
 [connection signal="area_entered" from="Jin/TextureRect/KickArea2d" to="Jin" method="_on_kick_area_2d_area_entered"]
