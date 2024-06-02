@@ -1,7 +1,8 @@
+CollisionShape2D
+StaticBody2D
 AudioStreamPlayer
 Marker2D
 AnimatedSprite2D
-CollisionShape2D
 Area2D
 ParallaxLayer
 Label
@@ -11,4 +12,3 @@ TextureRect
 Node
 Node2D
 AudioStreamPlayer2D
-AudioListener2D
