@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://7vgu60ngymtx"]
+
+[ext_resource type="Script" path="res://Global Stuff/pause_screen.gd" id="1_dhms2"]
+[ext_resource type="Texture2D" uid="uid://diuxd5rc4vjvb" path="res://Global Stuff/pausescreen.png" id="1_oan5v"]
+
+[node name="pauseScreen" type="Node2D"]
+script = ExtResource("1_dhms2")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 610.0
+offset_top = 166.0
+offset_right = 1301.0
+offset_bottom = 857.0
+texture = ExtResource("1_oan5v")
+
+[node name="Resume" type="LinkButton" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.022
+offset_left = 50.0
+offset_top = 40.0
+offset_right = 629.798
+offset_bottom = 220.0
+
+[node name="Settings" type="LinkButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 231.0
+offset_right = 653.0
+offset_bottom = 426.0
+
+[node name="exit" type="LinkButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 445.0
+offset_right = 634.0
+offset_bottom = 655.0
+
+[connection signal="pressed" from="TextureRect/exit" to="." method="_on_exit_pressed"]

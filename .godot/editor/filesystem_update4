@@ -1,4 +1,7 @@
+res://Global Stuff/pause_screen.gd
+res://Global Stuff/pause.gd
+res://Global Stuff/pause_screen.tscn
 res://Menu/start_menu.tscn
-res://1 Jin Kazama/jin_kazama.tscn
-res://1 Jin Kazama/jin_kazama_p_2.tscn
-res://1 Rocky Balboa/rocky_p_2.tscn
+res://1 Deadpool/deadpool_p_1.tscn
+res://1 Winter Soldier/soldier_p_2.tscn
+res://Global Stuff/pause.tscn
