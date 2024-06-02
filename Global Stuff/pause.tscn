@@ -7,8 +7,9 @@
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = 2294.0
 offset_top = -15.0
-offset_right = 2562.0
-offset_bottom = 254.0
+offset_right = 2794.0
+offset_bottom = 485.0
+scale = Vector2(0.559999, 0.559999)
 texture = ExtResource("1_drexn")
 
 [node name="LinkButton" type="LinkButton" parent="."]

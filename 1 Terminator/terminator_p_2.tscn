@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://dy4hc4dsyy4b1"]
+[gd_scene load_steps=13 format=3 uid="uid://dy4hc4dsyy4b1"]
 
 [ext_resource type="Script" path="res://1 Terminator/terminator_p_2.gd" id="1_e3l6d"]
 [ext_resource type="Texture2D" uid="uid://c5fomil7lxriq" path="res://1 Terminator/1Terminator-sprite.png" id="2_no8hn"]
 [ext_resource type="Script" path="res://1 Terminator/termP2ShootingOrigin.gd" id="3_j7oqr"]
+[ext_resource type="PackedScene" uid="uid://cf1vmxpxdha5o" path="res://1 Terminator/terminator_fire_ball_p_2.tscn" id="4_sp3al"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iby2u"]
 size = Vector2(260, 625)
@@ -146,6 +147,7 @@ libraries = {
 
 [node name="termP2shootingOrigin" type="Marker2D" parent="TermCharacterBody2"]
 script = ExtResource("3_j7oqr")
+termp2_scene = ExtResource("4_sp3al")
 
 [node name="TerminatorP2Hurtbox" type="Area2D" parent="TermCharacterBody2"]
 

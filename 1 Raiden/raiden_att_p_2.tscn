@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://bxlqr24giwnbc"]
+
+[ext_resource type="Script" path="res://1 Raiden/raiden_att_p_2.gd" id="1_qprav"]
+[ext_resource type="Texture2D" uid="uid://es08g3qe2ech" path="res://1 Raiden/raidenatt.png" id="2_d0ue6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cpo36"]
+atlas = ExtResource("2_d0ue6")
+region = Rect2(0, 0, 315, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gu7gy"]
+atlas = ExtResource("2_d0ue6")
+region = Rect2(315, 0, 315, 250)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d6cp8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cpo36")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gu7gy")
+}],
+"loop": true,
+"name": &"buzz2",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_orxr0"]
+size = Vector2(395.625, 279.5)
+
+[node name="raidenAttP2" type="Area2D"]
+script = ExtResource("1_qprav")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1918, 1087)
+scale = Vector2(1.617, 1.617)
+sprite_frames = SubResource("SpriteFrames_d6cp8")
+animation = &"buzz2"
+frame_progress = 0.991417
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1925, 1110)
+shape = SubResource("RectangleShape2D_orxr0")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
