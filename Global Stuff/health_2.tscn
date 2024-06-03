@@ -11,7 +11,7 @@ font = SubResource("SystemFont_77ip1")
 [node name="health2" type="Node2D"]
 
 [node name="barsprite" type="Sprite2D" parent="."]
-position = Vector2(1511, 162)
+position = Vector2(1521, 152)
 scale = Vector2(7.8625, 3.85312)
 texture = ExtResource("2_uer24")
 flip_h = true

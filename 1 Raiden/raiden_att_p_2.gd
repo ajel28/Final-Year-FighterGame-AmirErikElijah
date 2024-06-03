@@ -12,5 +12,6 @@ func _physics_process(delta):
 func _on_area_entered(area):
 	if !(area is RaidenAttP2):
 		Global.healthp1-=0.5
+		Global.takeHealth1()
 		print(Global.healthp1)
 		self.queue_free()

@@ -1,3 +1,4 @@
+AnimationPlayer
 AudioStreamPlayer
 AudioListener2D
 MarginContainer
@@ -11,4 +12,3 @@ AnimatedSprite2D
 Area2D
 ParallaxLayer
 Label
-AnimationPlayer
