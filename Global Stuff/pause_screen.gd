@@ -29,3 +29,7 @@ func _on_settings_mouse_entered():
 
 func _on_exit_mouse_entered():
 	$Exit.play()
+	Global.player=1
+	Global.map=0
+	Global.healthp1=100
+	Global.healthp2=100

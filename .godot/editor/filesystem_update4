@@ -1,5 +1,4 @@
 res://Menu/start_menu.tscn
-res://1 Raiden/raiden_att_p_2.gd
 res://1 Deadpool/deadpool_p_1.tscn
 res://1 Winter Soldier/soldier_p_2.tscn
 res://Global Stuff/pause_screen.tscn
@@ -24,4 +23,4 @@ res://1MainCharacter/main_character_p_2.tscn
 res://Global Stuff/health_1.tscn
 res://Global Stuff/health_2.tscn
 res://1 Raiden/raiden_att_p_2.tscn
-res://Global Stuff/health_1.gd
+res://Global Stuff/pause_screen.gd
