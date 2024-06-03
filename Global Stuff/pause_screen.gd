@@ -1,6 +1,5 @@
 extends Node2D
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -16,4 +15,17 @@ func _on_exit_pressed():
 
 
 func _on_resume_pressed():
+	get_tree().paused = false
 	self.queue_free()
+
+
+func _on_resume_mouse_entered():
+	$Resume.play()
+
+
+func _on_settings_mouse_entered():
+	$Settings.play()
+
+
+func _on_exit_mouse_entered():
+	$Exit.play()

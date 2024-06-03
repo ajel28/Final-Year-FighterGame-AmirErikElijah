@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cer67rv67h4id"
+path="res://.godot/imported/Game resumed 1.wav-18ab8622cea0241e55d54e5a90cfcd16.sample"
+
+[deps]
+
+source_file="res://Global Stuff/Game resumed 1.wav"
+dest_files=["res://.godot/imported/Game resumed 1.wav-18ab8622cea0241e55d54e5a90cfcd16.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

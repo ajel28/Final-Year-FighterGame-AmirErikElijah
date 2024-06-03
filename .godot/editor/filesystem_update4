@@ -1,5 +1,5 @@
-res://Global Stuff/pause_screen.gd
 res://Global Stuff/pause_screen.tscn
-res://Global Stuff/pause.gd
 res://Menu/start_menu.tscn
 res://Global Stuff/pause.tscn
+res://Global Stuff/pause.gd
+res://Global Stuff/pause_screen.gd

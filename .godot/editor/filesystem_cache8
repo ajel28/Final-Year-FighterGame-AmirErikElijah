@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1717369475
+::res://::1717371679
 icon.svg::CompressedTexture2D::8402663531990749670::1707397684::1717156823::1::::<><>::
 README.md::TextFile::-1::1717361486::0::1::::<><>::
 ::res://1 Deadpool/::1717366863
@@ -197,19 +197,24 @@ streetfightTheme.mp3::AudioStreamMP3::382963593952078244::1717361486::1717361486
 Super Smash Bros Ultimate (Theme).mp3::AudioStreamMP3::4630787861071090472::1717361486::1717361486::1::::<><>::
 The Immortals - Mortal Kombat (Techno Syndrome 12 Mix) [Custom Instrumental].mp3::AudioStreamMP3::3185291667829383599::1717361486::1717361486::1::::<><>::
 Yarikawa's Defense - Ghost of Tsushima OST.mp3::AudioStreamMP3::8482579937033032610::1717361486::1717361486::1::::<><>::
-::res://Global Stuff/::1717369466
+::res://Global Stuff/::1717372650
+Exit 1.wav::AudioStreamWAV::1060904053288733271::1717372144::1717372145::1::::<><>::
+Game resumed 1.wav::AudioStreamWAV::5090631462727479903::1717372650::1717372650::1::::<><>::
 Global.gd::GDScript::-1::1717361486::0::1::::<>Node<>::
 healthbar-sprite.png::CompressedTexture2D::1122461116531669561::1717361486::1717361486::1::::<><>::
 health_1.gd::GDScript::-1::1717361486::0::1::::<>Node2D<>::
 health_1.tscn::PackedScene::6584252947103346863::1717366863::0::1::::<><>::res://Global Stuff/health_1.gd<>uid://p8y1g2qyk62x::::res://Global Stuff/healthbar-sprite.png
 health_2.tscn::PackedScene::2174340182295251505::1717366863::0::1::::<><>::uid://p8y1g2qyk62x::::res://Global Stuff/healthbar-sprite.png
-pause.gd::GDScript::-1::1717369466::0::1::::<>Node2D<>::
+pause.gd::GDScript::-1::1717372488::0::1::::<>Node2D<>::
 pause.png::CompressedTexture2D::8477052106789954745::1717366863::1717366863::1::::<><>::
-pause.tscn::PackedScene::5738698664817500356::1717369466::0::1::::<><>::res://Global Stuff/pause.gd<>uid://ds1l2r85tr2px::::res://Global Stuff/pause.png
+pause.tscn::PackedScene::5738698664817500356::1717372488::0::1::::<><>::res://Global Stuff/pause.gd<>uid://ds1l2r85tr2px::::res://Global Stuff/pause.png<>uid://7vgu60ngymtx::::res://Global Stuff/pause_screen.tscn
 PauseButton.png::CompressedTexture2D::4864319881971026362::1717361486::1717361486::1::::<><>::
+Paused Game 1.wav::AudioStreamWAV::2722881917217582700::1717372407::1717372407::1::::<><>::
 pausescreen.png::CompressedTexture2D::7763463805572741607::1717369466::1717369466::1::::<><>::
-pause_screen.gd::GDScript::-1::1717369466::0::1::::<>Node2D<>::
-pause_screen.tscn::PackedScene::2289796614530589517::1717369466::0::1::::<><>::res://Global Stuff/pause_screen.gd<>uid://diuxd5rc4vjvb::::res://Global Stuff/pausescreen.png
+pause_screen.gd::GDScript::-1::1717372306::0::1::::<>Node2D<>::
+pause_screen.tscn::PackedScene::2289796614530589517::1717372488::0::1::::<><>::res://Global Stuff/pause_screen.gd<>uid://diuxd5rc4vjvb::::res://Global Stuff/pausescreen.png<>uid://7ltwu5qw3dj0::::res://Global Stuff/Resume 2.wav<>uid://1logh1npmryr::::res://Global Stuff/Settings 1.wav<>uid://pd561tyj4poh::::res://Global Stuff/Exit 1.wav<>uid://be18p5jcby6xs::::res://Global Stuff/Paused Game 1.wav
+Resume 2.wav::AudioStreamWAV::2269945159608770199::1717372148::1717372148::1::::<><>::
+Settings 1.wav::AudioStreamWAV::1848479250985222901::1717372147::1717372147::1::::<><>::
 ui_screen.tscn::PackedScene::8281122264665643053::1717366863::0::1::::<><>::uid://cn04r8bebir05::::res://Global Stuff/pause.tscn<>uid://c02pxi1t5ipwh::::res://Global Stuff/health_1.tscn<>uid://58jchj08xrjt::::res://Global Stuff/health_2.tscn
 ::res://Map Select/::1717366863
 Abandoned Ruins.png::CompressedTexture2D::6004056645392444917::1717361486::1717361486::1::::<><>::
@@ -265,14 +270,14 @@ taka_map.tscn::PackedScene::2355405196640841644::1717366863::0::1::::<><>::res:/
 TekkenBackground (1).png::CompressedTexture2D::4748193133728211385::1717361486::1717361486::1::::<><>::
 yaku_map.gd::GDScript::-1::1717361486::0::1::::<>Node2D<>::
 yaku_map.tscn::PackedScene::6341296432058137907::1717366863::0::1::::<><>::res://Maps/yaku_map.gd<>uid://cj7k2xvaahn0v::::res://Maps/ActualYakushimaForest.png<>uid://yo2mbldi5pwr::::res://GeneralSounds/READY, FIGHT - Sound Effect.mp3<>uid://dp8o4yekl6npt::::res://Global Stuff/ui_screen.tscn<>uid://f3l15b3b7ulq::::res://GeneralSounds/Rebellion  Sekiro_ Shadows Die Twice OST.mp3
-::res://Menu/::1717367225
+::res://Menu/::1717372488
 Creators.png::CompressedTexture2D::7378737626435583313::1717361486::1717361486::1::::<><>::
 intro_screen.gd::GDScript::-1::1717361486::0::1::::<>Node2D<>::
 intro_screen.tscn::PackedScene::982620707682158529::1717366863::0::1::::<><>::res://Menu/intro_screen.gd<>uid://ddeky3v4yehjd::::res://Menu/Creators.png
 LobbyMusic.mp3::AudioStreamMP3::3550493253570322633::1717361486::1717361486::1::::<><>::
 playbutton.gd::GDScript::-1::1717361486::0::1::::<>Button<>::
 start_menu.gd::GDScript::-1::1717361486::0::1::::<>Control<>::
-start_menu.tscn::PackedScene::1976587525571984087::1717367225::0::1::::<><>::res://Menu/start_menu.gd<>uid://ca4de511quu5p::::res://Menu/TitleScreen.png<>uid://bqt5dts6nv11v::::res://Menu/LobbyMusic.mp3
+start_menu.tscn::PackedScene::1976587525571984087::1717372488::0::1::::<><>::res://Menu/start_menu.gd<>uid://ca4de511quu5p::::res://Menu/TitleScreen.png<>uid://bqt5dts6nv11v::::res://Menu/LobbyMusic.mp3
 TitleScreen.png::CompressedTexture2D::4832899233476786363::1717361486::1717361486::1::::<><>::
 ::res://website/::1717362477
 ::res://website/img/::1717366863

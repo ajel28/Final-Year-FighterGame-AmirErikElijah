@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Global="*res://Global Stuff/Global.gd"
 P1Health="*res://Global Stuff/P1Health.gd"
+PauseScreen="*res://Global Stuff/pause_screen.gd"
 
 [display]
 
