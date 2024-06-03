@@ -1,4 +1,11 @@
 res://Menu/start_menu.tscn
-res://Global Stuff/pause_screen.gd
 res://Global Stuff/pause.tscn
 res://Global Stuff/pause_screen.tscn
+res://1 Raiden/raidenShootingOriginP1.gd
+res://1 Raiden/raiden_p_1.tscn
+res://1 Raiden/raidenShootingOriginP2.gd
+res://1 Raiden/raiden_p_2.tscn
+res://1 Dr. Doom/doomP1shootingOrigin.gd
+res://1 Dr. Doom/doomP2shootingOrigin.gd
+res://1 Terminator/termP1ShootingOrigin.gd
+res://1 Terminator/termP2ShootingOrigin.gd
