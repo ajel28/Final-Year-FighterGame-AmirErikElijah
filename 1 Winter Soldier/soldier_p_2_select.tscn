@@ -1,18 +1,18 @@
 [gd_scene load_steps=3 format=3 uid="uid://51pqsq3p4sxj"]
 
 [ext_resource type="Texture2D" uid="uid://c75s6osd465yr" path="res://1 Winter Soldier/WsoldierChSelectP2.png" id="1_o26qv"]
-[ext_resource type="AudioStream" uid="uid://t0uh2dw8xc17" path="res://1 Winter Soldier/WSoldierSound.mp3" id="2_7eq0u"]
+[ext_resource type="AudioStream" uid="uid://cf73q4svx0411" path="res://1 Winter Soldier/The Winter Soldier 3.wav" id="2_24hji"]
 
 [node name="SoldierP2Select" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 2062.0
-offset_top = 334.0
-offset_right = 2800.0
-offset_bottom = 1206.0
+offset_left = 1378.0
+offset_top = 90.0
+offset_right = 1886.0
+offset_bottom = 690.0
 texture = ExtResource("1_o26qv")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_7eq0u")
+stream = ExtResource("2_24hji")
 volume_db = 12.0
 autoplay = true

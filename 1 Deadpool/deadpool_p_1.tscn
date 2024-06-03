@@ -1,11 +1,13 @@
-[gd_scene load_steps=13 format=3 uid="uid://blqv6bi2f613f"]
+[gd_scene load_steps=15 format=3 uid="uid://blqv6bi2f613f"]
 
 [ext_resource type="Script" path="res://1 Deadpool/deadpool_p_1.gd" id="1_jaspc"]
 [ext_resource type="Texture2D" uid="uid://d236227iy03yl" path="res://1 Deadpool/1Deadpool-sprite.png" id="2_nv5fj"]
 [ext_resource type="Script" path="res://1 Deadpool/DeadpoolP1Hurtbox.gd" id="3_tgvqg"]
+[ext_resource type="AudioStream" uid="uid://cgjun3xnujc5q" path="res://1 Deadpool/Triple Hit 2.wav" id="4_4tp8b"]
+[ext_resource type="AudioStream" uid="uid://bl0stpj0qdy6m" path="res://1 Deadpool/Fatality 1.wav" id="5_6h3ip"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bjnh6"]
-size = Vector2(260, 653)
+size = Vector2(184.381, 319.499)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bwvxk"]
 size = Vector2(31.4763, 29.6518)
@@ -72,7 +74,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_q2vi3"]
 resource_name = "deadpooljump1"
-length = 0.3
+length = 0.8
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -80,10 +82,10 @@ tracks/0/path = NodePath("TextureRect:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2),
+"times": PackedFloat32Array(0.1, 0.7),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [0, 5]
+"values": [5, 0]
 }
 
 [sub_resource type="Animation" id="Animation_exyl8"]
@@ -136,20 +138,24 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b8aft"]
-size = Vector2(344, 651.5)
+size = Vector2(206.07, 322.75)
 
 [node name="DeadpoolP1" type="Node2D"]
 
 [node name="DeadpoolP1" type="CharacterBody2D" parent="."]
+scale = Vector2(0.997932, 1)
 script = ExtResource("1_jaspc")
+jump_height = 700.0
+jump_time_to_peak = 0.5
+jump_time_to_descent = 0.3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeadpoolP1"]
-position = Vector2(881, 1254.5)
+position = Vector2(322.667, 715.75)
 shape = SubResource("RectangleShape2D_bjnh6")
 
 [node name="TextureRect" type="Sprite2D" parent="DeadpoolP1"]
-position = Vector2(929, 1248)
-scale = Vector2(3.59, 3.59)
+position = Vector2(351.663, 698.978)
+scale = Vector2(1.88454, 1.88454)
 texture = ExtResource("2_nv5fj")
 hframes = 6
 <<<<<<< HEAD
@@ -173,7 +179,15 @@ libraries = {
 script = ExtResource("3_tgvqg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeadpoolP1/DeadpoolP1Hurtbox"]
-position = Vector2(910, 1253.75)
+position = Vector2(331.864, 712.375)
 shape = SubResource("RectangleShape2D_b8aft")
+
+[node name="Triple" type="AudioStreamPlayer" parent="DeadpoolP1"]
+stream = ExtResource("4_4tp8b")
+volume_db = 10.0
+
+[node name="Fatality" type="AudioStreamPlayer" parent="DeadpoolP1"]
+stream = ExtResource("5_6h3ip")
+volume_db = 10.0
 
 [connection signal="area_entered" from="DeadpoolP1/TextureRect/DeadpoolP1Punch" to="DeadpoolP1" method="_on_deadpool_p_1_punch_area_entered"]

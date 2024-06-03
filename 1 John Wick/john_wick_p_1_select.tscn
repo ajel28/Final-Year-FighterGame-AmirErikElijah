@@ -1,17 +1,17 @@
 [gd_scene load_steps=3 format=3 uid="uid://cpeoj32epjjqt"]
 
 [ext_resource type="Texture2D" uid="uid://b87kt0h616pgp" path="res://1 John Wick/JohnWickChSelectP1.png" id="1_qd1sx"]
-[ext_resource type="AudioStream" uid="uid://d2ruolhllfyno" path="res://1 John Wick/give-me-something-101soundboards.mp3" id="2_48jfd"]
+[ext_resource type="AudioStream" uid="uid://db053h165qgto" path="res://1 John Wick/John Wick 1.wav" id="2_plke4"]
 
 [node name="JohnWickP1Select" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 105.0
-offset_top = 294.0
-offset_right = 1015.0
-offset_bottom = 1190.0
+offset_left = 47.0
+offset_top = 130.0
+offset_right = 618.0
+offset_bottom = 684.0
 texture = ExtResource("1_qd1sx")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_48jfd")
+stream = ExtResource("2_plke4")
 autoplay = true

@@ -8,7 +8,7 @@
 size = Vector2(80.0466, 27.3464)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b3yfx"]
-size = Vector2(363, 560)
+size = Vector2(190.5, 303)
 
 [sub_resource type="Animation" id="Animation_n5wfg"]
 length = 0.001
@@ -36,6 +36,18 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector2(42.6583, -54.4832)]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SoldierP1Hurtbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="Animation" id="Animation_jy606"]
 resource_name = "buckycrouch"
@@ -51,6 +63,30 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [3]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect/SoldierP1Punch/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SoldierP1Hurtbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="Animation" id="Animation_ldial"]
@@ -68,9 +104,49 @@ tracks/0/keys = {
 "update": 1,
 "values": [2, 1, 0]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SoldierP1Hurtbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, false, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect/SoldierP1Punch/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, true, true]
+}
 
 [sub_resource type="Animation" id="Animation_4084e"]
 resource_name = "buckyjump"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [5, 0]
+}
+
+[sub_resource type="Animation" id="Animation_oyeh0"]
+resource_name = "buckypunch"
 length = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -82,23 +158,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [5]
-}
-
-[sub_resource type="Animation" id="Animation_oyeh0"]
-resource_name = "buckypunch"
-length = 0.25
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("TextureRect:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [4, 0]
+"values": [4]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -135,31 +195,30 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yk7ge"]
-size = Vector2(437.5, 561.25)
+size = Vector2(232.75, 299.625)
 
 [node name="SoldierP1" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("1_64tp6")
+jump_height = 700.0
+jump_time_to_peak = 0.5
+jump_time_to_descent = 0.3
 
 [node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(840, 1290)
-scale = Vector2(2.685, 2.685)
+position = Vector2(375, 723)
+scale = Vector2(1.46563, 1.46563)
 texture = ExtResource("2_q332d")
 hframes = 6
-<<<<<<< HEAD
-=======
-frame = 1
 
 [node name="SoldierP1Punch" type="Area2D" parent="CharacterBody2D/TextureRect"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/TextureRect/SoldierP1Punch"]
 position = Vector2(42.6583, -54.4832)
 shape = SubResource("RectangleShape2D_5y4ve")
->>>>>>> 5291211c4b087318142dc2367840247698d847a4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(734.5, 1291)
+position = Vector2(324.75, 722.5)
 shape = SubResource("RectangleShape2D_b3yfx")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
@@ -171,7 +230,7 @@ libraries = {
 script = ExtResource("3_mgnrh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/SoldierP1Hurtbox"]
-position = Vector2(773.25, 1289.62)
+position = Vector2(343.625, 719.812)
 shape = SubResource("RectangleShape2D_yk7ge")
 
 [connection signal="area_entered" from="CharacterBody2D/TextureRect/SoldierP1Punch" to="CharacterBody2D" method="_on_soldier_p_1_punch_area_entered"]

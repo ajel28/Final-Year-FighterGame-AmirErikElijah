@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cidvskwee72ym"]
+
+[ext_resource type="Script" path="res://1 Terminator/terminator_fire_ball_p_1.gd" id="1_edn7b"]
+[ext_resource type="Texture2D" uid="uid://bdti6hrqkkh0c" path="res://1 Terminator/FireBall.png" id="1_l3m3a"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mwfqx"]
+radius = 47.0
+height = 94.0
+
+[node name="TerminatorFireBallP1" type="Area2D"]
+script = ExtResource("1_edn7b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(11, 3)
+scale = Vector2(0.545, 0.538434)
+texture = ExtResource("1_l3m3a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, -6)
+shape = SubResource("CapsuleShape2D_mwfqx")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

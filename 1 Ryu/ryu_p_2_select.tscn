@@ -1,18 +1,18 @@
 [gd_scene load_steps=3 format=3 uid="uid://bworwahc0peld"]
 
 [ext_resource type="Texture2D" uid="uid://ctrwcc8d2x3rp" path="res://1 Ryu/RyuChSelectP2.png" id="1_143by"]
-[ext_resource type="AudioStream" uid="uid://i0eu2fopwilx" path="res://1 Ryu/RyuSelect.mp3" id="2_xh1bq"]
+[ext_resource type="AudioStream" uid="uid://b25c0yx7g1x7d" path="res://1 Ryu/Ryu 4.wav" id="2_8taqa"]
 
 [node name="RyuP2Select" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1994.0
-offset_top = 312.0
-offset_right = 2836.0
-offset_bottom = 1206.0
+offset_left = 1374.0
+offset_top = 99.0
+offset_right = 1928.0
+offset_bottom = 687.0
 texture = ExtResource("1_143by")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_xh1bq")
+stream = ExtResource("2_8taqa")
 volume_db = 12.0
 autoplay = true

@@ -15,38 +15,39 @@ script = ExtResource("1_uw3vl")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = -120.0
-offset_right = 2975.0
-offset_bottom = 1829.0
+offset_left = -50.0
+offset_top = -44.0
+offset_right = 1908.0
+offset_bottom = 1113.0
 texture = ExtResource("2_vk4qr")
 
 [node name="ExitButton" type="LinkButton" parent="."]
 layout_mode = 0
-offset_left = 1045.0
-offset_top = 907.0
-offset_right = 1771.0
-offset_bottom = 1151.0
+offset_left = 644.0
+offset_top = 494.0
+offset_right = 1170.0
+offset_bottom = 695.0
 
 [node name="ControlsButton" type="LinkButton" parent="."]
 layout_mode = 0
-offset_left = 80.0
-offset_top = 907.0
-offset_right = 853.0
-offset_bottom = 1195.0
+offset_left = -48.0
+offset_top = 500.0
+offset_right = 427.0
+offset_bottom = 694.0
 
 [node name="IntroButton" type="LinkButton" parent="."]
 layout_mode = 0
-offset_left = 107.0
-offset_top = 532.0
-offset_right = 843.0
-offset_bottom = 783.0
+offset_left = 43.0
+offset_top = 274.0
+offset_right = 606.0
+offset_bottom = 443.0
 
 [node name="StoryButton" type="LinkButton" parent="."]
 layout_mode = 0
-offset_left = 137.0
-offset_top = 1299.0
-offset_right = 813.0
-offset_bottom = 1587.0
+offset_left = 98.0
+offset_top = 750.0
+offset_right = 580.0
+offset_bottom = 965.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_vd1p0")

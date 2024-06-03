@@ -1,21 +1,104 @@
-[gd_scene load_steps=4 format=3 uid="uid://b3odc2ejkooke"]
+[gd_scene load_steps=9 format=3 uid="uid://b3odc2ejkooke"]
 
-[ext_resource type="Texture2D" uid="uid://cc1t6l268j2v1" path="res://website/img/MainCharacter.png" id="1_r26t7"]
-[ext_resource type="Script" path="res://MainCharacter/McP2.gd" id="1_ywrpk"]
+[ext_resource type="Script" path="res://1MainCharacter/McP2.gd" id="1_ywrpk"]
+[ext_resource type="Texture2D" uid="uid://c8lwr0ssc0plw" path="res://1MainCharacter/Mc-sprite.png" id="2_apci6"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7h5fk"]
-size = Vector2(268.5, 630.5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5fosg"]
+size = Vector2(165.375, 325.375)
+
+[sub_resource type="Animation" id="Animation_nnuwd"]
+resource_name = "mc_crouch"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MC2:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+
+[sub_resource type="Animation" id="Animation_qm1o4"]
+resource_name = "mc_idle"
+length = 0.55
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MC2:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [1, 2, 1, 0]
+}
+
+[sub_resource type="Animation" id="Animation_hmcoa"]
+resource_name = "mc_jump"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MC2:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [5, 0]
+}
+
+[sub_resource type="Animation" id="Animation_atsfe"]
+resource_name = "mc_punch"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MC2:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [3, 2]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vjnem"]
+_data = {
+"mc_crouch": SubResource("Animation_nnuwd"),
+"mc_idle": SubResource("Animation_qm1o4"),
+"mc_jump": SubResource("Animation_hmcoa"),
+"mc_punch": SubResource("Animation_atsfe")
+}
 
 [node name="MainCharacterP2" type="Node2D"]
 
 [node name="McP2" type="CharacterBody2D" parent="."]
 script = ExtResource("1_ywrpk")
+jump_height = 700.0
+jump_time_to_peak = 0.5
+jump_time_to_descent = 0.3
 
-[node name="Sprite2D" type="Sprite2D" parent="McP2"]
-position = Vector2(2150, 1257)
-scale = Vector2(3.205, 3.205)
-texture = ExtResource("1_r26t7")
+[node name="MC2" type="Sprite2D" parent="McP2"]
+position = Vector2(1709, 711)
+scale = Vector2(1.655, 1.655)
+texture = ExtResource("2_apci6")
+flip_h = true
+hframes = 6
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="McP2"]
-position = Vector2(2144.25, 1255.25)
-shape = SubResource("RectangleShape2D_7h5fk")
+position = Vector2(1705.69, 716.312)
+shape = SubResource("RectangleShape2D_5fosg")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="McP2"]
+libraries = {
+"": SubResource("AnimationLibrary_vjnem")
+}

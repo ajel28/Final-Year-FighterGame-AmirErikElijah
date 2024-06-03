@@ -4,7 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://p8y1g2qyk62x" path="res://Global Stuff/healthbar-sprite.png" id="2_rbvi0"]
 
 [sub_resource type="Animation" id="Animation_lpvq2"]
-resource_name = "dam1"
+resource_name = "damage"
+length = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -20,15 +21,15 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_x1w0m"]
 _data = {
-"dam1": SubResource("Animation_lpvq2")
+"damage": SubResource("Animation_lpvq2")
 }
 
 [node name="health1" type="Node2D"]
 script = ExtResource("1_fryop")
 
 [node name="barsprite" type="Sprite2D" parent="."]
-position = Vector2(211, 93)
-scale = Vector2(4.09, 2.06136)
+position = Vector2(388, 157)
+scale = Vector2(7.8625, 3.85312)
 texture = ExtResource("2_rbvi0")
 hframes = 17
 

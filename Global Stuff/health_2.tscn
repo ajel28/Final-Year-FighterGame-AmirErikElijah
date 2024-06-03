@@ -1,49 +1,28 @@
-[gd_scene load_steps=5 format=3 uid="uid://egp0o5462fp4"]
+[gd_scene load_steps=4 format=3 uid="uid://58jchj08xrjt"]
 
-[ext_resource type="Script" path="res://Global Stuff/health_2.gd" id="1_oio7h"]
 [ext_resource type="Texture2D" uid="uid://p8y1g2qyk62x" path="res://Global Stuff/healthbar-sprite.png" id="2_uer24"]
 
-[sub_resource type="Animation" id="Animation_lpvq2"]
-resource_name = "dam1"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("barsprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [1]
-}
+[sub_resource type="SystemFont" id="SystemFont_77ip1"]
+font_names = PackedStringArray("PingFang HK")
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_x1w0m"]
-_data = {
-"dam1": SubResource("Animation_lpvq2")
-}
+[sub_resource type="LabelSettings" id="LabelSettings_ikor5"]
+font = SubResource("SystemFont_77ip1")
 
 [node name="health2" type="Node2D"]
-script = ExtResource("1_oio7h")
 
 [node name="barsprite" type="Sprite2D" parent="."]
-position = Vector2(899, 103)
-scale = Vector2(5, 2.52)
+position = Vector2(1521, 152)
+scale = Vector2(7.8625, 3.85312)
 texture = ExtResource("2_uer24")
 flip_h = true
 hframes = 17
 
 [node name="Label" type="Label" parent="barsprite"]
-offset_left = 17.8
-offset_top = -21.4286
-offset_right = 79.8
-offset_bottom = 1.57142
+offset_left = 18.442
+offset_top = -21.2815
+offset_right = 80.442
+offset_bottom = 1.71859
 scale = Vector2(0.398456, 0.401702)
-text = "Player 2
-"
+text = "Player 2"
+label_settings = SubResource("LabelSettings_ikor5")
 text_direction = 1
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_x1w0m")
-}

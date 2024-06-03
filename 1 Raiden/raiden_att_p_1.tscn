@@ -1,0 +1,53 @@
+[gd_scene load_steps=9 format=3 uid="uid://mg4lp80wcbpl"]
+
+[ext_resource type="Script" path="res://1 Raiden/raiden_att_p_1.gd" id="1_ggwyn"]
+[ext_resource type="Texture2D" uid="uid://es08g3qe2ech" path="res://1 Raiden/raidenatt.png" id="2_77ocj"]
+[ext_resource type="AudioStream" uid="uid://bnkhyexn33ony" path="res://1 Raiden/Triple Hit 2.wav" id="3_hdev3"]
+[ext_resource type="AudioStream" uid="uid://flor07t27tio" path="res://1 Raiden/Fatality 1.wav" id="4_t6kut"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cpo36"]
+atlas = ExtResource("2_77ocj")
+region = Rect2(0, 0, 315, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gu7gy"]
+atlas = ExtResource("2_77ocj")
+region = Rect2(315, 0, 315, 250)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d6cp8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cpo36")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gu7gy")
+}],
+"loop": true,
+"name": &"buzz",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_orxr0"]
+size = Vector2(243.501, 106)
+
+[node name="raidenAttP1" type="Area2D"]
+script = ExtResource("1_ggwyn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(572, 613)
+scale = Vector2(1.11, 1.11)
+sprite_frames = SubResource("SpriteFrames_d6cp8")
+animation = &"buzz"
+frame_progress = 0.934936
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(562, 628)
+shape = SubResource("RectangleShape2D_orxr0")
+
+[node name="Triple" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_hdev3")
+
+[node name="Fatality" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_t6kut")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

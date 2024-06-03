@@ -1,10 +1,27 @@
-[gd_scene load_steps=9 format=3 uid="uid://xee311mmo32j"]
+[gd_scene load_steps=13 format=3 uid="uid://xee311mmo32j"]
 
 [ext_resource type="Script" path="res://1 Raiden/raiden_p_2.gd" id="1_e1ly0"]
 [ext_resource type="Texture2D" uid="uid://dbaul8jp5wjv" path="res://1 Raiden/1Raiden-sprite.png" id="2_0xqlu"]
+[ext_resource type="Script" path="res://1 Raiden/raidenShootingOriginP2.gd" id="3_p676y"]
+[ext_resource type="PackedScene" uid="uid://bxlqr24giwnbc" path="res://1 Raiden/raiden_att_p_2.tscn" id="4_kapbo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ptl5s"]
-size = Vector2(234.5, 593.5)
+size = Vector2(152.25, 339)
+
+[sub_resource type="Animation" id="Animation_ed84p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RaidenHurtboxP2/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_fuov8"]
 resource_name = "raidencrouch2"
@@ -20,6 +37,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [3]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RaidenHurtboxP2/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="Animation" id="Animation_wrq8x"]
@@ -37,10 +66,22 @@ tracks/0/keys = {
 "update": 1,
 "values": [2, 1, 0]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RaidenHurtboxP2/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, false, false]
+}
 
 [sub_resource type="Animation" id="Animation_6rtrj"]
 resource_name = "raidenjump2"
-length = 0.1
+length = 0.8
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -48,10 +89,10 @@ tracks/0/path = NodePath("TextureRect:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [5]
+"values": [5, 0]
 }
 
 [sub_resource type="Animation" id="Animation_56r4c"]
@@ -72,29 +113,47 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fsynv"]
 _data = {
+"RESET": SubResource("Animation_ed84p"),
 "raidencrouch2": SubResource("Animation_fuov8"),
 "raidenidle2": SubResource("Animation_wrq8x"),
 "raidenjump2": SubResource("Animation_6rtrj"),
 "raidenpunch2": SubResource("Animation_56r4c")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l4pqf"]
+size = Vector2(191, 340)
+
 [node name="RaidenP2" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("1_e1ly0")
+jump_height = 700.0
+jump_time_to_peak = 0.5
+jump_time_to_descent = 0.3
 
 [node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(2147, 1266)
-scale = Vector2(3.0425, 3.0425)
+position = Vector2(1699.56, 701.562)
+scale = Vector2(1.79563, 1.79563)
 texture = ExtResource("2_0xqlu")
 flip_h = true
 hframes = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(2191.25, 1266.75)
+position = Vector2(1715.12, 706.5)
 shape = SubResource("RectangleShape2D_ptl5s")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
 libraries = {
 "": SubResource("AnimationLibrary_fsynv")
 }
+
+[node name="raidenShootingOriginP2" type="Marker2D" parent="CharacterBody2D"]
+script = ExtResource("3_p676y")
+raidp2_scene = ExtResource("4_kapbo")
+
+[node name="RaidenHurtboxP2" type="Area2D" parent="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/RaidenHurtboxP2"]
+position = Vector2(1694.5, 706)
+shape = SubResource("RectangleShape2D_l4pqf")
+disabled = true

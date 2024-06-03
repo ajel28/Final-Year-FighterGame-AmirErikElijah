@@ -1,12 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://cxkycfahah041"]
+[gd_scene load_steps=3 format=3 uid="uid://cxkycfahah041"]
 
-[ext_resource type="Texture2D" uid="uid://b1errqha0t3d5" path="res://MainCharacter/MCcharacterSelectP2.png" id="1_mhl60"]
+[ext_resource type="Texture2D" uid="uid://b1errqha0t3d5" path="res://1MainCharacter/MCcharacterSelectP2.png" id="1_mhl60"]
+[ext_resource type="AudioStream" uid="uid://fh7s7eenhmo" path="res://1MainCharacter/Character Origin Not Foun 1 (1).wav" id="2_qlji4"]
 
 [node name="MCSelectP2" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1978.0
-offset_top = 307.0
-offset_right = 2722.0
-offset_bottom = 1194.0
+offset_left = 1376.0
+offset_top = 140.0
+offset_right = 1826.0
+offset_bottom = 676.0
 texture = ExtResource("1_mhl60")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_qlji4")
+autoplay = true

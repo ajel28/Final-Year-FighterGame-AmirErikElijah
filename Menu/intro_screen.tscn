@@ -7,9 +7,11 @@
 script = ExtResource("1_xdcgs")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
-offset_left = -112.0
-offset_right = 2976.0
-offset_bottom = 1830.0
+offset_left = -115.0
+offset_top = 13.0
+offset_right = 2973.0
+offset_bottom = 1843.0
+scale = Vector2(0.654447, 0.566739)
 texture = ExtResource("2_7qmce")
 
 [node name="IntroBack" type="LinkButton" parent="."]

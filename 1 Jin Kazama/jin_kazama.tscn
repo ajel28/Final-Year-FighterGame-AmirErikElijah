@@ -152,10 +152,10 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mdbq0"]
-size = Vector2(264, 603)
+size = Vector2(189, 324.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aaw8i"]
-size = Vector2(388, 604.5)
+size = Vector2(219, 327.25)
 
 [node name="JinKazamaP1" type="Node2D"]
 
@@ -163,11 +163,10 @@ size = Vector2(388, 604.5)
 script = ExtResource("1_1urm1")
 
 [node name="TextureRect" type="Sprite2D" parent="Jin"]
-position = Vector2(854, 1257)
-scale = Vector2(3.015, 3.015)
+position = Vector2(344.625, 707.219)
+scale = Vector2(1.70375, 1.70375)
 texture = ExtResource("2_ys1gn")
 hframes = 7
-frame = 2
 
 [node name="KickArea2d" type="Area2D" parent="Jin/TextureRect"]
 
@@ -176,14 +175,6 @@ position = Vector2(39.2786, 15.7296)
 rotation = 0.523599
 shape = SubResource("RectangleShape2D_5n6a1")
 
-[node name="Camera2D" type="Camera2D" parent="Jin"]
-position = Vector2(1627, 775)
-zoom = Vector2(0.8, 0.8)
-limit_left = -1000
-limit_right = 5250
-position_smoothing_enabled = true
-position_smoothing_speed = 4.0
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Jin"]
 libraries = {
 "": SubResource("AnimationLibrary_ifsdv")
@@ -191,14 +182,14 @@ libraries = {
 
 [node name="IdleCollision" type="CollisionShape2D" parent="Jin"]
 z_as_relative = false
-position = Vector2(813, 1260.5)
+position = Vector2(320.5, 715.75)
 shape = SubResource("RectangleShape2D_mdbq0")
 
 [node name="JinP1Hurtbox" type="Area2D" parent="Jin"]
 script = ExtResource("3_wicmm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Jin/JinP1Hurtbox"]
-position = Vector2(873, 1261.25)
+position = Vector2(332.5, 716.375)
 shape = SubResource("RectangleShape2D_aaw8i")
 
 [connection signal="area_entered" from="Jin/TextureRect/KickArea2d" to="Jin" method="_on_kick_area_2d_area_entered"]

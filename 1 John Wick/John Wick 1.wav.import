@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://db053h165qgto"
+path="res://.godot/imported/John Wick 1.wav-30b05e862d92f2ee578f05f0897f9cea.sample"
+
+[deps]
+
+source_file="res://1 John Wick/John Wick 1.wav"
+dest_files=["res://.godot/imported/John Wick 1.wav-30b05e862d92f2ee578f05f0897f9cea.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

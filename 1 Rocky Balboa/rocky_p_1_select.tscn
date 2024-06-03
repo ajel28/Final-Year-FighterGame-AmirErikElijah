@@ -1,17 +1,17 @@
 [gd_scene load_steps=3 format=3 uid="uid://csn71a41n66kd"]
 
 [ext_resource type="Texture2D" uid="uid://685b8oqjg7b3" path="res://1 Rocky Balboa/RockChSelectP1.png" id="1_2yehc"]
-[ext_resource type="AudioStream" uid="uid://iuopxpmgibt1" path="res://1 Rocky Balboa/MjkzMTIyNDAyOTMxMjk_BGsop5jL6Yw.mp3" id="2_al4bd"]
+[ext_resource type="AudioStream" uid="uid://bmsshgkncyhal" path="res://1 Rocky Balboa/Rocky Balboa 2.wav" id="2_ypsg8"]
 
 [node name="RockyP1Select" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 314.0
-offset_top = 294.0
-offset_right = 1129.0
-offset_bottom = 1202.0
+offset_left = 130.0
+offset_top = 144.0
+offset_right = 621.0
+offset_bottom = 691.0
 texture = ExtResource("1_2yehc")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_al4bd")
+stream = ExtResource("2_ypsg8")
 autoplay = true
