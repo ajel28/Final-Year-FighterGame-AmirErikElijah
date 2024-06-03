@@ -33,11 +33,11 @@ func get_input():
 	input.x = int(Input.is_action_pressed("ui_L")) - int(Input.is_action_pressed("ui_J"))
 	if int(Input.is_action_pressed("ui_L")) == 1:
 		punch = false
-		global_position = global_position.clamp(Vector2(-700,-999), Vector2(2800,750))
+		global_position = global_position.clamp(Vector2(-1550,-999), Vector2(0,750))
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_J")) == 1:
 		punch = false
-		global_position = global_position.clamp(Vector2(-700,-999), Vector2(2800,750))
+		global_position = global_position.clamp(Vector2(-1550,-999), Vector2(0,750))
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_K"))  == 1:
 		punch = false
@@ -69,6 +69,7 @@ func player_movement(delta):
 		velocity += (input * accel * delta)
 		velocity = velocity.limit_length(max_speed)
 	move_and_slide()
+	global_position = global_position.clamp(Vector2(-1550,-999), Vector2(0,750))
 
 
 func _on_deadpool_p_2_punch_area_entered(area):

@@ -32,8 +32,10 @@ func jump():
 func get_input():
 	input.x = int(Input.is_action_pressed("ui_D")) - int(Input.is_action_pressed("ui_A"))
 	if int(Input.is_action_pressed("ui_D")) == 1:
+		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_A")) == 1:
+		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_S"))  == 1:
 		punch = false
@@ -64,5 +66,6 @@ func player_movement(delta):
 		velocity += ((input * accel * delta))
 		velocity = velocity.limit_length(max_speed)
 	move_and_slide()
+	global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 	
 

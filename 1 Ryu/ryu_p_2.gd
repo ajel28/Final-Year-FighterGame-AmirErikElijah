@@ -14,10 +14,10 @@ func _physics_process(delta):
 func get_input():
 	input.x = int(Input.is_action_pressed("ui_L")) - int(Input.is_action_pressed("ui_J"))
 	if int(Input.is_action_pressed("ui_L")) == 1:
-		global_position = global_position.clamp(Vector2(-700,-999), Vector2(2800,750))
+		global_position = global_position.clamp(Vector2(-1550,-999), Vector2(0,750))
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_J")) == 1:
-		global_position = global_position.clamp(Vector2(-700,-999), Vector2(2800,750))
+		global_position = global_position.clamp(Vector2(-1550,-999), Vector2(0,750))
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_K")) == 1:
 		animationsRyu2.play("ryucrouch2")
@@ -39,4 +39,4 @@ func player_movement(delta):
 		velocity += (input * accel * delta)
 		velocity = velocity.limit_length(max_speed)
 	move_and_slide()
-	global_position = global_position.clamp(Vector2(-700,-999), Vector2(2800,750))
+	global_position = global_position.clamp(Vector2(-1550,-999), Vector2(0,750))
