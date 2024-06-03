@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://mg4lp80wcbpl"]
+[gd_scene load_steps=9 format=3 uid="uid://mg4lp80wcbpl"]
 
 [ext_resource type="Script" path="res://1 Raiden/raiden_att_p_1.gd" id="1_ggwyn"]
 [ext_resource type="Texture2D" uid="uid://es08g3qe2ech" path="res://1 Raiden/raidenatt.png" id="2_77ocj"]
+[ext_resource type="AudioStream" uid="uid://bnkhyexn33ony" path="res://1 Raiden/Triple Hit 2.wav" id="3_hdev3"]
+[ext_resource type="AudioStream" uid="uid://flor07t27tio" path="res://1 Raiden/Fatality 1.wav" id="4_t6kut"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cpo36"]
 atlas = ExtResource("2_77ocj")
@@ -41,5 +43,11 @@ frame_progress = 0.934936
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(562, 628)
 shape = SubResource("RectangleShape2D_orxr0")
+
+[node name="Triple" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_hdev3")
+
+[node name="Fatality" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_t6kut")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

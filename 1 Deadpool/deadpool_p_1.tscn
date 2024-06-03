@@ -1,8 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://blqv6bi2f613f"]
+[gd_scene load_steps=15 format=3 uid="uid://blqv6bi2f613f"]
 
 [ext_resource type="Script" path="res://1 Deadpool/deadpool_p_1.gd" id="1_jaspc"]
 [ext_resource type="Texture2D" uid="uid://d236227iy03yl" path="res://1 Deadpool/1Deadpool-sprite.png" id="2_nv5fj"]
 [ext_resource type="Script" path="res://1 Deadpool/DeadpoolP1Hurtbox.gd" id="3_tgvqg"]
+[ext_resource type="AudioStream" uid="uid://cgjun3xnujc5q" path="res://1 Deadpool/Triple Hit 2.wav" id="4_4tp8b"]
+[ext_resource type="AudioStream" uid="uid://bl0stpj0qdy6m" path="res://1 Deadpool/Fatality 1.wav" id="5_6h3ip"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bjnh6"]
 size = Vector2(184.381, 319.499)
@@ -235,5 +237,13 @@ script = ExtResource("3_tgvqg")
 position = Vector2(331.864, 712.375)
 shape = SubResource("RectangleShape2D_b8aft")
 disabled = true
+
+[node name="Triple" type="AudioStreamPlayer" parent="DeadpoolP1"]
+stream = ExtResource("4_4tp8b")
+volume_db = 10.0
+
+[node name="Fatality" type="AudioStreamPlayer" parent="DeadpoolP1"]
+stream = ExtResource("5_6h3ip")
+volume_db = 10.0
 
 [connection signal="area_entered" from="DeadpoolP1/TextureRect/DeadpoolP1Punch" to="DeadpoolP1" method="_on_deadpool_p_1_punch_area_entered"]

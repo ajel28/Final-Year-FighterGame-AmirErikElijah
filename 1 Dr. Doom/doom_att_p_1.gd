@@ -12,7 +12,13 @@ func _physics_process(delta):
 		
 func _on_area_entered(area):
 	if !(area is DoomAttackPlayer1):
+		Global.hitsInRowP2 = 0
+		Global.hitsInRowP1+=1;
 		Global.healthp2-=0.5
 		print(Global.healthp2)
+		if Global.hitsInRowP1 == 3:
+			$Triple.play()
+		elif Global.hitsInRowP1 == 5:
+			$Fatality.play()
 		self.queue_free()
 

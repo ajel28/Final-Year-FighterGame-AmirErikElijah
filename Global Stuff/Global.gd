@@ -13,3 +13,7 @@ var mapchosen
 var healthp1 = 100
 
 var healthp2 = 100
+
+var hitsInRowP1 = 0
+
+var hitsInRowP2 = 0

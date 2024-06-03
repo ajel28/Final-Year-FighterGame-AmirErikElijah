@@ -74,5 +74,11 @@ func player_movement(delta):
 func _on_deadpool_p_2_punch_area_entered(area):
 	if !(area is DeadpoolHurtbox2):
 		if punch==true:
+			Global.hitsInRowP1 = 0
+			Global.hitsInRowP2+=1;
 			Global.healthp1-=0.5
 			print(Global.healthp1)
+		if Global.hitsInRowP2 == 3:
+			$Triple.play()
+		elif Global.hitsInRowP2 == 5:
+			$Fatality.play()
