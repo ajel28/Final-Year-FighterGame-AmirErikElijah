@@ -69,7 +69,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_td0ou"]
 resource_name = "termjump"
-length = 0.1
+length = 0.8
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -77,10 +77,10 @@ tracks/0/path = NodePath("TextureRect:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [5]
+"values": [5, 0]
 }
 
 [sub_resource type="Animation" id="Animation_k7k1g"]
@@ -115,13 +115,15 @@ size = Vector2(174.75, 317)
 
 [node name="TermCharacterBody" type="CharacterBody2D" parent="."]
 script = ExtResource("1_bfd82")
+jump_height = 700.0
+jump_time_to_peak = 0.5
+jump_time_to_descent = 0.3
 
 [node name="TextureRect" type="Sprite2D" parent="TermCharacterBody"]
 position = Vector2(407, 714)
 scale = Vector2(1.65188, 1.65188)
 texture = ExtResource("2_uaav8")
 hframes = 6
-frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TermCharacterBody"]
 position = Vector2(338.938, 718.75)

@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1717368800
+::res://::1717369656
 icon.svg::CompressedTexture2D::8402663531990749670::1707346693::1717265887::1::::<><>::
 README.md::TextFile::-1::1717348932::0::1::::<><>::
-::res://1 Deadpool/::1717365989
+::res://1 Deadpool/::1717369421
 1Deadpool-sprite.png::CompressedTexture2D::9114095317591810291::1717348931::1717348931::1::::<><>::
 Deadpool 2.wav::AudioStreamWAV::4034428455313071836::1717359746::1717359746::1::::<><>::
 DeadpoolChSelectP1.png::CompressedTexture2D::6094125457086067344::1717348931::1717348931::1::::<><>::
@@ -12,7 +12,7 @@ DeadpoolP1Punch.gd::GDScript::-1::1717348931::0::1::::<>Area2D<>::
 DeadpoolP2Hurtbox.gd::GDScript::-1::1717348931::0::1::::DeadpoolHurtbox2<>Area2D<>::
 DeadpoolSelect.mp3::AudioStreamMP3::4902737467378562692::1717348931::1717348931::1::::<><>::
 deadpool_p_1.gd::GDScript::-1::1717348941::0::1::::<>CharacterBody2D<>::
-deadpool_p_1.tscn::PackedScene::3192858490352034253::1717365989::0::1::::<><>::res://1 Deadpool/deadpool_p_1.gd<>uid://d236227iy03yl::::res://1 Deadpool/1Deadpool-sprite.png<>res://1 Deadpool/DeadpoolP1Hurtbox.gd
+deadpool_p_1.tscn::PackedScene::3192858490352034253::1717369421::0::1::::<><>::res://1 Deadpool/deadpool_p_1.gd<>uid://d236227iy03yl::::res://1 Deadpool/1Deadpool-sprite.png<>res://1 Deadpool/DeadpoolP1Hurtbox.gd
 deadpool_p_1_select.tscn::PackedScene::5800362354951297375::1717359746::0::1::::<><>::uid://bxqkpg8umqj61::::res://1 Deadpool/Deadpool 2.wav<>uid://cs3bmdo5qf1ng::::res://1 Deadpool/DeadpoolChSelectP1.png
 deadpool_p_2.gd::GDScript::-1::1717348941::0::1::::<>CharacterBody2D<>::
 deadpool_p_2.tscn::PackedScene::4230115730450483322::1717365989::0::1::::<><>::res://1 Deadpool/deadpool_p_2.gd<>uid://d236227iy03yl::::res://1 Deadpool/1Deadpool-sprite.png<>res://1 Deadpool/DeadpoolP2Hurtbox.gd
@@ -142,7 +142,7 @@ terminator_p_2_select.tscn::PackedScene::628118414764900307::1717365989::0::1:::
 termP1ShootingOrigin.gd::GDScript::-1::1717348941::0::1::::TerminatorPlayer1<>Node2D<>::
 termP2ShootingOrigin.gd::GDScript::-1::1717348941::0::1::::TerminatorPlayer2<>Node2D<>::
 The Terminator 2.wav::AudioStreamWAV::5486970538887797545::1717359746::1717359746::1::::<><>::
-::res://1 Winter Soldier/::1717365989
+::res://1 Winter Soldier/::1717369421
 1WinterSoldier-sprite.png::CompressedTexture2D::6559081933580043276::1717348931::1717348931::1::::<><>::
 SoldierP1Hurtbox.gd::GDScript::-1::1717348931::0::1::::SoldierHurtbox1<>Area2D<>::
 SoldierP2Hurtbox.gd::GDScript::-1::1717348931::0::1::::SoldierHurtbox2<>Area2D<>::
@@ -150,7 +150,7 @@ soldier_p_1.gd::GDScript::-1::1717348941::0::1::::<>CharacterBody2D<>::
 soldier_p_1.tscn::PackedScene::3300833800004374020::1717365784::0::1::::<><>::res://1 Winter Soldier/soldier_p_1.gd<>uid://c0pjeeb1btg7m::::res://1 Winter Soldier/1WinterSoldier-sprite.png<>res://1 Winter Soldier/SoldierP1Hurtbox.gd
 soldier_p_1_select.tscn::PackedScene::1152222741869659309::1717365989::0::1::::<><>::uid://brp1bra3gxbn7::::res://1 Winter Soldier/WsoldierChSelectP1.png<>uid://cf73q4svx0411::::res://1 Winter Soldier/The Winter Soldier 3.wav
 soldier_p_2.gd::GDScript::-1::1717348941::0::1::::<>CharacterBody2D<>::
-soldier_p_2.tscn::PackedScene::7346627604919074439::1717365784::0::1::::<><>::res://1 Winter Soldier/soldier_p_2.gd<>uid://c0pjeeb1btg7m::::res://1 Winter Soldier/1WinterSoldier-sprite.png<>res://1 Winter Soldier/SoldierP2Hurtbox.gd
+soldier_p_2.tscn::PackedScene::7346627604919074439::1717369421::0::1::::<><>::res://1 Winter Soldier/soldier_p_2.gd<>uid://c0pjeeb1btg7m::::res://1 Winter Soldier/1WinterSoldier-sprite.png<>res://1 Winter Soldier/SoldierP2Hurtbox.gd
 soldier_p_2_select.tscn::PackedScene::2160279429771072567::1717365989::0::1::::<><>::uid://c75s6osd465yr::::res://1 Winter Soldier/WsoldierChSelectP2.png<>uid://cf73q4svx0411::::res://1 Winter Soldier/The Winter Soldier 3.wav
 The Winter Soldier 3.wav::AudioStreamWAV::5191575874175746522::1717359746::1717359746::1::::<><>::
 WsoldierChSelectP1.png::CompressedTexture2D::3612178013634449142::1717348931::1717348931::1::::<><>::
@@ -197,16 +197,19 @@ streetfightTheme.mp3::AudioStreamMP3::382963593952078244::1717348932::1717348932
 Super Smash Bros Ultimate (Theme).mp3::AudioStreamMP3::4630787861071090472::1717348932::1717348932::1::::<><>::
 The Immortals - Mortal Kombat (Techno Syndrome 12 Mix) [Custom Instrumental].mp3::AudioStreamMP3::3185291667829383599::1717348932::1717348932::1::::<><>::
 Yarikawa's Defense - Ghost of Tsushima OST.mp3::AudioStreamMP3::8482579937033032610::1717348932::1717348932::1::::<><>::
-::res://Global Stuff/::1717368850
+::res://Global Stuff/::1717369421
 Global.gd::GDScript::-1::1717348932::0::1::::<>Node<>::
 healthbar-sprite.png::CompressedTexture2D::1122461116531669561::1717348932::1717348932::1::::<><>::
 health_1.gd::GDScript::-1::1717352377::0::1::::<>Node2D<>::
 health_1.tscn::PackedScene::6584252947103346863::1717357531::0::1::::<><>::res://Global Stuff/health_1.gd<>uid://p8y1g2qyk62x::::res://Global Stuff/healthbar-sprite.png
 health_2.tscn::PackedScene::2174340182295251505::1717357530::0::1::::<><>::uid://p8y1g2qyk62x::::res://Global Stuff/healthbar-sprite.png
+pause.gd::GDScript::-1::1717369323::0::1::::<>Node2D<>::
 pause.png::CompressedTexture2D::8477052106789954745::1717348941::1717348941::1::::<><>::
-pause.tscn::PackedScene::5738698664817500356::1717365988::0::1::::<><>::uid://ds1l2r85tr2px::::res://Global Stuff/pause.png
+pause.tscn::PackedScene::5738698664817500356::1717369421::0::1::::<><>::res://Global Stuff/pause.gd<>uid://ds1l2r85tr2px::::res://Global Stuff/pause.png
 PauseButton.png::CompressedTexture2D::4864319881971026362::1717348932::1717348932::1::::<><>::
 pausescreen.png::CompressedTexture2D::7763463805572741607::1717368726::1717368852::1::::<><>::
+pause_screen.gd::GDScript::-1::1717369323::0::1::::<>Node2D<>::
+pause_screen.tscn::PackedScene::2289796614530589517::1717369421::0::1::::<><>::res://Global Stuff/pause_screen.gd<>uid://diuxd5rc4vjvb::::res://Global Stuff/pausescreen.png
 ui_screen.tscn::PackedScene::8281122264665643053::1717368762::0::1::::<><>::uid://cn04r8bebir05::::res://Global Stuff/pause.tscn<>uid://c02pxi1t5ipwh::::res://Global Stuff/health_1.tscn<>uid://58jchj08xrjt::::res://Global Stuff/health_2.tscn
 ::res://Map Select/::1717357532
 Abandoned Ruins.png::CompressedTexture2D::6004056645392444917::1717348932::1717348932::1::::<><>::
@@ -262,14 +265,14 @@ taka_map.tscn::PackedScene::2355405196640841644::1717368762::0::1::::<><>::res:/
 TekkenBackground (1).png::CompressedTexture2D::4748193133728211385::1717348932::1717348932::1::::<><>::
 yaku_map.gd::GDScript::-1::1717348932::0::1::::<>Node2D<>::
 yaku_map.tscn::PackedScene::6341296432058137907::1717368762::0::1::::<><>::res://Maps/yaku_map.gd<>uid://cj7k2xvaahn0v::::res://Maps/ActualYakushimaForest.png<>uid://yo2mbldi5pwr::::res://GeneralSounds/READY, FIGHT - Sound Effect.mp3<>uid://dp8o4yekl6npt::::res://Global Stuff/ui_screen.tscn<>uid://f3l15b3b7ulq::::res://GeneralSounds/Rebellion  Sekiro_ Shadows Die Twice OST.mp3
-::res://Menu/::1717365988
+::res://Menu/::1717369421
 Creators.png::CompressedTexture2D::7378737626435583313::1717348932::1717348932::1::::<><>::
 intro_screen.gd::GDScript::-1::1717348932::0::1::::<>Node2D<>::
 intro_screen.tscn::PackedScene::982620707682158529::1717357531::0::1::::<><>::res://Menu/intro_screen.gd<>uid://ddeky3v4yehjd::::res://Menu/Creators.png
 LobbyMusic.mp3::AudioStreamMP3::3550493253570322633::1717348932::1717348932::1::::<><>::
 playbutton.gd::GDScript::-1::1717348932::0::1::::<>Button<>::
 start_menu.gd::GDScript::-1::1717348932::0::1::::<>Control<>::
-start_menu.tscn::PackedScene::1976587525571984087::1717365988::0::1::::<><>::res://Menu/start_menu.gd<>uid://ca4de511quu5p::::res://Menu/TitleScreen.png<>uid://bqt5dts6nv11v::::res://Menu/LobbyMusic.mp3
+start_menu.tscn::PackedScene::1976587525571984087::1717369421::0::1::::<><>::res://Menu/start_menu.gd<>uid://ca4de511quu5p::::res://Menu/TitleScreen.png<>uid://bqt5dts6nv11v::::res://Menu/LobbyMusic.mp3
 TitleScreen.png::CompressedTexture2D::4832899233476786363::1717348932::1717348932::1::::<><>::
 ::res://website/::1717348932
 ::res://website/img/::1717348937

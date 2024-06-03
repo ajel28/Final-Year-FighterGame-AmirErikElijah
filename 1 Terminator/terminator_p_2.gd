@@ -2,6 +2,14 @@ extends CharacterBody2D
 
 @export var yes  = 1 
 @onready var animationsterm2 = $AnimationPlayer
+@export var jump_height : float
+@export var jump_time_to_peak : float
+@export var jump_time_to_descent: float
+
+@onready var jump_velocity : float = ((2.0 * jump_height) / jump_time_to_peak) * -1.0
+@onready var jump_gravity : float = ((-2.0 * jump_height) / (jump_time_to_peak *jump_time_to_peak)) * -1.0
+@onready var fall_gravity: float = ((-2.0 * jump_height) / (jump_time_to_peak *jump_time_to_descent)) * -1.0
+var punch = false
 
 const max_speed = 520
 const accel = 1000
@@ -9,7 +17,17 @@ const friction = 3000
 var input = Vector2.ZERO
 
 func _physics_process(delta):
+	velocity.y += get_gravity() * delta
 	player_movement(delta)
+	if Input.is_action_just_pressed("ui_I") and is_on_floor():
+		jump()
+
+func get_gravity() -> float:
+	return jump_gravity if velocity.y < 0.0 else fall_gravity
+	
+
+func jump():
+	velocity.y = jump_velocity
 
 func get_input():
 	input.x = int(Input.is_action_pressed("ui_L")) - int(Input.is_action_pressed("ui_J"))
