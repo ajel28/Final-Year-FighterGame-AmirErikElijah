@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bnkhyexn33ony"
+path="res://.godot/imported/Triple Hit 2.wav-d401c9578fdc8987f45b4c30d71d2023.sample"
+
+[deps]
+
+source_file="res://1 Raiden/Triple Hit 2.wav"
+dest_files=["res://.godot/imported/Triple Hit 2.wav-d401c9578fdc8987f45b4c30d71d2023.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

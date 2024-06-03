@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bl0stpj0qdy6m"
+path="res://.godot/imported/Fatality 1.wav-2bf56b5ff1ce3a4121870f21d37c56e7.sample"
+
+[deps]
+
+source_file="res://1 Deadpool/Fatality 1.wav"
+dest_files=["res://.godot/imported/Fatality 1.wav-2bf56b5ff1ce3a4121870f21d37c56e7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
