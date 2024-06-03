@@ -7,16 +7,16 @@
 script = ExtResource("1_b4x0e")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = -129.0
-offset_top = -1.0
-offset_right = 2974.0
-offset_bottom = 1830.0
+offset_left = 2.0
+offset_top = -7.0
+offset_right = 1930.0
+offset_bottom = 1131.0
 texture = ExtResource("1_y6c7r")
 
 [node name="ControlBack" type="LinkButton" parent="."]
-offset_left = 1897.0
-offset_top = 1518.0
-offset_right = 2491.0
-offset_bottom = 1729.0
+offset_left = 1245.0
+offset_top = 922.0
+offset_right = 1658.0
+offset_bottom = 1080.0
 
 [connection signal="pressed" from="ControlBack" to="." method="_on_control_back_pressed"]
