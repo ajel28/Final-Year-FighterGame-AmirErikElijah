@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://blvwy27kwy3dv"]
+
+[ext_resource type="Script" path="res://P2Wins.gd" id="1_w1tnu"]
+[ext_resource type="AudioStream" uid="uid://b7ocgpof18cne" path="res://Global Stuff/K O player two wins 1.wav" id="2_ndmxl"]
+
+[node name="P2Wins" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_w1tnu")
+
+[node name="KO" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_ndmxl")
+autoplay = true

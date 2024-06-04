@@ -1,5 +1,6 @@
-AnimationPlayer
 AudioStreamPlayer
+Button
+AnimationPlayer
 AudioListener2D
 MarginContainer
 LinkButton
@@ -11,4 +12,3 @@ Marker2D
 AnimatedSprite2D
 Area2D
 ParallaxLayer
-Label

@@ -11,6 +11,8 @@ extends CharacterBody2D
 @onready var fall_gravity: float = ((-2.0 * jump_height) / (jump_time_to_peak *jump_time_to_descent)) * -1.0
 var punch = false
 
+@export var P2Wins: PackedScene
+
 const max_speed = 520
 const accel = 1000
 const friction = 3000
@@ -77,9 +79,12 @@ func _on_deadpool_p_2_punch_area_entered(area):
 		if punch==true:
 			Global.hitsInRowP1 = 0
 			Global.hitsInRowP2+=1;
-			Global.healthp1-=0.5
+			Global.healthp1-=2
 			print(Global.healthp1)
 		if Global.hitsInRowP2 == 3:
 			$Triple.play()
 		elif Global.hitsInRowP2 == 5:
 			$Fatality.play()
+		if Global.healthp1 <= 0:
+			var p2 = P2Wins.instantiate()
+			add_child(p2)
