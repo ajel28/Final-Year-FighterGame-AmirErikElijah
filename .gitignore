@@ -1,9 +1,12 @@
 # Godot-specific ignores
-/.godot
+*.godot
+.godot/
 
 # Imported translations (automatically generated from CSV files)
 *.translation
 
 # Mono-specific ignores
-.mono/
+*.mono
 data_*/
+
+.DS_Store
