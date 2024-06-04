@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bdrkj3cpgpwua"]
+[gd_scene load_steps=8 format=3 uid="uid://bdrkj3cpgpwua"]
 
 [ext_resource type="Script" path="res://Maps/depths_map.gd" id="1_rb8js"]
 [ext_resource type="Texture2D" uid="uid://6j7i310i4tmk" path="res://Maps/ActualTheDepths.png" id="2_vvges"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_qskw4"]
 [ext_resource type="PackedScene" uid="uid://dp8o4yekl6npt" path="res://Global Stuff/ui_screen.tscn" id="5_rjfwy"]
 [ext_resource type="AudioStream" uid="uid://b4h0vvd2e8ppn" path="res://GeneralSounds/STORM RISING (Climax).mp3" id="5_sknlw"]
+[ext_resource type="PackedScene" uid="uid://dha0e7uxt8qex" path="res://bullet_catcher.tscn" id="6_vrq4y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_52coe"]
 size = Vector2(1977, 172)
@@ -35,3 +36,6 @@ position = Vector2(959, 970)
 shape = SubResource("RectangleShape2D_52coe")
 
 [node name="UiScreen" parent="." instance=ExtResource("5_rjfwy")]
+
+[node name="BulletCatcher" parent="." instance=ExtResource("6_vrq4y")]
+position = Vector2(-107, 613)

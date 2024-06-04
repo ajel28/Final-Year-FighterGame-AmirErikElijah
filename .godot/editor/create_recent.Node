@@ -1,3 +1,5 @@
+CollisionShape2D
+Area2D
 AudioStreamPlayer
 Button
 AnimationPlayer
@@ -6,9 +8,7 @@ MarginContainer
 LinkButton
 TextureRect
 TextureButton
-CollisionShape2D
 StaticBody2D
 Marker2D
 AnimatedSprite2D
-Area2D
 ParallaxLayer

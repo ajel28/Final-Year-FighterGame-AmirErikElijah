@@ -1,13 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://csdotesi5o6kp"]
+[gd_scene load_steps=8 format=3 uid="uid://csdotesi5o6kp"]
 
 [ext_resource type="Script" path="res://Maps/dojo_background.gd" id="1_pecgx"]
 [ext_resource type="Texture2D" uid="uid://dmutwhrb64g6s" path="res://Maps/ActualDojo.png" id="2_7hxnm"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_xij7x"]
 [ext_resource type="PackedScene" uid="uid://dp8o4yekl6npt" path="res://Global Stuff/ui_screen.tscn" id="5_s164i"]
 [ext_resource type="AudioStream" uid="uid://blm8j2m75qkt8" path="res://GeneralSounds/The Immortals - Mortal Kombat (Techno Syndrome 12 Mix) [Custom Instrumental].mp3" id="5_w0rdj"]
+[ext_resource type="PackedScene" uid="uid://dha0e7uxt8qex" path="res://bullet_catcher.tscn" id="6_b7g4h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c5att"]
-size = Vector2(2076, 246)
+size = Vector2(2023, 246)
 
 [node name="DojoBackground" type="Node2D"]
 script = ExtResource("1_pecgx")
@@ -30,7 +31,10 @@ autoplay = true
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1018, 953)
+position = Vector2(991.5, 953)
 shape = SubResource("RectangleShape2D_c5att")
 
 [node name="UiScreen" parent="." instance=ExtResource("5_s164i")]
+
+[node name="BulletCatcher" parent="." instance=ExtResource("6_b7g4h")]
+position = Vector2(-60, 622)

@@ -1,13 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://jv1c33jhqauh"]
+[gd_scene load_steps=8 format=3 uid="uid://jv1c33jhqauh"]
 
 [ext_resource type="Script" path="res://Maps/ruins_map.gd" id="1_ffj44"]
 [ext_resource type="Texture2D" uid="uid://1n2vpwloagrl" path="res://Maps/ActualAbandonedRuins.png" id="2_o3vqq"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_bwn02"]
 [ext_resource type="PackedScene" uid="uid://dp8o4yekl6npt" path="res://Global Stuff/ui_screen.tscn" id="5_u7usa"]
 [ext_resource type="AudioStream" uid="uid://ds4a38gsleaek" path="res://GeneralSounds/Yarikawa's Defense - Ghost of Tsushima OST.mp3" id="5_uv3ua"]
+[ext_resource type="PackedScene" uid="uid://dha0e7uxt8qex" path="res://bullet_catcher.tscn" id="6_6ai2d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p3jq0"]
-size = Vector2(2005, 145)
+size = Vector2(1983.5, 145)
 
 [node name="RuinsMap" type="Node2D"]
 script = ExtResource("1_ffj44")
@@ -30,7 +31,10 @@ autoplay = true
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(956, 1042)
+position = Vector2(966.75, 1042)
 shape = SubResource("RectangleShape2D_p3jq0")
 
 [node name="UiScreen" parent="." instance=ExtResource("5_u7usa")]
+
+[node name="BulletCatcher" parent="." instance=ExtResource("6_6ai2d")]
+position = Vector2(-95, 639)
