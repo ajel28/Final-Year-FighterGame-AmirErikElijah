@@ -1,13 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://cwl1hw8ksqpct"]
+[gd_scene load_steps=8 format=3 uid="uid://cwl1hw8ksqpct"]
 
 [ext_resource type="Script" path="res://Maps/yaku_map.gd" id="1_fe0be"]
 [ext_resource type="Texture2D" uid="uid://cj7k2xvaahn0v" path="res://Maps/ActualYakushimaForest.png" id="2_3pgad"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_85s8j"]
 [ext_resource type="PackedScene" uid="uid://dp8o4yekl6npt" path="res://Global Stuff/ui_screen.tscn" id="5_r3kia"]
 [ext_resource type="AudioStream" uid="uid://f3l15b3b7ulq" path="res://GeneralSounds/Rebellion  Sekiro_ Shadows Die Twice OST.mp3" id="5_rkpiw"]
+[ext_resource type="PackedScene" uid="uid://dha0e7uxt8qex" path="res://bullet_catcher.tscn" id="6_35q14"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dif7a"]
-size = Vector2(2024, 265)
+size = Vector2(2061, 265)
 
 [node name="YakuMap" type="Node2D"]
 script = ExtResource("1_fe0be")
@@ -32,7 +33,10 @@ autoplay = true
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(949, 941.5)
+position = Vector2(930.5, 941.5)
 shape = SubResource("RectangleShape2D_dif7a")
 
 [node name="UiScreen" parent="." instance=ExtResource("5_r3kia")]
+
+[node name="BulletCatcher" parent="." instance=ExtResource("6_35q14")]
+position = Vector2(-76, 567)

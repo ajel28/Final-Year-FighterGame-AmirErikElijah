@@ -1,13 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://cn2ctm4qos323"]
+[gd_scene load_steps=8 format=3 uid="uid://cn2ctm4qos323"]
 
 [ext_resource type="Script" path="res://Maps/frosbite_map.gd" id="1_cilvh"]
 [ext_resource type="Texture2D" uid="uid://domr5brhcenr4" path="res://Maps/ActualFrosbiteColiseum.png" id="2_3v6t4"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_g70x2"]
 [ext_resource type="AudioStream" uid="uid://b68gnt3fjg4rs" path="res://GeneralSounds/Super Smash Bros Ultimate (Theme).mp3" id="5_4duqo"]
 [ext_resource type="PackedScene" uid="uid://dp8o4yekl6npt" path="res://Global Stuff/ui_screen.tscn" id="5_616v7"]
+[ext_resource type="PackedScene" uid="uid://dha0e7uxt8qex" path="res://bullet_catcher.tscn" id="6_r8r8o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1xtgs"]
-size = Vector2(2017, 220)
+size = Vector2(1958.5, 220)
 
 [node name="FrostbiteMap" type="Node2D"]
 script = ExtResource("1_cilvh")
@@ -30,7 +31,10 @@ autoplay = true
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(992, 958)
+position = Vector2(962.75, 958)
 shape = SubResource("RectangleShape2D_1xtgs")
 
 [node name="UiScreen" parent="." instance=ExtResource("5_616v7")]
+
+[node name="BulletCatcher" parent="." instance=ExtResource("6_r8r8o")]
+position = Vector2(-100, 619)
