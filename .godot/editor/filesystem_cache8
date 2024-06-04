@@ -1,8 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1717465154
+::res://::1717503740
 icon.svg::CompressedTexture2D::8402663531990749670::1707397684::1717464889::1::::<><>::
+P1Wins.gd::GDScript::-1::1717466694::0::1::::<>Node2D<>::
+P2Wins.gd::GDScript::-1::1717466694::0::1::::<>Node2D<>::
 README.md::TextFile::-1::1717361486::0::1::::<><>::
-::res://1 Deadpool/::1717443688
+::res://1 Deadpool/::1717503626
 1Deadpool-sprite.png::CompressedTexture2D::9114095317591810291::1717361485::1717361485::1::::<><>::
 Deadpool 2.wav::AudioStreamWAV::4034428455313071836::1717366863::1717366863::1::::<><>::
 DeadpoolChSelectP1.png::CompressedTexture2D::6094125457086067344::1717361485::1717361485::1::::<><>::
@@ -11,11 +13,11 @@ DeadpoolP1Hurtbox.gd::GDScript::-1::1717361485::0::1::::DeadpoolHurtbox1<>Area2D
 DeadpoolP1Punch.gd::GDScript::-1::1717361485::0::1::::<>Area2D<>::
 DeadpoolP2Hurtbox.gd::GDScript::-1::1717361485::0::1::::DeadpoolHurtbox2<>Area2D<>::
 DeadpoolSelect.mp3::AudioStreamMP3::4902737467378562692::1717361485::1717361485::1::::<><>::
-deadpool_p_1.gd::GDScript::-1::1717443688::0::1::::<>CharacterBody2D<>::
-deadpool_p_1.tscn::PackedScene::3192858490352034253::1717439322::0::1::::<><>::res://1 Deadpool/deadpool_p_1.gd<>uid://d236227iy03yl::::res://1 Deadpool/1Deadpool-sprite.png<>res://1 Deadpool/DeadpoolP1Hurtbox.gd<>uid://cgjun3xnujc5q::::res://1 Deadpool/Triple Hit 2.wav<>uid://bl0stpj0qdy6m::::res://1 Deadpool/Fatality 1.wav
+deadpool_p_1.gd::GDScript::-1::1717466694::0::1::::<>CharacterBody2D<>::
+deadpool_p_1.tscn::PackedScene::3192858490352034253::1717503626::0::1::::<><>::res://1 Deadpool/deadpool_p_1.gd<>uid://btjykdye08m3h::::res://Global Stuff/p_1_wins.tscn<>uid://d236227iy03yl::::res://1 Deadpool/1Deadpool-sprite.png<>res://1 Deadpool/DeadpoolP1Hurtbox.gd<>uid://cgjun3xnujc5q::::res://1 Deadpool/Triple Hit 2.wav<>uid://bl0stpj0qdy6m::::res://1 Deadpool/Fatality 1.wav
 deadpool_p_1_select.tscn::PackedScene::5800362354951297375::1717366863::0::1::::<><>::uid://bxqkpg8umqj61::::res://1 Deadpool/Deadpool 2.wav<>uid://cs3bmdo5qf1ng::::res://1 Deadpool/DeadpoolChSelectP1.png
-deadpool_p_2.gd::GDScript::-1::1717443688::0::1::::<>CharacterBody2D<>::
-deadpool_p_2.tscn::PackedScene::4230115730450483322::1717439322::0::1::::<><>::res://1 Deadpool/deadpool_p_2.gd<>uid://d236227iy03yl::::res://1 Deadpool/1Deadpool-sprite.png<>res://1 Deadpool/DeadpoolP2Hurtbox.gd<>uid://cgjun3xnujc5q::::res://1 Deadpool/Triple Hit 2.wav<>uid://bl0stpj0qdy6m::::res://1 Deadpool/Fatality 1.wav
+deadpool_p_2.gd::GDScript::-1::1717466694::0::1::::<>CharacterBody2D<>::
+deadpool_p_2.tscn::PackedScene::4230115730450483322::1717503626::0::1::::<><>::res://1 Deadpool/deadpool_p_2.gd<>uid://d236227iy03yl::::res://1 Deadpool/1Deadpool-sprite.png<>uid://blvwy27kwy3dv::::res://Global Stuff/p_2_wins.tscn<>res://1 Deadpool/DeadpoolP2Hurtbox.gd<>uid://cgjun3xnujc5q::::res://1 Deadpool/Triple Hit 2.wav<>uid://bl0stpj0qdy6m::::res://1 Deadpool/Fatality 1.wav
 deadpool_p_2_select.tscn::PackedScene::7968762502314548624::1717366863::0::1::::<><>::uid://pau7382yruw::::res://1 Deadpool/DeadpoolChSelectP2.png<>uid://bxqkpg8umqj61::::res://1 Deadpool/Deadpool 2.wav
 Fatality 1.wav::AudioStreamWAV::3211235046427846658::1717373525::1717373525::1::::<><>::
 Triple Hit 2.wav::AudioStreamWAV::5213792890979077244::1717373522::1717373522::1::::<><>::
@@ -202,10 +204,10 @@ streetfightTheme.mp3::AudioStreamMP3::382963593952078244::1717361486::1717361486
 Super Smash Bros Ultimate (Theme).mp3::AudioStreamMP3::4630787861071090472::1717361486::1717361486::1::::<><>::
 The Immortals - Mortal Kombat (Techno Syndrome 12 Mix) [Custom Instrumental].mp3::AudioStreamMP3::3185291667829383599::1717361486::1717361486::1::::<><>::
 Yarikawa's Defense - Ghost of Tsushima OST.mp3::AudioStreamMP3::8482579937033032610::1717361486::1717361486::1::::<><>::
-::res://Global Stuff/::1717465196
+::res://Global Stuff/::1717503626
 Exit 1.wav::AudioStreamWAV::1060904053288733271::1717372144::1717372145::1::::<><>::
 Game resumed 1.wav::AudioStreamWAV::5090631462727479903::1717372650::1717372650::1::::<><>::
-Global.gd::GDScript::-1::1717464878::0::1::::<>Node<>::
+Global.gd::GDScript::-1::1717466694::0::1::::<>Node<>::
 healthbar-sprite.png::CompressedTexture2D::1122461116531669561::1717361486::1717361486::1::::<><>::
 health_1.gd::GDScript::-1::1717412910::0::1::::H1<>Node2D<>::
 health_1.tscn::PackedScene::6584252947103346863::1717439323::0::1::::<><>::res://Global Stuff/health_1.gd<>uid://p8y1g2qyk62x::::res://Global Stuff/healthbar-sprite.png
@@ -214,12 +216,14 @@ K O player one wins 2.wav::AudioStreamWAV::2103430303894182246::1717465151::1717
 K O player two wins 1.wav::AudioStreamWAV::4661497927156672142::1717465196::1717465196::1::::<><>::
 pause.gd::GDScript::-1::1717373079::0::1::::<>Node2D<>::
 pause.png::CompressedTexture2D::8477052106789954745::1717366863::1717366863::1::::<><>::
-pause.tscn::PackedScene::5738698664817500356::1717464303::0::1::::<><>::res://Global Stuff/pause.gd<>uid://ds1l2r85tr2px::::res://Global Stuff/pause.png<>uid://7vgu60ngymtx::::res://Global Stuff/pause_screen.tscn
+pause.tscn::PackedScene::5738698664817500356::1717503626::0::1::::<><>::res://Global Stuff/pause.gd<>uid://ds1l2r85tr2px::::res://Global Stuff/pause.png<>uid://7vgu60ngymtx::::res://Global Stuff/pause_screen.tscn
 PauseButton.png::CompressedTexture2D::4864319881971026362::1717361486::1717361486::1::::<><>::
 Paused Game 1.wav::AudioStreamWAV::2722881917217582700::1717372407::1717372407::1::::<><>::
 pausescreen.png::CompressedTexture2D::7763463805572741607::1717441710::1717369466::1::::<><>::
 pause_screen.gd::GDScript::-1::1717439555::0::1::::<>Node2D<>::
 pause_screen.tscn::PackedScene::2289796614530589517::1717464303::0::1::::<><>::res://Global Stuff/pause_screen.gd<>uid://diuxd5rc4vjvb::::res://Global Stuff/pausescreen.png<>uid://7ltwu5qw3dj0::::res://Global Stuff/Resume 2.wav<>uid://1logh1npmryr::::res://Global Stuff/Settings 1.wav<>uid://pd561tyj4poh::::res://Global Stuff/Exit 1.wav<>uid://be18p5jcby6xs::::res://Global Stuff/Paused Game 1.wav
+p_1_wins.tscn::PackedScene::3740063373229516807::1717503626::0::1::::<><>::res://P1Wins.gd<>uid://476gpnrm0i0m::::res://Global Stuff/K O player one wins 2.wav
+p_2_wins.tscn::PackedScene::3203229997490216907::1717503626::0::1::::<><>::res://P2Wins.gd<>uid://b7ocgpof18cne::::res://Global Stuff/K O player two wins 1.wav
 Resume 2.wav::AudioStreamWAV::2269945159608770199::1717372148::1717372148::1::::<><>::
 Settings 1.wav::AudioStreamWAV::1848479250985222901::1717372147::1717372147::1::::<><>::
 ui_screen.tscn::PackedScene::8281122264665643053::1717366863::0::1::::<><>::uid://cn04r8bebir05::::res://Global Stuff/pause.tscn<>uid://c02pxi1t5ipwh::::res://Global Stuff/health_1.tscn<>uid://58jchj08xrjt::::res://Global Stuff/health_2.tscn
@@ -277,14 +281,14 @@ taka_map.tscn::PackedScene::2355405196640841644::1717366863::0::1::::<><>::res:/
 TekkenBackground (1).png::CompressedTexture2D::4748193133728211385::1717361486::1717361486::1::::<><>::
 yaku_map.gd::GDScript::-1::1717361486::0::1::::<>Node2D<>::
 yaku_map.tscn::PackedScene::6341296432058137907::1717366863::0::1::::<><>::res://Maps/yaku_map.gd<>uid://cj7k2xvaahn0v::::res://Maps/ActualYakushimaForest.png<>uid://yo2mbldi5pwr::::res://GeneralSounds/READY, FIGHT - Sound Effect.mp3<>uid://dp8o4yekl6npt::::res://Global Stuff/ui_screen.tscn<>uid://f3l15b3b7ulq::::res://GeneralSounds/Rebellion  Sekiro_ Shadows Die Twice OST.mp3
-::res://Menu/::1717464878
+::res://Menu/::1717503626
 Creators.png::CompressedTexture2D::7378737626435583313::1717361486::1717361486::1::::<><>::
 intro_screen.gd::GDScript::-1::1717361486::0::1::::<>Node2D<>::
 intro_screen.tscn::PackedScene::982620707682158529::1717366863::0::1::::<><>::res://Menu/intro_screen.gd<>uid://ddeky3v4yehjd::::res://Menu/Creators.png
 LobbyMusic.mp3::AudioStreamMP3::3550493253570322633::1717361486::1717361486::1::::<><>::
 playbutton.gd::GDScript::-1::1717361486::0::1::::<>Button<>::
 start_menu.gd::GDScript::-1::1717464878::0::1::::<>Control<>::
-start_menu.tscn::PackedScene::1976587525571984087::1717464862::0::1::::<><>::res://Menu/start_menu.gd<>uid://ca4de511quu5p::::res://Menu/TitleScreen.png<>uid://bqt5dts6nv11v::::res://Menu/LobbyMusic.mp3
+start_menu.tscn::PackedScene::1976587525571984087::1717503626::0::1::::<><>::res://Menu/start_menu.gd<>uid://ca4de511quu5p::::res://Menu/TitleScreen.png<>uid://bqt5dts6nv11v::::res://Menu/LobbyMusic.mp3
 TitleScreen.png::CompressedTexture2D::4832899233476786363::1717361486::1717361486::1::::<><>::
 ::res://website/::1717362477
 ::res://website/img/::1717366863
