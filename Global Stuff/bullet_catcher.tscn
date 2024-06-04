@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dha0e7uxt8qex"]
 
-[ext_resource type="Script" path="res://bulletcatcher.gd" id="1_b2rid"]
+[ext_resource type="Script" path="res://Global Stuff/bulletcatcher.gd" id="1_b2rid"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cxnp8"]
 size = Vector2(26.25, 1291)

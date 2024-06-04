@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_xij7x"]
 [ext_resource type="PackedScene" uid="uid://dp8o4yekl6npt" path="res://Global Stuff/ui_screen.tscn" id="5_s164i"]
 [ext_resource type="AudioStream" uid="uid://blm8j2m75qkt8" path="res://GeneralSounds/The Immortals - Mortal Kombat (Techno Syndrome 12 Mix) [Custom Instrumental].mp3" id="5_w0rdj"]
-[ext_resource type="PackedScene" uid="uid://dha0e7uxt8qex" path="res://bullet_catcher.tscn" id="6_b7g4h"]
+[ext_resource type="PackedScene" uid="uid://dha0e7uxt8qex" path="res://Global Stuff/bullet_catcher.tscn" id="6_b7g4h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c5att"]
 size = Vector2(2023, 246)

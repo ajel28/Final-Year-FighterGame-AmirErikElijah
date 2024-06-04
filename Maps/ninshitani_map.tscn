@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_adwny"]
 [ext_resource type="PackedScene" uid="uid://dp8o4yekl6npt" path="res://Global Stuff/ui_screen.tscn" id="5_6lpfe"]
 [ext_resource type="AudioStream" uid="uid://fprmby646d8o" path="res://GeneralSounds/streetfightTheme.mp3" id="5_40mjs"]
-[ext_resource type="PackedScene" uid="uid://dha0e7uxt8qex" path="res://bullet_catcher.tscn" id="6_xi2hm"]
+[ext_resource type="PackedScene" uid="uid://dha0e7uxt8qex" path="res://Global Stuff/bullet_catcher.tscn" id="6_xi2hm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kiori"]
 size = Vector2(1993, 200)

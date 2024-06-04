@@ -1,48 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://c02pxi1t5ipwh"]
+[gd_scene load_steps=3 format=3 uid="uid://c02pxi1t5ipwh"]
 
-[ext_resource type="Script" path="res://Global Stuff/health_1.gd" id="1_fryop"]
-[ext_resource type="Texture2D" uid="uid://p8y1g2qyk62x" path="res://Global Stuff/healthbar-sprite.png" id="2_rbvi0"]
+[ext_resource type="Texture2D" uid="uid://dfm8acainmtr5" path="res://Global Stuff/healthbarempty.png" id="2_huq0n"]
+[ext_resource type="Texture2D" uid="uid://brti7uu1q8vx5" path="res://Global Stuff/healthprogress.png" id="3_qk1m7"]
 
-[sub_resource type="Animation" id="Animation_lpvq2"]
-resource_name = "damage"
-length = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("barsprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [1]
-}
+[node name="health2" type="Node2D"]
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_x1w0m"]
-_data = {
-"damage": SubResource("Animation_lpvq2")
-}
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="health1" type="Node2D"]
-script = ExtResource("1_fryop")
-
-[node name="barsprite" type="Sprite2D" parent="."]
-position = Vector2(388, 157)
-scale = Vector2(7.8625, 3.85312)
-texture = ExtResource("2_rbvi0")
-hframes = 17
-
-[node name="Label" type="Label" parent="barsprite"]
-offset_left = -41.5648
-offset_top = -22.3154
-offset_right = 20.4352
-offset_bottom = 0.684643
-scale = Vector2(0.398456, 0.401702)
-text = "Player 1"
-text_direction = 1
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_x1w0m")
-}
+[node name="HealthBar2" type="TextureProgressBar" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -751.0
+offset_top = -142.0
+offset_right = -241.0
+offset_bottom = 164.0
+grow_horizontal = 0
+scale = Vector2(1.48, 1.48)
+value = 100.0
+texture_under = ExtResource("2_huq0n")
+texture_progress = ExtResource("3_qk1m7")

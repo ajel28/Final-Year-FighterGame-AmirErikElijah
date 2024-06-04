@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_qskw4"]
 [ext_resource type="PackedScene" uid="uid://dp8o4yekl6npt" path="res://Global Stuff/ui_screen.tscn" id="5_rjfwy"]
 [ext_resource type="AudioStream" uid="uid://b4h0vvd2e8ppn" path="res://GeneralSounds/STORM RISING (Climax).mp3" id="5_sknlw"]
-[ext_resource type="PackedScene" uid="uid://dha0e7uxt8qex" path="res://bullet_catcher.tscn" id="6_vrq4y"]
+[ext_resource type="PackedScene" uid="uid://dha0e7uxt8qex" path="res://Global Stuff/bullet_catcher.tscn" id="6_vrq4y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_52coe"]
 size = Vector2(1977, 172)

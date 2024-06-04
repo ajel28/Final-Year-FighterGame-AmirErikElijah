@@ -9,17 +9,22 @@ position = Vector2(-4, -3)
 script = ExtResource("1_63cur")
 PauseScreen = ExtResource("2_fkdoc")
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 874.0
-offset_right = 1374.0
-offset_bottom = 500.0
+[node name="LinkButton" type="LinkButton" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 894.0
+offset_top = 8.0
+offset_right = 1018.0
+offset_bottom = 114.0
+grow_horizontal = 2
+
+[node name="TextureRect" type="TextureRect" parent="LinkButton"]
+offset_left = -20.0
+offset_top = -8.0
+offset_right = 480.0
+offset_bottom = 492.0
 scale = Vector2(0.319999, 0.272881)
 texture = ExtResource("1_drexn")
-
-[node name="LinkButton" type="LinkButton" parent="."]
-offset_left = 890.0
-offset_top = 11.0
-offset_right = 1014.0
-offset_bottom = 117.0
 
 [connection signal="pressed" from="LinkButton" to="." method="_on_link_button_pressed"]

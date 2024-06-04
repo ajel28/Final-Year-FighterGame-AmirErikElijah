@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://btjykdye08m3h"]
 
-[ext_resource type="Script" path="res://P1Wins.gd" id="1_gwxbx"]
+[ext_resource type="Script" path="res://Global Stuff/P1Wins.gd" id="1_gwxbx"]
 [ext_resource type="AudioStream" uid="uid://476gpnrm0i0m" path="res://Global Stuff/K O player one wins 2.wav" id="2_v24rf"]
 
 [node name="P1Wins" type="Node2D"]
