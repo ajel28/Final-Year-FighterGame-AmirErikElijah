@@ -11,8 +11,10 @@ func _physics_process(delta):
 	global_position.x += -speed * delta
 		
 func _on_area_entered(area):
-	if !(area is DoomAttackPlayer2):
+	if !(area is DoomAttackPlayer2) and !(area is BulletCatcher):
 		Global.healthp1-=0.5
 		print(Global.healthp1)
+		self.queue_free()
+	elif (area is BulletCatcher):
 		self.queue_free()
 

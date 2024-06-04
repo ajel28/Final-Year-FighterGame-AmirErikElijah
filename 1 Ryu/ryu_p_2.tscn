@@ -98,7 +98,7 @@ scale = Vector2(1.7475, 1.7475)
 texture = ExtResource("2_dj4ga")
 flip_h = true
 hframes = 5
-frame = 3
+frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RyuP2"]
 position = Vector2(1738.5, 713.375)

@@ -1,10 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://cdhjlgq46nt8i"]
+[gd_scene load_steps=13 format=3 uid="uid://cdhjlgq46nt8i"]
 
 [ext_resource type="Script" path="res://1 Dr. Doom/doom_p_2.gd" id="1_eggay"]
 [ext_resource type="Texture2D" uid="uid://ccm0f38v8bx72" path="res://1 Dr. Doom/Doom-sprite.png" id="2_h65u4"]
 [ext_resource type="Script" path="res://1 Dr. Doom/doomP2shootingOrigin.gd" id="3_emyxb"]
 [ext_resource type="PackedScene" uid="uid://jgllyibx8cah" path="res://1 Dr. Doom/doom_att_p_2.tscn" id="4_5nukc"]
-[ext_resource type="PackedScene" uid="uid://b1jdnguba8pig" path="res://1 Deadpool/deadpool_p_2.tscn" id="5_wbwcb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tp4i7"]
 size = Vector2(175.75, 331)
@@ -157,6 +156,3 @@ doomp2_scene = ExtResource("4_5nukc")
 position = Vector2(1675.5, 709)
 shape = SubResource("RectangleShape2D_07g5u")
 disabled = true
-
-[node name="DeadpoolP2" parent="." instance=ExtResource("5_wbwcb")]
-visible = false

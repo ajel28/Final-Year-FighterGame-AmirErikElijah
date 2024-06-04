@@ -34,9 +34,11 @@ func get_input():
 	if int(Input.is_action_pressed("ui_D")) == 1:
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		return input.normalized()
+		punch = false
 	elif int(Input.is_action_pressed("ui_A")) == 1:
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		return input.normalized()
+		punch = false
 	elif int(Input.is_action_pressed("ui_S"))  == 1:
 		punch = false
 		animationsMC1.play("mc_crouch")
@@ -69,3 +71,9 @@ func player_movement(delta):
 	global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 	
 
+
+
+func _on_mc_punch_p_1_area_entered(area):
+	if punch==true:
+			Global.healthp2-=0.5
+			print(Global.healthp2)

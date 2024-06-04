@@ -137,6 +137,7 @@ scale = Vector2(1.63, 1.63)
 texture = ExtResource("2_no8hn")
 flip_h = true
 hframes = 6
+frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TermCharacterBody2"]
 position = Vector2(1724.5, 718.75)

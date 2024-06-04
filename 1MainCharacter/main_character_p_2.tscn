@@ -1,10 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://b3odc2ejkooke"]
+[gd_scene load_steps=12 format=3 uid="uid://b3odc2ejkooke"]
 
 [ext_resource type="Script" path="res://1MainCharacter/McP2.gd" id="1_ywrpk"]
 [ext_resource type="Texture2D" uid="uid://c8lwr0ssc0plw" path="res://1MainCharacter/Mc-sprite.png" id="2_apci6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5fosg"]
-size = Vector2(165.375, 325.375)
+size = Vector2(109.189, 325.375)
 
 [sub_resource type="Animation" id="Animation_nnuwd"]
 resource_name = "mc_crouch"
@@ -21,6 +21,30 @@ tracks/0/keys = {
 "update": 1,
 "values": [4]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MCPunchP2/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MCP2Hurtbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_qm1o4"]
 resource_name = "mc_idle"
@@ -36,6 +60,30 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [1, 2, 1, 0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MCPunchP2/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5, 0.55),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [true, true, true, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MCP2Hurtbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5, 0.55),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [false, false, false, false]
 }
 
 [sub_resource type="Animation" id="Animation_hmcoa"]
@@ -69,14 +117,72 @@ tracks/0/keys = {
 "update": 1,
 "values": [3, 2]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MCPunchP2/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MCP2Hurtbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
+}
+
+[sub_resource type="Animation" id="Animation_3ycri"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MCPunchP2/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MCP2Hurtbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vjnem"]
 _data = {
+"RESET": SubResource("Animation_3ycri"),
 "mc_crouch": SubResource("Animation_nnuwd"),
 "mc_idle": SubResource("Animation_qm1o4"),
 "mc_jump": SubResource("Animation_hmcoa"),
 "mc_punch": SubResource("Animation_atsfe")
 }
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qm5s5"]
+size = Vector2(76.25, 41)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0uggf"]
+size = Vector2(136, 327.5)
 
 [node name="MainCharacterP2" type="Node2D"]
 
@@ -92,13 +198,27 @@ scale = Vector2(1.655, 1.655)
 texture = ExtResource("2_apci6")
 flip_h = true
 hframes = 6
-frame = 1
+frame = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="McP2"]
-position = Vector2(1705.69, 716.312)
+position = Vector2(1716.59, 716)
 shape = SubResource("RectangleShape2D_5fosg")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="McP2"]
 libraries = {
 "": SubResource("AnimationLibrary_vjnem")
 }
+
+[node name="MCPunchP2" type="Area2D" parent="McP2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="McP2/MCPunchP2"]
+position = Vector2(1582.88, 623.5)
+shape = SubResource("RectangleShape2D_qm5s5")
+
+[node name="MCP2Hurtbox" type="Area2D" parent="McP2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="McP2/MCP2Hurtbox"]
+position = Vector2(1702, 712)
+shape = SubResource("RectangleShape2D_0uggf")
+
+[connection signal="area_entered" from="McP2/MCPunchP2" to="McP2" method="_on_mc_punch_p_2_area_entered"]

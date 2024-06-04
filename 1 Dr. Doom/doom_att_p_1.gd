@@ -11,14 +11,11 @@ func _physics_process(delta):
 	global_position.x += speed * delta
 		
 func _on_area_entered(area):
-	if !(area is DoomAttackPlayer1):
+	if !(area is DoomAttackPlayer1) and !(area is BulletCatcher):
+		self.queue_free()
 		Global.hitsInRowP2 = 0
 		Global.hitsInRowP1+=1;
 		Global.healthp2-=0.5
 		print(Global.healthp2)
-		if Global.hitsInRowP1 == 3:
-			$Triple.play()
-		elif Global.hitsInRowP1 == 5:
-			$Fatality.play()
+	elif (area is BulletCatcher):
 		self.queue_free()
-

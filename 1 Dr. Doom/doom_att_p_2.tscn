@@ -41,3 +41,5 @@ flip_h = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1459, 617)
 shape = SubResource("RectangleShape2D_yjdkl")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
