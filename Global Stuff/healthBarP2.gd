@@ -1,6 +1,6 @@
 extends TextureProgressBar
-class_name HealthBar
-var maxHealth = Global.maxHealthp1
+class_name HealthBar2
+var maxHealth = Global.maxHealthp2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,6 +12,6 @@ func _process(delta):
 	
 
 func update():
-	value = Global.healthp1 *100 / maxHealth
+	value = Global.healthp2 *100 / maxHealth
 
 	

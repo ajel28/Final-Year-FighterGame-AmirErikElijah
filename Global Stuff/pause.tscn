@@ -20,11 +20,15 @@ offset_bottom = 114.0
 grow_horizontal = 2
 
 [node name="TextureRect" type="TextureRect" parent="LinkButton"]
-layout_mode = 0
-offset_left = -20.0
-offset_top = -8.0
-offset_right = 480.0
-offset_bottom = 492.0
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -88.0
+offset_top = -9.0
+offset_right = 412.0
+offset_bottom = 491.0
+grow_horizontal = 2
 scale = Vector2(0.319999, 0.272881)
 texture = ExtResource("1_drexn")
 
