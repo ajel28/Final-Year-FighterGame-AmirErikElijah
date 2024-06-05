@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+class_name rockyP1
 @export var yes  = 1 
 @onready var animationsRocky1 = $AnimationPlayer
 @export var jump_height : float

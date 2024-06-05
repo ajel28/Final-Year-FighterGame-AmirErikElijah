@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+class_name ryu_P1
+
 @export var yes  = 1 
 @onready var animationsRyu = $AnimationPlayer
 const max_speed = 520

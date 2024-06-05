@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+class_name djP2
+
 @export var yes  = 1 
 @export var jump_height : float
 @export var jump_time_to_peak : float

@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+class_name termP2
+
 @export var yes  = 1 
 @onready var animationsterm2 = $AnimationPlayer
 @export var jump_height : float

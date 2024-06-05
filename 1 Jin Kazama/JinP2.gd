@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+class_name jinP2
 @export var yes  = 1 
 @onready var animations2 = $AnimationPlayer
 var kick = false

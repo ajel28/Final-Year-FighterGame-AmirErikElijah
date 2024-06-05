@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+class_name ryuP2
+
 @export var yes  = 1 
 @onready var animationsRyu2 = $AnimationPlayer
 
