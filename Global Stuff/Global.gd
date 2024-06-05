@@ -9,9 +9,13 @@ var player1
 var player2
 
 var mapchosen
+var needHChange = false
+
 
 var healthp1 = 100
+var maxHealthp1 = 100
 
+var maxHealthp2 = 100
 var healthp2 = 100
 
 var hitsInRowP1 = 0

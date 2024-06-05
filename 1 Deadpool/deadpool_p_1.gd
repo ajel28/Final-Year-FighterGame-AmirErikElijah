@@ -7,6 +7,7 @@ class_name dpP1
 @export var jump_time_to_peak : float
 @export var jump_time_to_descent: float
 
+
 @onready var jump_velocity : float = ((2.0 * jump_height) / jump_time_to_peak) * -1.0
 @onready var jump_gravity : float = ((-2.0 * jump_height) / (jump_time_to_peak *jump_time_to_peak)) * -1.0
 @onready var fall_gravity: float = ((-2.0 * jump_height) / (jump_time_to_peak *jump_time_to_descent)) * -1.0
@@ -93,3 +94,7 @@ func _on_deadpool_p_1_punch_area_entered(area):
 			var p1 = P1Wins.instantiate()
 			add_child(p1)
 			
+
+
+func _on_deadpool_p_1_hurtbox_area_entered(area):
+	Global.needHChange == true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://blqv6bi2f613f"]
+[gd_scene load_steps=19 format=3 uid="uid://blqv6bi2f613f"]
 
 [ext_resource type="Script" path="res://1 Deadpool/deadpool_p_1.gd" id="1_jaspc"]
 [ext_resource type="PackedScene" uid="uid://btjykdye08m3h" path="res://Global Stuff/p_1_wins.tscn" id="2_aqlr4"]
@@ -6,6 +6,9 @@
 [ext_resource type="Script" path="res://1 Deadpool/DeadpoolP1Hurtbox.gd" id="3_tgvqg"]
 [ext_resource type="AudioStream" uid="uid://cgjun3xnujc5q" path="res://1 Deadpool/Triple Hit 2.wav" id="4_4tp8b"]
 [ext_resource type="AudioStream" uid="uid://bl0stpj0qdy6m" path="res://1 Deadpool/Fatality 1.wav" id="5_6h3ip"]
+[ext_resource type="Texture2D" uid="uid://dfm8acainmtr5" path="res://Global Stuff/healthbarempty.png" id="7_tuv43"]
+[ext_resource type="Texture2D" uid="uid://brti7uu1q8vx5" path="res://Global Stuff/healthprogress.png" id="8_eejob"]
+[ext_resource type="Script" path="res://1 Deadpool/healthbar.gd" id="9_krjkt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bjnh6"]
 size = Vector2(184.381, 319.499)
@@ -248,4 +251,17 @@ volume_db = 10.0
 stream = ExtResource("5_6h3ip")
 volume_db = 10.0
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer"]
+offset_left = 2.0
+offset_top = -96.0
+offset_right = 502.0
+offset_bottom = 204.0
+value = 100.0
+texture_under = ExtResource("7_tuv43")
+texture_progress = ExtResource("8_eejob")
+script = ExtResource("9_krjkt")
+
 [connection signal="area_entered" from="DeadpoolP1/TextureRect/DeadpoolP1Punch" to="DeadpoolP1" method="_on_deadpool_p_1_punch_area_entered"]
+[connection signal="area_entered" from="DeadpoolP1/DeadpoolP1Hurtbox" to="DeadpoolP1" method="_on_deadpool_p_1_hurtbox_area_entered"]
