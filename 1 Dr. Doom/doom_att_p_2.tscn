@@ -26,7 +26,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yjdkl"]
-size = Vector2(251, 126)
+size = Vector2(97.5, 126)
 
 [node name="doomAttP2" type="Area2D"]
 script = ExtResource("1_8qpvy")
@@ -39,7 +39,7 @@ animation = &"gb2"
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1459, 617)
+position = Vector2(1387, 620)
 shape = SubResource("RectangleShape2D_yjdkl")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
