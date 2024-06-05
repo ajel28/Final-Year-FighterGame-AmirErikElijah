@@ -236,7 +236,7 @@ script = ExtResource("3_yq3i1")
 position = Vector2(1725.62, 724.25)
 shape = SubResource("RectangleShape2D_drr6n")
 
-[node name="TextureRect2" type="TextureRect" parent="CharacterBody2D"]
+[node name="TextureRect2" type="TextureRect" parent="."]
 z_index = 1
 offset_left = 1532.0
 offset_top = -95.0

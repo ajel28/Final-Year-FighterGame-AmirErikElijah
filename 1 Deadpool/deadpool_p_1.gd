@@ -13,8 +13,6 @@ class_name dpP1
 @onready var fall_gravity: float = ((-2.0 * jump_height) / (jump_time_to_peak *jump_time_to_descent)) * -1.0
 var punch = false
 
-@export var P1Wins: PackedScene
-
 const max_speed = 520
 const accel = 1000
 const friction = 3000
@@ -90,9 +88,6 @@ func _on_deadpool_p_1_punch_area_entered(area):
 			$Triple.play()
 		elif Global.hitsInRowP1 == 5:
 			$Fatality.play()
-		if Global.healthp2 <= 0:
-			var p1 = P1Wins.instantiate()
-			add_child(p1)
 			
 
 
