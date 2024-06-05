@@ -1,17 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://ctkb5fr83hdqh"]
+[gd_scene load_steps=3 format=3 uid="uid://ctkb5fr83hdqh"]
 
 [ext_resource type="PackedScene" uid="uid://b5vok5kcwhud1" path="res://Global Stuff/healthBar.tscn" id="1_a6df0"]
 [ext_resource type="Script" path="res://Global Stuff/healthBarP2.gd" id="2_htm0w"]
-[ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_1o31n"]
 
 [node name="ui_Screen" type="CanvasLayer"]
 
 [node name="HealthBarP1" parent="." instance=ExtResource("1_a6df0")]
+offset_left = 3.0
+offset_top = -146.0
+offset_right = 503.0
+offset_bottom = 154.0
+scale = Vector2(1.32, 1.32)
 
 [node name="HealthBarP2" parent="." instance=ExtResource("1_a6df0")]
-offset_left = 1419.0
-offset_right = 1919.0
+offset_left = 1255.0
+offset_top = -148.0
+offset_right = 1765.0
+offset_bottom = 158.0
+scale = Vector2(1.32, 1.32)
 fill_mode = 1
 script = ExtResource("2_htm0w")
-
-[node name="Pause" parent="." instance=ExtResource("3_1o31n")]
