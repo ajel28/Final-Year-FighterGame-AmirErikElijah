@@ -9,6 +9,7 @@
 
 [node name="pauseScreen" type="Node2D"]
 process_mode = 3
+z_index = 2
 script = ExtResource("1_dhms2")
 
 [node name="TextureRect" type="TextureRect" parent="."]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://b3x0om87oxver"]
+[gd_scene load_steps=5 format=3 uid="uid://b3x0om87oxver"]
 
 [ext_resource type="Texture2D" uid="uid://d1n1070rwtm4k" path="res://Characters/Devil Jin Player 1 (2).png" id="1_3g6du"]
 [ext_resource type="Script" path="res://1 Devil Jin/d_jin_p_2.gd" id="1_b6owt"]
+[ext_resource type="Texture2D" uid="uid://cechwde1tey00" path="res://1 Devil Jin/DJinBubble2.png" id="3_l8kas"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ahees"]
 size = Vector2(357, 624.5)
@@ -23,3 +24,11 @@ flip_h = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(2220.5, 1267.25)
 shape = SubResource("RectangleShape2D_ahees")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = 1
+offset_left = 1532.0
+offset_top = -95.0
+offset_right = 2198.0
+offset_bottom = 280.0
+texture = ExtResource("3_l8kas")

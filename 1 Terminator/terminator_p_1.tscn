@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://bpo00d74d56db"]
+[gd_scene load_steps=14 format=3 uid="uid://bpo00d74d56db"]
 
 [ext_resource type="Script" path="res://1 Terminator/terminator_p_1.gd" id="1_bfd82"]
 [ext_resource type="Texture2D" uid="uid://c5fomil7lxriq" path="res://1 Terminator/1Terminator-sprite.png" id="2_uaav8"]
 [ext_resource type="Script" path="res://1 Terminator/termP1ShootingOrigin.gd" id="3_5it6k"]
 [ext_resource type="PackedScene" uid="uid://cidvskwee72ym" path="res://1 Terminator/terminator_fire_ball_p_1.tscn" id="4_ei11k"]
+[ext_resource type="Texture2D" uid="uid://cysna5aw1pbr3" path="res://1 Terminator/TermBubble1.png" id="5_134q5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qj4j6"]
 size = Vector2(138.125, 319.5)
@@ -156,4 +157,13 @@ termp1_scene = ExtResource("4_ei11k")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TermCharacterBody/TermP1Hurtbox"]
 position = Vector2(355.625, 718.5)
+scale = Vector2(0.9932, 1)
 shape = SubResource("RectangleShape2D_u8v3p")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = 1
+offset_left = -261.0
+offset_top = -95.0
+offset_right = 405.0
+offset_bottom = 280.0
+texture = ExtResource("5_134q5")

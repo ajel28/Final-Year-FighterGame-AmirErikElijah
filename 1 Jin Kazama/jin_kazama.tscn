@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://dtivlebww4j1t"]
+[gd_scene load_steps=13 format=3 uid="uid://dtivlebww4j1t"]
 
 [ext_resource type="Script" path="res://1 Jin Kazama/CharacterBody2D.gd" id="1_1urm1"]
 [ext_resource type="Texture2D" uid="uid://deownb54lwa1w" path="res://1 Jin Kazama/kazama-sprite.png" id="2_ys1gn"]
 [ext_resource type="Script" path="res://1 Jin Kazama/JinP1Hurtbox.gd" id="3_wicmm"]
+[ext_resource type="Texture2D" uid="uid://cpxdquaw3ilc3" path="res://1 Jin Kazama/JinBubble1.png" id="4_gsphh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5n6a1"]
 size = Vector2(61.2776, 44.4415)
@@ -203,5 +204,13 @@ script = ExtResource("3_wicmm")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Jin/JinP1Hurtbox"]
 position = Vector2(332.5, 716.375)
 shape = SubResource("RectangleShape2D_aaw8i")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = 1
+offset_left = -261.0
+offset_top = -95.0
+offset_right = 405.0
+offset_bottom = 280.0
+texture = ExtResource("4_gsphh")
 
 [connection signal="area_entered" from="Jin/TextureRect/KickArea2d" to="Jin" method="_on_kick_area_2d_area_entered"]

@@ -12,5 +12,5 @@ func _on_area_entered(area):
 		self.queue_free()
 	elif !(area is TermFireballPlayer2):
 		Global.healthp1-=2
-		print(Global.healthp2)
+		print(Global.healthp1)
 		self.queue_free()

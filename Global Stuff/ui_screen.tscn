@@ -6,17 +6,17 @@
 [node name="ui_Screen" type="CanvasLayer"]
 
 [node name="HealthBarP1" parent="." instance=ExtResource("1_a6df0")]
-offset_left = 3.0
-offset_top = -146.0
-offset_right = 503.0
-offset_bottom = 154.0
+offset_left = 112.0
+offset_top = -95.0
+offset_right = 612.0
+offset_bottom = 205.0
 scale = Vector2(1.32, 1.32)
 
 [node name="HealthBarP2" parent="." instance=ExtResource("1_a6df0")]
-offset_left = 1255.0
-offset_top = -148.0
-offset_right = 1765.0
-offset_bottom = 158.0
+offset_left = 1166.0
+offset_top = -95.0
+offset_right = 1676.0
+offset_bottom = 211.0
 scale = Vector2(1.32, 1.32)
 fill_mode = 1
 script = ExtResource("2_htm0w")

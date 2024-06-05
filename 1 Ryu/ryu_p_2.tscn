@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://bpl8ljakjhy0t"]
+[gd_scene load_steps=10 format=3 uid="uid://bpl8ljakjhy0t"]
 
 [ext_resource type="Script" path="res://1 Ryu/ryu_p_2.gd" id="1_qwph0"]
 [ext_resource type="Texture2D" uid="uid://clxv6ubuqfy8p" path="res://1 Ryu/ryu-sprite.png" id="2_dj4ga"]
+[ext_resource type="Texture2D" uid="uid://chngekpnmkypo" path="res://1 Ryu/RyuBubble2.png" id="3_5aqm3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gkkdl"]
 size = Vector2(159, 328.75)
@@ -115,3 +116,11 @@ libraries = {
 position = Vector2(1722.88, 713.625)
 shape = SubResource("RectangleShape2D_b3qqh")
 disabled = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = 1
+offset_left = 1532.0
+offset_top = -95.0
+offset_right = 2198.0
+offset_bottom = 280.0
+texture = ExtResource("3_5aqm3")

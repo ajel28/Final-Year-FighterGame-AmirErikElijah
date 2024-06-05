@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://y6i7wj5df6rs"]
+[gd_scene load_steps=14 format=3 uid="uid://y6i7wj5df6rs"]
 
 [ext_resource type="Script" path="res://1 John Wick/john_wick_p_1.gd" id="1_bcwuj"]
 [ext_resource type="Texture2D" uid="uid://ddir2jqddhtad" path="res://1 John Wick/JohnWick-sprite.png" id="2_6kjc5"]
 [ext_resource type="Script" path="res://1 John Wick/WickP1Hurtbox.gd" id="3_l68pj"]
+[ext_resource type="Texture2D" uid="uid://crl7a5dal7ry5" path="res://1 John Wick/WickBubble1.png" id="4_mp5ow"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x0r2c"]
 size = Vector2(56.9831, 30.9283)
@@ -222,5 +223,13 @@ script = ExtResource("3_l68pj")
 position = Vector2(350, 719)
 shape = SubResource("RectangleShape2D_ynncu")
 disabled = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = 1
+offset_left = -261.0
+offset_top = -95.0
+offset_right = 405.0
+offset_bottom = 280.0
+texture = ExtResource("4_mp5ow")
 
 [connection signal="area_entered" from="CharacterBody2D/TextureRect/WickP1Punch" to="CharacterBody2D" method="_on_wick_p_1_punch_area_entered"]

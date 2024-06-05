@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://bec3sqiew2ali"]
+[gd_scene load_steps=14 format=3 uid="uid://bec3sqiew2ali"]
 
 [ext_resource type="Script" path="res://1 Rocky Balboa/rocky_p_2.gd" id="1_314r8"]
 [ext_resource type="Texture2D" uid="uid://tmw6qxjouv53" path="res://1 Rocky Balboa/Rocky-sprite.png" id="2_npn56"]
 [ext_resource type="Script" path="res://1 Rocky Balboa/RockyP2Hurtbox.gd" id="3_ngtig"]
+[ext_resource type="Texture2D" uid="uid://cpm58f61xpi0u" path="res://1 Rocky Balboa/RockyBubble2.png" id="4_mypsf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gc8ww"]
 size = Vector2(67.3001, 31.2496)
@@ -234,5 +235,13 @@ script = ExtResource("3_ngtig")
 position = Vector2(1705, 711)
 shape = SubResource("RectangleShape2D_kxvjw")
 disabled = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = 1
+offset_left = 1532.0
+offset_top = -95.0
+offset_right = 2198.0
+offset_bottom = 280.0
+texture = ExtResource("4_mypsf")
 
 [connection signal="area_entered" from="CharacterBody2D/TextureRect/RockyP2Punch" to="CharacterBody2D" method="_on_rocky_p_2_punch_area_entered"]

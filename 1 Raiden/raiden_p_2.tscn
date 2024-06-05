@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://xee311mmo32j"]
+[gd_scene load_steps=14 format=3 uid="uid://xee311mmo32j"]
 
 [ext_resource type="Script" path="res://1 Raiden/raiden_p_2.gd" id="1_e1ly0"]
 [ext_resource type="Texture2D" uid="uid://dbaul8jp5wjv" path="res://1 Raiden/1Raiden-sprite.png" id="2_0xqlu"]
 [ext_resource type="Script" path="res://1 Raiden/raidenShootingOriginP2.gd" id="3_p676y"]
 [ext_resource type="PackedScene" uid="uid://bxlqr24giwnbc" path="res://1 Raiden/raiden_att_p_2.tscn" id="4_kapbo"]
+[ext_resource type="Texture2D" uid="uid://2m42urldlb2o" path="res://1 Raiden/RaidBubble2.png" id="5_47qdn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ptl5s"]
 size = Vector2(152.25, 339)
@@ -157,3 +158,11 @@ raidp2_scene = ExtResource("4_kapbo")
 position = Vector2(1694.5, 706)
 shape = SubResource("RectangleShape2D_l4pqf")
 disabled = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = 1
+offset_left = 1532.0
+offset_top = -95.0
+offset_right = 2198.0
+offset_bottom = 280.0
+texture = ExtResource("5_47qdn")

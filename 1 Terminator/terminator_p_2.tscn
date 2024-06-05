@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://dy4hc4dsyy4b1"]
+[gd_scene load_steps=14 format=3 uid="uid://dy4hc4dsyy4b1"]
 
 [ext_resource type="Script" path="res://1 Terminator/terminator_p_2.gd" id="1_e3l6d"]
 [ext_resource type="Texture2D" uid="uid://c5fomil7lxriq" path="res://1 Terminator/1Terminator-sprite.png" id="2_no8hn"]
 [ext_resource type="Script" path="res://1 Terminator/termP2ShootingOrigin.gd" id="3_j7oqr"]
 [ext_resource type="PackedScene" uid="uid://cf1vmxpxdha5o" path="res://1 Terminator/terminator_fire_ball_p_2.tscn" id="4_sp3al"]
+[ext_resource type="Texture2D" uid="uid://bl128gh3ej7s8" path="res://1 Terminator/TermBubble2.png" id="5_uqqnf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iby2u"]
 size = Vector2(135, 317.5)
@@ -159,3 +160,11 @@ termp2_scene = ExtResource("4_sp3al")
 position = Vector2(1707.5, 718.625)
 shape = SubResource("RectangleShape2D_s7vr6")
 disabled = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = 1
+offset_left = 1530.0
+offset_top = -93.0
+offset_right = 2196.0
+offset_bottom = 282.0
+texture = ExtResource("5_uqqnf")

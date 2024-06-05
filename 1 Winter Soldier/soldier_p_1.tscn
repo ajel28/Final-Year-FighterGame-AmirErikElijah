@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://bna7irq3ijw8c"]
+[gd_scene load_steps=14 format=3 uid="uid://bna7irq3ijw8c"]
 
 [ext_resource type="Script" path="res://1 Winter Soldier/soldier_p_1.gd" id="1_64tp6"]
 [ext_resource type="Texture2D" uid="uid://c0pjeeb1btg7m" path="res://1 Winter Soldier/1WinterSoldier-sprite.png" id="2_q332d"]
 [ext_resource type="Script" path="res://1 Winter Soldier/SoldierP1Hurtbox.gd" id="3_mgnrh"]
+[ext_resource type="Texture2D" uid="uid://clxjau6elcq56" path="res://1 Winter Soldier/SoldBubble1.png" id="4_08uou"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5y4ve"]
 size = Vector2(80.0466, 27.3464)
@@ -232,5 +233,13 @@ script = ExtResource("3_mgnrh")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/SoldierP1Hurtbox"]
 position = Vector2(343.625, 719.812)
 shape = SubResource("RectangleShape2D_yk7ge")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = 1
+offset_left = -261.0
+offset_top = -95.0
+offset_right = 405.0
+offset_bottom = 280.0
+texture = ExtResource("4_08uou")
 
 [connection signal="area_entered" from="CharacterBody2D/TextureRect/SoldierP1Punch" to="CharacterBody2D" method="_on_soldier_p_1_punch_area_entered"]
