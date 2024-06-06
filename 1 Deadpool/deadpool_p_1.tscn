@@ -1,7 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://blqv6bi2f613f"]
+[gd_scene load_steps=16 format=3 uid="uid://blqv6bi2f613f"]
 
 [ext_resource type="Script" path="res://1 Deadpool/deadpool_p_1.gd" id="1_jaspc"]
-[ext_resource type="PackedScene" uid="uid://btjykdye08m3h" path="res://Global Stuff/p_1_wins.tscn" id="2_aqlr4"]
 [ext_resource type="Texture2D" uid="uid://d236227iy03yl" path="res://1 Deadpool/1Deadpool-sprite.png" id="2_nv5fj"]
 [ext_resource type="Script" path="res://1 Deadpool/DeadpoolP1Hurtbox.gd" id="3_tgvqg"]
 [ext_resource type="AudioStream" uid="uid://cgjun3xnujc5q" path="res://1 Deadpool/Triple Hit 2.wav" id="4_4tp8b"]
@@ -210,7 +209,6 @@ script = ExtResource("1_jaspc")
 jump_height = 700.0
 jump_time_to_peak = 0.5
 jump_time_to_descent = 0.3
-P1Wins = ExtResource("2_aqlr4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeadpoolP1"]
 position = Vector2(322.667, 715.75)

@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Maps/yaku_map.gd" id="1_fe0be"]
 [ext_resource type="Texture2D" uid="uid://cj7k2xvaahn0v" path="res://Maps/ActualYakushimaForest.png" id="2_3pgad"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_85s8j"]
-[ext_resource type="PackedScene" uid="uid://dp8o4yekl6npt" path="res://Global Stuff/ui_screen.tscn" id="5_r3kia"]
+[ext_resource type="PackedScene" uid="uid://ctkb5fr83hdqh" path="res://Global Stuff/ui_screen.tscn" id="5_r3kia"]
 [ext_resource type="AudioStream" uid="uid://f3l15b3b7ulq" path="res://GeneralSounds/Rebellion  Sekiro_ Shadows Die Twice OST.mp3" id="5_rkpiw"]
 [ext_resource type="PackedScene" uid="uid://dha0e7uxt8qex" path="res://Global Stuff/bullet_catcher.tscn" id="6_35q14"]
 

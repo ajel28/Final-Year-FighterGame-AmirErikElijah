@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://domr5brhcenr4" path="res://Maps/ActualFrosbiteColiseum.png" id="2_3v6t4"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_g70x2"]
 [ext_resource type="AudioStream" uid="uid://b68gnt3fjg4rs" path="res://GeneralSounds/Super Smash Bros Ultimate (Theme).mp3" id="5_4duqo"]
-[ext_resource type="PackedScene" uid="uid://dp8o4yekl6npt" path="res://Global Stuff/ui_screen.tscn" id="5_616v7"]
+[ext_resource type="PackedScene" uid="uid://ctkb5fr83hdqh" path="res://Global Stuff/ui_screen.tscn" id="5_616v7"]
 [ext_resource type="PackedScene" uid="uid://dha0e7uxt8qex" path="res://Global Stuff/bullet_catcher.tscn" id="6_r8r8o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1xtgs"]
@@ -14,10 +14,10 @@ size = Vector2(1958.5, 220)
 script = ExtResource("1_cilvh")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = -2.0
-offset_top = -63.0
-offset_right = 1918.0
-offset_bottom = 1139.0
+offset_left = -54.0
+offset_top = -189.0
+offset_right = 1983.0
+offset_bottom = 1086.0
 texture = ExtResource("2_3v6t4")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]

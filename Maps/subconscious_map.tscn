@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cs12t4tffe5wa" path="res://Maps/ActualIntoTheSubconcious.png" id="2_eqvbn"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_fr7nq"]
 [ext_resource type="AudioStream" uid="uid://b8die7nr0wpj7" path="res://GeneralSounds/Street Fighter II Ryu Theme Original.mp3" id="5_fe75d"]
-[ext_resource type="PackedScene" uid="uid://dp8o4yekl6npt" path="res://Global Stuff/ui_screen.tscn" id="5_glxk6"]
+[ext_resource type="PackedScene" uid="uid://ctkb5fr83hdqh" path="res://Global Stuff/ui_screen.tscn" id="5_glxk6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s655s"]
 size = Vector2(2015, 286.5)

@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Maps/ruins_map.gd" id="1_ffj44"]
 [ext_resource type="Texture2D" uid="uid://1n2vpwloagrl" path="res://Maps/ActualAbandonedRuins.png" id="2_o3vqq"]
 [ext_resource type="AudioStream" uid="uid://yo2mbldi5pwr" path="res://GeneralSounds/READY, FIGHT - Sound Effect.mp3" id="4_bwn02"]
-[ext_resource type="PackedScene" uid="uid://dp8o4yekl6npt" path="res://Global Stuff/ui_screen.tscn" id="5_u7usa"]
+[ext_resource type="PackedScene" uid="uid://ctkb5fr83hdqh" path="res://Global Stuff/ui_screen.tscn" id="5_u7usa"]
 [ext_resource type="AudioStream" uid="uid://ds4a38gsleaek" path="res://GeneralSounds/Yarikawa's Defense - Ghost of Tsushima OST.mp3" id="5_uv3ua"]
 [ext_resource type="PackedScene" uid="uid://dha0e7uxt8qex" path="res://Global Stuff/bullet_catcher.tscn" id="6_6ai2d"]
 
