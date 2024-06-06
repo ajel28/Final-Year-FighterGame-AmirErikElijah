@@ -153,6 +153,10 @@ position = Vector2(479, 664)
 script = ExtResource("3_5it6k")
 termp1_scene = ExtResource("4_ei11k")
 
+[node name="Timer" type="Timer" parent="TermCharacterBody/termP1ShootingOrigin"]
+wait_time = 0.5
+autostart = true
+
 [node name="TermP1Hurtbox" type="Area2D" parent="TermCharacterBody"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TermCharacterBody/TermP1Hurtbox"]
@@ -167,3 +171,5 @@ offset_top = -95.0
 offset_right = 405.0
 offset_bottom = 280.0
 texture = ExtResource("5_134q5")
+
+[connection signal="timeout" from="TermCharacterBody/termP1ShootingOrigin/Timer" to="TermCharacterBody/termP1ShootingOrigin" method="_on_timer_timeout"]

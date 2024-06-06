@@ -151,6 +151,10 @@ libraries = {
 script = ExtResource("3_emyxb")
 doomp2_scene = ExtResource("4_5nukc")
 
+[node name="Timer" type="Timer" parent="DoomP2/doomP2shootingOrigin"]
+wait_time = 0.5
+autostart = true
+
 [node name="DoomP2Hurtbox" type="Area2D" parent="DoomP2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoomP2/DoomP2Hurtbox"]
@@ -165,3 +169,5 @@ offset_top = -95.0
 offset_right = 2198.0
 offset_bottom = 280.0
 texture = ExtResource("5_ayuc5")
+
+[connection signal="timeout" from="DoomP2/doomP2shootingOrigin/Timer" to="DoomP2/doomP2shootingOrigin" method="_on_timer_timeout"]

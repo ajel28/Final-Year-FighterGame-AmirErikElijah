@@ -152,6 +152,10 @@ libraries = {
 script = ExtResource("3_p676y")
 raidp2_scene = ExtResource("4_kapbo")
 
+[node name="Timer" type="Timer" parent="CharacterBody2D/raidenShootingOriginP2"]
+wait_time = 0.5
+autostart = true
+
 [node name="RaidenHurtboxP2" type="Area2D" parent="CharacterBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/RaidenHurtboxP2"]
@@ -166,3 +170,5 @@ offset_top = -95.0
 offset_right = 2198.0
 offset_bottom = 280.0
 texture = ExtResource("5_47qdn")
+
+[connection signal="timeout" from="CharacterBody2D/raidenShootingOriginP2/Timer" to="CharacterBody2D/raidenShootingOriginP2" method="_on_timer_timeout"]
