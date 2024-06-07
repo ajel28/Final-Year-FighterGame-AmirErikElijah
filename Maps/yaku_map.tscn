@@ -17,7 +17,7 @@ script = ExtResource("1_fe0be")
 offset_left = -84.0
 offset_top = -52.0
 offset_right = 3756.0
-offset_bottom = 2108.0
+offset_bottom = 2119.0
 scale = Vector2(0.530298, 0.52337)
 texture = ExtResource("2_3pgad")
 

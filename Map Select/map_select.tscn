@@ -23,10 +23,10 @@ yakushima = ExtResource("8_1kjgd")
 frostbite = ExtResource("9_8q7wy")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = -3.0
-offset_top = -13.0
-offset_right = 1923.0
-offset_bottom = 1082.0
+offset_left = -1.0
+offset_top = -18.0
+offset_right = 1933.0
+offset_bottom = 1117.0
 texture = ExtResource("2_3vb1b")
 
 [node name="AbandonedButton" type="LinkButton" parent="."]

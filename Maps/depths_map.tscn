@@ -17,7 +17,7 @@ script = ExtResource("1_rb8js")
 offset_left = -1.0
 offset_top = -11.0
 offset_right = 3222.0
-offset_bottom = 2286.0
+offset_bottom = 2410.0
 scale = Vector2(0.59584, 0.476672)
 texture = ExtResource("2_vvges")
 

@@ -17,7 +17,7 @@ script = ExtResource("1_pecgx")
 offset_left = -10.0
 offset_top = -39.0
 offset_right = 1979.0
-offset_bottom = 1063.0
+offset_bottom = 1083.0
 texture = ExtResource("2_7hxnm")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

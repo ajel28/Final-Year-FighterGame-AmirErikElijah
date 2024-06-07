@@ -1,22 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://dioupap7ct4ka"]
+[gd_scene load_steps=4 format=3 uid="uid://dioupap7ct4ka"]
 
 [ext_resource type="Script" path="res://Controls/controls.gd" id="1_b4x0e"]
 [ext_resource type="Texture2D" uid="uid://bf56lvfqjjpk8" path="res://Controls/Controls Screen.png" id="1_y6c7r"]
+[ext_resource type="PackedScene" uid="uid://3fqdwtr0ackl" path="res://Menu/start_menu.tscn" id="2_yqfr4"]
 
 [node name="controls" type="Node2D"]
 script = ExtResource("1_b4x0e")
 
+[node name="StartMenu" parent="." instance=ExtResource("2_yqfr4")]
+
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 2.0
-offset_top = -7.0
-offset_right = 1930.0
-offset_bottom = 1131.0
+offset_left = -50.0
+offset_top = -44.0
+offset_right = 1924.0
+offset_bottom = 1113.0
 texture = ExtResource("1_y6c7r")
 
 [node name="ControlBack" type="LinkButton" parent="."]
-offset_left = 1245.0
-offset_top = 922.0
-offset_right = 1658.0
-offset_bottom = 1080.0
+offset_left = 1208.0
+offset_top = 889.0
+offset_right = 1621.0
+offset_bottom = 1047.0
 
 [connection signal="pressed" from="ControlBack" to="." method="_on_control_back_pressed"]
