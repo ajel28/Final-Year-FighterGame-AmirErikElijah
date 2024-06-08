@@ -1,10 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://ctkb5fr83hdqh"]
+[gd_scene load_steps=8 format=3 uid="uid://ctkb5fr83hdqh"]
 
 [ext_resource type="PackedScene" uid="uid://b5vok5kcwhud1" path="res://Global Stuff/healthBar.tscn" id="1_a6df0"]
+[ext_resource type="Script" path="res://Global Stuff/ui_screen.gd" id="1_nq61m"]
 [ext_resource type="Script" path="res://Global Stuff/healthBarP2.gd" id="2_htm0w"]
 [ext_resource type="PackedScene" uid="uid://cn04r8bebir05" path="res://Global Stuff/pause.tscn" id="3_axxk2"]
+[ext_resource type="PackedScene" uid="uid://c7vaawrxqxv6f" path="res://Global Stuff/stamina_bar.tscn" id="4_4ldtd"]
+[ext_resource type="Script" path="res://Global Stuff/stamina_bar2.gd" id="5_nirvn"]
+[ext_resource type="Script" path="res://Global Stuff/stamina_bar1.gd" id="5_rxdyn"]
 
 [node name="ui_Screen" type="CanvasLayer"]
+script = ExtResource("1_nq61m")
 
 [node name="HealthBarP1" parent="." instance=ExtResource("1_a6df0")]
 offset_left = 112.0
@@ -24,3 +29,18 @@ script = ExtResource("2_htm0w")
 
 [node name="Pause" parent="." instance=ExtResource("3_axxk2")]
 position = Vector2(20, 48)
+
+[node name="staminaBar" parent="." instance=ExtResource("4_4ldtd")]
+offset_left = 1483.0
+offset_top = 87.0
+offset_right = 1983.0
+offset_bottom = 387.0
+script = ExtResource("5_rxdyn")
+
+[node name="staminaBar2" parent="." instance=ExtResource("4_4ldtd")]
+offset_left = 134.0
+offset_top = 87.0
+offset_right = 634.0
+offset_bottom = 387.0
+fill_mode = 1
+script = ExtResource("5_nirvn")

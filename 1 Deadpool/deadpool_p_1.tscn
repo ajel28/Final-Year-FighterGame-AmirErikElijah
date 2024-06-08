@@ -247,9 +247,6 @@ volume_db = 10.0
 stream = ExtResource("5_6h3ip")
 volume_db = 10.0
 
-[node name="Stamina" type="Timer" parent="DeadpoolP1"]
-wait_time = 8.0
-
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1
 offset_left = -261.0

@@ -37,7 +37,7 @@ func get_input():
 	elif int(Input.is_action_pressed("ui_J")) == 1:
 		global_position = global_position.clamp(Vector2(-1550,-999), Vector2(0,750))
 		return input.normalized()
-	elif int(Input.is_action_pressed("ui_K"))  == 1 and $Stamina.time_left>=4:
+	elif int(Input.is_action_pressed("ui_K"))  == 1 and StaminaBar.Stamina.time_left>=4:
 		animationsDoom2.play("doomcrouch2")
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_U")) == 1:
