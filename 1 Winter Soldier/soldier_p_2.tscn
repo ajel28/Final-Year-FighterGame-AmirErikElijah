@@ -236,6 +236,10 @@ script = ExtResource("3_yq3i1")
 position = Vector2(1725.62, 724.25)
 shape = SubResource("RectangleShape2D_drr6n")
 
+[node name="Stamina" type="Timer" parent="CharacterBody2D"]
+wait_time = 8.0
+autostart = true
+
 [node name="TextureRect2" type="TextureRect" parent="."]
 z_index = 1
 offset_left = 1532.0

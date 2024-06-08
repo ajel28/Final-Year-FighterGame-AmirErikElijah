@@ -40,7 +40,7 @@ func get_input():
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		punch = false
 		return input.normalized()
-	elif int(Input.is_action_pressed("ui_S"))  == 1:
+	elif int(Input.is_action_pressed("ui_S")) == 1 and $Stamina.time_left>=4:
 		punch = false
 		animationsWick1.play("Wickcrouch1")
 		return input.normalized()

@@ -222,6 +222,10 @@ shape = SubResource("RectangleShape2D_qm5s5")
 position = Vector2(1702, 712)
 shape = SubResource("RectangleShape2D_0uggf")
 
+[node name="Stamina" type="Timer" parent="McP2"]
+wait_time = 8.0
+autostart = true
+
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1
 offset_left = 1532.0

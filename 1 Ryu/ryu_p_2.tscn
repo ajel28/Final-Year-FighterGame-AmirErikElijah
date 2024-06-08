@@ -117,6 +117,10 @@ position = Vector2(1722.88, 713.625)
 shape = SubResource("RectangleShape2D_b3qqh")
 disabled = true
 
+[node name="Stamina" type="Timer" parent="RyuP2"]
+wait_time = 8.0
+autostart = true
+
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1
 offset_left = 1532.0

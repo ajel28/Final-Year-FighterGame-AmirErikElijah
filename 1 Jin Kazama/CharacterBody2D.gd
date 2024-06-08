@@ -23,7 +23,7 @@ func get_input():
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		return input.normalized()
 		kick=false
-	elif int(Input.is_action_pressed("ui_S"))  == 1:
+	elif int(Input.is_action_pressed("ui_S")) == 1 and $Stamina.time_left>=4:
 		animationsDp1.play("crouch")
 		return input.normalized()
 		kick=false

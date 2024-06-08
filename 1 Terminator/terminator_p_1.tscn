@@ -164,6 +164,10 @@ position = Vector2(355.625, 718.5)
 scale = Vector2(0.9932, 1)
 shape = SubResource("RectangleShape2D_u8v3p")
 
+[node name="Stamina" type="Timer" parent="TermCharacterBody"]
+wait_time = 8.0
+autostart = true
+
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1
 offset_left = -261.0
