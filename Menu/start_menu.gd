@@ -25,3 +25,7 @@ func _on_exit_button_pressed():
 
 func _on_story_button_pressed():
 	get_tree().change_scene_to_file("res://Menu/intro_screen.tscn")
+
+
+func _on_ui_button_pressed():
+	get_tree().change_scene_to_file("res://Menu/ui.tscn")

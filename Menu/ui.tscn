@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://drg3cksllvuub"]
+
+[ext_resource type="Script" path="res://Menu/UI.gd" id="1_ieusb"]
+[ext_resource type="Texture2D" uid="uid://bkwv170022l4o" path="res://Menu/UI.png" id="2_mscg7"]
+
+[node name="UI" type="Node2D"]
+script = ExtResource("1_ieusb")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1924.0
+offset_bottom = 1113.0
+texture = ExtResource("2_mscg7")
+
+[node name="BackButton" type="LinkButton" parent="."]
+offset_left = 745.0
+offset_top = 860.0
+offset_right = 1177.0
+offset_bottom = 1037.0
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
