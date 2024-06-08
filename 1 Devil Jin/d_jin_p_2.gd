@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 class_name djP2
-
+@onready var animationsDJin2 = $AnimationPlayer
 @export var yes  = 1 
 @export var jump_height : float
 @export var jump_time_to_peak : float
@@ -38,7 +38,21 @@ func get_input():
 	elif int(Input.is_action_pressed("ui_J")) == 1:
 		global_position = global_position.clamp(Vector2(-1550,-999), Vector2(0,750))
 		return input.normalized()
+	elif int(Input.is_action_pressed("ui_K"))  == 1 and StaminaBar.Stamina.time_left>=4:
+		punch = false
+		animationsDJin2.play("djin_crouch")
+		return input.normalized()
+	elif int(Input.is_action_pressed("ui_U")) == 1:
+		punch = true
+		animationsDJin2.play("djin_punch")
+		return input.normalized()
+	elif int(Input.is_action_pressed("ui_I")) ==1:
+		punch = false
+		animationsDJin2.play("djin_jump")
+		return input.normalized()
 	else:
+		punch = false
+		animationsDJin2.play("djin_idle")
 		return input.normalized()
 
 	

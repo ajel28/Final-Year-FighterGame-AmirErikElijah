@@ -1,11 +1,83 @@
-[gd_scene load_steps=5 format=3 uid="uid://bypk66v45qs60"]
+[gd_scene load_steps=10 format=3 uid="uid://bypk66v45qs60"]
 
 [ext_resource type="Script" path="res://1 Devil Jin/d_jin_p_1.gd" id="1_c0fvp"]
-[ext_resource type="Texture2D" uid="uid://d1n1070rwtm4k" path="res://Characters/Devil Jin Player 1 (2).png" id="1_ogo66"]
+[ext_resource type="Texture2D" uid="uid://db0w5wqktmhlo" path="res://1 Devil Jin/1DevilJin.-spritepng.png" id="2_kxku6"]
 [ext_resource type="Texture2D" uid="uid://doautpdfmwtha" path="res://1 Devil Jin/DJinBubble1.png" id="3_50o60"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vugn1"]
-size = Vector2(357.5, 620)
+size = Vector2(250, 361)
+
+[sub_resource type="Animation" id="Animation_jp814"]
+resource_name = "djin_crouch"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DJin:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_8br16"]
+resource_name = "djin_jump"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DJin:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [4, 0]
+}
+
+[sub_resource type="Animation" id="Animation_hlui7"]
+resource_name = "djin_punch"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DJin:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [5, 0]
+}
+
+[sub_resource type="Animation" id="Animation_qx6lh"]
+resource_name = "djin_idle"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DJin:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [2, 1, 0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qkymp"]
+_data = {
+"djin_crouch": SubResource("Animation_jp814"),
+"djin_idle": SubResource("Animation_qx6lh"),
+"djin_jump": SubResource("Animation_8br16"),
+"djin_punch": SubResource("Animation_hlui7")
+}
 
 [node name="DJinP1" type="Node2D"]
 
@@ -15,14 +87,20 @@ jump_height = 700.0
 jump_time_to_peak = 0.5
 jump_time_to_descent = 0.3
 
-[node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(851.75, 1266.25)
-scale = Vector2(3.1525, 3.1525)
-texture = ExtResource("1_ogo66")
+[node name="DJin" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(331, 696.781)
+scale = Vector2(1.70562, 1.84781)
+texture = ExtResource("2_kxku6")
+hframes = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(809.25, 1267)
+position = Vector2(333, 697.5)
 shape = SubResource("RectangleShape2D_vugn1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
+libraries = {
+"": SubResource("AnimationLibrary_qkymp")
+}
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1
