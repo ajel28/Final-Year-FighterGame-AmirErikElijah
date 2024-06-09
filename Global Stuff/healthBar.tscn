@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://b5vok5kcwhud1"]
+[gd_scene load_steps=7 format=3 uid="uid://b5vok5kcwhud1"]
 
 [ext_resource type="Texture2D" uid="uid://dfm8acainmtr5" path="res://Global Stuff/healthbarempty.png" id="1_jq81o"]
 [ext_resource type="Texture2D" uid="uid://brti7uu1q8vx5" path="res://Global Stuff/healthprogress.png" id="2_yv5gx"]
 [ext_resource type="Script" path="res://1 Deadpool/healthbar.gd" id="3_vm3s0"]
 [ext_resource type="PackedScene" uid="uid://btjykdye08m3h" path="res://Global Stuff/p_1_wins.tscn" id="4_y0lfq"]
 [ext_resource type="PackedScene" uid="uid://blvwy27kwy3dv" path="res://Global Stuff/p_2_wins.tscn" id="5_rlx8u"]
+[ext_resource type="AudioStream" uid="uid://diewch1n2e5mf" path="res://Global Stuff/Finish Him 2.wav" id="6_sojxa"]
 
 [node name="HealthBar" type="TextureProgressBar"]
 offset_top = -104.0
@@ -16,3 +17,7 @@ texture_progress = ExtResource("2_yv5gx")
 script = ExtResource("3_vm3s0")
 P1Wins = ExtResource("4_y0lfq")
 P2Wins = ExtResource("5_rlx8u")
+
+[node name="FinishHim" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_sojxa")
+volume_db = 10.0

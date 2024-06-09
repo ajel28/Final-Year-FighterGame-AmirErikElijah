@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://dtivlebww4j1t"]
+[gd_scene load_steps=14 format=3 uid="uid://dtivlebww4j1t"]
 
 [ext_resource type="Script" path="res://1 Jin Kazama/CharacterBody2D.gd" id="1_1urm1"]
 [ext_resource type="Texture2D" uid="uid://deownb54lwa1w" path="res://1 Jin Kazama/kazama-sprite.png" id="2_ys1gn"]
 [ext_resource type="Script" path="res://1 Jin Kazama/JinP1Hurtbox.gd" id="3_wicmm"]
 [ext_resource type="Texture2D" uid="uid://cpxdquaw3ilc3" path="res://1 Jin Kazama/JinBubble1.png" id="4_gsphh"]
+[ext_resource type="PackedScene" uid="uid://dqk5kdbbaimir" path="res://Global Stuff/shield_p_1.tscn" id="4_k4cca"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5n6a1"]
 size = Vector2(61.2776, 44.4415)
@@ -208,6 +209,8 @@ shape = SubResource("RectangleShape2D_aaw8i")
 [node name="Stamina" type="Timer" parent="Jin"]
 wait_time = 8.0
 autostart = true
+
+[node name="ShieldP1" parent="Jin" instance=ExtResource("4_k4cca")]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1

@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://cbr6yliawxjan"]
+[gd_scene load_steps=15 format=3 uid="uid://cbr6yliawxjan"]
 
 [ext_resource type="Script" path="res://1 Raiden/raiden_p_1.gd" id="1_c2vda"]
 [ext_resource type="Texture2D" uid="uid://dbaul8jp5wjv" path="res://1 Raiden/1Raiden-sprite.png" id="2_yt3dl"]
 [ext_resource type="Script" path="res://1 Raiden/raidenShootingOriginP1.gd" id="3_tdt8i"]
 [ext_resource type="PackedScene" uid="uid://mg4lp80wcbpl" path="res://1 Raiden/raiden_att_p_1.tscn" id="4_x2aks"]
 [ext_resource type="Texture2D" uid="uid://jf6wxr1bcm5" path="res://1 Raiden/RaidBubble1.png" id="5_fajwu"]
+[ext_resource type="PackedScene" uid="uid://dqk5kdbbaimir" path="res://Global Stuff/shield_p_1.tscn" id="5_y1wsu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fogwt"]
 size = Vector2(189.75, 334)
@@ -164,6 +165,8 @@ disabled = true
 [node name="Stamina" type="Timer" parent="CharacterBody2D"]
 wait_time = 8.0
 autostart = true
+
+[node name="ShieldP1" parent="CharacterBody2D" instance=ExtResource("5_y1wsu")]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1

@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cff7g70o7h37h"]
+
+[ext_resource type="Texture2D" uid="uid://cfat2hjh4w1nx" path="res://Global Stuff/Shield.png" id="1_1b503"]
+
+[node name="ShieldP2" type="Node2D"]
+visible = false
+
+[node name="Shieldp2" type="TextureRect" parent="."]
+offset_left = 1427.0
+offset_top = 598.0
+offset_right = 1720.0
+offset_bottom = 891.0
+texture = ExtResource("1_1b503")
+flip_h = true

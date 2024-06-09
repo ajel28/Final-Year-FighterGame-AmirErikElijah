@@ -1,8 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://c7guufwi6t05k"]
+[gd_scene load_steps=15 format=3 uid="uid://c7guufwi6t05k"]
 
 [ext_resource type="Script" path="res://1 John Wick/john_wick_p_2.gd" id="1_27865"]
 [ext_resource type="Texture2D" uid="uid://ddir2jqddhtad" path="res://1 John Wick/JohnWick-sprite.png" id="2_7wlbd"]
 [ext_resource type="Script" path="res://1 John Wick/WickP2Hurtbox.gd" id="3_bvypt"]
+[ext_resource type="PackedScene" uid="uid://cff7g70o7h37h" path="res://Global Stuff/shield_p_2.tscn" id="4_oy6we"]
 [ext_resource type="Texture2D" uid="uid://c5pna55sxik60" path="res://1 John Wick/WickBubble2.png" id="4_q547k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rl6b6"]
@@ -239,6 +240,8 @@ disabled = true
 [node name="Stamina" type="Timer" parent="CharacterBody2D"]
 wait_time = 8.0
 autostart = true
+
+[node name="ShieldP2" parent="CharacterBody2D" instance=ExtResource("4_oy6we")]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1

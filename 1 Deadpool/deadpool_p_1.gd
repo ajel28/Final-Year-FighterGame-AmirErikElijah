@@ -38,37 +38,37 @@ func get_input():
 	input.x = int(Input.is_action_pressed("ui_D")) - int(Input.is_action_pressed("ui_A"))
 	if int(Input.is_action_pressed("ui_A")) == 1:
 		punch = false
-		get_node("ShieldDP1").hide()
+		get_node("ShieldP1").hide()
 		Global.isAttacking=false
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_D")) == 1:
 		punch = false
-		get_node("ShieldDP1").hide()
+		get_node("ShieldP1").hide()
 		Global.isAttacking=false
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_S"))  == 1 and StaminaBar.Stamina.time_left>=4:
 		punch = false
-		get_node("ShieldDP1").show()
+		get_node("ShieldP1").show()
 		Global.isAttacking=false
 		animations.play("deadpoolcrouch1")
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_Q")) == 1:
 		punch = true
-		get_node("ShieldDP1").hide()
+		get_node("ShieldP1").hide()
 		Global.isAttacking=true
 		animations.play("deadpoolpunch1")
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_W")) ==1:
 		punch = false
-		get_node("ShieldDP1").hide()
+		get_node("ShieldP1").hide()
 		Global.isAttacking=false
 		animations.play("deadpooljump1")
 		return input.normalized()
 	else:
 		punch = false
-		get_node("ShieldDP1").hide()
+		get_node("ShieldP1").hide()
 		Global.isAttacking=false
 		animations.play("deadpoolidle1")
 		return input.normalized()

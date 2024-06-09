@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://b3odc2ejkooke"]
+[gd_scene load_steps=14 format=3 uid="uid://b3odc2ejkooke"]
 
 [ext_resource type="Script" path="res://1MainCharacter/McP2.gd" id="1_ywrpk"]
 [ext_resource type="Texture2D" uid="uid://c8lwr0ssc0plw" path="res://1MainCharacter/Mc-sprite.png" id="2_apci6"]
 [ext_resource type="Texture2D" uid="uid://d25th64vb7aea" path="res://1MainCharacter/MCBubble2.png" id="3_r1td1"]
+[ext_resource type="PackedScene" uid="uid://cff7g70o7h37h" path="res://Global Stuff/shield_p_2.tscn" id="3_s6m84"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5fosg"]
 size = Vector2(109.189, 325.375)
@@ -225,6 +226,8 @@ shape = SubResource("RectangleShape2D_0uggf")
 [node name="Stamina" type="Timer" parent="McP2"]
 wait_time = 8.0
 autostart = true
+
+[node name="ShieldP2" parent="McP2" instance=ExtResource("3_s6m84")]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1

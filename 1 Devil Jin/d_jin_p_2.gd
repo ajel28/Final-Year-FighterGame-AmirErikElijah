@@ -34,27 +34,32 @@ func get_input():
 	input.x = int(Input.is_action_pressed("ui_L")) - int(Input.is_action_pressed("ui_J"))
 	if int(Input.is_action_pressed("ui_L")) == 1:
 		global_position = global_position.clamp(Vector2(-1550,-999), Vector2(0,750))
+		get_node("ShieldP2").hide()
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_J")) == 1:
 		global_position = global_position.clamp(Vector2(-1550,-999), Vector2(0,750))
+		get_node("ShieldP2").hide()
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_K"))  == 1 and StaminaBar.Stamina.time_left>=4:
 		punch = false
+		get_node("ShieldP2").show()
 		animationsDJin2.play("djin_crouch")
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_U")) == 1:
 		punch = true
+		get_node("ShieldP2").hide()
 		animationsDJin2.play("djin_punch")
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_I")) ==1:
 		punch = false
+		get_node("ShieldP2").hide()
 		animationsDJin2.play("djin_jump")
 		return input.normalized()
 	else:
 		punch = false
+		get_node("ShieldP2").hide()
 		animationsDJin2.play("djin_idle")
 		return input.normalized()
-
 	
 func player_movement(delta):
 	input = get_input()

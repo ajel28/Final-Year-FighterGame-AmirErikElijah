@@ -37,24 +37,30 @@ func get_input():
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		return input.normalized()
 		punch = false
+		get_node("ShieldP1").hide()
 	elif int(Input.is_action_pressed("ui_A")) == 1:
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		return input.normalized()
 		punch = false
+		get_node("ShieldP1").hide()
 	elif int(Input.is_action_pressed("ui_S"))  == 1 and StaminaBar.Stamina.time_left>=4:
 		punch = false
+		get_node("ShieldP1").show()
 		animationsMC1.play("mc_crouch")
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_Q")) == 1:
 		punch = true
+		get_node("ShieldP1").hide()
 		animationsMC1.play("mc_punch")
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_W")) ==1:
 		punch = false
+		get_node("ShieldP1").hide()
 		animationsMC1.play("mc_jump")
 		return input.normalized()
 	else:
 		punch = false
+		get_node("ShieldP1").hide()
 		animationsMC1.play("mc_idle")
 		return input.normalized()
 	

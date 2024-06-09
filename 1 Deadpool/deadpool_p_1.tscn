@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://1 Deadpool/DeadpoolP1Hurtbox.gd" id="3_tgvqg"]
 [ext_resource type="AudioStream" uid="uid://cgjun3xnujc5q" path="res://1 Deadpool/Triple Hit 2.wav" id="4_4tp8b"]
 [ext_resource type="AudioStream" uid="uid://bl0stpj0qdy6m" path="res://1 Deadpool/Fatality 1.wav" id="5_6h3ip"]
-[ext_resource type="Texture2D" uid="uid://cfat2hjh4w1nx" path="res://Global Stuff/Shield.png" id="6_yl8x0"]
+[ext_resource type="PackedScene" uid="uid://dqk5kdbbaimir" path="res://Global Stuff/shield_p_1.tscn" id="6_r6si1"]
 [ext_resource type="Texture2D" uid="uid://dirvd8akn28df" path="res://1 Deadpool/DeadpoolBubble1.png" id="7_od76m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bjnh6"]
@@ -248,12 +248,7 @@ volume_db = 10.0
 stream = ExtResource("5_6h3ip")
 volume_db = 10.0
 
-[node name="ShieldDP1" type="TextureRect" parent="DeadpoolP1"]
-offset_left = 344.713
-offset_top = 603.0
-offset_right = 630.713
-offset_bottom = 889.0
-texture = ExtResource("6_yl8x0")
+[node name="ShieldP1" parent="DeadpoolP1" instance=ExtResource("6_r6si1")]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1

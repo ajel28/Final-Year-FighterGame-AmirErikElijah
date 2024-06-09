@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=3 uid="uid://886767g7i8lg"]
+[gd_scene load_steps=15 format=3 uid="uid://886767g7i8lg"]
 
 [ext_resource type="Script" path="res://1 Rocky Balboa/rocky_p_1.gd" id="1_snoko"]
 [ext_resource type="Texture2D" uid="uid://tmw6qxjouv53" path="res://1 Rocky Balboa/Rocky-sprite.png" id="2_v7hqh"]
 [ext_resource type="Script" path="res://1 Rocky Balboa/RockyP1Hurtbox.gd" id="3_bphvm"]
 [ext_resource type="Texture2D" uid="uid://rwo2hxvw4rbx" path="res://1 Rocky Balboa/RockyBubble1.png" id="4_bx3jj"]
+[ext_resource type="PackedScene" uid="uid://dqk5kdbbaimir" path="res://Global Stuff/shield_p_1.tscn" id="4_jv0aa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0mhho"]
 size = Vector2(68.568, 35.4224)
@@ -238,6 +239,8 @@ disabled = true
 [node name="Stamina" type="Timer" parent="CharacterBody2D"]
 wait_time = 8.0
 autostart = true
+
+[node name="ShieldP1" parent="CharacterBody2D" instance=ExtResource("4_jv0aa")]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1

@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=3 uid="uid://da3rbr86g0icw"]
+[gd_scene load_steps=15 format=3 uid="uid://da3rbr86g0icw"]
 
 [ext_resource type="Script" path="res://1 Ryu/ryu_p_1.gd" id="1_x77s3"]
 [ext_resource type="Texture2D" uid="uid://cno2to6tukdm4" path="res://1 Ryu/1Ryu-sprite.png" id="2_4dom6"]
 [ext_resource type="Script" path="res://1 Ryu/RyuHurtboxP1.gd" id="3_50dt6"]
 [ext_resource type="Texture2D" uid="uid://bcul6xipib1q8" path="res://1 Ryu/RyuBubble1.png" id="3_r70x6"]
+[ext_resource type="PackedScene" uid="uid://dqk5kdbbaimir" path="res://Global Stuff/shield_p_1.tscn" id="4_m38fs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_583e0"]
 size = Vector2(40, 44.9999)
@@ -207,7 +208,6 @@ scale = Vector2(0.573888, 0.573888)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RyuP1/TextureRect/RyuPunch1"]
 position = Vector2(461, 643)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_583e0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RyuP1"]
@@ -226,6 +226,8 @@ script = ExtResource("3_50dt6")
 position = Vector2(339.25, 715.625)
 shape = SubResource("RectangleShape2D_w0731")
 disabled = true
+
+[node name="ShieldP1" parent="RyuP1" instance=ExtResource("4_m38fs")]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqk5kdbbaimir"]
+
+[ext_resource type="Texture2D" uid="uid://cfat2hjh4w1nx" path="res://Global Stuff/Shield.png" id="1_nrkrq"]
+
+[node name="ShieldP1" type="Node2D"]
+visible = false
+
+[node name="Shieldp1" type="TextureRect" parent="."]
+offset_left = 347.0
+offset_top = 605.0
+offset_right = 629.0
+offset_bottom = 887.0
+texture = ExtResource("1_nrkrq")

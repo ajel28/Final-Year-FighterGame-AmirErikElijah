@@ -1,13 +1,29 @@
-[gd_scene load_steps=14 format=3 uid="uid://b3x0om87oxver"]
+[gd_scene load_steps=15 format=3 uid="uid://b3x0om87oxver"]
 
 [ext_resource type="Script" path="res://1 Devil Jin/d_jin_p_2.gd" id="1_b6owt"]
 [ext_resource type="Texture2D" uid="uid://db0w5wqktmhlo" path="res://1 Devil Jin/1DevilJin.-spritepng.png" id="2_snpt2"]
 [ext_resource type="Script" path="res://1 Devil Jin/DJinShootOrigin2.gd" id="3_cd55g"]
 [ext_resource type="Texture2D" uid="uid://cechwde1tey00" path="res://1 Devil Jin/DJinBubble2.png" id="3_l8kas"]
 [ext_resource type="PackedScene" uid="uid://cim1wspmh5x5t" path="res://1 Devil Jin/d_jin_attack_p_2.tscn" id="4_sc1e2"]
+[ext_resource type="PackedScene" uid="uid://cff7g70o7h37h" path="res://Global Stuff/shield_p_2.tscn" id="5_f5hby"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ahees"]
 size = Vector2(192, 357)
+
+[sub_resource type="Animation" id="Animation_3ywxs"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DJinHurtbox2/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_xjrbw"]
 resource_name = "djin_crouch"
@@ -109,21 +125,6 @@ tracks/1/keys = {
 "values": [false, false]
 }
 
-[sub_resource type="Animation" id="Animation_3ywxs"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("DJinHurtbox2/CollisionShape2D:disabled")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xmxp6"]
 _data = {
 "RESET": SubResource("Animation_3ywxs"),
@@ -175,6 +176,8 @@ djin2_scene = ExtResource("4_sc1e2")
 [node name="Timer" type="Timer" parent="CharacterBody2D/DJinShootOrigin2"]
 wait_time = 0.5
 autostart = true
+
+[node name="ShieldP2" parent="CharacterBody2D" instance=ExtResource("5_f5hby")]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1

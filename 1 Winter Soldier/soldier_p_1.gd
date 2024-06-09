@@ -35,25 +35,31 @@ func get_input():
 	if int(Input.is_action_pressed("ui_A")) == 1:
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		punch = false
+		get_node("ShieldP1").hide()
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_D")) == 1:
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		punch = false
+		get_node("ShieldP1").hide()
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_S"))  == 1 and StaminaBar.Stamina.time_left>=4:
 		punch = false
+		get_node("ShieldP1").show()
 		animationsbucky1.play("buckycrouch")
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_Q")) == 1:
 		punch = true
+		get_node("ShieldP1").hide()
 		animationsbucky1.play("buckypunch")
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_W")) ==1:
 		punch = false
+		get_node("ShieldP1").hide()
 		animationsbucky1.play("buckyjump")
 		return input.normalized()
 	else:
 		punch = false
+		get_node("ShieldP1").hide()
 		animationsbucky1.play("buckyidle")
 		return input.normalized()
 

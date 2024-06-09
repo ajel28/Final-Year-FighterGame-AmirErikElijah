@@ -1,8 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://bna7irq3ijw8c"]
+[gd_scene load_steps=15 format=3 uid="uid://bna7irq3ijw8c"]
 
 [ext_resource type="Script" path="res://1 Winter Soldier/soldier_p_1.gd" id="1_64tp6"]
 [ext_resource type="Texture2D" uid="uid://c0pjeeb1btg7m" path="res://1 Winter Soldier/1WinterSoldier-sprite.png" id="2_q332d"]
 [ext_resource type="Script" path="res://1 Winter Soldier/SoldierP1Hurtbox.gd" id="3_mgnrh"]
+[ext_resource type="PackedScene" uid="uid://dqk5kdbbaimir" path="res://Global Stuff/shield_p_1.tscn" id="4_1nx3b"]
 [ext_resource type="Texture2D" uid="uid://clxjau6elcq56" path="res://1 Winter Soldier/SoldBubble1.png" id="4_08uou"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5y4ve"]
@@ -237,6 +238,8 @@ shape = SubResource("RectangleShape2D_yk7ge")
 [node name="Stamina" type="Timer" parent="CharacterBody2D"]
 wait_time = 8.0
 autostart = true
+
+[node name="ShieldP1" parent="CharacterBody2D" instance=ExtResource("4_1nx3b")]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1

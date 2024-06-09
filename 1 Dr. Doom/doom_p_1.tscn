@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=3 uid="uid://j70b4iqssibs"]
+[gd_scene load_steps=15 format=3 uid="uid://j70b4iqssibs"]
 
 [ext_resource type="Script" path="res://1 Dr. Doom/doom_p_1.gd" id="1_nxp1m"]
 [ext_resource type="Texture2D" uid="uid://ccm0f38v8bx72" path="res://1 Dr. Doom/Doom-sprite.png" id="2_dei3s"]
 [ext_resource type="Script" path="res://1 Dr. Doom/doomP1shootingOrigin.gd" id="3_ronra"]
 [ext_resource type="PackedScene" uid="uid://b3jwbo3d5xvxw" path="res://1 Dr. Doom/doom_att_p_1.tscn" id="4_w8hpj"]
+[ext_resource type="PackedScene" uid="uid://dqk5kdbbaimir" path="res://Global Stuff/shield_p_1.tscn" id="5_ifaw3"]
 [ext_resource type="Texture2D" uid="uid://civ534vx24f05" path="res://1 Dr. Doom/DoomBubble1.png" id="5_yutm0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5yttx"]
@@ -163,9 +164,7 @@ position = Vector2(343.125, 714.125)
 shape = SubResource("RectangleShape2D_q40p6")
 disabled = true
 
-[node name="Stamina" type="Timer" parent="DoomP1"]
-wait_time = 8.0
-autostart = true
+[node name="ShieldP1" parent="DoomP1" instance=ExtResource("5_ifaw3")]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1

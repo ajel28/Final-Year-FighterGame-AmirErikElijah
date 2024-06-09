@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=3 uid="uid://bpl8ljakjhy0t"]
+[gd_scene load_steps=15 format=3 uid="uid://bpl8ljakjhy0t"]
 
 [ext_resource type="Script" path="res://1 Ryu/ryu_p_2.gd" id="1_qwph0"]
 [ext_resource type="Texture2D" uid="uid://cno2to6tukdm4" path="res://1 Ryu/1Ryu-sprite.png" id="2_nuxf5"]
 [ext_resource type="Texture2D" uid="uid://chngekpnmkypo" path="res://1 Ryu/RyuBubble2.png" id="3_5aqm3"]
 [ext_resource type="Script" path="res://1 Ryu/RyuHurtboxP2.gd" id="3_gumdg"]
+[ext_resource type="PackedScene" uid="uid://cff7g70o7h37h" path="res://Global Stuff/shield_p_2.tscn" id="4_t5ntr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n1bn0"]
 size = Vector2(56, 57)
@@ -228,6 +229,8 @@ disabled = true
 [node name="Stamina" type="Timer" parent="RyuP2"]
 wait_time = 8.0
 autostart = true
+
+[node name="ShieldP2" parent="RyuP2" instance=ExtResource("4_t5ntr")]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1

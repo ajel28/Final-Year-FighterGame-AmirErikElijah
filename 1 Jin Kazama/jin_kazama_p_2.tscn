@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://c0soaw4janyg2"]
+[gd_scene load_steps=14 format=3 uid="uid://c0soaw4janyg2"]
 
 [ext_resource type="Script" path="res://1 Jin Kazama/JinP2.gd" id="1_qa0yt"]
 [ext_resource type="Texture2D" uid="uid://deownb54lwa1w" path="res://1 Jin Kazama/kazama-sprite.png" id="2_abo3y"]
 [ext_resource type="Script" path="res://1 Jin Kazama/JinP2Hurtbox.gd" id="3_2w8xe"]
+[ext_resource type="PackedScene" uid="uid://cff7g70o7h37h" path="res://Global Stuff/shield_p_2.tscn" id="4_nsx3d"]
 [ext_resource type="Texture2D" uid="uid://d0qny66uvr4x2" path="res://1 Jin Kazama/JinBubble2.png" id="5_kdqmb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v6j4u"]
@@ -208,6 +209,8 @@ disabled = true
 [node name="Stamina" type="Timer" parent="JinP2"]
 wait_time = 8.0
 autostart = true
+
+[node name="ShieldP2" parent="JinP2" instance=ExtResource("4_nsx3d")]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1

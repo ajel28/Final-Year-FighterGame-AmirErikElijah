@@ -17,21 +17,26 @@ func get_input():
 	input.x = int(Input.is_action_pressed("ui_D")) - int(Input.is_action_pressed("ui_A"))
 	if int(Input.is_action_pressed("ui_D")) == 1:
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
+		get_node("ShieldP1").hide()
 		return input.normalized()
 		kick=false
 	elif int(Input.is_action_pressed("ui_A")) == 1:
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
+		get_node("ShieldP1").hide()
 		return input.normalized()
 		kick=false
 	elif int(Input.is_action_pressed("ui_S")) == 1 and StaminaBar.Stamina.time_left>=4:
 		animationsDp1.play("crouch")
+		get_node("ShieldP1").show()
 		return input.normalized()
 		kick=false
 	elif int(Input.is_action_pressed("ui_Q")) == 1:
 		animationsDp1.play("kick")
+		get_node("ShieldP1").hide()
 		kick=true
 		return input.normalized()
 	else:
+		get_node("ShieldP1").hide()
 		animationsDp1.play("idle")
 		return input.normalized()
 		kick=false
