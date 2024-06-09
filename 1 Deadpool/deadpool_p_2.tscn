@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://b1jdnguba8pig"]
+[gd_scene load_steps=18 format=3 uid="uid://b1jdnguba8pig"]
 
 [ext_resource type="Script" path="res://1 Deadpool/deadpool_p_2.gd" id="1_i1ie6"]
 [ext_resource type="Texture2D" uid="uid://d236227iy03yl" path="res://1 Deadpool/1Deadpool-sprite.png" id="2_fud5q"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://1 Deadpool/DeadpoolP2Hurtbox.gd" id="3_fol0w"]
 [ext_resource type="AudioStream" uid="uid://cgjun3xnujc5q" path="res://1 Deadpool/Triple Hit 2.wav" id="4_fel2k"]
 [ext_resource type="AudioStream" uid="uid://bl0stpj0qdy6m" path="res://1 Deadpool/Fatality 1.wav" id="5_6ps01"]
+[ext_resource type="Texture2D" uid="uid://cfat2hjh4w1nx" path="res://Global Stuff/Shield.png" id="7_my47v"]
 [ext_resource type="Texture2D" uid="uid://45bxrftab5mu" path="res://1 Deadpool/DeadpoolBubble2.png" id="7_rhi1f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t24q1"]
@@ -246,6 +247,14 @@ volume_db = 5.0
 [node name="Fatality" type="AudioStreamPlayer" parent="DeadpoolP2"]
 stream = ExtResource("5_6ps01")
 volume_db = 5.0
+
+[node name="ShieldDP2" type="TextureRect" parent="DeadpoolP2"]
+offset_left = 1427.0
+offset_top = 605.0
+offset_right = 1711.0
+offset_bottom = 889.0
+texture = ExtResource("7_my47v")
+flip_h = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1
