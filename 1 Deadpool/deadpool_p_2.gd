@@ -88,7 +88,7 @@ func _on_deadpool_p_2_punch_area_entered(area):
 		if punch==true:
 			Global.hitsInRowP1 = 0
 			Global.hitsInRowP2+=1;
-			Global.healthp1-=2
+			Global.healthp1-=3
 			print(Global.healthp1)
 		if Global.hitsInRowP2 == 3:
 			$Triple.play()
@@ -97,13 +97,3 @@ func _on_deadpool_p_2_punch_area_entered(area):
 		if Global.healthp1 <= 0:
 			var p2 = P2Wins.instantiate()
 			add_child(p2)
-
-func _on_deadpool_p_2_hurtbox_area_entered(area):
-	if(Global.isAttacking==true and punch==false):
-		knockback()
-
-
-func knockback():
-	var knockbackDirection = -velocity.normalized()*knockbackPower
-	velocity= knockbackDirection
-	move_and_slide()
