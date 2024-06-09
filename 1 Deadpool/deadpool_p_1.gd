@@ -7,6 +7,7 @@ class_name dpP1
 @export var jump_time_to_peak : float
 @export var jump_time_to_descent: float
 
+@export var knockbackPower: int=500
 
 @onready var jump_velocity : float = ((2.0 * jump_height) / jump_time_to_peak) * -1.0
 @onready var jump_gravity : float = ((-2.0 * jump_height) / (jump_time_to_peak *jump_time_to_peak)) * -1.0
@@ -37,26 +38,32 @@ func get_input():
 	input.x = int(Input.is_action_pressed("ui_D")) - int(Input.is_action_pressed("ui_A"))
 	if int(Input.is_action_pressed("ui_A")) == 1:
 		punch = false
+		Global.isAttacking=false
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_D")) == 1:
 		punch = false
+		Global.isAttacking=false
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_S"))  == 1 and StaminaBar.Stamina.time_left>=4:
 		punch = false
+		Global.isAttacking=false
 		animations.play("deadpoolcrouch1")
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_Q")) == 1:
 		punch = true
+		Global.isAttacking=true
 		animations.play("deadpoolpunch1")
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_W")) ==1:
 		punch = false
+		Global.isAttacking=false
 		animations.play("deadpooljump1")
 		return input.normalized()
 	else:
 		punch = false
+		Global.isAttacking=false
 		animations.play("deadpoolidle1")
 		return input.normalized()
 
@@ -90,4 +97,11 @@ func _on_deadpool_p_1_punch_area_entered(area):
 			$Fatality.play()
 
 func _on_deadpool_p_1_hurtbox_area_entered(area):
-	Global.needHChange == true
+	if(Global.isAttacking==true and punch==false):
+		knockback()
+		Global.needHChange == true
+	
+func knockback():
+	var knockbackDirection = -velocity.normalized()*knockbackPower
+	velocity=knockbackDirection
+	move_and_slide()

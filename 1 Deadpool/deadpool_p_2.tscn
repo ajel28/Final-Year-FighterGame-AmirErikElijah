@@ -256,3 +256,4 @@ offset_bottom = 280.0
 texture = ExtResource("7_rhi1f")
 
 [connection signal="area_entered" from="DeadpoolP2/TextureRect/DeadpoolP2Punch" to="DeadpoolP2" method="_on_deadpool_p_2_punch_area_entered"]
+[connection signal="area_entered" from="DeadpoolP2/DeadpoolP2Hurtbox" to="DeadpoolP2" method="_on_deadpool_p_2_hurtbox_area_entered"]
