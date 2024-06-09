@@ -71,3 +71,10 @@ func player_movement(delta):
 		velocity = velocity.limit_length(max_speed)
 	move_and_slide()
 	global_position = global_position.clamp(Vector2(-1550,-999), Vector2(0,750))
+
+
+func _on_ryu_punch_2_area_entered(area):
+		if !(area is RyuHurtbox2):
+			if punch==true:
+				Global.healthp1-=2
+				print(Global.healthp1)

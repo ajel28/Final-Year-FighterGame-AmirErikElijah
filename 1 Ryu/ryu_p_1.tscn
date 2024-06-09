@@ -1,8 +1,12 @@
-[gd_scene load_steps=12 format=3 uid="uid://da3rbr86g0icw"]
+[gd_scene load_steps=14 format=3 uid="uid://da3rbr86g0icw"]
 
 [ext_resource type="Script" path="res://1 Ryu/ryu_p_1.gd" id="1_x77s3"]
 [ext_resource type="Texture2D" uid="uid://cno2to6tukdm4" path="res://1 Ryu/1Ryu-sprite.png" id="2_4dom6"]
+[ext_resource type="Script" path="res://1 Ryu/RyuHurtboxP1.gd" id="3_50dt6"]
 [ext_resource type="Texture2D" uid="uid://bcul6xipib1q8" path="res://1 Ryu/RyuBubble1.png" id="3_r70x6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_583e0"]
+size = Vector2(40, 44.9999)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2wvoc"]
 size = Vector2(147.5, 328.75)
@@ -20,6 +24,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect/RyuPunch1/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
 }
 
 [sub_resource type="Animation" id="Animation_rinsu"]
@@ -49,6 +65,18 @@ tracks/1/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect/RyuPunch1/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_spteg"]
 resource_name = "ryuidle"
@@ -72,10 +100,22 @@ tracks/1/path = NodePath("RyuHurtboxP1/CollisionShape2D:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [false, false, false, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect/RyuPunch1/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, false, false]
+"values": [true, true, true]
 }
 
 [sub_resource type="Animation" id="Animation_rkf65"]
@@ -109,6 +149,30 @@ tracks/0/keys = {
 "update": 1,
 "values": [5, 2]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RyuHurtboxP1/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect/RyuPunch1/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_26ifj"]
 _data = {
@@ -135,7 +199,16 @@ position = Vector2(333.75, 709.25)
 scale = Vector2(1.7425, 1.7425)
 texture = ExtResource("2_4dom6")
 hframes = 6
-frame = 2
+frame = 3
+
+[node name="RyuPunch1" type="Area2D" parent="RyuP1/TextureRect"]
+position = Vector2(-191.535, -407.03)
+scale = Vector2(0.573888, 0.573888)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RyuP1/TextureRect/RyuPunch1"]
+position = Vector2(461, 643)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_583e0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RyuP1"]
 position = Vector2(319.25, 716.375)
@@ -147,15 +220,12 @@ libraries = {
 }
 
 [node name="RyuHurtboxP1" type="Area2D" parent="RyuP1"]
+script = ExtResource("3_50dt6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RyuP1/RyuHurtboxP1"]
 position = Vector2(339.25, 715.625)
 shape = SubResource("RectangleShape2D_w0731")
 disabled = true
-
-[node name="Stamina" type="Timer" parent="RyuP1"]
-wait_time = 8.0
-autostart = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1
@@ -164,3 +234,5 @@ offset_top = -95.0
 offset_right = 405.0
 offset_bottom = 280.0
 texture = ExtResource("3_r70x6")
+
+[connection signal="area_entered" from="RyuP1/TextureRect/RyuPunch1" to="RyuP1" method="_on_ryu_punch_1_area_entered"]

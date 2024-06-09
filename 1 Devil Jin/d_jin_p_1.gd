@@ -10,7 +10,6 @@ class_name djP1
 @onready var jump_velocity : float = ((2.0 * jump_height) / jump_time_to_peak) * -1.0
 @onready var jump_gravity : float = ((-2.0 * jump_height) / (jump_time_to_peak *jump_time_to_peak)) * -1.0
 @onready var fall_gravity: float = ((-2.0 * jump_height) / (jump_time_to_peak *jump_time_to_descent)) * -1.0
-var punch = false
 
 const max_speed = 520
 const accel = 1000
@@ -39,19 +38,15 @@ func get_input():
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_S"))  == 1 and StaminaBar.Stamina.time_left>=4:
-		punch = false
 		animationsDJin1.play("djin_crouch")
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_Q")) == 1:
-		punch = true
 		animationsDJin1.play("djin_punch")
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_W")) ==1:
-		punch = false
 		animationsDJin1.play("djin_jump")
 		return input.normalized()
 	else:
-		punch = false
 		animationsDJin1.play("djin_idle")
 		return input.normalized()
 

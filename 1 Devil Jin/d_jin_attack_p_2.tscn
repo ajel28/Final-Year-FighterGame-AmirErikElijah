@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cim1wspmh5x5t"]
+
+[ext_resource type="Script" path="res://DJinAttackP2.gd" id="1_jo3el"]
+[ext_resource type="Texture2D" uid="uid://b8fysdk4albjd" path="res://1 Devil Jin/DJinBall.png" id="2_jbwgi"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c7dlk"]
+radius = 35.0
+height = 74.0
+
+[node name="DJinAttackP2" type="Area2D"]
+script = ExtResource("1_jo3el")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(17, 4)
+scale = Vector2(0.129062, 0.129062)
+texture = ExtResource("2_jbwgi")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-20, 1)
+shape = SubResource("CapsuleShape2D_c7dlk")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

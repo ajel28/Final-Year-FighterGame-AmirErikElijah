@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://ba10qkqjdqkg5"]
+
+[ext_resource type="Script" path="res://1 Devil Jin/d_jin_attack_p_1.gd" id="1_io8lx"]
+[ext_resource type="Texture2D" uid="uid://b8fysdk4albjd" path="res://1 Devil Jin/DJinBall.png" id="1_j7ee0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2xk6m"]
+radius = 39.0
+height = 82.0
+
+[node name="DJinAttackP1" type="Area2D"]
+script = ExtResource("1_io8lx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1, 5)
+scale = Vector2(0.141667, 0.141667)
+texture = ExtResource("1_j7ee0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(40, 2)
+shape = SubResource("CapsuleShape2D_2xk6m")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

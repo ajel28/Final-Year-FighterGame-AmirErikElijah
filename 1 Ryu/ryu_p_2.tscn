@@ -1,8 +1,12 @@
-[gd_scene load_steps=12 format=3 uid="uid://bpl8ljakjhy0t"]
+[gd_scene load_steps=14 format=3 uid="uid://bpl8ljakjhy0t"]
 
 [ext_resource type="Script" path="res://1 Ryu/ryu_p_2.gd" id="1_qwph0"]
 [ext_resource type="Texture2D" uid="uid://cno2to6tukdm4" path="res://1 Ryu/1Ryu-sprite.png" id="2_nuxf5"]
 [ext_resource type="Texture2D" uid="uid://chngekpnmkypo" path="res://1 Ryu/RyuBubble2.png" id="3_5aqm3"]
+[ext_resource type="Script" path="res://1 Ryu/RyuHurtboxP2.gd" id="3_gumdg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n1bn0"]
+size = Vector2(56, 57)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gkkdl"]
 size = Vector2(159, 328.75)
@@ -20,6 +24,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RyuPunch2/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
 }
 
 [sub_resource type="Animation" id="Animation_td0cy"]
@@ -49,6 +65,18 @@ tracks/1/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("RyuPunch2/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_buhw7"]
 resource_name = "ryuidle2"
@@ -72,10 +100,22 @@ tracks/1/path = NodePath("RyuHurtboxP2/CollisionShape2D:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [false, false, false]
+"values": [false, false, false, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("RyuPunch2/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [true, true, true, true]
 }
 
 [sub_resource type="Animation" id="Animation_dxpn8"]
@@ -109,6 +149,30 @@ tracks/0/keys = {
 "update": 1,
 "values": [5, 1]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RyuHurtboxP2/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("RyuPunch2/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_wcpg3"]
 _data = {
@@ -138,6 +202,12 @@ flip_h = true
 hframes = 6
 frame = 1
 
+[node name="RyuPunch2" type="Area2D" parent="RyuP2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RyuP2/RyuPunch2"]
+position = Vector2(1598, 646)
+shape = SubResource("RectangleShape2D_n1bn0")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RyuP2"]
 position = Vector2(1738.5, 713.375)
 shape = SubResource("RectangleShape2D_gkkdl")
@@ -148,6 +218,7 @@ libraries = {
 }
 
 [node name="RyuHurtboxP2" type="Area2D" parent="RyuP2"]
+script = ExtResource("3_gumdg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RyuP2/RyuHurtboxP2"]
 position = Vector2(1722.88, 713.625)
@@ -165,3 +236,5 @@ offset_top = -95.0
 offset_right = 2198.0
 offset_bottom = 280.0
 texture = ExtResource("3_5aqm3")
+
+[connection signal="area_entered" from="RyuP2/RyuPunch2" to="RyuP2" method="_on_ryu_punch_2_area_entered"]
