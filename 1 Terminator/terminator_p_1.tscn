@@ -155,7 +155,7 @@ script = ExtResource("3_5it6k")
 termp1_scene = ExtResource("4_ei11k")
 
 [node name="Timer" type="Timer" parent="TermCharacterBody/termP1ShootingOrigin"]
-wait_time = 0.5
+wait_time = 0.4
 autostart = true
 
 [node name="TermP1Hurtbox" type="Area2D" parent="TermCharacterBody"]

@@ -153,7 +153,7 @@ script = ExtResource("3_emyxb")
 doomp2_scene = ExtResource("4_5nukc")
 
 [node name="Timer" type="Timer" parent="DoomP2/doomP2shootingOrigin"]
-wait_time = 0.5
+wait_time = 0.4
 autostart = true
 
 [node name="DoomP2Hurtbox" type="Area2D" parent="DoomP2"]

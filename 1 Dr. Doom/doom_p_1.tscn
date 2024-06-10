@@ -154,7 +154,7 @@ script = ExtResource("3_ronra")
 doomp1_scene = ExtResource("4_w8hpj")
 
 [node name="Timer" type="Timer" parent="DoomP1/Marker2D"]
-wait_time = 0.5
+wait_time = 0.4
 autostart = true
 
 [node name="DoomP1Hurtbox" type="Area2D" parent="DoomP1"]

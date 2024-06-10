@@ -173,7 +173,7 @@ script = ExtResource("3_28jnj")
 djinp1_scene = ExtResource("4_dnq2l")
 
 [node name="Timer" type="Timer" parent="CharacterBody2D/DJinShootOriginP1"]
-wait_time = 0.5
+wait_time = 0.4
 autostart = true
 
 [node name="ShieldP1" parent="CharacterBody2D" instance=ExtResource("5_67q31")]

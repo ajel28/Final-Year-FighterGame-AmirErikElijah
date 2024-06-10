@@ -5,8 +5,8 @@
 [node name="YakushimaSelect" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 968.0
-offset_top = 226.0
-offset_right = 1953.0
-offset_bottom = 754.0
+offset_left = 887.0
+offset_top = 243.0
+offset_right = 1872.0
+offset_bottom = 771.0
 texture = ExtResource("1_d3m1m")

@@ -62,6 +62,15 @@ stream = ExtResource("3_vd1p0")
 volume_db = 0.299
 autoplay = true
 
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1741.0
+offset_top = 1004.0
+offset_right = 1896.0
+offset_bottom = 1073.0
+theme_override_font_sizes/font_size = 50
+text = "v 1.0.0"
+
 [connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]
 [connection signal="pressed" from="ControlsButton" to="." method="_on_controls_button_pressed"]
 [connection signal="pressed" from="IntroButton" to="." method="_on_intro_button_pressed"]

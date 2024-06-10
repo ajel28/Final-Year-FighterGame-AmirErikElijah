@@ -154,7 +154,7 @@ script = ExtResource("3_p676y")
 raidp2_scene = ExtResource("4_kapbo")
 
 [node name="Timer" type="Timer" parent="CharacterBody2D/raidenShootingOriginP2"]
-wait_time = 0.5
+wait_time = 0.4
 autostart = true
 
 [node name="RaidenHurtboxP2" type="Area2D" parent="CharacterBody2D"]

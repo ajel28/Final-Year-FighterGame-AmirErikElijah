@@ -156,7 +156,7 @@ script = ExtResource("3_j7oqr")
 termp2_scene = ExtResource("4_sp3al")
 
 [node name="Timer" type="Timer" parent="TermCharacterBody2/termP2shootingOrigin"]
-wait_time = 0.5
+wait_time = 0.4
 autostart = true
 
 [node name="TerminatorP2Hurtbox" type="Area2D" parent="TermCharacterBody2"]

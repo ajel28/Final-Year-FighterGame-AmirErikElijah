@@ -5,8 +5,8 @@
 [node name="FrosbiteSelect" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1002.0
-offset_top = 256.0
-offset_right = 1943.0
-offset_bottom = 790.0
+offset_left = 849.0
+offset_top = 220.0
+offset_right = 1865.0
+offset_bottom = 797.0
 texture = ExtResource("1_slafd")
