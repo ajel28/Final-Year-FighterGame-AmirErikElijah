@@ -200,7 +200,7 @@ position = Vector2(333.75, 709.25)
 scale = Vector2(1.7425, 1.7425)
 texture = ExtResource("2_4dom6")
 hframes = 6
-frame = 3
+frame = 2
 
 [node name="RyuPunch1" type="Area2D" parent="RyuP1/TextureRect"]
 position = Vector2(-191.535, -407.03)
