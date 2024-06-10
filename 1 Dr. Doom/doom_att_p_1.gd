@@ -8,10 +8,7 @@ func _ready():
 	animDoom1.play("gb")
 	
 func _physics_process(delta):
-	position = Vector2(position.x, position.y)
 	global_position.x += speed * delta
-	if (Global.punchP1 == true):
-		position.y = position.y
 		
 func _on_area_entered(area):
 	if (area is DJinAttack1) or (area is DJinAttack2) or (area is RaidenAttP2) or (area is BulletCatcher) or (area is TermFireballPlayer1) or (area is TermFireballPlayer2) or (area is RaidenAttP1) or (area is DoomAttackPlayer2):
