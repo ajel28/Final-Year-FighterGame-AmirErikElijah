@@ -100,6 +100,3 @@ func _on_deadpool_p_2_punch_area_entered(area):
 			$Triple.play()
 		elif Global.hitsInRowP2 == 5:
 			$Fatality.play()
-		if Global.healthp1 <= 0:
-			var p2 = P2Wins.instantiate()
-			add_child(p2)
