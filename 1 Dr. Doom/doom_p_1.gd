@@ -10,7 +10,6 @@ class_name doomP1
 @onready var jump_velocity : float = ((2.0 * jump_height) / jump_time_to_peak) * -1.0
 @onready var jump_gravity : float = ((-2.0 * jump_height) / (jump_time_to_peak *jump_time_to_peak)) * -1.0
 @onready var fall_gravity: float = ((-2.0 * jump_height) / (jump_time_to_peak *jump_time_to_descent)) * -1.0
-var punch = false
 
 const max_speed = 520
 const accel = 1000
@@ -45,6 +44,7 @@ func get_input():
 		get_node("ShieldP1").show()
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_Q")) == 1:
+		Global.punchP1 = true
 		animationsDoom1.play("doompunch1")
 		get_node("ShieldP1").hide()
 		return input.normalized()
@@ -57,7 +57,6 @@ func get_input():
 		get_node("ShieldP1").hide()
 		return input.normalized()
 
-	
 func player_movement(delta):
 	input = get_input()
 	

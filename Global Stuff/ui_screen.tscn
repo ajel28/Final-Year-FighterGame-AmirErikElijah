@@ -31,16 +31,16 @@ script = ExtResource("2_htm0w")
 position = Vector2(20, 48)
 
 [node name="staminaBar" parent="." instance=ExtResource("4_4ldtd")]
-offset_left = 1483.0
-offset_top = 87.0
-offset_right = 1983.0
-offset_bottom = 387.0
+offset_left = 113.0
+offset_top = 91.0
+offset_right = 613.0
+offset_bottom = 391.0
 script = ExtResource("5_rxdyn")
 
 [node name="staminaBar2" parent="." instance=ExtResource("4_4ldtd")]
-offset_left = 134.0
-offset_top = 87.0
-offset_right = 634.0
-offset_bottom = 387.0
+offset_left = 1501.0
+offset_top = 91.0
+offset_right = 2001.0
+offset_bottom = 391.0
 fill_mode = 1
 script = ExtResource("5_nirvn")

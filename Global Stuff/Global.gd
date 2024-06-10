@@ -19,4 +19,7 @@ var healthp2 = 100
 var hitsInRowP1 = 0
 var hitsInRowP2 = 0
 
+var punchP1 = false
+var punchP2 = false
+
 var isAttacking = false
