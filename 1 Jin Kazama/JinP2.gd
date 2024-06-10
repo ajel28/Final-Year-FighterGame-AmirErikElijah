@@ -38,7 +38,7 @@ func get_input():
 		
 	else:
 		kick = false
-		get_node("ShieldP1").hide()
+		get_node("ShieldP2").hide()
 		animations2.play("idle2")
 		return input.normalized()
 

@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://blvwy27kwy3dv"]
+[gd_scene load_steps=5 format=3 uid="uid://blvwy27kwy3dv"]
 
 [ext_resource type="Script" path="res://Global Stuff/P2Wins.gd" id="1_w1tnu"]
 [ext_resource type="AudioStream" uid="uid://b7ocgpof18cne" path="res://Global Stuff/K O player two wins 1.wav" id="2_ndmxl"]
+[ext_resource type="Texture2D" uid="uid://b8mqf5oogdvfx" path="res://Global Stuff/KO.png" id="3_ajsv0"]
+[ext_resource type="Texture2D" uid="uid://cop3joyty71wp" path="res://Global Stuff/MainMenu.png" id="4_owmul"]
 
 [node name="P2Wins" type="Node2D"]
 process_mode = 3
@@ -10,3 +12,25 @@ script = ExtResource("1_w1tnu")
 [node name="KO" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_ndmxl")
 autoplay = true
+
+[node name="KO2" type="TextureRect" parent="."]
+offset_left = 326.0
+offset_top = 200.0
+offset_right = 1152.0
+offset_bottom = 673.0
+texture = ExtResource("3_ajsv0")
+
+[node name="MainMenu" type="TextureRect" parent="."]
+offset_left = 226.0
+offset_top = 504.0
+offset_right = 1142.0
+offset_bottom = 1020.0
+texture = ExtResource("4_owmul")
+
+[node name="LinkButton" type="LinkButton" parent="."]
+offset_left = 436.0
+offset_top = 679.0
+offset_right = 918.0
+offset_bottom = 856.0
+
+[connection signal="pressed" from="LinkButton" to="." method="_on_link_button_pressed"]
