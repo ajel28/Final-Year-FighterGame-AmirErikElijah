@@ -1,242 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Retro Fight Night</title>
-    <script
-      src="https://kit.fontawesome.com/d06cb09b4c.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <style>
-      * {
-        font-family: "Pixelify Sans", sans-serif;
-        color: white;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      .logo {
-        color: white;
-        font-weight: 600;
-        font-size: 1.3rem;
-      }
-      .logo i {
-        font-size: 1.5rem;
-      }
-      nav ul,
-      .user ul {
-        display: flex;
-        list-style: none;
-        font-weight: 300;
-      }
 
-      nav ul li,
-      .user ul li {
-        padding: 0 10px;
-      }
-      nav ul li:first-child,
-      .user ul li:first-child {
-        font-weight: 500;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retro Fight Night</title>
+  <script src="https://kit.fontawesome.com/d06cb09b4c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: "Pixelify Sans", sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-      header {
-        margin: 30px auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 70%;
-      }
-      .divider-line {
-        border-bottom: 1px solid rgb(229, 229, 229);
-        margin-bottom: 20px;
-      }
-      main {
-        margin: 20px auto;
-        width: 70%;
-      }
-      .champion-array p {
-        font-size: 1.7rem;
-        font-weight: 500;
-        margin-bottom: 15px;
-      }
-      .champ-pics {
-        margin: auto;
-        width: 100%;
-        height: 450px;
-        display: flex;
-        justify-content: space-between;
-        gap: 5px;
-        border-radius: 20px;
-        overflow: hidden;
-      }
+    .logo {
+      color: white;
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
 
-      .pics-left,
-      .pics-right {
-        width: 50%;
-      }
+    .logo i {
+      font-size: 1.5rem;
+    }
 
-      .pics-right {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: space-between;
-        gap: 5px;
-        border-radius: 0 20px 20px 0;
-        overflow: hidden;
-      }
+    nav ul,
+    .user ul {
+      display: flex;
+      list-style: none;
+      font-weight: 300;
+    }
 
-      .pics-left img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    nav ul li,
+    .user ul li {
+      padding: 0 10px;
+    }
 
-      .pic {
-        flex: 48%;
-        height: 49%;
-      }
-      .pic img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    nav ul li:first-child,
+    .user ul li:first-child {
+      font-weight: 500;
+    }
 
-      .owner-info {
-        margin-top: 20px;
-        display: flex;
-        gap: 30px;
-        justify-content: space-between;
-      }
-      .owner-info-main {
-        flex: 1;
-      }
-      .home-info-main p {
-        margin-top: 5px;
-        font-weight: 300;
-      }
-      .rating {
-        margin-bottom: 20px;
-      }
-      .description {
-        line-height: 24px;
-        margin-bottom: 20px;
-      }
-      .home-info-reserve {
-        width: 400px;
-        border: 1px solid rgb(229, 229, 229);
-        padding: 20px;
-        border-radius: 20px;
-        box-shadow: 2px 3px 17px -15px rgba(66, 68, 90, 1);
-      }
+    header {
+      margin: 30px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%;
+    }
 
-      .price {
-        font-size: 1.4rem;
-        font-weight: 500;
-      }
-      .game-info-purchase button {
-        margin: 20px 0 10px 0;
-        width: 100%;
-        padding: 13px;
-        color: #fff;
-        border: none;
-        border-radius: 10px;
-        font-size: 1.2rem;
-        background-color: #0b0404;
-        cursor: pointer;
-      }
+    .divider-line {
+      border-bottom: 1px solid rgb(229, 229, 229);
+      margin-bottom: 20px;
+    }
 
-      .charge {
-        font-size: 0.9rem;
-        text-align: center;
-        margin-bottom: 20px;
-      }
+    main {
+      margin: 20px auto;
+      width: 70%;
+    }
 
-      .home-info-reserve table {
-        width: 100%;
-        margin-bottom: 10px;
-      }
-      .home-info-reserve table td {
-        padding: 4px 0;
-      }
-      .home-info-reserve table td:last-child {
-        text-align: right;
-      }
+    .champion-array p {
+      font-size: 1.7rem;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
 
-      footer {
-        background-color: rgb(51, 51, 51);
-      }
-      .footer-text {
-        padding: 20px 0;
-        width: 70%;
-        margin: auto;
-      }
-      .a{
-        position: center;
-      }
+    .champ-pics {
+      margin: auto;
+      width: 100%;
+      height: 450px;
+      display: flex;
+      justify-content: space-between;
+      gap: 5px;
+      border-radius: 20px;
+      overflow: hidden;
+    }
 
-      a {
-        color: black;
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body style="background-color:black;">
-    <header>
-      <div class="logo">
-        <a href="start.html"><p><i class="fa-solid fa-gamepad"></i> Retro Fight Night</p></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="characters.html"><strong>Characters</strong></a></li>
-          <li><a href="maps.html"><strong>Maps</strong></a></li>
-          <li><a href="controls.html"><strong>Controls</strong></a></li>
-          <li><a href="creators.html"><strong>Creators</strong></a></li>
-          <li><a href="description.html"><strong>Description</strong></a></li>
-        </ul>
-      </nav>
+    .pics-left,
+    .pics-right {
+      width: 50%;
+    }
 
-      <div>
-        <div class="user">
+    .pics-right {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
+      gap: 5px;
+      border-radius: 0 20px 20px 0;
+      overflow: hidden;
+    }
+
+    .pics-left img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .pic {
+      flex: 48%;
+      height: 49%;
+    }
+
+    .pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .owner-info {
+      margin-top: 20px;
+      display: flex;
+      gap: 30px;
+      justify-content: space-between;
+    }
+
+    .owner-info-main {
+      flex: 1;
+      line-height: 1.5;
+    }
+
+    .home-info-main p {
+      margin-top: 5px;
+      font-weight: 300;
+    }
+
+    .rating {
+      margin-bottom: 20px;
+    }
+
+    .description {
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+
+    .home-info-reserve {
+      width: 400px;
+      border: 1px solid rgb(229, 229, 229);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 2px 3px 17px -15px rgba(66, 68, 90, 1);
+    }
+
+    .price {
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+
+    .game-info-purchase button {
+      margin: 20px 0 10px 0;
+      width: 100%;
+      padding: 13px;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      background-color: #0b0404;
+      cursor: pointer;
+    }
+
+    .charge {
+      font-size: 0.9rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .home-info-reserve table {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .home-info-reserve table td {
+      padding: 4px 0;
+    }
+
+    .home-info-reserve table td:last-child {
+      text-align: right;
+    }
+
+    footer {
+      background-color: rgb(51, 51, 51);
+    }
+
+    .footer-text {
+      padding: 20px 0;
+      width: 70%;
+      margin: auto;
+    }
+
+    .a {
+      position: center;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body style="background-color:black;">
+  <header>
+    <div class="logo">
+      <a href="start.html">
+        <p><i class="fa-solid fa-gamepad"></i> Retro Fight Night</p>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="characters.html"><strong>Characters</strong></a></li>
+        <li><a href="maps.html"><strong>Maps</strong></a></li>
+        <li><a href="controls.html"><strong>Controls</strong></a></li>
+        <li><a href="creators.html"><strong>Story</strong></a></li>
+        <li><a href="description.html"><strong>Description</strong></a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <div class="user">
         <ul>
           <li><i class="fa-solid fa-globe"></i></li>
           <li><i class="fa-solid fa-bars"></i></li>
           <li><i class="fa-solid fa-user"></i></li>
 
         </ul>
-        </div>
-        
       </div>
-    </header>
-    <div class="divider-line"></div>
-    <main>
-    
-      <div class="owner-info">
-        <div class="owner-info-main">
-          <h2>Creators</h2>
-          <p> Koro Nishitani</p>
-          <p><i class="fa-solid fa-star"></i>5.0 - 1078 Reviews</p>
-          <p>
-            Welcome to the Underground Arena, a subterranean sanctuary of clandestine combat boasting multiple arenas catering to every fighting style. Descend into the dimly lit depths where the air crackles with anticipation and the scent of sweat and adrenaline fills the atmosphere. Behold our glorious fighters, each a legend in the making, as they clash in a symphony of violence under the harsh glow of the overhead lights. Here, friendships are forged, rivalries ignited, and legends born amidst the chaos and camaraderie of the ring. Welcome to the epitome of primal thrills and underground glory.
-          </p>
-        </div>
 
-    </main>
-    <footer>
-      <div class="divider-line"></div>
-      <div class="footer-text">
-        <p><i class="fa-solid fa-copyright"></i> Retro Fight Night, Inc. AEE Games - Privacy - Your Privacy Choices</p>
+    </div>
+  </header>
+  <div class="divider-line"></div>
+  <main>
+
+    <div class="owner-info">
+      <div class="owner-info-main">
+        <h2>Story</h2>
+        <p>
+          Prologue:
+          The beads of sweat began to trickle off of Nishitani’s face, as the young boy kept on punching the tree in
+          front of him. As he continued on, his master watched him intently.
+          “Better form. Come on now, no slacking yet, we’ve just gotten started.”
+          Nishintani paused for a moment, and turned around to look at his master.
+          “But Master Takahashi, I’ve been punching at this tree for hours!!! It’s not like it’s trying to hurt me.”
+          “You never know who or what will harm you in life. You will grow to learn that trust is earned, not expected.
+          Never assume who is on your side.” Takahashi responded, a wistful look in his eyes.
+          And so, Nishitani spent his evening punching trees. By the end of the day, his knuckles were swollen and
+          bloody, his hands bruised and callused.
+          As they began packing up, Nishitani told Takahashi, “Master, I think I did really well today. I’ll try to be
+          even better tomorrow.”
+          Again, Takahashi simply looked at his student and said, “do or do not, there is no try. It’s getting late,
+          young one, we better get you back home.”
+          Nishitani rolled his eyes. His master had a way of being confusing at all times. He simply chuckled as he made
+          his way back to his family…
+          <hr>
+          Current Day:
+          Billionaire, genius, and philanthropist Nishitani Sakamoto has a reputation for being the most wealthy
+          businessman in the world. His company, the Sakamoto Kabu, is the most influential in the modern world.
+          However, Nishitani and his family have recently received terrible news...
+          Nishitani has been diagnosed with a fatal disease!!! This disease has no known cure, and even with the highest
+          grade medical technology, doctors have informed Nishitani that he has at most 1 year left of his life...
+          In Nishitani’s earlier years, he spent his time learning martial arts from the renowned master Hiroshi
+          Takahashi. He was talented beyond comprehension, and eventually even surpassed his master. However, as time
+          went on, Nishitani became lazier and more arrogant. He developed a family, and his skills were no longer put
+          to use...
+          With his impending doom, Nishitani has made the decision to announce the Trials of the Fallen Shadow!!! The
+          most skilled fighters from all the realms are welcome to attend. Those from all over Earth will battle it out
+          for glory, with Nishitani watching from the shadows. However, only one will come out victorious...
+          This victor of this prestigious tournament will have the honor to fight Nishitani himself, and battle him to
+          the death. If he does have the ability to best such a warrior in hand to hand combat, this contestor will be
+          next in line to receive the Sakamoto Kabu!!! Nishitani believes that only the most worthy of champions can
+          best him in combat, and give him a proper warrior’s death, before his disease inevitably consumes him...
+
+        </p>
       </div>
-    </footer>
-  </body>
+
+  </main>
+  <footer>
+    <div class="divider-line"></div>
+    <div class="footer-text">
+      <p><i class="fa-solid fa-copyright"></i> Retro Fight Night, Inc. AEE Games - Privacy - Your Privacy Choices</p>
+    </div>
+  </footer>
+</body>
+
 </html>
