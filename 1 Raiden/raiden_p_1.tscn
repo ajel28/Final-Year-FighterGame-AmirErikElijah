@@ -169,6 +169,10 @@ autostart = true
 
 [node name="ShieldP1" parent="CharacterBody2D" instance=ExtResource("5_y1wsu")]
 
+[node name="TextureRect2" type="TextureRect" parent="CharacterBody2D"]
+offset_right = 40.0
+offset_bottom = 40.0
+
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 1
 offset_left = -261.0
