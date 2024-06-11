@@ -6,9 +6,9 @@
 [node name="DoomP2Select" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1287.0
+offset_left = 1337.0
 offset_top = 159.0
-offset_right = 1803.0
+offset_right = 1853.0
 offset_bottom = 710.0
 texture = ExtResource("1_wb1id")
 

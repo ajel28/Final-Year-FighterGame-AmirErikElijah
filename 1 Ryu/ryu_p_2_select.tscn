@@ -6,9 +6,9 @@
 [node name="RyuP2Select" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1321.0
+offset_left = 1371.0
 offset_top = 152.0
-offset_right = 1811.0
+offset_right = 1861.0
 offset_bottom = 710.0
 texture = ExtResource("1_143by")
 

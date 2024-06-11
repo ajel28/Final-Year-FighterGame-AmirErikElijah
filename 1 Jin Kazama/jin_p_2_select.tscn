@@ -6,9 +6,9 @@
 [node name="JinP2Select" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1350.0
+offset_left = 1400.0
 offset_top = 161.0
-offset_right = 1737.0
+offset_right = 1787.0
 offset_bottom = 692.0
 texture = ExtResource("1_oha04")
 

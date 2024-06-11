@@ -6,9 +6,9 @@
 [node name="RockyP2Select" type="Node2D"]
 
 [node name="TextureRect2" type="TextureRect" parent="."]
-offset_left = 1269.0
+offset_left = 1319.0
 offset_top = 162.0
-offset_right = 1776.0
+offset_right = 1826.0
 offset_bottom = 685.0
 texture = ExtResource("1_t4qi6")
 

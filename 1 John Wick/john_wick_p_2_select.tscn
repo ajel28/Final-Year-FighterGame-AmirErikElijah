@@ -6,9 +6,9 @@
 [node name="JohnWickP2Select" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1358.0
+offset_left = 1408.0
 offset_top = 159.0
-offset_right = 1794.0
+offset_right = 1844.0
 offset_bottom = 693.0
 texture = ExtResource("1_sdhkl")
 
