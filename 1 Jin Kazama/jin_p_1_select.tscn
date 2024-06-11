@@ -6,10 +6,10 @@
 [node name="JinP1Select" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 101.0
-offset_top = 232.0
-offset_right = 582.0
-offset_bottom = 768.0
+offset_left = 174.0
+offset_top = 184.0
+offset_right = 637.0
+offset_bottom = 700.0
 texture = ExtResource("1_dboem")
 
 [node name="Audio" type="AudioStreamPlayer" parent="."]

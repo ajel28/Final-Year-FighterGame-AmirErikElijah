@@ -6,10 +6,10 @@
 [node name="JohnWickP1Select" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 7.0
-offset_top = 205.0
-offset_right = 536.0
-offset_bottom = 759.0
+offset_left = 141.0
+offset_top = 165.0
+offset_right = 638.0
+offset_bottom = 686.0
 texture = ExtResource("1_qd1sx")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

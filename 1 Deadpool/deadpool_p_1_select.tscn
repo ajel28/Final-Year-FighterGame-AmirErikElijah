@@ -11,8 +11,8 @@ volume_db = 5.0
 autoplay = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 104.0
-offset_top = 239.0
-offset_right = 587.0
-offset_bottom = 782.0
+offset_left = 180.0
+offset_top = 190.0
+offset_right = 642.0
+offset_bottom = 709.0
 texture = ExtResource("1_ii2he")

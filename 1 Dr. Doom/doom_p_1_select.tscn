@@ -6,10 +6,10 @@
 [node name="DoomP1Select" type="Node2D"]
 
 [node name="TextureRect2" type="TextureRect" parent="."]
-offset_left = 72.0
-offset_top = 211.0
-offset_right = 582.0
-offset_bottom = 776.0
+offset_left = 164.0
+offset_top = 169.0
+offset_right = 644.0
+offset_bottom = 701.0
 texture = ExtResource("1_uoakb")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
