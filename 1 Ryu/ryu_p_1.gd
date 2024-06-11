@@ -40,14 +40,12 @@ func get_input():
 	if int(Input.is_action_pressed("ui_A")) == 1:
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		animationsRyu.play("ryuwalk")
-		$TextureRect.flip_h = true
 		punch = false
 		get_node("ShieldP1").hide()
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_D")) == 1:
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		animationsRyu.play("ryuwalk")
-		$TextureRect.flip_h = false
 		punch = false
 		get_node("ShieldP1").hide()
 		return input.normalized()
