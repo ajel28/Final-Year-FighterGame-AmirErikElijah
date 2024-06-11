@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://dkrvuhoo7rd1r"]
+[gd_scene load_steps=28 format=3 uid="uid://dkrvuhoo7rd1r"]
 
 [ext_resource type="Script" path="res://Character Select/characterselect.gd" id="1_k2uhs"]
 [ext_resource type="PackedScene" uid="uid://srmqp8v1pxq8" path="res://1 Jin Kazama/jin_p_1_select.tscn" id="2_oq3ql"]
@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://v2ttyxy2h0su" path="res://1MainCharacter/mc_select_p_1.tscn" id="22_hq2rk"]
 [ext_resource type="PackedScene" uid="uid://cxkycfahah041" path="res://1MainCharacter/mc_select_p_2.tscn" id="23_6b1hc"]
 [ext_resource type="AudioStream" uid="uid://cn1udulpbh5v5" path="res://Character Select/ChooseDestiny.mp3" id="23_l56ex"]
+[ext_resource type="Texture2D" uid="uid://dt4mdxo5nt08a" path="res://Character Select/CharBoxes.png" id="24_6yxnu"]
 [ext_resource type="Texture2D" uid="uid://bsdwombbd0jg8" path="res://Character Select/SelectChar(DLCs).png" id="24_f7p6o"]
 [ext_resource type="AudioStream" uid="uid://bx2h7i3nmfwkb" path="res://Character Select/Mortal Kombat 11 Character Select Music.mp3" id="24_tn18t"]
 
@@ -182,6 +183,14 @@ autoplay = true
 stream = ExtResource("24_tn18t")
 volume_db = 1.0
 autoplay = true
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+z_index = 1
+offset_left = -1.0
+offset_top = -15.0
+offset_right = 1931.0
+offset_bottom = 1117.0
+texture = ExtResource("24_6yxnu")
 
 [connection signal="pressed" from="backButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="NextButton" to="." method="_on_next_button_pressed"]
