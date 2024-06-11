@@ -53,6 +53,14 @@ SoldierP2Select = ExtResource("21_vrvnp")
 MCP1Select = ExtResource("22_hq2rk")
 MCP2Select = ExtResource("23_6b1hc")
 
+[node name="TextureRect2" type="TextureRect" parent="."]
+z_index = 1
+offset_left = -1.0
+offset_top = -15.0
+offset_right = 1931.0
+offset_bottom = 1117.0
+texture = ExtResource("24_6yxnu")
+
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -1.0
 offset_top = -18.0
@@ -183,14 +191,6 @@ autoplay = true
 stream = ExtResource("24_tn18t")
 volume_db = 1.0
 autoplay = true
-
-[node name="TextureRect2" type="TextureRect" parent="."]
-z_index = 1
-offset_left = -1.0
-offset_top = -15.0
-offset_right = 1931.0
-offset_bottom = 1117.0
-texture = ExtResource("24_6yxnu")
 
 [connection signal="pressed" from="backButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="NextButton" to="." method="_on_next_button_pressed"]
