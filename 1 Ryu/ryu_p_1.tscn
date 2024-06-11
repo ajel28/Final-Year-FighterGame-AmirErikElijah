@@ -1,7 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://da3rbr86g0icw"]
+[gd_scene load_steps=16 format=3 uid="uid://da3rbr86g0icw"]
 
 [ext_resource type="Script" path="res://1 Ryu/ryu_p_1.gd" id="1_x77s3"]
-[ext_resource type="Texture2D" uid="uid://cno2to6tukdm4" path="res://1 Ryu/1Ryu-sprite.png" id="2_4dom6"]
+[ext_resource type="Texture2D" uid="uid://bes2gdt8mj380" path="res://1 Ryu/1Ryu-spritee.png" id="2_q3n4w"]
 [ext_resource type="Script" path="res://1 Ryu/RyuHurtboxP1.gd" id="3_50dt6"]
 [ext_resource type="Texture2D" uid="uid://bcul6xipib1q8" path="res://1 Ryu/RyuBubble1.png" id="3_r70x6"]
 [ext_resource type="PackedScene" uid="uid://dqk5kdbbaimir" path="res://Global Stuff/shield_p_1.tscn" id="4_m38fs"]
@@ -175,13 +175,30 @@ tracks/2/keys = {
 "values": [false, true]
 }
 
+[sub_resource type="Animation" id="Animation_gquni"]
+resource_name = "ryuwalk"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [7, 8, 9, 10, 11]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_26ifj"]
 _data = {
 "RESET": SubResource("Animation_eq0v0"),
 "crouchryu": SubResource("Animation_rinsu"),
 "ryuidle": SubResource("Animation_spteg"),
 "ryujump": SubResource("Animation_rkf65"),
-"ryupunch": SubResource("Animation_8kmgq")
+"ryupunch": SubResource("Animation_8kmgq"),
+"ryuwalk": SubResource("Animation_gquni")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w0731"]
@@ -198,9 +215,9 @@ jump_time_to_descent = 0.3
 [node name="TextureRect" type="Sprite2D" parent="RyuP1"]
 position = Vector2(333.75, 709.25)
 scale = Vector2(1.7425, 1.7425)
-texture = ExtResource("2_4dom6")
-hframes = 6
-frame = 2
+texture = ExtResource("2_q3n4w")
+hframes = 12
+frame = 7
 
 [node name="RyuPunch1" type="Area2D" parent="RyuP1/TextureRect"]
 position = Vector2(-191.535, -407.03)
