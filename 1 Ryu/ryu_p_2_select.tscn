@@ -6,10 +6,10 @@
 [node name="RyuP2Select" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1374.0
-offset_top = 99.0
-offset_right = 1928.0
-offset_bottom = 687.0
+offset_left = 1382.0
+offset_top = 206.0
+offset_right = 1890.0
+offset_bottom = 784.0
 texture = ExtResource("1_143by")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

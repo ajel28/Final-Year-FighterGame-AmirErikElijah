@@ -6,10 +6,10 @@
 [node name="RaidenP1Select" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 146.0
-offset_top = 117.0
-offset_right = 682.0
-offset_bottom = 665.0
+offset_left = 68.0
+offset_top = 227.0
+offset_right = 604.0
+offset_bottom = 775.0
 texture = ExtResource("1_ev3lu")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

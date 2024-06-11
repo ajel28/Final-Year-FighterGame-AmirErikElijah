@@ -6,10 +6,10 @@
 [node name="DJinSelectP1" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 62.0
-offset_top = 121.0
-offset_right = 697.0
-offset_bottom = 706.0
+offset_left = 7.0
+offset_top = 244.0
+offset_right = 572.0
+offset_bottom = 765.0
 texture = ExtResource("1_8abj0")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
