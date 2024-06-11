@@ -1,7 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://cdhjlgq46nt8i"]
+[gd_scene load_steps=16 format=3 uid="uid://cdhjlgq46nt8i"]
 
 [ext_resource type="Script" path="res://1 Dr. Doom/doom_p_2.gd" id="1_eggay"]
-[ext_resource type="Texture2D" uid="uid://ccm0f38v8bx72" path="res://1 Dr. Doom/Doom-sprite.png" id="2_h65u4"]
+[ext_resource type="Texture2D" uid="uid://brnvh0fidoew7" path="res://1 Dr. Doom/1Doom-sprite.png" id="2_ad8bg"]
 [ext_resource type="Script" path="res://1 Dr. Doom/doomP2shootingOrigin.gd" id="3_emyxb"]
 [ext_resource type="PackedScene" uid="uid://jgllyibx8cah" path="res://1 Dr. Doom/doom_att_p_2.tscn" id="4_5nukc"]
 [ext_resource type="Texture2D" uid="uid://c66q2pnx8ahbw" path="res://1 Dr. Doom/DoomBubble2.png" id="5_ayuc5"]
@@ -112,13 +112,30 @@ tracks/0/keys = {
 "values": [3, 0]
 }
 
+[sub_resource type="Animation" id="Animation_73kuy"]
+resource_name = "doomwalk2"
+length = 0.35
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [7, 8, 9, 10]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_m46h6"]
 _data = {
 "RESET": SubResource("Animation_63wlq"),
 "doomcrouch2": SubResource("Animation_qbqub"),
 "doomidle2": SubResource("Animation_p077e"),
 "doomjump2": SubResource("Animation_sueaq"),
-"doompunch2": SubResource("Animation_aapdd")
+"doompunch2": SubResource("Animation_aapdd"),
+"doomwalk2": SubResource("Animation_73kuy")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_07g5u"]
@@ -135,9 +152,10 @@ jump_time_to_descent = 0.3
 [node name="TextureRect" type="Sprite2D" parent="DoomP2"]
 position = Vector2(1671, 704)
 scale = Vector2(1.64453, 1.82936)
-texture = ExtResource("2_h65u4")
+texture = ExtResource("2_ad8bg")
 flip_h = true
-hframes = 6
+hframes = 11
+frame = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoomP2"]
 position = Vector2(1704.88, 709.5)

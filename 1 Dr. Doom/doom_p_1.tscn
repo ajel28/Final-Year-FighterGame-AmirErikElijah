@@ -1,7 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://j70b4iqssibs"]
+[gd_scene load_steps=16 format=3 uid="uid://j70b4iqssibs"]
 
 [ext_resource type="Script" path="res://1 Dr. Doom/doom_p_1.gd" id="1_nxp1m"]
-[ext_resource type="Texture2D" uid="uid://ccm0f38v8bx72" path="res://1 Dr. Doom/Doom-sprite.png" id="2_dei3s"]
+[ext_resource type="Texture2D" uid="uid://brnvh0fidoew7" path="res://1 Dr. Doom/1Doom-sprite.png" id="2_gtpe8"]
 [ext_resource type="Script" path="res://1 Dr. Doom/doomP1shootingOrigin.gd" id="3_ronra"]
 [ext_resource type="PackedScene" uid="uid://b3jwbo3d5xvxw" path="res://1 Dr. Doom/doom_att_p_1.tscn" id="4_w8hpj"]
 [ext_resource type="PackedScene" uid="uid://dqk5kdbbaimir" path="res://Global Stuff/shield_p_1.tscn" id="5_ifaw3"]
@@ -113,9 +113,26 @@ tracks/0/keys = {
 "values": [3, 0]
 }
 
+[sub_resource type="Animation" id="Animation_tbvvp"]
+resource_name = "doom_walk1"
+length = 0.35
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [7, 8, 9, 10]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bvwla"]
 _data = {
 "RESET": SubResource("Animation_5e2pc"),
+"doom_walk1": SubResource("Animation_tbvvp"),
 "doomcrouch1": SubResource("Animation_noaj0"),
 "doomidle1": SubResource("Animation_nwae5"),
 "doomjump1": SubResource("Animation_sggg2"),
@@ -136,9 +153,9 @@ jump_time_to_descent = 0.3
 [node name="TextureRect" type="Sprite2D" parent="DoomP1"]
 position = Vector2(352, 711)
 scale = Vector2(1.82063, 1.82135)
-texture = ExtResource("2_dei3s")
-hframes = 6
-frame = 1
+texture = ExtResource("2_gtpe8")
+hframes = 11
+frame = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoomP1"]
 position = Vector2(326.688, 711.25)
