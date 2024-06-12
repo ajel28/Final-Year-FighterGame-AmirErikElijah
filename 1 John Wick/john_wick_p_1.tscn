@@ -6,9 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://dqk5kdbbaimir" path="res://Global Stuff/shield_p_1.tscn" id="4_i5wc1"]
 [ext_resource type="Texture2D" uid="uid://crl7a5dal7ry5" path="res://1 John Wick/WickBubble1.png" id="4_mp5ow"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_x0r2c"]
-size = Vector2(56.9831, 30.9283)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2kb6w"]
 size = Vector2(173, 324)
 
@@ -18,7 +15,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("TextureRect/WickP1Punch/CollisionShape2D:disabled")
+tracks/0/path = NodePath("WickP1Hurtbox/WickP1Punch/CollisionShape2D:disabled")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -30,7 +27,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("TextureRect/WickP1Punch/CollisionShape2D:position")
+tracks/1/path = NodePath("WickP1Hurtbox/WickP1Punch/CollisionShape2D:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -50,6 +47,18 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("WickP1Hurtbox/CollisionShape2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(345.375, 719)]
 }
 
 [sub_resource type="Animation" id="Animation_7erri"]
@@ -82,7 +91,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("TextureRect/WickP1Punch/CollisionShape2D:disabled")
+tracks/2/path = NodePath("WickP1Hurtbox/WickP1Punch/CollisionShape2D:disabled")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -122,7 +131,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("TextureRect/WickP1Punch/CollisionShape2D:disabled")
+tracks/2/path = NodePath("WickP1Hurtbox/WickP1Punch/CollisionShape2D:disabled")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -166,26 +175,50 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("TextureRect/WickP1Punch/CollisionShape2D:disabled")
+tracks/1/path = NodePath("WickP1Hurtbox/WickP1Punch/CollisionShape2D:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [false, true]
+"values": [true, false, true, true]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("TextureRect/WickP1Punch/CollisionShape2D:position")
+tracks/2/path = NodePath("WickP1Hurtbox/WickP1Punch/CollisionShape2D:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(53.8713, -53.6709), Vector2(-30.7173, -80)]
+"values": [Vector2(53.8713, -53.6709), Vector2(76.2479, -51.6324)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("WickP1Hurtbox/CollisionShape2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(345.375, 719)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("WickP1Hurtbox/CollisionShape2D:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, false, false]
 }
 
 [sub_resource type="Animation" id="Animation_ea5be"]
@@ -227,7 +260,10 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ynncu"]
-size = Vector2(222.5, 324)
+size = Vector2(213.25, 324)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x0r2c"]
+size = Vector2(13.8087, 30.9283)
 
 [node name="JohnWickP1" type="Node2D"]
 
@@ -242,13 +278,6 @@ position = Vector2(341, 716)
 scale = Vector2(1.66562, 1.66562)
 texture = ExtResource("2_5ptqx")
 hframes = 12
-frame = 11
-
-[node name="WickP1Punch" type="Area2D" parent="CharacterBody2D/TextureRect"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/TextureRect/WickP1Punch"]
-position = Vector2(53.8713, -53.6709)
-shape = SubResource("RectangleShape2D_x0r2c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(318.5, 718)
@@ -263,9 +292,17 @@ libraries = {
 script = ExtResource("3_l68pj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/WickP1Hurtbox"]
-position = Vector2(350, 719)
+position = Vector2(345.375, 719)
 shape = SubResource("RectangleShape2D_ynncu")
 disabled = true
+
+[node name="WickP1Punch" type="Area2D" parent="CharacterBody2D/WickP1Hurtbox"]
+position = Vector2(341, 716)
+scale = Vector2(1.66562, 1.66562)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/WickP1Hurtbox/WickP1Punch"]
+position = Vector2(53.8713, -53.6709)
+shape = SubResource("RectangleShape2D_x0r2c")
 
 [node name="Stamina" type="Timer" parent="CharacterBody2D"]
 wait_time = 8.0
@@ -281,5 +318,5 @@ offset_right = 405.0
 offset_bottom = 280.0
 texture = ExtResource("4_mp5ow")
 
-[connection signal="area_entered" from="CharacterBody2D/TextureRect/WickP1Punch" to="CharacterBody2D" method="_on_wick_p_1_punch_area_entered"]
 [connection signal="area_entered" from="CharacterBody2D/WickP1Hurtbox" to="CharacterBody2D" method="_on_wick_p_1_hurtbox_area_entered"]
+[connection signal="area_entered" from="CharacterBody2D/WickP1Hurtbox/WickP1Punch" to="CharacterBody2D" method="_on_wick_p_1_punch_area_entered"]

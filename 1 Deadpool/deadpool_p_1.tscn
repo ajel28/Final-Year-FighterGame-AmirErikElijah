@@ -250,7 +250,7 @@ position = Vector2(351.663, 698.978)
 scale = Vector2(1.88454, 1.88454)
 texture = ExtResource("2_nv5fj")
 hframes = 9
-frame = 8
+frame = 1
 
 [node name="DeadpoolP1Punch" type="Area2D" parent="DeadpoolP1/TextureRect"]
 

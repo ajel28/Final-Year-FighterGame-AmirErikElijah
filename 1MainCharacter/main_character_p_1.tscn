@@ -153,10 +153,22 @@ tracks/1/path = NodePath("McP1/MCPunchP1/CollisionShape2D:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1),
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("McP1/MCP1Hurtbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true]
+"values": [false, false]
 }
 
 [sub_resource type="Animation" id="Animation_n0dhu"]
@@ -216,7 +228,7 @@ position = Vector2(340.5, 712.5)
 scale = Vector2(1.655, 1.655)
 texture = ExtResource("2_ocgkn")
 hframes = 11
-frame = 7
+frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="McP1"]
 position = Vector2(329.625, 712.375)

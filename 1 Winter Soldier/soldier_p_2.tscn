@@ -6,9 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://cff7g70o7h37h" path="res://Global Stuff/shield_p_2.tscn" id="4_ac5kk"]
 [ext_resource type="Texture2D" uid="uid://ct7imn3lcml0t" path="res://1 Winter Soldier/SoldBubble2.png" id="4_pvqo2"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5yacv"]
-size = Vector2(80.5223, 27.9105)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h4uix"]
 size = Vector2(194.5, 307)
 
@@ -17,7 +14,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("TextureRect/SoldierP2Punch/CollisionShape2D:disabled")
+tracks/0/path = NodePath("SoldierP2Punch/CollisionShape2D:disabled")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -29,7 +26,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("TextureRect/SoldierP2Punch/CollisionShape2D:position")
+tracks/1/path = NodePath("SoldierP2Punch/CollisionShape2D:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -69,7 +66,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("TextureRect/SoldierP2Punch/CollisionShape2D:disabled")
+tracks/1/path = NodePath("SoldierP2Punch/CollisionShape2D:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -121,7 +118,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("TextureRect/SoldierP2Punch/CollisionShape2D:disabled")
+tracks/2/path = NodePath("SoldierP2Punch/CollisionShape2D:disabled")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -165,26 +162,38 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("TextureRect/SoldierP2Punch/CollisionShape2D:disabled")
+tracks/1/path = NodePath("SoldierP2Punch/CollisionShape2D:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true]
+"values": [true, false, true]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("TextureRect/SoldierP2Punch/CollisionShape2D:position")
+tracks/2/path = NodePath("SoldierP2Punch/CollisionShape2D:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-42.5373, -56.7164), Vector2(55.2239, -85.0746)]
+"values": [Vector2(-42.5373, -56.7164), Vector2(-74.1648, -55.7047)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SoldierP2Hurtbox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
 }
 
 [sub_resource type="Animation" id="Animation_7yn4j"]
@@ -228,6 +237,9 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_drr6n"]
 size = Vector2(235.25, 306.5)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5yacv"]
+size = Vector2(18.1136, 27.9105)
+
 [node name="SoldierP2" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
@@ -242,13 +254,7 @@ scale = Vector2(1.49, 1.49)
 texture = ExtResource("2_8ipco")
 flip_h = true
 hframes = 10
-frame = 6
-
-[node name="SoldierP2Punch" type="Area2D" parent="CharacterBody2D/TextureRect"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/TextureRect/SoldierP2Punch"]
-position = Vector2(-42.5373, -56.7164)
-shape = SubResource("RectangleShape2D_5yacv")
+frame = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(1747.25, 723.5)
@@ -266,6 +272,14 @@ script = ExtResource("3_yq3i1")
 position = Vector2(1725.62, 724.25)
 shape = SubResource("RectangleShape2D_drr6n")
 
+[node name="SoldierP2Punch" type="Area2D" parent="CharacterBody2D"]
+position = Vector2(1696, 724)
+scale = Vector2(1.49, 1.49)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/SoldierP2Punch"]
+position = Vector2(-42.5373, -56.7164)
+shape = SubResource("RectangleShape2D_5yacv")
+
 [node name="Stamina" type="Timer" parent="CharacterBody2D"]
 wait_time = 8.0
 autostart = true
@@ -280,5 +294,5 @@ offset_right = 2198.0
 offset_bottom = 280.0
 texture = ExtResource("4_pvqo2")
 
-[connection signal="area_entered" from="CharacterBody2D/TextureRect/SoldierP2Punch" to="CharacterBody2D" method="_on_soldier_p_2_punch_area_entered"]
 [connection signal="area_entered" from="CharacterBody2D/SoldierP2Hurtbox" to="CharacterBody2D" method="_on_soldier_p_2_hurtbox_area_entered"]
+[connection signal="area_entered" from="CharacterBody2D/SoldierP2Punch" to="CharacterBody2D" method="_on_soldier_p_2_punch_area_entered"]

@@ -6,9 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://cff7g70o7h37h" path="res://Global Stuff/shield_p_2.tscn" id="4_kfspi"]
 [ext_resource type="Texture2D" uid="uid://cpm58f61xpi0u" path="res://1 Rocky Balboa/RockyBubble2.png" id="4_mypsf"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gc8ww"]
-size = Vector2(67.3001, 31.2496)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ia1gf"]
 size = Vector2(148.562, 319.312)
 
@@ -17,7 +14,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("TextureRect/RockyP2Punch/CollisionShape2D:disabled")
+tracks/0/path = NodePath("RockyP2Hurtbox/RockyP2Punch/CollisionShape2D:disabled")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -29,7 +26,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("TextureRect/RockyP2Punch/CollisionShape2D:position")
+tracks/1/path = NodePath("RockyP2Hurtbox/RockyP2Punch/CollisionShape2D:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -81,7 +78,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("TextureRect/RockyP2Punch/CollisionShape2D:disabled")
+tracks/2/path = NodePath("RockyP2Hurtbox/RockyP2Punch/CollisionShape2D:disabled")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -109,7 +106,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("TextureRect/RockyP2Punch/CollisionShape2D:disabled")
+tracks/1/path = NodePath("RockyP2Hurtbox/RockyP2Punch/CollisionShape2D:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -165,26 +162,38 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("TextureRect/RockyP2Punch/CollisionShape2D:disabled")
+tracks/1/path = NodePath("RockyP2Hurtbox/RockyP2Punch/CollisionShape2D:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true]
+"values": [true, false, true]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("TextureRect/RockyP2Punch/CollisionShape2D:position")
+tracks/2/path = NodePath("RockyP2Hurtbox/RockyP2Punch/CollisionShape2D:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-60.2072, -47.3287), Vector2(30.5866, -79.847)]
+"values": [Vector2(-60.2072, -47.3287), Vector2(-77.5321, -46.8026)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("RockyP2Hurtbox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
 }
 
 [sub_resource type="Animation" id="Animation_3cxf2"]
@@ -228,6 +237,9 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kxvjw"]
 size = Vector2(181, 320.5)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gc8ww"]
+size = Vector2(35.5058, 31.2496)
+
 [node name="RockyP2" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
@@ -242,13 +254,6 @@ scale = Vector2(1.61662, 1.61662)
 texture = ExtResource("2_lw75m")
 flip_h = true
 hframes = 11
-frame = 10
-
-[node name="RockyP2Punch" type="Area2D" parent="CharacterBody2D/TextureRect"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/TextureRect/RockyP2Punch"]
-position = Vector2(-61.4951, -43.7871)
-shape = SubResource("RectangleShape2D_gc8ww")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(1722, 711)
@@ -267,6 +272,14 @@ position = Vector2(1705, 711)
 shape = SubResource("RectangleShape2D_kxvjw")
 disabled = true
 
+[node name="RockyP2Punch" type="Area2D" parent="CharacterBody2D/RockyP2Hurtbox"]
+position = Vector2(1696.34, 712.662)
+scale = Vector2(1.61662, 1.61662)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/RockyP2Hurtbox/RockyP2Punch"]
+position = Vector2(-61.4951, -43.7871)
+shape = SubResource("RectangleShape2D_gc8ww")
+
 [node name="Stamina" type="Timer" parent="CharacterBody2D"]
 wait_time = 8.0
 autostart = true
@@ -281,5 +294,5 @@ offset_right = 2198.0
 offset_bottom = 280.0
 texture = ExtResource("4_mypsf")
 
-[connection signal="area_entered" from="CharacterBody2D/TextureRect/RockyP2Punch" to="CharacterBody2D" method="_on_rocky_p_2_punch_area_entered"]
 [connection signal="area_entered" from="CharacterBody2D/RockyP2Hurtbox" to="CharacterBody2D" method="_on_rocky_p_2_hurtbox_area_entered"]
+[connection signal="area_entered" from="CharacterBody2D/RockyP2Hurtbox/RockyP2Punch" to="CharacterBody2D" method="_on_rocky_p_2_punch_area_entered"]
