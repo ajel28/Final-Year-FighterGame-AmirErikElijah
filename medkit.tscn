@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://bh0t8qlgdpf5b"]
+
+[ext_resource type="Texture2D" uid="uid://eo7arfpn3kmk" path="res://Global Stuff/MedKit-sprite.png" id="1_2efdy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ecmtr"]
+atlas = ExtResource("1_2efdy")
+region = Rect2(0, 0, 360, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kg6xk"]
+atlas = ExtResource("1_2efdy")
+region = Rect2(360, 0, 360, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i0svu"]
+atlas = ExtResource("1_2efdy")
+region = Rect2(720, 0, 360, 360)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vkr1f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ecmtr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kg6xk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i0svu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Medkit" type="AnimatedSprite2D"]
+position = Vector2(89, -57)
+scale = Vector2(0.422222, 0.422222)
+sprite_frames = SubResource("SpriteFrames_vkr1f")

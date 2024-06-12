@@ -85,3 +85,11 @@ func _on_mc_punch_p_2_area_entered(area):
 	if punch==true:
 		Global.healthp1-=3
 		print(Global.healthp1)
+
+
+func _on_mcp_2_hurtbox_area_entered(area):
+	if (area is Med):
+		Global.healthp2+=5
+		area.queue_free()
+	if(Global.healthp2>=100):
+		Global.healthp2=100

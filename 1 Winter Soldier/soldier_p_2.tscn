@@ -252,3 +252,4 @@ offset_bottom = 280.0
 texture = ExtResource("4_pvqo2")
 
 [connection signal="area_entered" from="CharacterBody2D/TextureRect/SoldierP2Punch" to="CharacterBody2D" method="_on_soldier_p_2_punch_area_entered"]
+[connection signal="area_entered" from="CharacterBody2D/SoldierP2Hurtbox" to="CharacterBody2D" method="_on_soldier_p_2_hurtbox_area_entered"]

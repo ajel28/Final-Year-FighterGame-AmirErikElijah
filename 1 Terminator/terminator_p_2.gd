@@ -72,3 +72,11 @@ func player_movement(delta):
 		velocity = velocity.limit_length(max_speed)
 	move_and_slide()
 	global_position = global_position.clamp(Vector2(-1550,-999), Vector2(0,750))
+
+
+func _on_terminator_p_2_hurtbox_area_entered(area):
+	if (area is Med):
+		Global.healthp2+=5
+		area.queue_free()
+	if(Global.healthp2>=100):
+		Global.healthp2=100

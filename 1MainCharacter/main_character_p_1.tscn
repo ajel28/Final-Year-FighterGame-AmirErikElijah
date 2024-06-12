@@ -226,3 +226,4 @@ offset_bottom = 280.0
 texture = ExtResource("3_i2mjh")
 
 [connection signal="area_entered" from="McP1/MCPunchP1" to="McP1" method="_on_mc_punch_p_1_area_entered"]
+[connection signal="area_entered" from="McP1/MCP1Hurtbox" to="McP1" method="_on_mcp_1_hurtbox_area_entered"]

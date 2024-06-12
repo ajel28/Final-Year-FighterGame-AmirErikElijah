@@ -221,3 +221,4 @@ offset_bottom = 281.0
 texture = ExtResource("5_kdqmb")
 
 [connection signal="area_entered" from="JinP2/TextureRect/JinP2Kick" to="JinP2" method="_on_jin_p_2_kick_area_entered"]
+[connection signal="area_entered" from="JinP2/JinP2Hurtbox" to="JinP2" method="_on_jin_p_2_hurtbox_area_entered"]

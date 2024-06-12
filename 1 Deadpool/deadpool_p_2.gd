@@ -100,3 +100,11 @@ func _on_deadpool_p_2_punch_area_entered(area):
 			$Triple.play()
 		elif Global.hitsInRowP2 == 5:
 			$Fatality.play()
+
+
+func _on_deadpool_p_2_hurtbox_area_entered(area):
+	if (area is Med):
+		Global.healthp2+=5
+		area.queue_free()
+	if(Global.healthp2>=100):
+		Global.healthp2=100

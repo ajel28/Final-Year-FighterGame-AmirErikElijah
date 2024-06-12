@@ -84,3 +84,11 @@ func _on_wick_p_1_punch_area_entered(area):
 		if punch==true:
 			Global.healthp2-=3
 			print(Global.healthp2)
+
+
+func _on_wick_p_1_hurtbox_area_entered(area):
+	if (area is Med):
+		Global.healthp1+=5
+		area.queue_free()
+	if(Global.healthp1>=100):
+		Global.healthp1=100

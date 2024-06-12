@@ -221,3 +221,4 @@ offset_bottom = 280.0
 texture = ExtResource("4_gsphh")
 
 [connection signal="area_entered" from="Jin/TextureRect/KickArea2d" to="Jin" method="_on_kick_area_2d_area_entered"]
+[connection signal="area_entered" from="Jin/JinP1Hurtbox" to="Jin" method="_on_jin_p_1_hurtbox_area_entered"]
