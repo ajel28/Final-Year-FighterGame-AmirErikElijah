@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dmovu8n2ploou"]
 
 [ext_resource type="Script" path="res://Area2D.gd" id="1_jx2rq"]
-[ext_resource type="PackedScene" uid="uid://bh0t8qlgdpf5b" path="res://medkit.tscn" id="2_fbsay"]
+[ext_resource type="PackedScene" uid="uid://bh0t8qlgdpf5b" path="res://Global Stuff/medkit (2).tscn" id="2_fbsay"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vm2ae"]
 size = Vector2(97.2894, 117.711)

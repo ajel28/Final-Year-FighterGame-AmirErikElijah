@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://buxtqqs1pa478"
+path="res://.godot/imported/Time run out tied game 1.wav-c543735342cfadcf50c1bfe99060db32.sample"
+
+[deps]
+
+source_file="res://Global Stuff/Time run out tied game 1.wav"
+dest_files=["res://.godot/imported/Time run out tied game 1.wav-c543735342cfadcf50c1bfe99060db32.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

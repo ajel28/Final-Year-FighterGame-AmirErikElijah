@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://ds8x1jtu0oaax" path="res://Map Select/frosbite_select.tscn" id="9_8q7wy"]
 
 [node name="MapSelect" type="Node2D"]
+process_mode = 3
 script = ExtResource("1_7jipo")
 abandonRuins = ExtResource("2_n7yhm")
 subconscious = ExtResource("3_78qk1")

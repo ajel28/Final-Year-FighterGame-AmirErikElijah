@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bh0t8qlgdpf5b"]
 
 [ext_resource type="Texture2D" uid="uid://eo7arfpn3kmk" path="res://Global Stuff/MedKit-sprite.png" id="1_2efdy"]
-[ext_resource type="Script" path="res://medkit.gd" id="2_h50ig"]
+[ext_resource type="Script" path="res://Global Stuff/medkit.gd" id="2_h50ig"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ecmtr"]
 atlas = ExtResource("1_2efdy")

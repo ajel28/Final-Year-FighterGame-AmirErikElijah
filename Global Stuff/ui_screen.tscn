@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://ctkb5fr83hdqh"]
+[gd_scene load_steps=12 format=3 uid="uid://ctkb5fr83hdqh"]
 
 [ext_resource type="PackedScene" uid="uid://b5vok5kcwhud1" path="res://Global Stuff/healthBar.tscn" id="1_a6df0"]
 [ext_resource type="Script" path="res://Global Stuff/ui_screen.gd" id="1_nq61m"]
@@ -7,6 +7,12 @@
 [ext_resource type="PackedScene" uid="uid://c7vaawrxqxv6f" path="res://Global Stuff/stamina_bar.tscn" id="4_4ldtd"]
 [ext_resource type="Script" path="res://Global Stuff/stamina_bar2.gd" id="5_nirvn"]
 [ext_resource type="Script" path="res://Global Stuff/stamina_bar1.gd" id="5_rxdyn"]
+[ext_resource type="FontFile" uid="uid://kl5738mycd7l" path="res://Global Stuff/Amuro.otf" id="8_jqa4c"]
+[ext_resource type="Script" path="res://Global Stuff/Label.gd" id="9_b5c2q"]
+[ext_resource type="PackedScene" uid="uid://bsfvxlhuywuc4" path="res://Global Stuff/tied_game.tscn" id="10_ja5al"]
+
+[sub_resource type="FontVariation" id="FontVariation_4i4ft"]
+base_font = ExtResource("8_jqa4c")
 
 [node name="ui_Screen" type="CanvasLayer"]
 script = ExtResource("1_nq61m")
@@ -44,3 +50,18 @@ offset_right = 2001.0
 offset_bottom = 391.0
 fill_mode = 1
 script = ExtResource("5_nirvn")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 856.0
+offset_top = 112.0
+offset_right = 1106.0
+offset_bottom = 311.0
+theme_override_fonts/font = SubResource("FontVariation_4i4ft")
+theme_override_font_sizes/font_size = 150
+text = "90"
+script = ExtResource("9_b5c2q")
+tied = ExtResource("10_ja5al")
+
+[node name="Timer" type="Timer" parent="Label"]
+wait_time = 91.0
+one_shot = true

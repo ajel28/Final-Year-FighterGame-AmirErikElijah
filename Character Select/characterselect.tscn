@@ -28,6 +28,7 @@
 [ext_resource type="AudioStream" uid="uid://bx2h7i3nmfwkb" path="res://Character Select/Mortal Kombat 11 Character Select Music.mp3" id="24_tn18t"]
 
 [node name="characterselect" type="Node2D"]
+process_mode = 3
 script = ExtResource("1_k2uhs")
 jinP1select = ExtResource("2_oq3ql")
 jinP2select = ExtResource("3_pi26h")

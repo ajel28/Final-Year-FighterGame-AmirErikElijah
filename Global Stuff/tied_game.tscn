@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsfvxlhuywuc4"]
+
+[ext_resource type="Script" path="res://TiedGame.gd" id="1_me3t7"]
+[ext_resource type="Texture2D" uid="uid://cop3joyty71wp" path="res://Global Stuff/MainMenu.png" id="2_sk63w"]
+[ext_resource type="AudioStream" uid="uid://buxtqqs1pa478" path="res://Global Stuff/Time run out tied game 1.wav" id="3_pyc2g"]
+
+[node name="TiedGame" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_me3t7")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -604.0
+offset_top = 42.0
+offset_right = 797.0
+offset_bottom = 831.0
+texture = ExtResource("2_sk63w")
+
+[node name="LinkButton" type="LinkButton" parent="."]
+offset_left = -232.0
+offset_top = 335.0
+offset_right = 402.0
+offset_bottom = 563.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_pyc2g")
+autoplay = true
+
+[connection signal="pressed" from="LinkButton" to="." method="_on_link_button_pressed"]
