@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cdhjlgq46nt8i"]
+[gd_scene load_steps=18 format=3 uid="uid://cdhjlgq46nt8i"]
 
 [ext_resource type="Script" path="res://1 Dr. Doom/doom_p_2.gd" id="1_eggay"]
 [ext_resource type="Texture2D" uid="uid://brnvh0fidoew7" path="res://1 Dr. Doom/1Doom-sprite.png" id="2_ad8bg"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://jgllyibx8cah" path="res://1 Dr. Doom/doom_att_p_2.tscn" id="4_5nukc"]
 [ext_resource type="Texture2D" uid="uid://c66q2pnx8ahbw" path="res://1 Dr. Doom/DoomBubble2.png" id="5_ayuc5"]
 [ext_resource type="PackedScene" uid="uid://cff7g70o7h37h" path="res://Global Stuff/shield_p_2.tscn" id="5_vbies"]
+[ext_resource type="PackedScene" uid="uid://c5ruwgu6bmo6p" path="res://Global Stuff/reload_1.tscn" id="7_r08et"]
+[ext_resource type="Script" path="res://Global Stuff/reload_1doom2.gd" id="8_88yqd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tp4i7"]
 size = Vector2(175.75, 331)
@@ -191,4 +193,17 @@ offset_right = 2198.0
 offset_bottom = 280.0
 texture = ExtResource("5_ayuc5")
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Reload1" parent="CanvasLayer" instance=ExtResource("7_r08et")]
+offset_left = 1610.0
+offset_right = 2110.0
+fill_mode = 1
+script = ExtResource("8_88yqd")
+
+[node name="Timer2" type="Timer" parent="CanvasLayer/Reload1"]
+wait_time = 0.4
+autostart = true
+
 [connection signal="timeout" from="DoomP2/doomP2shootingOrigin/Timer" to="DoomP2/doomP2shootingOrigin" method="_on_timer_timeout"]
+[connection signal="timeout" from="CanvasLayer/Reload1/Timer2" to="CanvasLayer/Reload1" method="_on_timer_2_timeout"]

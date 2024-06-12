@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://b3x0om87oxver"]
+[gd_scene load_steps=17 format=3 uid="uid://b3x0om87oxver"]
 
 [ext_resource type="Script" path="res://1 Devil Jin/d_jin_p_2.gd" id="1_b6owt"]
 [ext_resource type="Texture2D" uid="uid://db0w5wqktmhlo" path="res://1 Devil Jin/1DevilJin.-spritepng.png" id="2_snpt2"]
@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://cechwde1tey00" path="res://1 Devil Jin/DJinBubble2.png" id="3_l8kas"]
 [ext_resource type="PackedScene" uid="uid://cim1wspmh5x5t" path="res://1 Devil Jin/d_jin_attack_p_2.tscn" id="4_sc1e2"]
 [ext_resource type="PackedScene" uid="uid://cff7g70o7h37h" path="res://Global Stuff/shield_p_2.tscn" id="5_f5hby"]
+[ext_resource type="PackedScene" uid="uid://c5ruwgu6bmo6p" path="res://Global Stuff/reload_1.tscn" id="7_87ar0"]
+[ext_resource type="Script" path="res://Global Stuff/reload_1doom2.gd" id="8_su55p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ahees"]
 size = Vector2(192, 357)
@@ -187,4 +189,19 @@ offset_right = 2198.0
 offset_bottom = 280.0
 texture = ExtResource("3_l8kas")
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Reload1" parent="CanvasLayer" instance=ExtResource("7_87ar0")]
+offset_left = 1587.0
+offset_top = 947.0
+offset_right = 2087.0
+offset_bottom = 1247.0
+fill_mode = 1
+script = ExtResource("8_su55p")
+
+[node name="Timer2" type="Timer" parent="CanvasLayer/Reload1"]
+wait_time = 0.4
+autostart = true
+
 [connection signal="timeout" from="CharacterBody2D/DJinShootOrigin2/Timer" to="CharacterBody2D/DJinShootOrigin2" method="_on_timer_timeout"]
+[connection signal="timeout" from="CanvasLayer/Reload1/Timer2" to="CanvasLayer/Reload1" method="_on_timer_2_timeout"]

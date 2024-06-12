@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dy4hc4dsyy4b1"]
+[gd_scene load_steps=17 format=3 uid="uid://dy4hc4dsyy4b1"]
 
 [ext_resource type="Script" path="res://1 Terminator/terminator_p_2.gd" id="1_e3l6d"]
 [ext_resource type="Texture2D" uid="uid://c5fomil7lxriq" path="res://1 Terminator/1Terminator-sprite.png" id="2_no8hn"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://cf1vmxpxdha5o" path="res://1 Terminator/terminator_fire_ball_p_2.tscn" id="4_sp3al"]
 [ext_resource type="PackedScene" uid="uid://cff7g70o7h37h" path="res://Global Stuff/shield_p_2.tscn" id="5_ms6i4"]
 [ext_resource type="Texture2D" uid="uid://bl128gh3ej7s8" path="res://1 Terminator/TermBubble2.png" id="5_uqqnf"]
+[ext_resource type="PackedScene" uid="uid://c5ruwgu6bmo6p" path="res://Global Stuff/reload_1.tscn" id="7_wserb"]
+[ext_resource type="Script" path="res://Global Stuff/reload_1doom2.gd" id="8_02n5y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iby2u"]
 size = Vector2(135, 317.5)
@@ -180,4 +182,17 @@ offset_right = 2196.0
 offset_bottom = 282.0
 texture = ExtResource("5_uqqnf")
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Reload1" parent="CanvasLayer" instance=ExtResource("7_wserb")]
+offset_left = 1584.0
+offset_right = 2084.0
+fill_mode = 1
+script = ExtResource("8_02n5y")
+
+[node name="Timer2" type="Timer" parent="CanvasLayer/Reload1"]
+wait_time = 0.4
+autostart = true
+
 [connection signal="timeout" from="TermCharacterBody2/termP2shootingOrigin/Timer" to="TermCharacterBody2/termP2shootingOrigin" method="_on_timer_timeout"]
+[connection signal="timeout" from="CanvasLayer/Reload1/Timer2" to="CanvasLayer/Reload1" method="_on_timer_2_timeout"]

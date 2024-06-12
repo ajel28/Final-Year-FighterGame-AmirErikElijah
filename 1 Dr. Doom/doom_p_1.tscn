@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://j70b4iqssibs"]
+[gd_scene load_steps=18 format=3 uid="uid://j70b4iqssibs"]
 
 [ext_resource type="Script" path="res://1 Dr. Doom/doom_p_1.gd" id="1_nxp1m"]
 [ext_resource type="Texture2D" uid="uid://brnvh0fidoew7" path="res://1 Dr. Doom/1Doom-sprite.png" id="2_gtpe8"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dqk5kdbbaimir" path="res://Global Stuff/shield_p_1.tscn" id="5_ifaw3"]
 [ext_resource type="PackedScene" uid="uid://c5ruwgu6bmo6p" path="res://Global Stuff/reload_1.tscn" id="5_rusiu"]
 [ext_resource type="Texture2D" uid="uid://civ534vx24f05" path="res://1 Dr. Doom/DoomBubble1.png" id="5_yutm0"]
+[ext_resource type="Script" path="res://Global Stuff/reload_1.gd" id="8_38qrk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5yttx"]
 size = Vector2(190.625, 321.5)
@@ -197,6 +198,7 @@ texture = ExtResource("5_yutm0")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Reload1" parent="CanvasLayer" instance=ExtResource("5_rusiu")]
+script = ExtResource("8_38qrk")
 
 [node name="Timer" type="Timer" parent="CanvasLayer/Reload1"]
 wait_time = 0.4

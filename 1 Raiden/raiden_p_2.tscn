@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://xee311mmo32j"]
+[gd_scene load_steps=17 format=3 uid="uid://xee311mmo32j"]
 
 [ext_resource type="Script" path="res://1 Raiden/raiden_p_2.gd" id="1_e1ly0"]
 [ext_resource type="Texture2D" uid="uid://dbaul8jp5wjv" path="res://1 Raiden/1Raiden-sprite.png" id="2_0xqlu"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://bxlqr24giwnbc" path="res://1 Raiden/raiden_att_p_2.tscn" id="4_kapbo"]
 [ext_resource type="PackedScene" uid="uid://cff7g70o7h37h" path="res://Global Stuff/shield_p_2.tscn" id="5_8c3rl"]
 [ext_resource type="Texture2D" uid="uid://2m42urldlb2o" path="res://1 Raiden/RaidBubble2.png" id="5_47qdn"]
+[ext_resource type="PackedScene" uid="uid://c5ruwgu6bmo6p" path="res://Global Stuff/reload_1.tscn" id="7_uxj32"]
+[ext_resource type="Script" path="res://Global Stuff/reload_1doom2.gd" id="8_h6pth"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ptl5s"]
 size = Vector2(152.25, 339)
@@ -178,4 +180,19 @@ offset_right = 2198.0
 offset_bottom = 280.0
 texture = ExtResource("5_47qdn")
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Reload1" parent="CanvasLayer" instance=ExtResource("7_uxj32")]
+offset_left = 1583.0
+offset_top = 945.0
+offset_right = 2083.0
+offset_bottom = 1245.0
+fill_mode = 1
+script = ExtResource("8_h6pth")
+
+[node name="Timer2" type="Timer" parent="CanvasLayer/Reload1"]
+wait_time = 0.4
+autostart = true
+
 [connection signal="timeout" from="CharacterBody2D/raidenShootingOriginP2/Timer" to="CharacterBody2D/raidenShootingOriginP2" method="_on_timer_timeout"]
+[connection signal="timeout" from="CanvasLayer/Reload1/Timer2" to="CanvasLayer/Reload1" method="_on_timer_2_timeout"]
