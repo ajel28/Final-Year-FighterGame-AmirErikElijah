@@ -72,7 +72,12 @@
         }
 
         img {
+            width: 50vw;
+        }
+
+        .container {
             justify-content: center;
+            flex-direction: column;
         }
 
         .description {
@@ -82,6 +87,21 @@
 
         .class {
             font-size: 1.7rem;
+        }
+
+        footer {
+            background-color: rgb(51, 51, 51);
+        }
+
+        .footer-text {
+            background-color: rgb(51, 51, 51);
+        }
+
+        .footer-text > p{
+            padding: 20px 0;
+            width: 70%;
+            margin: auto;
+            background-color: rgb(51, 51, 51);
         }
     </style>
 </head>
@@ -116,17 +136,25 @@
       </header>
       <div class="divider-line"></div>
       <main>
-        <div class="image"><img src="/img/" alt=""></div>
-        <br>
-        <div class="description">
+        <div class="container">
+            <img src="img/IMG_4796.png" alt="">
+            <br>
+            <div class="description">
             <p>Amir Jeffries-El</p>
             <p>Erik Turdiu</p>
             <p>Elijah Park</p>
             <br>
             <div class="class">
-                <p>ATCS Class of 2027</p>
+                    <p>ATCS Class of 2027</p>
+            </div>
             </div>
         </div>
       </main>
+      <footer>
+        <div class="divider-line"></div>
+        <div class="footer-text">
+        <p><i class="fa-solid fa-copyright"></i> Retro Fight Night, Inc. AEE Games - Privacy - Your Privacy Choices</p>
+        </div>
+      </footer>
 </body>
 </html>
