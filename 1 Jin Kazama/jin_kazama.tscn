@@ -1,7 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://dtivlebww4j1t"]
+[gd_scene load_steps=15 format=3 uid="uid://dtivlebww4j1t"]
 
 [ext_resource type="Script" path="res://1 Jin Kazama/CharacterBody2D.gd" id="1_1urm1"]
-[ext_resource type="Texture2D" uid="uid://deownb54lwa1w" path="res://1 Jin Kazama/kazama-sprite.png" id="2_ys1gn"]
+[ext_resource type="Texture2D" uid="uid://mym1g2ujhonl" path="res://1 Jin Kazama/1JinKazama-spritesheet.png" id="2_h00aa"]
 [ext_resource type="Script" path="res://1 Jin Kazama/JinP1Hurtbox.gd" id="3_wicmm"]
 [ext_resource type="Texture2D" uid="uid://cpxdquaw3ilc3" path="res://1 Jin Kazama/JinBubble1.png" id="4_gsphh"]
 [ext_resource type="PackedScene" uid="uid://dqk5kdbbaimir" path="res://Global Stuff/shield_p_1.tscn" id="4_k4cca"]
@@ -157,11 +157,27 @@ tracks/2/keys = {
 "values": [true, false, true]
 }
 
+[sub_resource type="Animation" id="Animation_1u1s5"]
+resource_name = "jinwalk"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [8, 9, 10, 11]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ifsdv"]
 _data = {
 "RESET": SubResource("Animation_qwya1"),
 "crouch": SubResource("Animation_qtryj"),
 "idle": SubResource("Animation_q4gh0"),
+"jinwalk": SubResource("Animation_1u1s5"),
 "kick": SubResource("Animation_s5bvc")
 }
 
@@ -179,8 +195,9 @@ script = ExtResource("1_1urm1")
 [node name="TextureRect" type="Sprite2D" parent="Jin"]
 position = Vector2(344.625, 707.219)
 scale = Vector2(1.70375, 1.70375)
-texture = ExtResource("2_ys1gn")
-hframes = 7
+texture = ExtResource("2_h00aa")
+hframes = 12
+frame = 11
 
 [node name="KickArea2d" type="Area2D" parent="Jin/TextureRect"]
 

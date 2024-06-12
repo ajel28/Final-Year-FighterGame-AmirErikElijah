@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://b1jdnguba8pig"]
+[gd_scene load_steps=19 format=3 uid="uid://b1jdnguba8pig"]
 
 [ext_resource type="Script" path="res://1 Deadpool/deadpool_p_2.gd" id="1_i1ie6"]
 [ext_resource type="Texture2D" uid="uid://d236227iy03yl" path="res://1 Deadpool/1Deadpool-sprite.png" id="2_fud5q"]
@@ -189,13 +189,29 @@ tracks/2/keys = {
 "values": [Vector2(-57.7732, -36.2489), Vector2(-56.2365, -36.9142), Vector2(21.6294, -70.9445)]
 }
 
+[sub_resource type="Animation" id="Animation_8gwj4"]
+resource_name = "dpwalk"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [6, 7, 8]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_mgr81"]
 _data = {
 "RESET": SubResource("Animation_e3lfu"),
 "deadpoolcrouch2": SubResource("Animation_x47d5"),
 "deadpoolidle2": SubResource("Animation_rx3nm"),
 "deadpooljump2": SubResource("Animation_l6xdn"),
-"deadpoolpunch2": SubResource("Animation_o1hdw")
+"deadpoolpunch2": SubResource("Animation_o1hdw"),
+"dpwalk": SubResource("Animation_8gwj4")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_epjal"]
@@ -215,8 +231,8 @@ position = Vector2(1696, 701)
 scale = Vector2(1.86938, 1.87592)
 texture = ExtResource("2_fud5q")
 flip_h = true
-hframes = 6
-frame = 4
+hframes = 9
+frame = 8
 
 [node name="DeadpoolP2Punch" type="Area2D" parent="DeadpoolP2/TextureRect"]
 
