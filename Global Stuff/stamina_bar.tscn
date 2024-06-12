@@ -8,7 +8,9 @@
 offset_right = 500.0
 offset_bottom = 300.0
 scale = Vector2(0.64, 0.6)
-value = 60.0
+value = 100.0
 texture_under = ExtResource("1_nmf8k")
 texture_progress = ExtResource("2_ucomg")
 script = ExtResource("3_wgtq4")
+
+[node name="Timer" type="Timer" parent="."]

@@ -11,6 +11,14 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	updateStamina()
+	if (value <= 0):
+		Stamina.start()
+		if (Stamina.time_left > 3):
+			Stamina.stop()
+			value = 100
 
 func updateStamina():
-	value = (Stamina.time_left-4)*12.5
+	if (Input.is_action_just_pressed("ui_K")):
+		pass
+	if (Input.is_action_just_pressed("ui_I")):
+		value -= 7
