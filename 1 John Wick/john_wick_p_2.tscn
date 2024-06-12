@@ -1,7 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://c7guufwi6t05k"]
+[gd_scene load_steps=16 format=3 uid="uid://c7guufwi6t05k"]
 
 [ext_resource type="Script" path="res://1 John Wick/john_wick_p_2.gd" id="1_27865"]
-[ext_resource type="Texture2D" uid="uid://ddir2jqddhtad" path="res://1 John Wick/JohnWick-sprite.png" id="2_7wlbd"]
+[ext_resource type="Texture2D" uid="uid://d0ndy0yy7fgms" path="res://1 John Wick/1JohnWick-sprite.png" id="2_m5rd5"]
 [ext_resource type="Script" path="res://1 John Wick/WickP2Hurtbox.gd" id="3_bvypt"]
 [ext_resource type="PackedScene" uid="uid://cff7g70o7h37h" path="res://Global Stuff/shield_p_2.tscn" id="4_oy6we"]
 [ext_resource type="Texture2D" uid="uid://c5pna55sxik60" path="res://1 John Wick/WickBubble2.png" id="4_q547k"]
@@ -187,13 +187,29 @@ tracks/2/keys = {
 "values": [Vector2(-53.3831, -53.3222), Vector2(34.9874, -75.3575)]
 }
 
+[sub_resource type="Animation" id="Animation_rwp0x"]
+resource_name = "johnwickwalk2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [7, 8, 9, 10, 11]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_i8hso"]
 _data = {
 "RESET": SubResource("Animation_6dipv"),
 "Wickcrouch1": SubResource("Animation_7erri"),
 "Wickidle1": SubResource("Animation_kfjsi"),
 "Wickjump1": SubResource("Animation_yy0yi"),
-"Wickpunch1": SubResource("Animation_b60ec")
+"Wickpunch1": SubResource("Animation_b60ec"),
+"johnwickwalk2": SubResource("Animation_rwp0x")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w2rdk"]
@@ -210,9 +226,10 @@ jump_time_to_descent = 0.3
 [node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(1692.03, 714.031)
 scale = Vector2(1.67031, 1.66031)
-texture = ExtResource("2_7wlbd")
+texture = ExtResource("2_m5rd5")
 flip_h = true
-hframes = 6
+hframes = 12
+frame = 11
 
 [node name="WickP2Punch" type="Area2D" parent="CharacterBody2D/TextureRect"]
 

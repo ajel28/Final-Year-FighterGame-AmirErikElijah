@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cbr6yliawxjan"]
+[gd_scene load_steps=18 format=3 uid="uid://cbr6yliawxjan"]
 
 [ext_resource type="Script" path="res://1 Raiden/raiden_p_1.gd" id="1_c2vda"]
 [ext_resource type="Texture2D" uid="uid://dbaul8jp5wjv" path="res://1 Raiden/1Raiden-sprite.png" id="2_yt3dl"]
@@ -115,13 +115,30 @@ tracks/0/keys = {
 "values": [4, 0]
 }
 
+[sub_resource type="Animation" id="Animation_hx7rj"]
+resource_name = "raidenwalk"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [7, 8, 9, 10, 11]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_k81x8"]
 _data = {
 "RESET": SubResource("Animation_a3xvp"),
 "raidencrouch1": SubResource("Animation_q6qt6"),
 "raidenidle1": SubResource("Animation_gh1a5"),
 "raidenjump1": SubResource("Animation_xmx72"),
-"raidenpunch1": SubResource("Animation_cva3a")
+"raidenpunch1": SubResource("Animation_cva3a"),
+"raidenwalk": SubResource("Animation_hx7rj")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6f00w"]
@@ -139,7 +156,8 @@ jump_time_to_descent = 0.3
 position = Vector2(329, 703)
 scale = Vector2(1.7675, 1.7675)
 texture = ExtResource("2_yt3dl")
-hframes = 6
+hframes = 12
+frame = 11
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(323.125, 707)

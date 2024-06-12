@@ -37,12 +37,14 @@ func jump():
 func get_input():
 	input.x = int(Input.is_action_pressed("ui_D")) - int(Input.is_action_pressed("ui_A"))
 	if int(Input.is_action_pressed("ui_A")) == 1:
+		animations.play("dpwalk")
 		punch = false
 		get_node("ShieldP1").hide()
 		Global.isAttacking=false
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_D")) == 1:
+		animations.play("dpwalk")
 		punch = false
 		get_node("ShieldP1").hide()
 		Global.isAttacking=false

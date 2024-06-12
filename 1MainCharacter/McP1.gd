@@ -35,11 +35,13 @@ func get_input():
 	input.x = int(Input.is_action_pressed("ui_D")) - int(Input.is_action_pressed("ui_A"))
 	if int(Input.is_action_pressed("ui_D")) == 1:
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
+		animationsMC1.play("mcwalk")
 		return input.normalized()
 		punch = false
 		get_node("ShieldP1").hide()
 	elif int(Input.is_action_pressed("ui_A")) == 1:
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
+		animationsMC1.play("mcwalk")
 		return input.normalized()
 		punch = false
 		get_node("ShieldP1").hide()
