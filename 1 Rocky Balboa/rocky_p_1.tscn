@@ -251,3 +251,4 @@ offset_bottom = 280.0
 texture = ExtResource("4_bx3jj")
 
 [connection signal="area_entered" from="CharacterBody2D/TextureRect/RockyP1Punch" to="CharacterBody2D" method="_on_rocky_p_1_punch_area_entered"]
+[connection signal="area_entered" from="CharacterBody2D/RockyP1Hurtbox" to="CharacterBody2D" method="_on_rocky_p_1_hurtbox_area_entered"]

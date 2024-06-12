@@ -62,3 +62,11 @@ func _on_jin_p_2_kick_area_entered(area):
 		if kick==true:
 			Global.healthp1-=3
 			print(Global.healthp1)
+
+
+func _on_jin_p_2_hurtbox_area_entered(area):
+	if (area is Med):
+		Global.healthp2+=5
+		area.queue_free()
+	if(Global.healthp2>=100):
+		Global.healthp2=100

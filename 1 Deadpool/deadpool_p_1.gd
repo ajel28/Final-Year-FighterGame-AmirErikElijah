@@ -103,5 +103,10 @@ func _on_deadpool_p_1_punch_area_entered(area):
 			$Fatality.play()
 
 func _on_deadpool_p_1_hurtbox_area_entered(area):
+	if (area is Med):
+		Global.healthp1+=5
+		area.queue_free()
+	if(Global.healthp1>=100):
+		Global.healthp1=100
 	if(Global.isAttacking==true and punch==false):
 		Global.needHChange == true

@@ -252,3 +252,4 @@ offset_bottom = 280.0
 texture = ExtResource("4_mp5ow")
 
 [connection signal="area_entered" from="CharacterBody2D/TextureRect/WickP1Punch" to="CharacterBody2D" method="_on_wick_p_1_punch_area_entered"]
+[connection signal="area_entered" from="CharacterBody2D/WickP1Hurtbox" to="CharacterBody2D" method="_on_wick_p_1_hurtbox_area_entered"]

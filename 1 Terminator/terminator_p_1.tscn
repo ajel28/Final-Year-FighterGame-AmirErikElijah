@@ -191,4 +191,5 @@ wait_time = 0.4
 autostart = true
 
 [connection signal="timeout" from="TermCharacterBody/termP1ShootingOrigin/Timer" to="TermCharacterBody/termP1ShootingOrigin" method="_on_timer_timeout"]
+[connection signal="area_entered" from="TermCharacterBody/TermP1Hurtbox" to="TermCharacterBody" method="_on_term_p_1_hurtbox_area_entered"]
 [connection signal="timeout" from="CanvasLayer/Reload1/Timer" to="CanvasLayer/Reload1" method="_on_timer_timeout"]

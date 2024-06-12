@@ -197,5 +197,6 @@ script = ExtResource("8_8s0tg")
 wait_time = 0.4
 autostart = true
 
+[connection signal="area_entered" from="CharacterBody2D/DJinHurtbox2" to="CharacterBody2D" method="_on_d_jin_hurtbox_2_area_entered"]
 [connection signal="timeout" from="CharacterBody2D/DJinShootOriginP1/Timer" to="CharacterBody2D/DJinShootOriginP1" method="_on_timer_timeout"]
 [connection signal="timeout" from="CanvasLayer/Reload1/Timer" to="CanvasLayer/Reload1" method="_on_timer_timeout"]

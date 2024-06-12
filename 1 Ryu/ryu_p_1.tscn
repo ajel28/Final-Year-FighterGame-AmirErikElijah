@@ -255,3 +255,4 @@ offset_bottom = 280.0
 texture = ExtResource("3_r70x6")
 
 [connection signal="area_entered" from="RyuP1/TextureRect/RyuPunch1" to="RyuP1" method="_on_ryu_punch_1_area_entered"]
+[connection signal="area_entered" from="RyuP1/RyuHurtboxP1" to="RyuP1" method="_on_ryu_hurtbox_p_1_area_entered"]
