@@ -13,7 +13,7 @@ func update():
 	value = $Timer2.time_left*250
 	
 func _input(event):
-	if Input.is_action_pressed("ui_U"):
+	if Input.is_action_pressed("ui_U") and $Timer2.time_left==0:
 		$Timer2.start()
 
 
