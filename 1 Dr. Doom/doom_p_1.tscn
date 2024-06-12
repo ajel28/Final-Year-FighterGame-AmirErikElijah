@@ -157,7 +157,7 @@ position = Vector2(352, 711)
 scale = Vector2(1.82063, 1.82135)
 texture = ExtResource("2_gtpe8")
 hframes = 11
-frame = 10
+frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoomP1"]
 position = Vector2(326.688, 711.25)
@@ -205,4 +205,5 @@ wait_time = 0.4
 autostart = true
 
 [connection signal="timeout" from="DoomP1/Marker2D/Timer" to="DoomP1/Marker2D" method="_on_timer_timeout"]
+[connection signal="area_entered" from="DoomP1/DoomP1Hurtbox" to="DoomP1" method="_on_doom_p_1_hurtbox_area_entered"]
 [connection signal="timeout" from="CanvasLayer/Reload1/Timer" to="CanvasLayer/Reload1" method="_on_timer_timeout"]

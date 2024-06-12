@@ -14,7 +14,7 @@ func update():
 	value = $Timer.time_left*250
 	
 func _input(event):
-	if Input.is_action_pressed("ui_Q"):
+	if Input.is_action_pressed("ui_Q") and $Timer.time_left==0:
 		$Timer.start()
 
 

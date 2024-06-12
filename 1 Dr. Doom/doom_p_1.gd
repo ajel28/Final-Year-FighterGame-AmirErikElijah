@@ -34,13 +34,11 @@ func get_input():
 	if int(Input.is_action_pressed("ui_A")) == 1:
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		animationsDoom1.play("doom_walk1")
-		$TextureRect.flip_h = true
 		get_node("ShieldP1").hide()
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_D")) == 1:
 		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
 		animationsDoom1.play("doom_walk1")
-		$TextureRect.flip_h = false
 		get_node("ShieldP1").hide()
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_S"))  == 1 and StaminaBar.Stamina.time_left>=4:
@@ -74,3 +72,11 @@ func player_movement(delta):
 		velocity = velocity.limit_length(max_speed)
 	move_and_slide()
 	global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
+
+
+func _on_doom_p_1_hurtbox_area_entered(area):
+	if (area is Med):
+		Global.healthp1+=5
+		area.queue_free()
+	if(Global.healthp1>=100):
+		Global.healthp1=100
