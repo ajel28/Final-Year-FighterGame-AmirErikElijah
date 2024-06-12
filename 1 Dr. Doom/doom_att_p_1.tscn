@@ -26,21 +26,21 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yjdkl"]
-size = Vector2(97, 132.875)
+size = Vector2(97, 175)
 
 [node name="doomAttP1" type="Area2D"]
 position = Vector2(-5, -6)
 script = ExtResource("1_ny2ve")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(569.062, 622.062)
-scale = Vector2(0.960556, 0.960556)
+position = Vector2(466.562, 519.562)
+scale = Vector2(1.87166, 1.87166)
 sprite_frames = SubResource("SpriteFrames_av0un")
 animation = &"gb"
 frame_progress = 0.0391416
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(631.5, 616.562)
+position = Vector2(621, 507.5)
 shape = SubResource("RectangleShape2D_yjdkl")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
