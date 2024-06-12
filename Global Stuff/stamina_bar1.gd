@@ -13,7 +13,5 @@ func _process(delta):
 	updateStamina()
 
 func updateStamina():
-	if (Input.is_action_just_pressed("ui_S")):
-		pass
-	if (Input.is_action_just_pressed("ui_W")):
-		value -= 7
+	value = Stamina.time_left * 12.5-50
+		

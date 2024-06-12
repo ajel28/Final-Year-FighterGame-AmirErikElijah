@@ -130,6 +130,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [7, 8, 9, 10]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TerminatorP2Hurtbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_l8kb1"]
 _data = {
@@ -158,10 +170,10 @@ scale = Vector2(1.63, 1.63)
 texture = ExtResource("2_nd0fh")
 flip_h = true
 hframes = 11
-frame = 10
+frame = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TermCharacterBody2"]
-position = Vector2(1724.5, 718.75)
+position = Vector2(1656, 718)
 shape = SubResource("RectangleShape2D_iby2u")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="TermCharacterBody2"]
@@ -181,7 +193,7 @@ autostart = true
 [node name="TerminatorP2Hurtbox" type="Area2D" parent="TermCharacterBody2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TermCharacterBody2/TerminatorP2Hurtbox"]
-position = Vector2(1707.5, 718.625)
+position = Vector2(1637, 719)
 shape = SubResource("RectangleShape2D_s7vr6")
 disabled = true
 

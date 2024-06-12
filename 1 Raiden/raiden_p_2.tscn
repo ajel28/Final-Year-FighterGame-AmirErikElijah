@@ -130,6 +130,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [7, 8, 9, 10, 11]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RaidenHurtboxP2/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fsynv"]
 _data = {
@@ -158,7 +170,7 @@ scale = Vector2(1.79563, 1.79563)
 texture = ExtResource("2_0xqlu")
 flip_h = true
 hframes = 12
-frame = 11
+frame = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(1715.12, 706.5)

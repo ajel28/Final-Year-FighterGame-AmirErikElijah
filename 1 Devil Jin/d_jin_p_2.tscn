@@ -142,6 +142,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [6, 7, 8, 9]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DJinHurtbox2/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xmxp6"]
 _data = {
@@ -170,7 +182,7 @@ scale = Vector2(1.67617, 1.82809)
 texture = ExtResource("2_8cgjm")
 flip_h = true
 hframes = 10
-frame = 6
+frame = 9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(1719, 697.5)

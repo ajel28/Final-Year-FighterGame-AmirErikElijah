@@ -119,6 +119,34 @@ tracks/2/keys = {
 "values": [true, true, true]
 }
 
+[sub_resource type="Animation" id="Animation_byr2w"]
+resource_name = "jinwalk"
+length = 0.35
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [8, 9, 10, 11]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("JinP2Hurtbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
+}
+
 [sub_resource type="Animation" id="Animation_5d3qk"]
 resource_name = "kick2"
 length = 0.5
@@ -159,22 +187,6 @@ tracks/2/keys = {
 "values": [Vector2(15.8677, -55.2066), Vector2(-67.9845, 9.76266), Vector2(23.8016, -53.8843)]
 }
 
-[sub_resource type="Animation" id="Animation_byr2w"]
-resource_name = "jinwalk"
-length = 0.35
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("TextureRect:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [8, 9, 10, 11]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_i6ygw"]
 _data = {
 "RESET": SubResource("Animation_k74ws"),
@@ -201,7 +213,7 @@ scale = Vector2(1.665, 1.665)
 texture = ExtResource("2_ha5rb")
 flip_h = true
 hframes = 12
-frame = 6
+frame = 11
 
 [node name="JinP2Kick" type="Area2D" parent="JinP2/TextureRect"]
 

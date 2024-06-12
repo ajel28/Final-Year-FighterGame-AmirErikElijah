@@ -186,6 +186,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [7, 8, 9, 10]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MCP2Hurtbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vjnem"]
 _data = {
@@ -217,7 +229,7 @@ scale = Vector2(1.655, 1.655)
 texture = ExtResource("2_j74h6")
 flip_h = true
 hframes = 11
-frame = 2
+frame = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="McP2"]
 position = Vector2(1716.59, 716)

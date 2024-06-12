@@ -7,7 +7,7 @@ class_name dpP2
 @export var jump_time_to_peak : float
 @export var jump_time_to_descent: float
 
-var knockbackPower: int=500
+var knockbackPower: int=700
 
 @onready var jump_velocity : float = ((2.0 * jump_height) / jump_time_to_peak) * -1.0
 @onready var jump_gravity : float = ((-2.0 * jump_height) / (jump_time_to_peak *jump_time_to_peak)) * -1.0
@@ -110,3 +110,8 @@ func _on_deadpool_p_2_hurtbox_area_entered(area):
 		area.queue_free()
 	if(Global.healthp2>=100):
 		Global.healthp2=100
+	
+func knockback():
+	var knocbackdirection = -velocity.normalized() * knockbackPower
+	velocity = knocbackdirection
+	move_and_slide()
