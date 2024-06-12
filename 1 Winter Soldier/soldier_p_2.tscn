@@ -1,7 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://dcw05bdd7621p"]
+[gd_scene load_steps=16 format=3 uid="uid://dcw05bdd7621p"]
 
 [ext_resource type="Script" path="res://1 Winter Soldier/soldier_p_2.gd" id="1_t5xny"]
-[ext_resource type="Texture2D" uid="uid://c0pjeeb1btg7m" path="res://1 Winter Soldier/1WinterSoldier-sprite.png" id="2_j6gx7"]
+[ext_resource type="Texture2D" uid="uid://b0o1flskrjp2c" path="res://1 Winter Soldier/1WinterSoldier-spritefinal.png" id="2_8ipco"]
 [ext_resource type="Script" path="res://1 Winter Soldier/SoldierP2Hurtbox.gd" id="3_yq3i1"]
 [ext_resource type="PackedScene" uid="uid://cff7g70o7h37h" path="res://Global Stuff/shield_p_2.tscn" id="4_ac5kk"]
 [ext_resource type="Texture2D" uid="uid://ct7imn3lcml0t" path="res://1 Winter Soldier/SoldBubble2.png" id="4_pvqo2"]
@@ -149,7 +149,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_oyeh0"]
 resource_name = "buckypunch"
-length = 0.3
+length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -157,10 +157,10 @@ tracks/0/path = NodePath("TextureRect:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [4, 1]
+"values": [1, 4, 1]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -187,13 +187,30 @@ tracks/2/keys = {
 "values": [Vector2(-42.5373, -56.7164), Vector2(55.2239, -85.0746)]
 }
 
+[sub_resource type="Animation" id="Animation_7yn4j"]
+resource_name = "wswalk"
+length = 0.35
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [7, 8, 9, 6]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_r8p1l"]
 _data = {
 "RESET": SubResource("Animation_8wk51"),
 "buckycrouch": SubResource("Animation_jy606"),
 "buckyidle": SubResource("Animation_ldial"),
 "buckyjump": SubResource("Animation_4084e"),
-"buckypunch": SubResource("Animation_oyeh0")
+"buckypunch": SubResource("Animation_oyeh0"),
+"wswalk": SubResource("Animation_7yn4j")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_drr6n"]
@@ -210,9 +227,9 @@ jump_time_to_descent = 0.3
 [node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(1696, 724)
 scale = Vector2(1.49, 1.49)
-texture = ExtResource("2_j6gx7")
+texture = ExtResource("2_8ipco")
 flip_h = true
-hframes = 6
+hframes = 10
 frame = 4
 
 [node name="SoldierP2Punch" type="Area2D" parent="CharacterBody2D/TextureRect"]

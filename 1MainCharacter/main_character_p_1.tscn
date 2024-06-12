@@ -133,7 +133,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_q44im"]
 resource_name = "mc_punch"
-length = 0.1
+length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -141,10 +141,10 @@ tracks/0/path = NodePath("McP1/MC1:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [3]
+"values": [2, 3, 2]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -204,7 +204,7 @@ position = Vector2(340.5, 712.5)
 scale = Vector2(1.655, 1.655)
 texture = ExtResource("2_ocgkn")
 hframes = 11
-frame = 10
+frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="McP1"]
 position = Vector2(329.625, 712.375)

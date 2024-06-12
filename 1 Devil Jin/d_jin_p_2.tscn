@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=3 uid="uid://b3x0om87oxver"]
 
 [ext_resource type="Script" path="res://1 Devil Jin/d_jin_p_2.gd" id="1_b6owt"]
-[ext_resource type="Texture2D" path="res://1 Devil Jin/1DJin-sprite.png" id="2_8cgjm"]
+[ext_resource type="Texture2D" uid="uid://da54d6ql1mul1" path="res://1 Devil Jin/1DJin-sprite.png" id="2_8cgjm"]
 [ext_resource type="Script" path="res://1 Devil Jin/DJinShootOrigin2.gd" id="3_cd55g"]
 [ext_resource type="Texture2D" uid="uid://cechwde1tey00" path="res://1 Devil Jin/DJinBubble2.png" id="3_l8kas"]
 [ext_resource type="PackedScene" uid="uid://cim1wspmh5x5t" path="res://1 Devil Jin/d_jin_attack_p_2.tscn" id="4_sc1e2"]

@@ -1,7 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://dy4hc4dsyy4b1"]
+[gd_scene load_steps=18 format=3 uid="uid://dy4hc4dsyy4b1"]
 
 [ext_resource type="Script" path="res://1 Terminator/terminator_p_2.gd" id="1_e3l6d"]
-[ext_resource type="Texture2D" uid="uid://c5fomil7lxriq" path="res://1 Terminator/1Terminator-sprite.png" id="2_no8hn"]
+[ext_resource type="Texture2D" uid="uid://dwitgebhswbql" path="res://1 Terminator/1Terminator-spritefinal.png" id="2_nd0fh"]
 [ext_resource type="Script" path="res://1 Terminator/termP2ShootingOrigin.gd" id="3_j7oqr"]
 [ext_resource type="PackedScene" uid="uid://cf1vmxpxdha5o" path="res://1 Terminator/terminator_fire_ball_p_2.tscn" id="4_sp3al"]
 [ext_resource type="PackedScene" uid="uid://cff7g70o7h37h" path="res://Global Stuff/shield_p_2.tscn" id="5_ms6i4"]
@@ -115,13 +115,30 @@ tracks/0/keys = {
 "values": [4]
 }
 
+[sub_resource type="Animation" id="Animation_mbl4o"]
+resource_name = "termwalk"
+length = 0.35
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [7, 8, 9, 10]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_l8kb1"]
 _data = {
 "RESET": SubResource("Animation_hh0ea"),
 "termcrouch": SubResource("Animation_ifml2"),
 "termidle": SubResource("Animation_pnsov"),
 "termjump": SubResource("Animation_td0ou"),
-"termpunch": SubResource("Animation_k7k1g")
+"termpunch": SubResource("Animation_k7k1g"),
+"termwalk": SubResource("Animation_mbl4o")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s7vr6"]
@@ -138,10 +155,10 @@ jump_time_to_descent = 0.3
 [node name="TextureRect" type="Sprite2D" parent="TermCharacterBody2"]
 position = Vector2(1652, 713)
 scale = Vector2(1.63, 1.63)
-texture = ExtResource("2_no8hn")
+texture = ExtResource("2_nd0fh")
 flip_h = true
-hframes = 6
-frame = 2
+hframes = 11
+frame = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TermCharacterBody2"]
 position = Vector2(1724.5, 718.75)

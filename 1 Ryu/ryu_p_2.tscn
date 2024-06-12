@@ -137,7 +137,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_c6q31"]
 resource_name = "ryupunch2"
-length = 0.3
+length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -145,10 +145,10 @@ tracks/0/path = NodePath("TextureRect:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [5, 1]
+"values": [1, 5, 1]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -218,7 +218,7 @@ scale = Vector2(1.7475, 1.7475)
 texture = ExtResource("2_tdgjb")
 flip_h = true
 hframes = 12
-frame = 11
+frame = 5
 
 [node name="RyuPunch2" type="Area2D" parent="RyuP2"]
 
