@@ -169,10 +169,10 @@ tracks/2/path = NodePath("TextureRect/RyuPunch1/CollisionShape2D:disabled")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [false, true]
+"values": [true, false, true]
 }
 
 [sub_resource type="Animation" id="Animation_gquni"]
@@ -229,7 +229,7 @@ position = Vector2(333.75, 709.25)
 scale = Vector2(1.7425, 1.7425)
 texture = ExtResource("2_q3n4w")
 hframes = 12
-frame = 2
+frame = 5
 
 [node name="RyuPunch1" type="Area2D" parent="RyuP1/TextureRect"]
 position = Vector2(-191.535, -407.03)
