@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://biq0onn55efc5"]
+
+[ext_resource type="Texture2D" uid="uid://ch1sj7qbhkgd0" path="res://Global Stuff/reloadbar.png" id="1_ly1rj"]
+
+[node name="ReloadBarP1" type="Node2D"]
+
+[node name="Reload1" type="TextureProgressBar" parent="."]
+offset_left = 24.0
+offset_top = 1028.0
+offset_right = 174.0
+offset_bottom = 1083.0
+value = 100.0
+texture_progress = ExtResource("1_ly1rj")
