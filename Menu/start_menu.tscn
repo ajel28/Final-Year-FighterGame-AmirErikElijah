@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://3fqdwtr0ackl"]
 
 [ext_resource type="Script" path="res://Menu/start_menu.gd" id="1_uw3vl"]
-[ext_resource type="Texture2D" uid="uid://vxpi730y804m" path="res://Menu/TitleScreen.png" id="2_vk4qr"]
+[ext_resource type="Texture2D" uid="uid://ob2m770ep77s" path="res://Menu/Title Screen.pptx (8).png" id="2_ldtho"]
 [ext_resource type="AudioStream" uid="uid://bqt5dts6nv11v" path="res://Menu/LobbyMusic.mp3" id="3_vd1p0"]
 
 [node name="StartMenu" type="Control"]
@@ -20,7 +20,7 @@ offset_left = -50.0
 offset_top = -44.0
 offset_right = 1924.0
 offset_bottom = 1113.0
-texture = ExtResource("2_vk4qr")
+texture = ExtResource("2_ldtho")
 
 [node name="ExitButton" type="LinkButton" parent="."]
 layout_mode = 0

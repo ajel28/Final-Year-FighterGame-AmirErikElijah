@@ -52,12 +52,12 @@ fill_mode = 1
 script = ExtResource("5_nirvn")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 856.0
-offset_top = 112.0
-offset_right = 1106.0
-offset_bottom = 311.0
+offset_left = 869.0
+offset_top = 121.0
+offset_right = 1119.0
+offset_bottom = 320.0
 theme_override_fonts/font = SubResource("FontVariation_4i4ft")
-theme_override_font_sizes/font_size = 150
+theme_override_font_sizes/font_size = 135
 text = "90"
 script = ExtResource("9_b5c2q")
 tied = ExtResource("10_ja5al")

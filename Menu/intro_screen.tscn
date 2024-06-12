@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://n88vcest8wk4"]
 
 [ext_resource type="Script" path="res://Menu/intro_screen.gd" id="1_xdcgs"]
-[ext_resource type="Texture2D" uid="uid://ddeky3v4yehjd" path="res://Menu/Creators.png" id="2_7qmce"]
+[ext_resource type="Texture2D" uid="uid://dnu4rnllisgpb" path="res://Menu/Intro (4).png" id="2_srspu"]
 
 [node name="IntroScreen" type="Node2D"]
 script = ExtResource("1_xdcgs")
@@ -12,7 +12,7 @@ offset_top = -44.0
 offset_right = 2966.0
 offset_bottom = 1998.0
 scale = Vector2(0.654447, 0.566739)
-texture = ExtResource("2_7qmce")
+texture = ExtResource("2_srspu")
 
 [node name="IntroBack" type="LinkButton" parent="."]
 offset_left = 1187.0
