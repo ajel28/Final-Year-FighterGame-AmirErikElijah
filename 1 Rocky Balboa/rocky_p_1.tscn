@@ -1,7 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://886767g7i8lg"]
+[gd_scene load_steps=16 format=3 uid="uid://886767g7i8lg"]
 
 [ext_resource type="Script" path="res://1 Rocky Balboa/rocky_p_1.gd" id="1_snoko"]
-[ext_resource type="Texture2D" uid="uid://tmw6qxjouv53" path="res://1 Rocky Balboa/Rocky-sprite.png" id="2_v7hqh"]
+[ext_resource type="Texture2D" uid="uid://cus5vkroj7igd" path="res://1 Rocky Balboa/1Rocky-sprite.png" id="2_66eqr"]
 [ext_resource type="Script" path="res://1 Rocky Balboa/RockyP1Hurtbox.gd" id="3_bphvm"]
 [ext_resource type="Texture2D" uid="uid://rwo2hxvw4rbx" path="res://1 Rocky Balboa/RockyBubble1.png" id="4_bx3jj"]
 [ext_resource type="PackedScene" uid="uid://dqk5kdbbaimir" path="res://Global Stuff/shield_p_1.tscn" id="4_jv0aa"]
@@ -149,7 +149,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_dq7va"]
 resource_name = "rockypunch1"
-length = 0.25
+length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -157,10 +157,10 @@ tracks/0/path = NodePath("TextureRect:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [3, 0]
+"values": [0, 3, 0]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -187,13 +187,30 @@ tracks/2/keys = {
 "values": [Vector2(58.2462, -44.0869), Vector2(-23.8134, -80.1287)]
 }
 
+[sub_resource type="Animation" id="Animation_ijdkv"]
+resource_name = "rockywalk"
+length = 0.45
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [6, 7, 8, 9, 10]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ay6a2"]
 _data = {
 "RESET": SubResource("Animation_j0j56"),
 "rockycrouch1": SubResource("Animation_mqm06"),
 "rockyidle1": SubResource("Animation_m1hbg"),
 "rockyjump1": SubResource("Animation_wp78g"),
-"rockypunch1": SubResource("Animation_dq7va")
+"rockypunch1": SubResource("Animation_dq7va"),
+"rockywalk": SubResource("Animation_ijdkv")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mwsv7"]
@@ -210,8 +227,9 @@ jump_time_to_descent = 0.3
 [node name="TextureRect" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(362, 710)
 scale = Vector2(1.68438, 1.68438)
-texture = ExtResource("2_v7hqh")
-hframes = 6
+texture = ExtResource("2_66eqr")
+hframes = 11
+frame = 6
 
 [node name="RockyP1Punch" type="Area2D" parent="CharacterBody2D/TextureRect"]
 

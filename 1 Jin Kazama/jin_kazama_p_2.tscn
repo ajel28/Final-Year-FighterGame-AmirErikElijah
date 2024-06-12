@@ -1,7 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://c0soaw4janyg2"]
+[gd_scene load_steps=15 format=3 uid="uid://c0soaw4janyg2"]
 
 [ext_resource type="Script" path="res://1 Jin Kazama/JinP2.gd" id="1_qa0yt"]
-[ext_resource type="Texture2D" uid="uid://deownb54lwa1w" path="res://1 Jin Kazama/kazama-sprite.png" id="2_abo3y"]
+[ext_resource type="Texture2D" uid="uid://mym1g2ujhonl" path="res://1 Jin Kazama/1JinKazama-spritesheet.png" id="2_ha5rb"]
 [ext_resource type="Script" path="res://1 Jin Kazama/JinP2Hurtbox.gd" id="3_2w8xe"]
 [ext_resource type="PackedScene" uid="uid://cff7g70o7h37h" path="res://Global Stuff/shield_p_2.tscn" id="4_nsx3d"]
 [ext_resource type="Texture2D" uid="uid://d0qny66uvr4x2" path="res://1 Jin Kazama/JinBubble2.png" id="5_kdqmb"]
@@ -121,7 +121,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_5d3qk"]
 resource_name = "kick2"
-length = 0.6
+length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -159,11 +159,28 @@ tracks/2/keys = {
 "values": [Vector2(15.8677, -55.2066), Vector2(-67.9845, 9.76266), Vector2(23.8016, -53.8843)]
 }
 
+[sub_resource type="Animation" id="Animation_byr2w"]
+resource_name = "jinwalk"
+length = 0.35
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [8, 9, 10, 11]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_i6ygw"]
 _data = {
 "RESET": SubResource("Animation_k74ws"),
 "crouch2": SubResource("Animation_hfve4"),
 "idle2": SubResource("Animation_8ii4g"),
+"jinwalk": SubResource("Animation_byr2w"),
 "kick2": SubResource("Animation_5d3qk")
 }
 
@@ -174,13 +191,17 @@ size = Vector2(206.25, 329)
 
 [node name="JinP2" type="CharacterBody2D" parent="."]
 script = ExtResource("1_qa0yt")
+jump_height = 700.0
+jump_time_to_peak = 0.5
+jump_time_to_descent = 0.3
 
 [node name="TextureRect" type="Sprite2D" parent="JinP2"]
 position = Vector2(1684.5, 707.305)
 scale = Vector2(1.665, 1.665)
-texture = ExtResource("2_abo3y")
+texture = ExtResource("2_ha5rb")
 flip_h = true
-hframes = 7
+hframes = 12
+frame = 6
 
 [node name="JinP2Kick" type="Area2D" parent="JinP2/TextureRect"]
 

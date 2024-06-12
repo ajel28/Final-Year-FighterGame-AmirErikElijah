@@ -133,7 +133,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_atsfe"]
 resource_name = "mc_punch"
-length = 0.3
+length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -141,10 +141,10 @@ tracks/0/path = NodePath("MC2:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [3, 2]
+"values": [2, 3, 2]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -217,7 +217,7 @@ scale = Vector2(1.655, 1.655)
 texture = ExtResource("2_j74h6")
 flip_h = true
 hframes = 11
-frame = 10
+frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="McP2"]
 position = Vector2(1716.59, 716)
