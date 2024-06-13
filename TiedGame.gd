@@ -13,3 +13,7 @@ func _process(delta):
 
 func _on_link_button_pressed():
 	get_tree().change_scene_to_file("res://Menu/start_menu.tscn")
+	Global.healthp1=100
+	Global.healthp2=100
+	Global.player=1
+	Global.map=0
