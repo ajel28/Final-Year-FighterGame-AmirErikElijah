@@ -86,7 +86,7 @@ func player_movement(delta):
 func _on_mc_punch_p_1_area_entered(area):
 	if !(area is Med):
 		if punch==true:
-			Global.healthp2-=4
+			Global.healthp2-=6
 			print(Global.healthp2)
 
 

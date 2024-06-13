@@ -13,6 +13,6 @@ func _on_area_entered(area):
 	elif (area is Med):
 		area.queue_free()
 	elif !(area is TermFireballPlayer2):
-		Global.healthp1-=3
+		Global.healthp1-=5
 		print(Global.healthp1)
 		self.queue_free()
