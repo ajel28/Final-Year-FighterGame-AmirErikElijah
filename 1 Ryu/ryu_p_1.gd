@@ -89,7 +89,7 @@ func player_movement(delta):
 func _on_ryu_punch_1_area_entered(area):
 	if !(area is RyuHurtbox1 and Med):
 		if punch==true:
-			Global.healthp2-=3
+			Global.healthp2-=4
 			print(Global.healthp2)
 
 
