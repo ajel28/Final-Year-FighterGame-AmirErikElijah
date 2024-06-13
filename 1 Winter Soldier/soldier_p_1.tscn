@@ -271,7 +271,6 @@ frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/TextureRect/SoldierP1Punch"]
 position = Vector2(42.6583, -54.4832)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_5y4ve")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]

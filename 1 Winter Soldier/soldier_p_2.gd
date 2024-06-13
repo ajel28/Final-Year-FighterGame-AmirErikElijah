@@ -89,8 +89,15 @@ func _on_soldier_p_2_punch_area_entered(area):
 
 
 func _on_soldier_p_2_hurtbox_area_entered(area):
-	if (area is Med):
+	if !(area is Med):
+		$TextureRect.modulate = Color.RED
+		await get_tree().create_timer(0.1).timeout
+		$TextureRect.modulate = Color.WHITE
+	elif (area is Med):
 		Global.healthp2+=5
 		area.queue_free()
+		$TextureRect.modulate = Color.GREEN_YELLOW
+		await get_tree().create_timer(0.1).timeout
+		$TextureRect.modulate = Color.WHITE
 	if(Global.healthp2>=100):
 		Global.healthp2=100

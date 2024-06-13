@@ -90,8 +90,16 @@ func _on_mc_punch_p_2_area_entered(area):
 
 
 func _on_mcp_2_hurtbox_area_entered(area):
-	if (area is Med):
+	if !(area is Med):
+		$MC2.modulate = Color.RED
+		await get_tree().create_timer(0.1).timeout
+		$MC2.modulate = Color.WHITE
+		
+	elif (area is Med):
 		Global.healthp2+=5
 		area.queue_free()
+		$MC2.modulate = Color.GREEN_YELLOW
+		await get_tree().create_timer(0.1).timeout
+		$MC2.modulate = Color.WHITE
 	if(Global.healthp2>=100):
 		Global.healthp2=100

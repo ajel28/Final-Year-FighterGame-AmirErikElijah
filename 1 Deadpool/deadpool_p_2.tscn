@@ -251,7 +251,6 @@ hframes = 9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeadpoolP2/TextureRect/DeadpoolP2Punch"]
 position = Vector2(-47.0079, -35.8093)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_t24q1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeadpoolP2"]
