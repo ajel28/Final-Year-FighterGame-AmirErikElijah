@@ -85,7 +85,7 @@ func player_movement(delta):
 func _on_rocky_p_2_punch_area_entered(area):
 	if !(area is RockyHurtbox2):
 		if punch==true:
-			Global.healthp2-=3
+			Global.healthp2-=4
 			print(Global.healthp2)
 
 
