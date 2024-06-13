@@ -41,14 +41,14 @@ func get_input():
 		punch = false
 		get_node("ShieldP2").hide()
 		Global.isAttacking=false
-		global_position = global_position.clamp(Vector2(-1550,-999), Vector2(0,750))
+		global_position = global_position.clamp(Vector2(-1550,-999), Vector2(50,750))
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_J")) == 1:
 		animationsDp2.play("dpwalk")
 		punch = false
 		get_node("ShieldP2").hide()
 		Global.isAttacking=false
-		global_position = global_position.clamp(Vector2(-1550,-999), Vector2(0,750))
+		global_position = global_position.clamp(Vector2(-1550,-999), Vector2(50,750))
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_K"))  == 1 and StaminaBar.Stamina.time_left>=4:
 		punch = false
@@ -88,7 +88,7 @@ func player_movement(delta):
 		velocity += (input * accel * delta)
 		velocity = velocity.limit_length(max_speed)
 	move_and_slide()
-	global_position = global_position.clamp(Vector2(-1550,-999), Vector2(0,750))
+	global_position = global_position.clamp(Vector2(-1550,-999), Vector2(50,750))
 
 
 func _on_deadpool_p_2_punch_area_entered(area):

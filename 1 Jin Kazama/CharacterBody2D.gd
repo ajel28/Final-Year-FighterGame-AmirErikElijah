@@ -33,13 +33,13 @@ func jump():
 func get_input():
 	input.x = int(Input.is_action_pressed("ui_D")) - int(Input.is_action_pressed("ui_A"))
 	if int(Input.is_action_pressed("ui_D")) == 1:
-		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
+		global_position = global_position.clamp(Vector2(-180,-999), Vector2(1400,750))
 		animationsJinp1.play("jinwalk")
 		get_node("ShieldP1").hide()
 		return input.normalized()
 		kick=false
 	elif int(Input.is_action_pressed("ui_A")) == 1:
-		global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
+		global_position = global_position.clamp(Vector2(-180,-999), Vector2(1400,750))
 		animationsJinp1.play("jinwalk")
 		get_node("ShieldP1").hide()
 		return input.normalized()
@@ -74,7 +74,7 @@ func player_movement(delta):
 		velocity += ((input * accel * delta))
 		velocity = velocity.limit_length(max_speed)
 	move_and_slide()
-	global_position = global_position.clamp(Vector2(-150,-999), Vector2(1400,750))
+	global_position = global_position.clamp(Vector2(-180,-999), Vector2(1400,750))
 
 
 func _on_kick_area_2d_area_entered(area):

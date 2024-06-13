@@ -37,13 +37,13 @@ func jump():
 func get_input():
 	input.x = int(Input.is_action_pressed("ui_L")) - int(Input.is_action_pressed("ui_J"))
 	if int(Input.is_action_pressed("ui_L")) == 1:
-		global_position = global_position.clamp(Vector2(-1550,-999), Vector2(0,750))
+		global_position = global_position.clamp(Vector2(-1550,-999), Vector2(50,750))
 		animationsRyu2.play("ryuwalk2")
 		punch = false
 		get_node("ShieldP2").hide()
 		return input.normalized()
 	elif int(Input.is_action_pressed("ui_J")) == 1:
-		global_position = global_position.clamp(Vector2(-1550,-999), Vector2(0,750))
+		global_position = global_position.clamp(Vector2(-1550,-999), Vector2(50,750))
 		animationsRyu2.play("ryuwalk2")
 		punch = false
 		get_node("ShieldP2").hide()
@@ -81,7 +81,7 @@ func player_movement(delta):
 		velocity += (input * accel * delta)
 		velocity = velocity.limit_length(max_speed)
 	move_and_slide()
-	global_position = global_position.clamp(Vector2(-1550,-999), Vector2(0,750))
+	global_position = global_position.clamp(Vector2(-1550,-999), Vector2(50,750))
 
 
 func _on_ryu_punch_2_area_entered(area):
