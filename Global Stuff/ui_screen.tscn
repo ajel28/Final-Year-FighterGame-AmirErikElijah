@@ -64,5 +64,5 @@ script = ExtResource("9_b5c2q")
 tied = ExtResource("10_ja5al")
 
 [node name="Timer" type="Timer" parent="Label"]
-wait_time = 61.0
+wait_time = 91.0
 one_shot = true
