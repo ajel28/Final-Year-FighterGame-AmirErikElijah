@@ -6,7 +6,6 @@
 [ext_resource type="Script" path="res://1 Ryu/RyuHurtboxP2.gd" id="3_gumdg"]
 [ext_resource type="PackedScene" uid="uid://cff7g70o7h37h" path="res://Global Stuff/shield_p_2.tscn" id="4_t5ntr"]
 
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n1bn0"]
 size = Vector2(56, 57)
 
@@ -138,7 +137,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_c6q31"]
 resource_name = "ryupunch2"
-length = 0.3
+length = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -231,7 +230,7 @@ scale = Vector2(1.7475, 1.7475)
 texture = ExtResource("2_tdgjb")
 flip_h = true
 hframes = 12
-frame = 5
+frame = 1
 
 [node name="RyuPunch2" type="Area2D" parent="RyuP2"]
 

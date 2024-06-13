@@ -133,7 +133,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_q44im"]
 resource_name = "mc_punch"
-length = 0.5
+length = 0.3
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true

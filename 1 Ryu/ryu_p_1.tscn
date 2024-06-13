@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://bcul6xipib1q8" path="res://1 Ryu/RyuBubble1.png" id="3_r70x6"]
 [ext_resource type="PackedScene" uid="uid://dqk5kdbbaimir" path="res://Global Stuff/shield_p_1.tscn" id="4_m38fs"]
 
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_583e0"]
 size = Vector2(40, 44.9999)
 
@@ -138,7 +137,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_8kmgq"]
 resource_name = "ryupunch"
-length = 0.3
+length = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -230,7 +229,7 @@ position = Vector2(333.75, 709.25)
 scale = Vector2(1.7425, 1.7425)
 texture = ExtResource("2_q3n4w")
 hframes = 12
-frame = 5
+frame = 2
 
 [node name="RyuPunch1" type="Area2D" parent="RyuP1/TextureRect"]
 position = Vector2(-191.535, -407.03)
