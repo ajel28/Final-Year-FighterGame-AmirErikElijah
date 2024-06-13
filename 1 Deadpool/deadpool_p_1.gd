@@ -97,7 +97,7 @@ func _on_deadpool_p_1_punch_area_entered(area):
 		if punch==true:
 			Global.hitsInRowP2 = 0
 			Global.hitsInRowP1+=1;
-			Global.healthp2-=4
+			Global.healthp2-=6
 			print(Global.healthp2)
 		if Global.hitsInRowP1 == 3:
 			$Triple.play()

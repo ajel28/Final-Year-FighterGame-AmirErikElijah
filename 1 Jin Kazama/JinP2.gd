@@ -79,7 +79,7 @@ func player_movement(delta):
 func _on_jin_p_2_kick_area_entered(area):
 	if !(area is JinHurtbox2 and Med):
 		if kick==true:
-			Global.healthp1-=4
+			Global.healthp1-=6
 			print(Global.healthp1)
 
 
