@@ -1,16 +1,43 @@
 extends TextureProgressBar
 class_name StaminaBarP2
-var Stamina = Timer.new()
+@onready var Stamina = $TextureProgressBar
+var can_regen = false
+var time_to_wait = 2
+var s_timer = 0
+var can_start_timer = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	Stamina.set_wait_time(12)
-	Stamina.autostart=true
-	add_child(Stamina)
+	value = max_value
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	updateStamina()
+	if (can_regen == false && value != 100 or value <= 0):
+		can_start_timer = true
+		if (can_start_timer):
+			s_timer += delta
+			if (s_timer >= time_to_wait):
+				can_regen = true
+				can_start_timer = false
+				s_timer = 0
 
-func updateStamina():
-	value = Stamina.time_left*12.5-50
+	if (value < 0):
+		value = 0
+
+	if (value == 100):
+		can_regen = false
+	
+	if (can_regen == true):
+		value += 1
+		can_start_timer = false
+		s_timer = 0
+		
+	if (Input.is_action_just_pressed("ui_I")):
+		value -= 10
+		can_regen = false
+		s_timer = 0
+	
+	if (Input.is_action_just_pressed("ui_K")):
+		value -= 15
+		can_regen = false
+		s_timer = 0
