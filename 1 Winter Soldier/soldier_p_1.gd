@@ -81,7 +81,7 @@ func player_movement(delta):
 	global_position = global_position.clamp(Vector2(-180,-999), Vector2(1400,750))
 
 func _on_soldier_p_1_punch_area_entered(area):
-	if !(area is SoldierHurtbox1):
+	if !(area is SoldierHurtbox1 and Med):
 		if punch==true:
 			Global.healthp2-=4
 			print(Global.healthp2)

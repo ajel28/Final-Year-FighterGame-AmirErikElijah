@@ -92,7 +92,7 @@ func player_movement(delta):
 
 
 func _on_deadpool_p_2_punch_area_entered(area):
-	if !(area is DeadpoolHurtbox2):
+	if !(area is DeadpoolHurtbox2 and Med):
 		if punch==true:
 			Global.hitsInRowP1 = 0
 			Global.hitsInRowP2+=1;

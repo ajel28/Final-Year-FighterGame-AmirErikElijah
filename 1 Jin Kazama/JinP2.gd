@@ -77,7 +77,7 @@ func player_movement(delta):
 	global_position = global_position.clamp(Vector2(-1550,-999), Vector2(50,750))
 	
 func _on_jin_p_2_kick_area_entered(area):
-	if !(area is JinHurtbox2):
+	if !(area is JinHurtbox2 and Med):
 		if kick==true:
 			Global.healthp1-=4
 			print(Global.healthp1)

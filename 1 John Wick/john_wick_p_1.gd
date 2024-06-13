@@ -82,7 +82,7 @@ func player_movement(delta):
 
 
 func _on_wick_p_1_punch_area_entered(area):
-	if !(area is WickHurtbox1):
+	if !(area is WickHurtbox1 and Med):
 		if punch==true:
 			Global.healthp2-=4
 			print(Global.healthp2)
