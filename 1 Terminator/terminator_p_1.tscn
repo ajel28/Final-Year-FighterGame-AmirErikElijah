@@ -180,21 +180,21 @@ libraries = {
 "": SubResource("AnimationLibrary_l8kb1")
 }
 
-[node name="termP1ShootingOrigin" type="Marker2D" parent="TermCharacterBody"]
-position = Vector2(479, 664)
-script = ExtResource("3_5it6k")
-termp1_scene = ExtResource("4_ei11k")
-
-[node name="Timer" type="Timer" parent="TermCharacterBody/termP1ShootingOrigin"]
-wait_time = 0.4
-autostart = true
-
 [node name="TermP1Hurtbox" type="Area2D" parent="TermCharacterBody"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TermCharacterBody/TermP1Hurtbox"]
 position = Vector2(423, 720)
 scale = Vector2(0.9932, 1)
 shape = SubResource("RectangleShape2D_u8v3p")
+
+[node name="termP1ShootingOrigin" type="Marker2D" parent="TermCharacterBody"]
+position = Vector2(550, 661)
+script = ExtResource("3_5it6k")
+termp1_scene = ExtResource("4_ei11k")
+
+[node name="Timer" type="Timer" parent="TermCharacterBody/termP1ShootingOrigin"]
+wait_time = 0.4
+autostart = true
 
 [node name="Stamina" type="Timer" parent="TermCharacterBody"]
 wait_time = 8.0
@@ -219,6 +219,6 @@ script = ExtResource("8_l4kfm")
 wait_time = 0.4
 autostart = true
 
-[connection signal="timeout" from="TermCharacterBody/termP1ShootingOrigin/Timer" to="TermCharacterBody/termP1ShootingOrigin" method="_on_timer_timeout"]
 [connection signal="area_entered" from="TermCharacterBody/TermP1Hurtbox" to="TermCharacterBody" method="_on_term_p_1_hurtbox_area_entered"]
+[connection signal="timeout" from="TermCharacterBody/termP1ShootingOrigin/Timer" to="TermCharacterBody/termP1ShootingOrigin" method="_on_timer_timeout"]
 [connection signal="timeout" from="CanvasLayer/Reload1/Timer" to="CanvasLayer/Reload1" method="_on_timer_timeout"]
