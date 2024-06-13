@@ -22,7 +22,7 @@ func update():
 	if Global.healthp1<=0:
 		var p2 = P2Wins.instantiate()
 		add_child(p2)
-	if Global.healthp1==19 or Global.healthp1==20:
+	if Global.healthp1==20 or Global.healthp1==18:
 		$FinishHim.play()
-	if Global.healthp2==19 or Global.healthp2==20:
+	if Global.healthp2==20 or Global.healthp2==18:
 		$FinishHim.play()
