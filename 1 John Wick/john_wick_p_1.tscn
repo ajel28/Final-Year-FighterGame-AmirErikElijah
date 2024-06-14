@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://crl7a5dal7ry5" path="res://1 John Wick/WickBubble1.png" id="4_mp5ow"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2kb6w"]
-size = Vector2(173, 324)
+size = Vector2(173, 589)
 
 [sub_resource type="Animation" id="Animation_hvomy"]
 length = 0.001
@@ -280,7 +280,7 @@ texture = ExtResource("2_5ptqx")
 hframes = 12
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(318.5, 718)
+position = Vector2(318.5, 585.5)
 shape = SubResource("RectangleShape2D_2kb6w")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]

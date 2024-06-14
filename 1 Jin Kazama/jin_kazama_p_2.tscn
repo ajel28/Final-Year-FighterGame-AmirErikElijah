@@ -10,7 +10,7 @@
 size = Vector2(65.1307, 45.0622)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cbt6k"]
-size = Vector2(173, 331)
+size = Vector2(173, 556)
 
 [sub_resource type="Animation" id="Animation_k74ws"]
 length = 0.001
@@ -222,7 +222,7 @@ rotation = 2.44346
 shape = SubResource("RectangleShape2D_v6j4u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="JinP2"]
-position = Vector2(1702.5, 709.5)
+position = Vector2(1702.5, 597)
 shape = SubResource("RectangleShape2D_cbt6k")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="JinP2"]

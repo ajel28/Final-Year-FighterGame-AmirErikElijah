@@ -195,7 +195,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mdbq0"]
-size = Vector2(189, 324.5)
+size = Vector2(189, 587)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aaw8i"]
 size = Vector2(219, 327.25)
@@ -228,7 +228,7 @@ libraries = {
 
 [node name="IdleCollision" type="CollisionShape2D" parent="Jin"]
 z_as_relative = false
-position = Vector2(320.5, 715.75)
+position = Vector2(320.5, 584.5)
 shape = SubResource("RectangleShape2D_mdbq0")
 
 [node name="JinP1Hurtbox" type="Area2D" parent="Jin"]

@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cpm58f61xpi0u" path="res://1 Rocky Balboa/RockyBubble2.png" id="4_mypsf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ia1gf"]
-size = Vector2(148.562, 319.312)
+size = Vector2(148.562, 393.656)
 
 [sub_resource type="Animation" id="Animation_xwo5q"]
 length = 0.001
@@ -256,7 +256,7 @@ flip_h = true
 hframes = 11
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(1722, 711)
+position = Vector2(1722, 673.828)
 shape = SubResource("RectangleShape2D_ia1gf")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]

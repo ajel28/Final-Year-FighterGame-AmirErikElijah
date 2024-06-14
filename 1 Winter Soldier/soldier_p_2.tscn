@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://ct7imn3lcml0t" path="res://1 Winter Soldier/SoldBubble2.png" id="4_pvqo2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h4uix"]
-size = Vector2(194.5, 307)
+size = Vector2(194.5, 372)
 
 [sub_resource type="Animation" id="Animation_8wk51"]
 length = 0.001
@@ -257,7 +257,7 @@ hframes = 10
 frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(1747.25, 723.5)
+position = Vector2(1747.25, 691)
 shape = SubResource("RectangleShape2D_h4uix")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]

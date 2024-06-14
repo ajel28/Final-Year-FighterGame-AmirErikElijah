@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dirvd8akn28df" path="res://1 Deadpool/DeadpoolBubble1.png" id="7_od76m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bjnh6"]
-size = Vector2(184.381, 319.499)
+size = Vector2(184.381, 556.499)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bwvxk"]
 size = Vector2(31.4763, 29.6518)
@@ -242,7 +242,8 @@ jump_time_to_peak = 0.5
 jump_time_to_descent = 0.3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeadpoolP1"]
-position = Vector2(322.667, 715.75)
+position = Vector2(322.667, 597.25)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_bjnh6")
 
 [node name="TextureRect" type="Sprite2D" parent="DeadpoolP1"]

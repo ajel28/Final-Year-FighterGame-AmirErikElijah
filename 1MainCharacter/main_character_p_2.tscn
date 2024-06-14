@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cff7g70o7h37h" path="res://Global Stuff/shield_p_2.tscn" id="3_s6m84"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5fosg"]
-size = Vector2(109.189, 325.375)
+size = Vector2(109.189, 400.688)
 
 [sub_resource type="Animation" id="Animation_3ycri"]
 length = 0.001
@@ -232,7 +232,7 @@ hframes = 11
 frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="McP2"]
-position = Vector2(1716.59, 716)
+position = Vector2(1716.59, 678.344)
 shape = SubResource("RectangleShape2D_5fosg")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="McP2"]
