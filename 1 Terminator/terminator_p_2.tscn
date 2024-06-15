@@ -10,7 +10,7 @@
 [ext_resource type="Script" path="res://Global Stuff/reload_1doom2.gd" id="8_02n5y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iby2u"]
-size = Vector2(135, 401.75)
+size = Vector2(135, 605.75)
 
 [sub_resource type="Animation" id="Animation_hh0ea"]
 length = 0.001
@@ -173,7 +173,7 @@ hframes = 11
 frame = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TermCharacterBody2"]
-position = Vector2(1656, 675.875)
+position = Vector2(1656, 573.875)
 shape = SubResource("RectangleShape2D_iby2u")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="TermCharacterBody2"]
